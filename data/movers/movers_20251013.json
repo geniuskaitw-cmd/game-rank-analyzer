@@ -1,0 +1,214 @@
+{
+  "tw": {
+    "top_grossing": [
+      {
+        "name": "TFT: 聯盟戰棋",
+        "delta": 122,
+        "direction": "rise"
+      },
+      {
+        "name": "ONE PIECE Bounty Rush",
+        "delta": -122,
+        "direction": "fall"
+      },
+      {
+        "name": "Sky光·遇",
+        "delta": -110,
+        "direction": "fall"
+      },
+      {
+        "name": "魔靈召喚: 天空之役",
+        "delta": -84,
+        "direction": "fall"
+      },
+      {
+        "name": "怪獸 8號 THE GAME",
+        "delta": -80,
+        "direction": "fall"
+      },
+      {
+        "name": "RO仙境傳說：守護永恆的愛",
+        "delta": -78,
+        "direction": "fall"
+      },
+      {
+        "name": "三國志・戰略版",
+        "delta": -70,
+        "direction": "fall"
+      },
+      {
+        "name": "出發吧麥芬-香格里拉·開拓異境聯動",
+        "delta": 69,
+        "direction": "rise"
+      },
+      {
+        "name": "女神秘令: 熱血橫向動作像素RPG",
+        "delta": -69,
+        "direction": "fall"
+      },
+      {
+        "name": "LINE Rangers 放置戰爭",
+        "delta": -68,
+        "direction": "fall"
+      }
+    ],
+    "top_free": [
+      {
+        "name": "狙击区：枪支射击",
+        "delta": -126,
+        "direction": "fall"
+      },
+      {
+        "name": "DoE：流亡地牢",
+        "delta": -121,
+        "direction": "fall"
+      },
+      {
+        "name": "Water Sort Puzzle - Sort Color",
+        "delta": 99,
+        "direction": "rise"
+      },
+      {
+        "name": "Magic Level 9: 音遊, 節奏大師, 聲音遊戲",
+        "delta": -93,
+        "direction": "fall"
+      },
+      {
+        "name": "董事長模擬器 - 逆襲人生当老闆 經營養成遊戲",
+        "delta": -90,
+        "direction": "fall"
+      },
+      {
+        "name": "腦洞大爆炸 - 詞語分類 單機益智文字遊戲",
+        "delta": 83,
+        "direction": "rise"
+      },
+      {
+        "name": "Match Villains",
+        "delta": -81,
+        "direction": "fall"
+      },
+      {
+        "name": "2 Player Games : Offline Games",
+        "delta": -79,
+        "direction": "fall"
+      },
+      {
+        "name": "主公快逃: 無路可逃",
+        "delta": -77,
+        "direction": "fall"
+      },
+      {
+        "name": "RF ONLINE NEXT",
+        "delta": -74,
+        "direction": "fall"
+      }
+    ]
+  },
+  "us": {
+    "top_grossing": [
+      {
+        "name": "Sea War: Raid",
+        "delta": 86,
+        "direction": "rise"
+      },
+      {
+        "name": "The Battle Cats",
+        "delta": 78,
+        "direction": "rise"
+      },
+      {
+        "name": "Hit it Rich! Casino Slots Game",
+        "delta": 61,
+        "direction": "rise"
+      },
+      {
+        "name": "Kingdom Guard:Tower Defense TD",
+        "delta": -61,
+        "direction": "fall"
+      },
+      {
+        "name": "Summoners War",
+        "delta": -59,
+        "direction": "fall"
+      },
+      {
+        "name": "Seven Knights Re:BIRTH",
+        "delta": -58,
+        "direction": "fall"
+      },
+      {
+        "name": "Last Shelter: Survival",
+        "delta": -57,
+        "direction": "fall"
+      },
+      {
+        "name": "Capybara Go!",
+        "delta": -54,
+        "direction": "fall"
+      },
+      {
+        "name": "Destiny: Rising",
+        "delta": 46,
+        "direction": "rise"
+      },
+      {
+        "name": "Empires & Puzzles: Match-3 RPG",
+        "delta": 41,
+        "direction": "rise"
+      }
+    ],
+    "top_free": [
+      {
+        "name": "Sort It Right: Relax Puzzle",
+        "delta": 105,
+        "direction": "rise"
+      },
+      {
+        "name": "Merge Cooking®",
+        "delta": -96,
+        "direction": "fall"
+      },
+      {
+        "name": "Bird Sort 2 Color Puzzle Game",
+        "delta": 87,
+        "direction": "rise"
+      },
+      {
+        "name": "Drop Away: Color Puzzle",
+        "delta": 84,
+        "direction": "rise"
+      },
+      {
+        "name": "Carnival Tycoon: Coin Games",
+        "delta": -77,
+        "direction": "fall"
+      },
+      {
+        "name": "Arrows – Puzzle Escape",
+        "delta": -77,
+        "direction": "fall"
+      },
+      {
+        "name": "Highway Racer Pro",
+        "delta": 74,
+        "direction": "rise"
+      },
+      {
+        "name": "Daily Themed Crossword Puzzles",
+        "delta": 67,
+        "direction": "rise"
+      },
+      {
+        "name": "Animals & Coins Adventure Game",
+        "delta": 67,
+        "direction": "rise"
+      },
+      {
+        "name": "Charades Guess Game: Guessly",
+        "delta": 66,
+        "direction": "rise"
+      }
+    ]
+  }
+}

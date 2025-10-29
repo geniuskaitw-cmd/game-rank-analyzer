@@ -1,0 +1,214 @@
+{
+  "tw": {
+    "top_grossing": [
+      {
+        "name": "Fate/Grand Order",
+        "delta": -143,
+        "direction": "fall"
+      },
+      {
+        "name": "Sky光·遇",
+        "delta": 135,
+        "direction": "rise"
+      },
+      {
+        "name": "瘋狂的蛇姬",
+        "delta": -122,
+        "direction": "fall"
+      },
+      {
+        "name": "怪獸 8號 THE GAME",
+        "delta": 117,
+        "direction": "rise"
+      },
+      {
+        "name": "魔靈召喚: 天空之役",
+        "delta": 79,
+        "direction": "rise"
+      },
+      {
+        "name": "TFT: 聯盟戰棋",
+        "delta": -79,
+        "direction": "fall"
+      },
+      {
+        "name": "RO仙境傳說：新世代的誕生",
+        "delta": -70,
+        "direction": "fall"
+      },
+      {
+        "name": "Garena 極速領域：寶寶樂園",
+        "delta": -70,
+        "direction": "fall"
+      },
+      {
+        "name": "我的勇者外傳",
+        "delta": -69,
+        "direction": "fall"
+      },
+      {
+        "name": "冰的啦！企鵝逗陣戰",
+        "delta": 63,
+        "direction": "rise"
+      }
+    ],
+    "top_free": [
+      {
+        "name": "拼拼世界",
+        "delta": -161,
+        "direction": "fall"
+      },
+      {
+        "name": "Brain Puzzle 2: Logic Twist",
+        "delta": 145,
+        "direction": "rise"
+      },
+      {
+        "name": "我的勇者外傳",
+        "delta": -127,
+        "direction": "fall"
+      },
+      {
+        "name": "點點大作戰",
+        "delta": -116,
+        "direction": "fall"
+      },
+      {
+        "name": "上古：龍神覺醒 - 打王掉寶爽",
+        "delta": -91,
+        "direction": "fall"
+      },
+      {
+        "name": "侍寢三國志",
+        "delta": 89,
+        "direction": "rise"
+      },
+      {
+        "name": "Hello Kitty My Dream Store",
+        "delta": -89,
+        "direction": "fall"
+      },
+      {
+        "name": "Disney Magic Match 3D",
+        "delta": -86,
+        "direction": "fall"
+      },
+      {
+        "name": "鳴潮",
+        "delta": -82,
+        "direction": "fall"
+      },
+      {
+        "name": "Block Crush!",
+        "delta": 81,
+        "direction": "rise"
+      }
+    ]
+  },
+  "us": {
+    "top_grossing": [
+      {
+        "name": "Star Wars™: Galaxy of Heroes",
+        "delta": 105,
+        "direction": "rise"
+      },
+      {
+        "name": "DRAGON BALL LEGENDS",
+        "delta": 92,
+        "direction": "rise"
+      },
+      {
+        "name": "Umamusume: Pretty Derby",
+        "delta": 88,
+        "direction": "rise"
+      },
+      {
+        "name": "OneState RP: Role Play Online",
+        "delta": 88,
+        "direction": "rise"
+      },
+      {
+        "name": "Age of Empires Mobile",
+        "delta": 68,
+        "direction": "rise"
+      },
+      {
+        "name": "Sea War: Raid",
+        "delta": -66,
+        "direction": "fall"
+      },
+      {
+        "name": "Disney Emoji Blitz Game",
+        "delta": 62,
+        "direction": "rise"
+      },
+      {
+        "name": "GODDESS OF VICTORY: NIKKE",
+        "delta": 62,
+        "direction": "rise"
+      },
+      {
+        "name": "Summoners War",
+        "delta": 59,
+        "direction": "rise"
+      },
+      {
+        "name": "Fortnite",
+        "delta": -49,
+        "direction": "fall"
+      }
+    ],
+    "top_free": [
+      {
+        "name": "Charades - Family & Party Game",
+        "delta": -144,
+        "direction": "fall"
+      },
+      {
+        "name": "Hexa Sort",
+        "delta": 100,
+        "direction": "rise"
+      },
+      {
+        "name": "Pixel Flow!",
+        "delta": 100,
+        "direction": "rise"
+      },
+      {
+        "name": "Exposed - Who's Most Likely To",
+        "delta": -87,
+        "direction": "fall"
+      },
+      {
+        "name": "Car Match - Traffic Puzzle",
+        "delta": -83,
+        "direction": "fall"
+      },
+      {
+        "name": "Arrows – Puzzle Escape",
+        "delta": 77,
+        "direction": "rise"
+      },
+      {
+        "name": "Little Farm Story: Idle Tycoon",
+        "delta": -68,
+        "direction": "fall"
+      },
+      {
+        "name": "2 Player Games : Offline Games",
+        "delta": -65,
+        "direction": "fall"
+      },
+      {
+        "name": "Royal Cooking",
+        "delta": 63,
+        "direction": "rise"
+      },
+      {
+        "name": "Water Out Puzzle",
+        "delta": 59,
+        "direction": "rise"
+      }
+    ]
+  }
+}
