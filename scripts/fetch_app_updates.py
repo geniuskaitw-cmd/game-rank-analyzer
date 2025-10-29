@@ -187,7 +187,7 @@ def main():
         print(f"\n--- 處理 {country} ({len(dates)} 個可用日期) ---")
         
         # 2. 遍歷所有可比較的日期對 (dates[i] vs dates[i+1])
-        for i in range(len(dates) - 1):
+        for i in range(min(1, len(dates) - 1)):
             today_str = dates[i]
             yday_str = dates[i+1]
             
