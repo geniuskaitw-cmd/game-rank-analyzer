@@ -24,8 +24,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          # 您的腳本需要這些函式庫
-          pip install requests firebase-admin
+          # 您的腳本需要這些函式庫 (已新增 openai)
+          pip install requests firebase-admin openai
           
       # === 準備 Firebase 憑證檔案 (Secrets) ===
       - name: Create Firebase Key File
@@ -46,10 +46,13 @@ jobs:
       - name: 2. Run fetch_ios_rss.py (Fetch Ranks)
         run: python scripts/fetch_ios_rss (4).py
         
-      # 3. 根據覆寫和 AI 邏輯分類遊戲
+      # 3. 根據覆寫和 AI 邏輯分類遊戲 (已新增 OPENAI_API_KEY)
       - name: 3. Run classify_games.py (Classify Ranks)
         run: python scripts/classify_games (2).py
-        
+        env:
+          # 將 OpenAI 金鑰傳遞給腳本
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          
       # 4. 分析名次變動者
       - name: 4. Run analyze_rank_movers.py (Analyze Movers)
         run: python scripts/analyze_rank_movers (2).py
