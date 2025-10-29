@@ -93,6 +93,7 @@
                         </tbody>
                     </table>
                 </div>
+                <!-- 修正：將按鈕移出 table，確保事件監聽可以正確綁定 -->
                 <button id="toggle-expand" class="mt-4 text-sm text-blue-600 hover:underline hidden">展開全部</button>
             </section>
 
@@ -194,12 +195,20 @@
             // 3. Firebase 初始化
             initializeFirebase() {
                 try {
-                    // 嘗試讀取 Canvas 提供的全域變數
-                    const firebaseConfig = JSON.parse(typeof __firebase_config !== 'undefined' ? __firebase_config : '{}');
-                    const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+                    // === 修正：直接使用您提供的 Firebase Config ===
+                    const firebaseConfig = {
+                      apiKey: "AIzaSyAgXqF-jPd8FpTLzuXuiDfDD4vhGO28d7M",
+                      authDomain: "rankanalyzer-1a95d.firebaseapp.com",
+                      projectId: "rankanalyzer-1a95d",
+                      storageBucket: "rankanalyzer-1a95d.appspot.com", // 注意：Firebase 通常用 .appspot.com
+                      messagingSenderId: "825847760",
+                      appId: "1:825847760:web:1606401fd848f9c962d3d5"
+                    };
+                    // ===========================================
 
+                    // 檢查 apiKey 是否存在
                     if (!firebaseConfig.apiKey) {
-                        console.warn("Firebase config 未設定，分類覆寫功能將無法使用。");
+                        console.warn("Firebase config 未設定或無效，分類覆寫功能將無法使用。");
                         this.showError("Firebase 未設定，覆寫功能已停用。");
                         return;
                     }
@@ -214,8 +223,8 @@
                             console.log("Firebase 驗證成功:", user.uid);
                             this.isAuthReady = true;
                         } else {
-                            // 如果未登入，嘗試使用 Token 登入或匿名登入
-                            this.authenticate(initialAuthToken);
+                            // 如果未登入，嘗試匿名登入 (我們不再需要 token 登入)
+                            this.authenticate();
                         }
                     });
                 } catch (error) {
@@ -224,18 +233,13 @@
                 }
             },
 
-            // 4. Firebase 登入邏輯
-            async authenticate(token) {
+            // 4. Firebase 登入邏輯 (簡化：只用匿名)
+            async authenticate() {
                 try {
-                    if (token) {
-                        console.log("嘗試使用 Custom Token 登入...");
-                        await signInWithCustomToken(this.auth, token);
-                    } else {
-                        console.log("嘗試匿名登入...");
-                        await signInAnonymously(this.auth);
-                    }
+                    console.log("嘗試匿名登入...");
+                    await signInAnonymously(this.auth);
                 } catch (error) {
-                    console.error("Firebase 登入失敗:", error);
+                    console.error("Firebase 匿名登入失敗:", error);
                     this.showError("Firebase 登入失敗，無法使用分類覆寫功能。");
                 }
             },
@@ -246,17 +250,17 @@
                 document.getElementById('country-select').addEventListener('change', () => this.handleCountryChange());
                 document.getElementById('chart-select').addEventListener('change', () => this.handleFilterChange());
                 document.getElementById('date-select').addEventListener('change', () => this.handleFilterChange());
-                
-                document.getElementById('rank-list').addEventListener('click', (e) => {
-                    if (e.target.id === 'toggle-expand') {
-                        this.toggleRankListExpand(e.target);
-                    }
+
+                // === 修正：直接為 #toggle-expand 按鈕綁定事件 ===
+                document.getElementById('toggle-expand').addEventListener('click', (e) => {
+                    this.toggleRankListExpand(e.target);
                 });
+                // ===========================================
 
                 document.getElementById('toggle-history-btn').addEventListener('click', () => this.toggleHistoryMode());
                 document.getElementById('run-history-btn').addEventListener('click', () => this.runHistoryAnalysis());
                 document.getElementById('rank-list').addEventListener('click', (e) => this.handleHistorySelection(e));
-                
+
                 document.getElementById('close-history-modal').addEventListener('click', () => {
                     document.getElementById('history-modal').classList.add('hidden');
                 });
@@ -275,7 +279,7 @@
             },
 
             // 7. 核心資料載入邏輯
-            
+
             async handleCountryChange() {
                 const country = document.getElementById('country-select').value;
                 const dateSelect = document.getElementById('date-select');
@@ -363,9 +367,9 @@
                     const delta = row.delta || 0;
                     const deltaColor = delta > 0 ? 'text-green-500' : (delta < 0 ? 'text-red-500' : 'text-gray-400');
                     const deltaIcon = delta > 0 ? '▲' : (delta < 0 ? '▼' : '—');
-                    
+
                     return `
-                        <tr id="app-row-${row.app_id}" class="bg-white border-b hover:bg-gray-50 ${index >= 10 ? 'hidden' : ''} rank-row" data-app-id="${row.app_id}" data-app-name="${row.app_name}">
+                        <tr id="app-row-${row.app_id}" class="bg-white border-b hover:bg-gray-50 ${index >= 10 ? 'hidden rank-collapsed' : ''} rank-row" data-app-id="${row.app_id}" data-app-name="${row.app_name}">
                             <td class="py-3 px-4 text-sm text-gray-500">${row.rank}</td>
                             <td class="py-3 px-4 font-medium text-gray-900">
                                 ${row.app_name}
@@ -387,7 +391,7 @@
                         </tr>
                     `;
                 }).join('');
-                
+
                 document.querySelectorAll('.category-select').forEach(select => {
                     select.addEventListener('change', (e) => this.handleCategoryOverride(e));
                 });
@@ -396,6 +400,8 @@
                 if (rows.length > 10) {
                     toggleBtn.classList.remove('hidden');
                     toggleBtn.textContent = '展開全部';
+                    // === 修正：確保按鈕狀態正確 ===
+                    toggleBtn.dataset.expanded = 'false';
                 } else {
                     toggleBtn.classList.add('hidden');
                 }
@@ -408,7 +414,7 @@
                     return;
                 }
                 const sortedPercentages = Object.entries(percentages).sort(([,a],[,b]) => b-a);
-                
+
                 container.innerHTML = sortedPercentages.map(([name, percent]) => `
                     <div class="text-sm mb-1">
                         <span class="font-medium">${name}:</span>
@@ -420,37 +426,41 @@
             renderMovers(movers) {
                 const riseList = document.getElementById('movers-rise');
                 const fallList = document.getElementById('movers-fall');
-                
+
                 const rising = movers.filter(m => m.direction === 'rise');
                 const falling = movers.filter(m => m.direction === 'fall');
 
-                riseList.innerHTML = rising.length > 0 ? 
-                    rising.map(m => `<li>${m.name} (+${m.delta})</li>`).join('') : 
+                riseList.innerHTML = rising.length > 0 ?
+                    rising.map(m => `<li>${m.name} (+${m.delta})</li>`).join('') :
                     '<li>無</li>';
-                
-                fallList.innerHTML = falling.length > 0 ? 
-                    falling.map(m => `<li>${m.name} (${m.delta})</li>`).join('') : 
+
+                fallList.innerHTML = falling.length > 0 ?
+                    falling.map(m => `<li>${m.name} (${m.delta})</li>`).join('') :
                     '<li>無</li>';
             },
 
             // 9. 互動功能
             toggleRankListExpand(button) {
-                const rows = document.querySelectorAll('.rank-row');
-                const isExpanded = button.textContent.includes('收合');
+                // === 修正：目標是帶有 .rank-collapsed class 的元素 ===
+                const collapsedRows = document.querySelectorAll('.rank-collapsed');
+                const isExpanded = button.dataset.expanded === 'true'; // 從 data-* 屬性讀取狀態
 
-                rows.forEach((row, index) => {
-                    if (index >= 10) {
-                        row.classList.toggle('hidden', isExpanded);
-                    }
+                collapsedRows.forEach((row) => {
+                    row.classList.toggle('hidden', isExpanded); // isExpanded 為 true 時隱藏，false 時顯示
                 });
 
+                // 更新按鈕文字和狀態
                 button.textContent = isExpanded ? '展開全部' : '收合榜單';
+                button.dataset.expanded = !isExpanded; // 切換狀態
             },
 
             async handleCategoryOverride(event) {
                 if (!this.db || !this.isAuthReady) {
                     this.showError("Firebase 未連線，無法儲存覆寫。");
-                    event.target.value = event.target.options[event.target.selectedIndex - 1]?.value || event.target.options[0].value;
+                    // 還原下拉選單的顯示值
+                    const select = event.target;
+                    const originalIndex = Array.from(select.options).findIndex(option => option.defaultSelected);
+                    select.selectedIndex = originalIndex >= 0 ? originalIndex : 0;
                     return;
                 }
 
@@ -470,9 +480,18 @@
                         updated_at: serverTimestamp()
                     });
                     this.showSuccess(`已成功儲存 ${appName} 的分類！下次自動化執行時將會套用。`);
+                    // 更新下拉選單的預設選中狀態，以反映最新的儲存值
+                    Array.from(event.target.options).forEach(option => {
+                        option.defaultSelected = (option.value === newCategory);
+                    });
+
                 } catch (error) {
                     console.error("寫入 Firestore 失敗:", error);
                     this.showError("儲存覆寫失敗，請檢查主控台。");
+                    // 還原下拉選單的顯示值
+                    const select = event.target;
+                    const originalIndex = Array.from(select.options).findIndex(option => option.defaultSelected);
+                    select.selectedIndex = originalIndex >= 0 ? originalIndex : 0;
                 }
             },
 
@@ -496,7 +515,7 @@
                     btn.classList.replace('hover:bg-gray-600', 'hover:bg-green-700');
                     runBtn.classList.add('hidden');
                     addBtns.forEach(b => b.classList.add('hidden'));
-                    
+
                     this.historySelection.clear();
                     document.querySelectorAll('.selected-for-analysis').forEach(row => {
                         row.classList.remove('selected-for-analysis');
@@ -509,17 +528,17 @@
                     });
                 }
             },
-            
+
             handleHistorySelection(event) {
                 if (!this.isHistoryMode) return;
-                
+
                 const button = event.target.closest('[data-action="toggle-history"]');
                 if (!button) return;
-                
+
                 const row = button.closest('tr');
                 const appId = row.dataset.appId;
                 const appName = row.dataset.appName;
-                
+
                 if (this.historySelection.has(appId)) {
                     this.historySelection.delete(appId);
                     row.classList.remove('selected-for-analysis');
@@ -539,10 +558,10 @@
                     button.classList.replace('hover:bg-blue-200', 'hover:bg-red-200');
                     button.classList.replace('text-blue-600', 'text-red-600');
                 }
-                
+
                 this.updateHistorySelectionCount();
             },
-            
+
             updateHistorySelectionCount() {
                 const runBtn = document.getElementById('run-history-btn');
                 const count = this.historySelection.size;
@@ -573,10 +592,10 @@
                     if (!dates || dates.length === 0) {
                         throw new Error("找不到可用日期。");
                     }
-                    
-                    const sortedDates = dates.slice().reverse(); 
 
-                    const datasets = new Map(); 
+                    const sortedDates = dates.slice().reverse();
+
+                    const datasets = new Map();
                     this.historySelection.forEach((appName, appId) => {
                         datasets.set(appId, {
                             label: appName,
@@ -591,33 +610,33 @@
                         // === 修正：使用 URL 物件來確保路徑正確 ===
                         const rankFile = `data/ranks/${country}/${platformLower}_${countryLower}_${chart}_${date}_classified.json`;
                         const rankData = await this.fetchJson(rankFile);
-                        
+
                         const rankMap = rankData ? new Map(rankData.rows.map(row => [row.app_id, row.rank])) : new Map();
 
                         datasets.forEach((appData, appId) => {
-                            const rank = rankMap.get(appId) || null; 
+                            const rank = rankMap.get(appId) || null;
                             appData.data.push(rank);
                         });
                     }
-                    
+
                     modalBody.innerHTML = '<canvas id="history-chart"></canvas>';
                     const ctx = document.getElementById('history-chart').getContext('2d');
-                    
+
                     if (this.historyChartInstance) {
-                        this.historyChartInstance.destroy(); 
+                        this.historyChartInstance.destroy();
                     }
 
                     this.historyChartInstance = new Chart(ctx, {
                         type: 'line',
                         data: {
-                            labels: sortedDates, 
-                            datasets: Array.from(datasets.values()) 
+                            labels: sortedDates,
+                            datasets: Array.from(datasets.values())
                         },
                         options: {
                             responsive: true,
                             scales: {
                                 y: {
-                                    reverse: true, 
+                                    reverse: true,
                                     beginAtZero: true,
                                     title: {
                                         display: true,
@@ -652,7 +671,7 @@
             setLoading(isLoading) {
                 this.isLoading = isLoading;
                 document.getElementById('loading-indicator').classList.toggle('hidden', !isLoading);
-                
+
                 document.getElementById('platform-select').disabled = isLoading;
                 document.getElementById('country-select').disabled = isLoading;
                 document.getElementById('chart-select').disabled = isLoading;
@@ -662,7 +681,7 @@
                     document.getElementById('date-select').disabled = true;
                 }
             },
-            
+
             clearUI() {
                 document.getElementById('rank-list-body').innerHTML = '<tr><td colspan="4" class="py-10 text-center text-gray-500">載入資料中...</td></tr>';
                 document.getElementById('stats-body').innerHTML = '<p class="text-sm text-gray-500">載入中...</p>';
@@ -673,10 +692,8 @@
             async fetchJson(url) {
                 try {
                     // === 修正：使用 new URL() 來建構一個保證正確的絕對 URL ===
-                    // 這會將 'data/ranks/...' 這種相對路徑
-                    // 轉換為 'https://<your-site-domain>/data/ranks/...'
                     const absoluteUrl = new URL(url, window.location.origin);
-                    
+
                     const response = await fetch(absoluteUrl, { cache: 'no-cache' });
                     if (!response.ok) {
                         if (response.status === 404) {
@@ -691,7 +708,7 @@
                     throw error;
                 }
             },
-            
+
             showError(message) {
                 this.showMessage(message, 'bg-red-500');
             },
@@ -708,9 +725,9 @@
 
                 const toast = document.createElement('div');
                 toast.id = (duration === 0) ? 'toast-loading' : '';
-                toast.className = `fixed bottom-5 right-5 p-4 rounded-md text-white shadow-lg transform transition-all ${bgColor}`;
+                toast.className = `p-4 rounded-md text-white shadow-lg transform transition-all ${bgColor}`; // 移除 fixed positioning
                 toast.textContent = message;
-                
+
                 container.appendChild(toast);
 
                 if (duration > 0) {
