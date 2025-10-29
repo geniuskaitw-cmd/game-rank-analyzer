@@ -349,7 +349,7 @@
                         this.fetchJson(`data/ranks/${country}/${platformLower}_${countryLower}_${chart}_${date}_classified.json`),
                         this.fetchJson(`data/movers/movers_${date}.json`),
                         // === 修正：讀取 metadata_cache 文件，而不是 updates_*.json ===
-                        this.fetchJson(`data/updates/metadata_cache_${date}.json`) 
+                        this.fetchJson(`data/ranks/updates/metadata_cache_${date}.json`) 
                     ]);
 
                     // 處理 Metadata 快取資料 (用於顯示更新圖示)
