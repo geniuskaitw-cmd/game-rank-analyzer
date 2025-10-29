@@ -132,11 +132,11 @@
                     </div>
                 </div>
 
-                <!-- 新增：今日更新 -->
+                <!-- 新增：最新Metadata (取代原本的今日更新) -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-lg font-semibold mb-4">今日更新</h3>
+                    <h3 class="text-lg font-semibold mb-4">最新版本資訊 (Metadata)</h3>
                     <ul id="updates-list" class="list-disc list-inside space-y-1 text-sm text-gray-700">
-                        <li>載入中...</li>
+                        <li>版本資訊已整合到排行榜圖示中。</li>
                     </ul>
                 </div>
 
@@ -176,7 +176,7 @@
             isHistoryMode: false, // 是否處於歷史分析模式
             historySelection: new Map(), // 儲存待分析的遊戲 {app_id: app_name}
             historyChartInstance: null, // Chart.js 圖表實例
-            currentUpdates: new Map(), // 新增：儲存當前載入的更新資訊 {app_id: {version, updated, ...}}
+            currentMetadata: new Map(), // 修改：儲存當前載入的 Metadata 資訊 {app_name: {version, updated, ...}}
 
             // 定義篩選條件
             platforms: [
@@ -326,7 +326,7 @@
             async handleFilterChange() {
                 if (this.isLoading) return;
                 this.setLoading(true);
-                this.currentUpdates.clear(); // 清空舊的更新資訊
+                this.currentMetadata.clear(); // 清空舊的 Metadata 資訊
 
                 this.clearUI();
 
@@ -344,25 +344,25 @@
                 const platformLower = platform.toLowerCase();
 
                 try {
-                    // 平行載入排行榜、Movers 和更新資料
-                    const [rankData, moversData, updatesData] = await Promise.all([
+                    // 平行載入排行榜、Movers 和 Metadata 快取資料 (Metadata cache)
+                    const [rankData, moversData, metadataCacheData] = await Promise.all([
                         this.fetchJson(`data/ranks/${country}/${platformLower}_${countryLower}_${chart}_${date}_classified.json`),
                         this.fetchJson(`data/movers/movers_${date}.json`),
-                        this.fetchJson(`data/updates/updates_${date}.json`) // 新增：讀取更新資料
+                        // === 修正：讀取 metadata_cache 文件，而不是 updates_*.json ===
+                        this.fetchJson(`data/updates/metadata_cache_${date}.json`) 
                     ]);
 
-                    // 處理更新資料
-                    if (updatesData && updatesData[countryLower]?.[platformLower]?.[chart]) {
-                        // 將更新資料存入 Map，方便查找
-                        this.currentUpdates = new Map(Object.entries(updatesData[countryLower][platformLower][chart]));
-                        this.renderUpdatesList(this.currentUpdates); // 新增：渲染更新列表
-                    } else {
-                         this.renderUpdatesList(new Map()); // 新增：渲染空的更新列表
-                    }
-
-                    // 處理排行榜資料 (現在可以傳遞更新資訊)
+                    // 處理 Metadata 快取資料 (用於顯示更新圖示)
+                    if (metadataCacheData && metadataCacheData[country]?.[platformLower]?.[chart]) {
+                        // 將 Metadata 存入 Map {app_name: {version, updated, ...}}
+                        // 注意：metadataCacheData 的頂層鍵是 'TW' (大寫國家代碼)，需要修正
+                        const cache = metadataCacheData[country][platformLower][chart];
+                        this.currentMetadata = new Map(Object.entries(cache));
+                    } 
+                    
+                    // 處理排行榜資料 (現在使用 currentMetadata 來顯示更新資訊)
                     if (rankData) {
-                        this.renderRankList(rankData.rows || [], this.currentUpdates); // 修改：傳入更新資訊
+                        this.renderRankList(rankData.rows || [], this.currentMetadata); // 修改：傳入 Metadata
                         this.renderStatistics(rankData.type_percentages_ai || {});
                     } else {
                         this.showError(`找不到榜單資料: data/ranks/${country}/${platformLower}_${countryLower}_${chart}_${date}_classified.json`);
@@ -384,7 +384,7 @@
             },
 
             // 8. 渲染 UI 元件
-            renderRankList(rows, updatesMap) { // 修改：接收 updatesMap
+            renderRankList(rows, metadataMap) { // 修改：接收 metadataMap
                 const listElement = document.getElementById('rank-list-body');
                 if (rows.length === 0) {
                     listElement.innerHTML = '<tr><td colspan="4" class="py-4 text-center text-gray-500">此篩選條件下無榜單資料。</td></tr>';
@@ -396,12 +396,21 @@
                     const delta = row.delta || 0;
                     const deltaColor = delta > 0 ? 'text-green-500' : (delta < 0 ? 'text-red-500' : 'text-gray-400');
                     const deltaIcon = delta > 0 ? '▲' : (delta < 0 ? '▼' : '—');
-                    const updateInfo = updatesMap.get(row.app_name); // 根據遊戲名稱查找更新資訊
-                    const updateIconHtml = updateInfo
-                        ? `<span class="update-icon" title="版本: ${updateInfo.version || 'N/A'}\n更新時間: ${updateInfo.updated ? new Date(updateInfo.updated).toLocaleString('zh-TW') : 'N/A'}">🔄</span>`
-                        : '';
+                    
+                    // === 新增/修改：根據 Metadata 判斷是否顯示圖示 ===
+                    const metadataInfo = metadataMap.get(row.app_name); // 根據遊戲名稱查找 Metadata
+                    
+                    let updateIconHtml = '';
+                    if (metadataInfo) {
+                        const version = metadataInfo.version || 'N/A';
+                        // 將 UTC 時間轉換為 TW 時間顯示
+                        const updatedTime = metadataInfo.updated ? new Date(metadataInfo.updated).toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }) : 'N/A';
+                        
+                        // 顯示圖示，title 屬性用於滑鼠懸停時顯示
+                        updateIconHtml = `<span class="update-icon" title="最新版本: ${version}\nApp Store 更新時間: ${updatedTime}">🔄</span>`;
+                    }
+                    // ===========================================
 
-                    // === 修正：移除錯誤的註解語法 ===
                     return `
                         <tr id="app-row-${row.app_id}" class="bg-white border-b hover:bg-gray-50 ${index >= 10 ? 'hidden rank-collapsed' : ''} rank-row" data-app-id="${row.app_id}" data-app-name="${row.app_name}">
                             <td class="py-3 px-4 text-sm text-gray-500">${row.rank}</td>
@@ -425,7 +434,6 @@
                             </td>
                         </tr>
                     `;
-                    // ===================================
                 }).join('');
 
                 document.querySelectorAll('.category-select').forEach(select => {
@@ -474,19 +482,8 @@
                     '<li>無</li>';
             },
 
-            // 新增：渲染今日更新列表
-            renderUpdatesList(updatesMap) {
-                const list = document.getElementById('updates-list');
-                if (updatesMap.size === 0) {
-                     list.innerHTML = '<li>今日無遊戲更新</li>';
-                     return;
-                }
-                list.innerHTML = Array.from(updatesMap.entries()).map(([appName, updateInfo]) => {
-                     const version = updateInfo.version || 'N/A';
-                     const updatedTime = updateInfo.updated ? new Date(updateInfo.updated).toLocaleTimeString('zh-TW', { hour: '2-digit', minute: '2-digit'}) : 'N/A';
-                     return `<li>${appName} (v${version} - ${updatedTime})</li>`;
-                }).join('');
-            },
+            // 移除原本的 renderUpdatesList，因為Metadata已經在排行榜中顯示
+            // renderUpdatesList(updatesMap) { ... },
 
             // 9. 互動功能
             toggleRankListExpand(button) {
@@ -791,5 +788,3 @@
     </script>
 </body>
 </html>
-" between the  and  tags.
-
