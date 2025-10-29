@@ -6,6 +6,7 @@
     <title>遊戲市場趨勢儀表板</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
     <style>
         /* 簡單的 loading 動畫 */
         .loader {
@@ -102,7 +103,7 @@
                     <div id="stats-body" class="relative h-64 w-full">
                         <p class="text-sm text-gray-500">載入中...</p>
                     </div>
-                    </div>
+                </div>
 
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <h3 class="text-lg font-semibold mb-4">摘要與變動 (Movers)</h3>
@@ -157,15 +158,11 @@
             auth: null,
             isAuthReady: false,
             isLoading: false,
-            isHistoryMode: false, // 是否處於歷史分析模式
-            historySelection: new Map(), // 儲存待分析的遊戲 {app_id: app_name}
-            historyChartInstance: null, // Chart.js 歷史圖表實例
-            
-            // === START: 圓餅圖修改 ===
-            pieChartInstance: null, // Chart.js 圓餅圖實例
-            // === END: 圓餅圖修改 ===
-            
-            currentMetadata: new Map(), // 儲存當前載入的 Metadata 資訊 {app_name: {version, updated, ...}}
+            isHistoryMode: false, 
+            historySelection: new Map(), 
+            historyChartInstance: null, 
+            pieChartInstance: null, // 圓餅圖實例
+            currentMetadata: new Map(), 
 
             // 定義篩選條件
             platforms: [
@@ -187,7 +184,6 @@
                 '角色扮演', '社交賭場', '策略對戰', '動作競技', '模擬沙盒', '休閒益智', '其他'
             ],
             
-            // === START: 圓餅圖修改 (定義顏色) ===
             // 定義一個固定的顏色表，確保分類顏色一致
             categoryColors: {
                 '角色扮演': '#FF6384',
@@ -198,7 +194,6 @@
                 '休閒益智': '#FF9F40',
                 '其他': '#C9CBCF'
             },
-            // === END: 圓餅圖修改 ===
 
             // 2. 初始化 (程式進入點)
             async initialize() {
@@ -206,25 +201,21 @@
                 this.initializeFirebase();
                 this.bindEvents();
                 this.renderFilters();
-                // 應用程式啟動時，手動觸發一次資料載入
                 this.handleCountryChange();
             },
 
             // 3. Firebase 初始化
             initializeFirebase() {
                 try {
-                    // === 修正：直接使用您提供的 Firebase Config ===
                     const firebaseConfig = {
                       apiKey: "AIzaSyAgXqF-jPd8FpTLzuXuiDfDD4vhGO28d7M",
                       authDomain: "rankanalyzer-1a95d.firebaseapp.com",
                       projectId: "rankanalyzer-1a95d",
-                      storageBucket: "rankanalyzer-1a95d.appspot.com", // 注意：Firebase 通常用 .appspot.com
+                      storageBucket: "rankanalyzer-1a95d.appspot.com", 
                       messagingSenderId: "825847760",
                       appId: "1:825847760:web:1606401fd848f9c962d3d5"
                     };
-                    // ===========================================
 
-                    // 檢查 apiKey 是否存在
                     if (!firebaseConfig.apiKey) {
                         console.warn("Firebase config 未設定或無效，分類覆寫功能將無法使用。");
                         this.showError("Firebase 未設定，覆寫功能已停用。");
@@ -235,13 +226,11 @@
                     this.db = getFirestore(firebaseApp);
                     this.auth = getAuth(firebaseApp);
 
-                    // 監聽登入狀態
                     onAuthStateChanged(this.auth, (user) => {
                         if (user) {
                             console.log("Firebase 驗證成功:", user.uid);
                             this.isAuthReady = true;
                         } else {
-                            // 如果未登入，嘗試匿名登入 (我們不再需要 token 登入)
                             this.authenticate();
                         }
                     });
@@ -269,11 +258,9 @@
                 document.getElementById('chart-select').addEventListener('change', () => this.handleFilterChange());
                 document.getElementById('date-select').addEventListener('change', () => this.handleFilterChange());
 
-                // === 修正：直接為 #toggle-expand 按鈕綁定事件 ===
                 document.getElementById('toggle-expand').addEventListener('click', (e) => {
                     this.toggleRankListExpand(e.target);
                 });
-                // ===========================================
 
                 document.getElementById('toggle-history-btn').addEventListener('click', () => this.toggleHistoryMode());
                 document.getElementById('run-history-btn').addEventListener('click', () => this.runHistoryAnalysis());
@@ -305,12 +292,11 @@
                 dateSelect.innerHTML = '<option>載入日期中...</option>';
 
                 try {
-                    // === 修正：使用 URL 物件來確保路徑正確 ===
                     const dates = await this.fetchJson(`data/ranks/${country}/available_dates_${country}.json`);
                     if (dates && dates.length > 0) {
                         dateSelect.innerHTML = dates.map(date => `<option value="${date}">${date}</option>`).join('');
                         dateSelect.disabled = false;
-                        this.handleFilterChange(); // 自動載入最新日期的資料
+                        this.handleFilterChange(); 
                     } else {
                         dateSelect.innerHTML = '<option>無可用日期</option>';
                         this.clearUI();
@@ -328,7 +314,7 @@
             async handleFilterChange() {
                 if (this.isLoading) return;
                 this.setLoading(true);
-                this.currentMetadata.clear(); // 清空舊的 Metadata 資訊
+                this.currentMetadata.clear(); 
 
                 this.clearUI();
 
@@ -346,31 +332,32 @@
                 const platformLower = platform.toLowerCase();
 
                 try {
-                    // 平行載入排行榜、Movers 和 Metadata 快取資料 (Metadata cache)
                     const [rankData, moversData, metadataCacheData] = await Promise.all([
                         this.fetchJson(`data/ranks/${country}/${platformLower}_${countryLower}_${chart}_${date}_classified.json`),
                         this.fetchJson(`data/movers/movers_${date}.json`),
-                        // === 修正 404 錯誤的路徑 ===
                         this.fetchJson(`data/ranks/updates/metadata_cache_${date}.json`) 
                     ]);
 
-                    // 處理 Metadata 快取資料 (用於顯示更新圖示)
                     if (metadataCacheData && metadataCacheData[country]?.[platformLower]?.[chart]) {
-                        // 將 Metadata 存入 Map {app_name: {version, updated, ...}}
-                        // 注意：metadataCacheData 的頂層鍵是 'TW' (大寫國家代碼)，需要修正
                         const cache = metadataCacheData[country][platformLower][chart];
                         this.currentMetadata = new Map(Object.entries(cache));
                     }  
                     
-                    // 處理排行榜資料 (現在使用 currentMetadata 來顯示更新資訊)
                     if (rankData) {
-                        this.renderRankList(rankData.rows || [], this.currentMetadata); // 修改：傳入 Metadata
-                        this.renderStatistics(rankData.type_percentages_ai || {});
+                        this.renderRankList(rankData.rows || [], this.currentMetadata); 
+                        
+                        // === START: 圓餅圖優化 (傳入原始計數) ===
+                        // 將 "百分比" 和 "原始計數" 都傳遞給渲染函式
+                        this.renderStatistics(
+                            rankData.type_percentages_ai || {},
+                            rankData.type_counts_ai || {} 
+                        );
+                        // === END: 圓餅圖優化 ===
+                        
                     } else {
                         this.showError(`找不到榜單資料: data/ranks/${country}/${platformLower}_${countryLower}_${chart}_${date}_classified.json`);
                     }
 
-                    // 處理 Movers 資料
                     if (moversData && moversData[countryLower] && moversData[countryLower][chart]) {
                         this.renderMovers(moversData[countryLower][chart]);
                     } else {
@@ -386,7 +373,7 @@
             },
 
             // 8. 渲染 UI 元件
-            renderRankList(rows, metadataMap) { // 修改：接收 metadataMap
+            renderRankList(rows, metadataMap) { 
                 const listElement = document.getElementById('rank-list-body');
                 if (rows.length === 0) {
                     listElement.innerHTML = '<tr><td colspan="4" class="py-4 text-center text-gray-500">此篩選條件下無榜單資料。</td></tr>';
@@ -399,19 +386,14 @@
                     const deltaColor = delta > 0 ? 'text-green-500' : (delta < 0 ? 'text-red-500' : 'text-gray-400');
                     const deltaIcon = delta > 0 ? '▲' : (delta < 0 ? '▼' : '—');
                     
-                    // === 新增/修改：根據 Metadata 判斷是否顯示圖示 ===
-                    const metadataInfo = metadataMap.get(row.app_name); // 根據遊戲名稱查找 Metadata
+                    const metadataInfo = metadataMap.get(row.app_name); 
                     
                     let updateIconHtml = '';
                     if (metadataInfo) {
                         const version = metadataInfo.version || 'N/A';
-                        // 將 UTC 時間轉換為 TW 時間顯示
                         const updatedTime = metadataInfo.updated ? new Date(metadataInfo.updated).toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }) : 'N/A';
-                        
-                        // 顯示圖示，title 屬性用於滑鼠懸停時顯示
                         updateIconHtml = `<span class="update-icon" title="最新版本: ${version}\nApp Store 更新時間: ${updatedTime}">🔄</span>`;
                     }
-                    // ===========================================
 
                     return `
                         <tr id="app-row-${row.app_id}" class="bg-white border-b hover:bg-gray-50 ${index >= 10 ? 'hidden rank-collapsed' : ''} rank-row" data-app-id="${row.app_id}" data-app-name="${row.app_name}">
@@ -452,11 +434,11 @@
                 }
             },
 
-            // === START: 圓餅圖修改 (重寫 renderStatistics 函式) ===
-            renderStatistics(percentages) {
+            // === START: 圓餅圖優化 (重寫 renderStatistics 函式以滿足新需求) ===
+            renderStatistics(percentages, counts) {
                 const container = document.getElementById('stats-body');
 
-                // 1. 銷毀舊的圖表實例 (如果存在)
+                // 1. 銷毀舊的圖表實例
                 if (this.pieChartInstance) {
                     this.pieChartInstance.destroy();
                     this.pieChartInstance = null;
@@ -469,53 +451,96 @@
                 }
 
                 // 3. 清空容器並建立 Canvas
-                // (我們需要一個固定的 ID 來抓取 context)
                 container.innerHTML = '<canvas id="category-pie-chart"></canvas>';
                 const ctx = document.getElementById('category-pie-chart').getContext('2d');
 
                 // 4. 準備 Chart.js 所需的資料
-                // 依百分比排序
                 const sortedPercentages = Object.entries(percentages).sort(([,a],[,b]) => b-a);
                 
                 const labels = sortedPercentages.map(([name]) => name);
                 const data = sortedPercentages.map(([, percent]) => percent);
-                
-                // 根據排序後的標籤，動態產生顏色陣列
-                const backgroundColors = labels.map(label => this.categoryColors[label] || '#C9CBCF'); // 如果找不到顏色，使用灰色
+                const backgroundColors = labels.map(label => this.categoryColors[label] || '#C9CBCF'); 
 
                 // 5. 建立新的 Chart.js 圖表
                 this.pieChartInstance = new Chart(ctx, {
-                    type: 'doughnut', // 'pie' 或 'doughnut' (甜甜圈圖)
+                    type: 'doughnut', 
                     data: {
                         labels: labels,
                         datasets: [{
                             label: '品類佔比',
                             data: data,
                             backgroundColor: backgroundColors,
-                            borderColor: '#FFFFFF', // 白色邊框
+                            borderColor: '#FFFFFF', 
                             borderWidth: 2
                         }]
                     },
+                    // 註冊 DataLabels 外掛 (使其生效)
+                    plugins: [ChartDataLabels],
                     options: {
                         responsive: true,
-                        maintainAspectRatio: false, // 允許圖表填滿 h-64 的容器
+                        maintainAspectRatio: false, 
                         plugins: {
+                            // === 需求 1: 在圖表上顯示 % ===
+                            datalabels: {
+                                formatter: (value, context) => {
+                                    // 僅顯示大於 5% 的標籤，避免擁擠
+                                    if (value < 5) {
+                                        return null;
+                                    }
+                                    return `${value}%`;
+                                },
+                                color: '#FFFFFF',
+                                font: {
+                                    weight: 'bold',
+                                    size: 14,
+                                },
+                                // 增加黑色細邊，讓白色文字在淺色背景上更易讀
+                                textStrokeColor: 'rgba(0,0,0,0.6)',
+                                textStrokeWidth: 1.5
+                            },
+                            
+                            // === 需求 2: 在圖例上顯示 "數量" ===
                             legend: {
-                                position: 'right', // 將圖例放在右側
+                                position: 'right', 
                                 labels: {
                                     font: {
                                         size: 12
                                     },
-                                    boxWidth: 20
+                                    boxWidth: 20,
+                                    // 使用 generateLabels 回呼來自訂圖例文字
+                                    generateLabels: function(chart) {
+                                        const data = chart.data;
+                                        if (data.labels.length && data.datasets.length) {
+                                            return data.labels.map((label, i) => {
+                                                const meta = chart.getDatasetMeta(0);
+                                                const style = meta.controller.getStyle(i);
+                                                
+                                                // 從外部 counts 物件獲取實際數量
+                                                const categoryCount = counts[label] || 0; 
+                                                
+                                                return {
+                                                    // 產生新文字: "分類 (數量款)"
+                                                    text: `${label} (${categoryCount}款)`,
+                                                    fillStyle: style.backgroundColor,
+                                                    strokeStyle: style.borderColor,
+                                                    lineWidth: style.borderWidth,
+                                                    hidden: !chart.getDataVisibility(i),
+                                                    index: i
+                                                };
+                                            });
+                                        }
+                                        return [];
+                                    }
                                 }
                             },
                             tooltip: {
-                                // 自訂提示框，顯示百分比
                                 callbacks: {
                                     label: function(context) {
                                         let label = context.label || '';
                                         let value = context.raw || 0;
-                                        return `${label}: ${value}%`;
+                                        // 提示框同時顯示 % 和 數量
+                                        let count = counts[label] || 0;
+                                        return `${label}: ${value}% (${count}款)`;
                                     }
                                 }
                             }
@@ -523,7 +548,7 @@
                     }
                 });
             },
-            // === END: 圓餅圖修改 ===
+            // === END: 圓餅圖優化 ===
 
             renderMovers(movers) {
                 const riseList = document.getElementById('movers-rise');
@@ -684,7 +709,6 @@
                 const countryLower = country.toLowerCase();
 
                 try {
-                    // === 修正：使用 URL 物件來確保路徑正確 ===
                     const dates = await this.fetchJson(`data/ranks/${country}/available_dates_${country}.json`);
                     if (!dates || dates.length === 0) {
                         throw new Error("找不到可用日期。");
@@ -704,7 +728,6 @@
                     });
 
                     for (const date of sortedDates) {
-                        // === 修正：使用 URL 物件來確保路徑正確 ===
                         const rankFile = `data/ranks/${country}/${platformLower}_${countryLower}_${chart}_${date}_classified.json`;
                         const rankData = await this.fetchJson(rankFile);
 
@@ -785,7 +808,6 @@
                 document.getElementById('movers-rise').innerHTML = '<li>載入中...</li>';
                 document.getElementById('movers-fall').innerHTML = '<li>載入中...</li>';
                 
-                // (我們保留了 Metadata 區塊，所以這行也保留)
                 const updatesList = document.getElementById('updates-list');
                 if (updatesList) {
                     updatesList.innerHTML = '<li>版本資訊已整合到排行榜圖示中。</li>';
@@ -794,7 +816,6 @@
 
             async fetchJson(url) {
                 try {
-                    // === 修正：使用 new URL() 來建構一個保證正確的絕對 URL ===
                     const absoluteUrl = new URL(url, window.location.origin);
 
                     const response = await fetch(absoluteUrl, { cache: 'no-cache' });
@@ -828,7 +849,7 @@
 
                 const toast = document.createElement('div');
                 toast.id = (duration === 0) ? 'toast-loading' : '';
-                toast.className = `p-4 rounded-md text-white shadow-lg transform transition-all ${bgColor}`; // 移除 fixed positioning
+                toast.className = `p-4 rounded-md text-white shadow-lg transform transition-all ${bgColor}`; 
                 toast.textContent = message;
 
                 container.appendChild(toast);
