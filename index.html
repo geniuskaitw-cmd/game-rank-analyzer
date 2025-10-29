@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>遊戲市場趨勢儀表板</title>
-    <!-- 載入 Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- 載入 Chart.js (用於歷史圖表) -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         /* 簡單的 loading 動畫 */
@@ -38,10 +36,8 @@
 </head>
 <body class="bg-gray-100 font-sans text-gray-800">
 
-    <!-- 訊息提示容器 -->
     <div id="toast-container" class="fixed bottom-5 right-5 z-[100]"></div>
 
-    <!-- 頁首 -->
     <header class="bg-white shadow-md">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <h1 class="text-2xl font-bold text-gray-800">遊戲市場趨勢儀表板</h1>
@@ -49,7 +45,6 @@
         </div>
     </header>
 
-    <!-- 篩選列 -->
     <nav class="bg-gray-800 text-white sticky top-0 z-10">
         <div class="container mx-auto px-4 py-3 flex flex-wrap gap-4 items-center">
             <div>
@@ -77,11 +72,9 @@
         </div>
     </nav>
 
-    <!-- 主要內容區 -->
     <main class="container mx-auto px-4 py-6">
         <div class="flex flex-col lg:flex-row gap-6">
 
-            <!-- 左側：排行榜 -->
             <section class="lg:w-2/3 bg-white p-6 rounded-lg shadow-md">
                 <h2 class="text-xl font-semibold mb-4">排行榜</h2>
                 <div class="overflow-x-auto">
@@ -95,27 +88,22 @@
                             </tr>
                         </thead>
                         <tbody id="rank-list-body">
-                            <!-- 遊戲資料將由 JS 動態填入 -->
                             <tr><td colspan="4" class="py-10 text-center text-gray-500">載入資料中...</td></tr>
                         </tbody>
                     </table>
                 </div>
-                <!-- 修正：將按鈕移出 table，確保事件監聽可以正確綁定 -->
                 <button id="toggle-expand" class="mt-4 text-sm text-blue-600 hover:underline hidden">展開全部</button>
             </section>
 
-            <!-- 右側：摘要 -->
             <aside class="lg:w-1/3 space-y-6">
 
-                <!-- 品類統計 -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <h3 class="text-lg font-semibold mb-4">品類統計 (AI 分類)</h3>
-                    <div id="stats-body" class="grid grid-cols-2 gap-2">
+                    <div id="stats-body" class="relative h-64 w-full">
                         <p class="text-sm text-gray-500">載入中...</p>
                     </div>
-                </div>
+                    </div>
 
-                <!-- 摘要與變動 -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <h3 class="text-lg font-semibold mb-4">摘要與變動 (Movers)</h3>
                     <div class="text-sm">
@@ -132,7 +120,6 @@
                     </div>
                 </div>
 
-                <!-- 新增：最新Metadata (取代原本的今日更新) -->
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <h3 class="text-lg font-semibold mb-4">最新版本資訊 (Metadata)</h3>
                     <ul id="updates-list" class="list-disc list-inside space-y-1 text-sm text-gray-700">
@@ -144,7 +131,6 @@
         </div>
     </main>
 
-    <!-- 歷史分析 Modal (彈出視窗) -->
     <div id="history-modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden p-4">
         <div class="bg-white rounded-lg shadow-xl w-full max-w-4xl max-h-[90vh] flex flex-col">
             <div class="flex justify-between items-center border-b p-4">
@@ -152,12 +138,10 @@
                 <button id="close-history-modal" class="text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
             </div>
             <div id="history-modal-body" class="p-6 overflow-y-auto">
-                <!-- 圖表將由 JS 繪製於此 -->
-            </div>
+                </div>
         </div>
     </div>
 
-    <!-- Firebase SDK (必須) -->
     <script type="module">
         // 載入 Firebase 核心 SDK
         import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
@@ -175,8 +159,13 @@
             isLoading: false,
             isHistoryMode: false, // 是否處於歷史分析模式
             historySelection: new Map(), // 儲存待分析的遊戲 {app_id: app_name}
-            historyChartInstance: null, // Chart.js 圖表實例
-            currentMetadata: new Map(), // 修改：儲存當前載入的 Metadata 資訊 {app_name: {version, updated, ...}}
+            historyChartInstance: null, // Chart.js 歷史圖表實例
+            
+            // === START: 圓餅圖修改 ===
+            pieChartInstance: null, // Chart.js 圓餅圖實例
+            // === END: 圓餅圖修改 ===
+            
+            currentMetadata: new Map(), // 儲存當前載入的 Metadata 資訊 {app_name: {version, updated, ...}}
 
             // 定義篩選條件
             platforms: [
@@ -197,6 +186,19 @@
             categories: [
                 '角色扮演', '社交賭場', '策略對戰', '動作競技', '模擬沙盒', '休閒益智', '其他'
             ],
+            
+            // === START: 圓餅圖修改 (定義顏色) ===
+            // 定義一個固定的顏色表，確保分類顏色一致
+            categoryColors: {
+                '角色扮演': '#FF6384',
+                '社交賭場': '#36A2EB',
+                '策略對戰': '#FFCE56',
+                '動作競技': '#4BC0C0',
+                '模擬沙盒': '#9966FF',
+                '休閒益智': '#FF9F40',
+                '其他': '#C9CBCF'
+            },
+            // === END: 圓餅圖修改 ===
 
             // 2. 初始化 (程式進入點)
             async initialize() {
@@ -348,7 +350,7 @@
                     const [rankData, moversData, metadataCacheData] = await Promise.all([
                         this.fetchJson(`data/ranks/${country}/${platformLower}_${countryLower}_${chart}_${date}_classified.json`),
                         this.fetchJson(`data/movers/movers_${date}.json`),
-                        // === 修正：讀取 metadata_cache 文件，而不是 updates_*.json ===
+                        // === 修正 404 錯誤的路徑 ===
                         this.fetchJson(`data/ranks/updates/metadata_cache_${date}.json`) 
                     ]);
 
@@ -358,7 +360,7 @@
                         // 注意：metadataCacheData 的頂層鍵是 'TW' (大寫國家代碼)，需要修正
                         const cache = metadataCacheData[country][platformLower][chart];
                         this.currentMetadata = new Map(Object.entries(cache));
-                    } 
+                    }  
                     
                     // 處理排行榜資料 (現在使用 currentMetadata 來顯示更新資訊)
                     if (rankData) {
@@ -450,21 +452,78 @@
                 }
             },
 
+            // === START: 圓餅圖修改 (重寫 renderStatistics 函式) ===
             renderStatistics(percentages) {
                 const container = document.getElementById('stats-body');
+
+                // 1. 銷毀舊的圖表實例 (如果存在)
+                if (this.pieChartInstance) {
+                    this.pieChartInstance.destroy();
+                    this.pieChartInstance = null;
+                }
+
+                // 2. 檢查是否有資料
                 if (Object.keys(percentages).length === 0) {
                     container.innerHTML = '<p class="text-sm text-gray-500">無統計資料。</p>';
                     return;
                 }
-                const sortedPercentages = Object.entries(percentages).sort(([,a],[,b]) => b-a);
 
-                container.innerHTML = sortedPercentages.map(([name, percent]) => `
-                    <div class="text-sm mb-1">
-                        <span class="font-medium">${name}:</span>
-                        <span class="text-blue-600 font-bold">${percent}%</span>
-                    </div>
-                `).join('');
+                // 3. 清空容器並建立 Canvas
+                // (我們需要一個固定的 ID 來抓取 context)
+                container.innerHTML = '<canvas id="category-pie-chart"></canvas>';
+                const ctx = document.getElementById('category-pie-chart').getContext('2d');
+
+                // 4. 準備 Chart.js 所需的資料
+                // 依百分比排序
+                const sortedPercentages = Object.entries(percentages).sort(([,a],[,b]) => b-a);
+                
+                const labels = sortedPercentages.map(([name]) => name);
+                const data = sortedPercentages.map(([, percent]) => percent);
+                
+                // 根據排序後的標籤，動態產生顏色陣列
+                const backgroundColors = labels.map(label => this.categoryColors[label] || '#C9CBCF'); // 如果找不到顏色，使用灰色
+
+                // 5. 建立新的 Chart.js 圖表
+                this.pieChartInstance = new Chart(ctx, {
+                    type: 'doughnut', // 'pie' 或 'doughnut' (甜甜圈圖)
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: '品類佔比',
+                            data: data,
+                            backgroundColor: backgroundColors,
+                            borderColor: '#FFFFFF', // 白色邊框
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false, // 允許圖表填滿 h-64 的容器
+                        plugins: {
+                            legend: {
+                                position: 'right', // 將圖例放在右側
+                                labels: {
+                                    font: {
+                                        size: 12
+                                    },
+                                    boxWidth: 20
+                                }
+                            },
+                            tooltip: {
+                                // 自訂提示框，顯示百分比
+                                callbacks: {
+                                    label: function(context) {
+                                        let label = context.label || '';
+                                        let value = context.raw || 0;
+                                        return `${label}: ${value}%`;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
             },
+            // === END: 圓餅圖修改 ===
 
             renderMovers(movers) {
                 const riseList = document.getElementById('movers-rise');
@@ -481,9 +540,6 @@
                     falling.map(m => `<li>${m.name} (${m.delta})</li>`).join('') :
                     '<li>無</li>';
             },
-
-            // 移除原本的 renderUpdatesList，因為Metadata已經在排行榜中顯示
-            // renderUpdatesList(updatesMap) { ... },
 
             // 9. 互動功能
             toggleRankListExpand(button) {
@@ -728,7 +784,12 @@
                 document.getElementById('stats-body').innerHTML = '<p class="text-sm text-gray-500">載入中...</p>';
                 document.getElementById('movers-rise').innerHTML = '<li>載入中...</li>';
                 document.getElementById('movers-fall').innerHTML = '<li>載入中...</li>';
-                document.getElementById('updates-list').innerHTML = '<li>載入中...</li>'; // 新增：清空更新列表
+                
+                // (我們保留了 Metadata 區塊，所以這行也保留)
+                const updatesList = document.getElementById('updates-list');
+                if (updatesList) {
+                    updatesList.innerHTML = '<li>版本資訊已整合到排行榜圖示中。</li>';
+                }
             },
 
             async fetchJson(url) {
