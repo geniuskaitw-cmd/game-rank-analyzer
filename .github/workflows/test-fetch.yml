@@ -7,16 +7,16 @@ jobs:
   run_fetch_test:
     runs-on: ubuntu-latest
 
-    # === 新增：賦予工作 "寫入" 權限 ===
+    # === 賦予工作 "寫入" 權限 (必要的) ===
     permissions:
       contents: write
-    # ==================================
 
     steps:
       - name: 1. Checkout repository code
         uses: actions/checkout@v4
         with:
-          persist-credentials: false
+          # === 修正：移除 "persist-credentials: false" ===
+          # 確保憑證被保留，以便 auto-commit-action 可以推送
           fetch-depth: 0 
           
       - name: 2. Set up Python
@@ -34,7 +34,6 @@ jobs:
         run: python scripts/fetch_ios_rss.py
         
       # === 提交變動 (將 JSON 數據推回儲存庫) ===
-      # 這是我們要測試的關鍵：確認 .gitignore 修正後，檔案會被提交
       - name: 5. Commit and Push generated data
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
