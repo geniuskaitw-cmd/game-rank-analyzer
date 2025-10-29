@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>遊戲市場趨勢儀表板 </title>
+    <title>遊戲市場趨勢儀表板 (AI 版)</title>
     <!-- 載入 Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- 載入 Chart.js (用於歷史圖表) -->
@@ -26,6 +26,13 @@
         .selected-for-analysis {
             background-color: #fffbeb !important; /* 淺黃色背景 */
             border-left: 4px solid #f59e0b; /* 黃色左邊框 */
+        }
+        /* 更新圖示樣式 */
+        .update-icon {
+            display: inline-block;
+            margin-left: 0.25rem; /* 4px */
+            color: #2563eb; /* blue-600 */
+            cursor: help; /* 顯示問號鼠標，提示有 tooltip */
         }
     </style>
 </head>
@@ -125,6 +132,14 @@
                     </div>
                 </div>
 
+                <!-- 新增：今日更新 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold mb-4">今日更新</h3>
+                    <ul id="updates-list" class="list-disc list-inside space-y-1 text-sm text-gray-700">
+                        <li>載入中...</li>
+                    </ul>
+                </div>
+
             </aside>
         </div>
     </main>
@@ -161,6 +176,7 @@
             isHistoryMode: false, // 是否處於歷史分析模式
             historySelection: new Map(), // 儲存待分析的遊戲 {app_id: app_name}
             historyChartInstance: null, // Chart.js 圖表實例
+            currentUpdates: new Map(), // 新增：儲存當前載入的更新資訊 {app_id: {version, updated, ...}}
 
             // 定義篩選條件
             platforms: [
@@ -292,7 +308,7 @@
                     if (dates && dates.length > 0) {
                         dateSelect.innerHTML = dates.map(date => `<option value="${date}">${date}</option>`).join('');
                         dateSelect.disabled = false;
-                        this.handleFilterChange();
+                        this.handleFilterChange(); // 自動載入最新日期的資料
                     } else {
                         dateSelect.innerHTML = '<option>無可用日期</option>';
                         this.clearUI();
@@ -310,6 +326,7 @@
             async handleFilterChange() {
                 if (this.isLoading) return;
                 this.setLoading(true);
+                this.currentUpdates.clear(); // 清空舊的更新資訊
 
                 this.clearUI();
 
@@ -327,19 +344,31 @@
                 const platformLower = platform.toLowerCase();
 
                 try {
-                    // === 修正：使用 URL 物件來確保路徑正確 ===
-                    const rankFile = `data/ranks/${country}/${platformLower}_${countryLower}_${chart}_${date}_classified.json`;
-                    const rankData = await this.fetchJson(rankFile);
-                    if (rankData) {
-                        this.renderRankList(rankData.rows || []);
-                        this.renderStatistics(rankData.type_percentages_ai || {});
+                    // 平行載入排行榜、Movers 和更新資料
+                    const [rankData, moversData, updatesData] = await Promise.all([
+                        this.fetchJson(`data/ranks/${country}/${platformLower}_${countryLower}_${chart}_${date}_classified.json`),
+                        this.fetchJson(`data/movers/movers_${date}.json`),
+                        this.fetchJson(`data/updates/updates_${date}.json`) // 新增：讀取更新資料
+                    ]);
+
+                    // 處理更新資料
+                    if (updatesData && updatesData[countryLower]?.[platformLower]?.[chart]) {
+                        // 將更新資料存入 Map，方便查找
+                        this.currentUpdates = new Map(Object.entries(updatesData[countryLower][platformLower][chart]));
+                        this.renderUpdatesList(this.currentUpdates); // 新增：渲染更新列表
                     } else {
-                        this.showError(`找不到榜單資料: ${rankFile}`);
+                         this.renderUpdatesList(new Map()); // 新增：渲染空的更新列表
                     }
 
-                    // === 修正：使用 URL 物件來確保路徑正確 ===
-                    const moversFile = `data/movers/movers_${date}.json`;
-                    const moversData = await this.fetchJson(moversFile);
+                    // 處理排行榜資料 (現在可以傳遞更新資訊)
+                    if (rankData) {
+                        this.renderRankList(rankData.rows || [], this.currentUpdates); // 修改：傳入更新資訊
+                        this.renderStatistics(rankData.type_percentages_ai || {});
+                    } else {
+                        this.showError(`找不到榜單資料: data/ranks/${country}/${platformLower}_${countryLower}_${chart}_${date}_classified.json`);
+                    }
+
+                    // 處理 Movers 資料
                     if (moversData && moversData[countryLower] && moversData[countryLower][chart]) {
                         this.renderMovers(moversData[countryLower][chart]);
                     } else {
@@ -355,7 +384,7 @@
             },
 
             // 8. 渲染 UI 元件
-            renderRankList(rows) {
+            renderRankList(rows, updatesMap) { // 修改：接收 updatesMap
                 const listElement = document.getElementById('rank-list-body');
                 if (rows.length === 0) {
                     listElement.innerHTML = '<tr><td colspan="4" class="py-4 text-center text-gray-500">此篩選條件下無榜單資料。</td></tr>';
@@ -367,12 +396,17 @@
                     const delta = row.delta || 0;
                     const deltaColor = delta > 0 ? 'text-green-500' : (delta < 0 ? 'text-red-500' : 'text-gray-400');
                     const deltaIcon = delta > 0 ? '▲' : (delta < 0 ? '▼' : '—');
+                    const updateInfo = updatesMap.get(row.app_name); // 根據遊戲名稱查找更新資訊
+                    const updateIconHtml = updateInfo
+                        ? `<span class="update-icon" title="版本: ${updateInfo.version || 'N/A'}\n更新時間: ${updateInfo.updated ? new Date(updateInfo.updated).toLocaleString('zh-TW') : 'N/A'}">🔄</span>`
+                        : '';
 
                     return `
                         <tr id="app-row-${row.app_id}" class="bg-white border-b hover:bg-gray-50 ${index >= 10 ? 'hidden rank-collapsed' : ''} rank-row" data-app-id="${row.app_id}" data-app-name="${row.app_name}">
                             <td class="py-3 px-4 text-sm text-gray-500">${row.rank}</td>
                             <td class="py-3 px-4 font-medium text-gray-900">
                                 ${row.app_name}
+                                ${updateIconHtml} {/* 新增：更新圖示 */}
                                 <button data-action="toggle-history" class="history-add-btn hidden ml-2 px-2 py-0.5 text-xs text-blue-600 bg-blue-100 rounded-full hover:bg-blue-200">+</button>
                             </td>
                             <td class="py-3 px-4 text-sm ${deltaColor}">${deltaIcon} ${Math.abs(delta)}</td>
@@ -400,7 +434,6 @@
                 if (rows.length > 10) {
                     toggleBtn.classList.remove('hidden');
                     toggleBtn.textContent = '展開全部';
-                    // === 修正：確保按鈕狀態正確 ===
                     toggleBtn.dataset.expanded = 'false';
                 } else {
                     toggleBtn.classList.add('hidden');
@@ -439,25 +472,36 @@
                     '<li>無</li>';
             },
 
+            // 新增：渲染今日更新列表
+            renderUpdatesList(updatesMap) {
+                const list = document.getElementById('updates-list');
+                if (updatesMap.size === 0) {
+                     list.innerHTML = '<li>今日無遊戲更新</li>';
+                     return;
+                }
+                list.innerHTML = Array.from(updatesMap.entries()).map(([appName, updateInfo]) => {
+                     const version = updateInfo.version || 'N/A';
+                     const updatedTime = updateInfo.updated ? new Date(updateInfo.updated).toLocaleTimeString('zh-TW', { hour: '2-digit', minute: '2-digit'}) : 'N/A';
+                     return `<li>${appName} (v${version} - ${updatedTime})</li>`;
+                }).join('');
+            },
+
             // 9. 互動功能
             toggleRankListExpand(button) {
-                // === 修正：目標是帶有 .rank-collapsed class 的元素 ===
                 const collapsedRows = document.querySelectorAll('.rank-collapsed');
-                const isExpanded = button.dataset.expanded === 'true'; // 從 data-* 屬性讀取狀態
+                const isExpanded = button.dataset.expanded === 'true';
 
                 collapsedRows.forEach((row) => {
-                    row.classList.toggle('hidden', isExpanded); // isExpanded 為 true 時隱藏，false 時顯示
+                    row.classList.toggle('hidden', isExpanded);
                 });
 
-                // 更新按鈕文字和狀態
                 button.textContent = isExpanded ? '展開全部' : '收合榜單';
-                button.dataset.expanded = !isExpanded; // 切換狀態
+                button.dataset.expanded = !isExpanded;
             },
 
             async handleCategoryOverride(event) {
                 if (!this.db || !this.isAuthReady) {
                     this.showError("Firebase 未連線，無法儲存覆寫。");
-                    // 還原下拉選單的顯示值
                     const select = event.target;
                     const originalIndex = Array.from(select.options).findIndex(option => option.defaultSelected);
                     select.selectedIndex = originalIndex >= 0 ? originalIndex : 0;
@@ -480,7 +524,6 @@
                         updated_at: serverTimestamp()
                     });
                     this.showSuccess(`已成功儲存 ${appName} 的分類！下次自動化執行時將會套用。`);
-                    // 更新下拉選單的預設選中狀態，以反映最新的儲存值
                     Array.from(event.target.options).forEach(option => {
                         option.defaultSelected = (option.value === newCategory);
                     });
@@ -488,7 +531,6 @@
                 } catch (error) {
                     console.error("寫入 Firestore 失敗:", error);
                     this.showError("儲存覆寫失敗，請檢查主控台。");
-                    // 還原下拉選單的顯示值
                     const select = event.target;
                     const originalIndex = Array.from(select.options).findIndex(option => option.defaultSelected);
                     select.selectedIndex = originalIndex >= 0 ? originalIndex : 0;
@@ -687,6 +729,7 @@
                 document.getElementById('stats-body').innerHTML = '<p class="text-sm text-gray-500">載入中...</p>';
                 document.getElementById('movers-rise').innerHTML = '<li>載入中...</li>';
                 document.getElementById('movers-fall').innerHTML = '<li>載入中...</li>';
+                document.getElementById('updates-list').innerHTML = '<li>載入中...</li>'; // 新增：清空更新列表
             },
 
             async fetchJson(url) {
