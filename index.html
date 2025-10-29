@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>遊戲市場趨勢儀表板 (AI 版)</title>
+    <!-- 載入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 載入 Chart.js (用於歷史圖表) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* 簡單的 loading 動畫 */
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        /* 用於歷史分析的選中樣式 */
+        .selected-for-analysis {
+            background-color: #fffbeb !important; /* 淺黃色背景 */
+            border-left: 4px solid #f59e0b; /* 黃色左邊框 */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+
+    <!-- 訊息提示容器 -->
+    <div id="toast-container" class="fixed bottom-5 right-5 z-[100]"></div>
+
+    <!-- 頁首 -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-800">遊戲市場趨勢儀表板 (AI 版)</h1>
+            <div id="loading-indicator" class="loader hidden"></div>
+        </div>
+    </header>
+
+    <!-- 篩選列 -->
+    <nav class="bg-gray-800 text-white sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-3 flex flex-wrap gap-4 items-center">
+            <div>
+                <label for="platform-select" class="text-sm font-medium mr-2">平台:</label>
+                <select id="platform-select" class="bg-gray-700 border-gray-600 rounded-md py-1 px-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"></select>
+            </div>
+            <div>
+                <label for="country-select" class="text-sm font-medium mr-2">國家:</label>
+                <select id="country-select" class="bg-gray-700 border-gray-600 rounded-md py-1 px-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"></select>
+            </div>
+            <div>
+                <label for="chart-select" class="text-sm font-medium mr-2">榜單:</label>
+                <select id="chart-select" class="bg-gray-700 border-gray-600 rounded-md py-1 px-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"></select>
+            </div>
+            <div>
+                <label for="date-select" class="text-sm font-medium mr-2">日期:</label>
+                <select id="date-select" class="bg-gray-700 border-gray-600 rounded-md py-1 px-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" disabled>
+                    <option>請先選擇國家</option>
+                </select>
+            </div>
+            <div class="ml-auto flex gap-2">
+                <button id="toggle-history-btn" class="bg-green-600 hover:bg-green-700 text-white py-1 px-3 rounded-md text-sm font-medium">歷史分析</button>
+                <button id="run-history-btn" class="bg-blue-600 hover:bg-blue-700 text-white py-1 px-3 rounded-md text-sm font-medium hidden" disabled>分析 0 款遊戲</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要內容區 -->
+    <main class="container mx-auto px-4 py-6">
+        <div class="flex flex-col lg:flex-row gap-6">
+
+            <!-- 左側：排行榜 -->
+            <section class="lg:w-2/3 bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-4">排行榜 (Top 50)</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full min-w-max" id="rank-list">
+                        <thead>
+                            <tr class="border-b bg-gray-50 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                <th class="py-3 px-4">#</th>
+                                <th class="py-3 px-4">遊戲</th>
+                                <th class="py-3 px-4">變動</th>
+                                <th class="py-3 px-4">類型 (AI)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="rank-list-body">
+                            <!-- 遊戲資料將由 JS 動態填入 -->
+                            <tr><td colspan="4" class="py-10 text-center text-gray-500">載入資料中...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button id="toggle-expand" class="mt-4 text-sm text-blue-600 hover:underline hidden">展開全部</button>
+            </section>
+
+            <!-- 右側：摘要 -->
+            <aside class="lg:w-1/3 space-y-6">
+
+                <!-- 品類統計 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold mb-4">品類統計 (AI 分類)</h3>
+                    <div id="stats-body" class="grid grid-cols-2 gap-2">
+                        <p class="text-sm text-gray-500">載入中...</p>
+                    </div>
+                </div>
+
+                <!-- 摘要與變動 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold mb-4">摘要與變動 (Movers)</h3>
+                    <div class="text-sm">
+                        <h4 class="font-semibold text-green-600 mb-2">▲ 今日大幅上升 (Top 10)</h4>
+                        <ul id="movers-rise" class="list-disc list-inside space-y-1 text-gray-700">
+                            <li>載入中...</li>
+                        </ul>
+                    </div>
+                    <div class="text-sm mt-4">
+                        <h4 class="font-semibold text-red-600 mb-2">▼ 今日大幅下降 (Top 10)</h4>
+                        <ul id="movers-fall" class="list-disc list-inside space-y-1 text-gray-700">
+                            <li>載入中...</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </aside>
+        </div>
+    </main>
+
+    <!-- 歷史分析 Modal (彈出視窗) -->
+    <div id="history-modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden p-4">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-4xl max-h-[90vh] flex flex-col">
+            <div class="flex justify-between items-center border-b p-4">
+                <h3 class="text-xl font-semibold">歷史排名分析</h3>
+                <button id="close-history-modal" class="text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
+            </div>
+            <div id="history-modal-body" class="p-6 overflow-y-auto">
+                <!-- 圖表將由 JS 繪製於此 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDK (必須) -->
+    <script type="module">
+        // 載入 Firebase 核心 SDK
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        // 載入 Auth (用於登入)
+        import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        // 載入 Firestore (用於寫入分類)
+        import { getFirestore, doc, setDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        // --- 應用程式主邏輯 ---
+        const app = {
+            // 1. 狀態管理
+            db: null,
+            auth: null,
+            isAuthReady: false,
+            isLoading: false,
+            isHistoryMode: false, // 是否處於歷史分析模式
+            historySelection: new Map(), // 儲存待分析的遊戲 {app_id: app_name}
+            historyChartInstance: null, // Chart.js 圖表實例
+
+            // 定義篩選條件
+            platforms: [
+                { id: 'ios', name: 'iOS' },
+                { id: 'gp', name: 'Google Play' }
+            ],
+            countries: [
+                { id: 'TW', name: '台灣' },
+                { id: 'US', name: '美國' },
+                { id: 'CN', name: '中國' },
+                { id: 'TH', name: '泰國' },
+                { id: 'PH', name: '菲律賓' }
+            ],
+            charts: [
+                { id: 'top_grossing', name: '暢銷榜' },
+                { id: 'top_free', name: '免費榜' }
+            ],
+            categories: [
+                '角色扮演', '社交賭場', '策略對戰', '動作競技', '模擬沙盒', '休閒益智', '其他'
+            ],
+
+            // 2. 初始化 (程式進入點)
+            async initialize() {
+                console.log("儀表板初始化...");
+                this.initializeFirebase();
+                this.bindEvents();
+                this.renderFilters();
+                // 應用程式啟動時，手動觸發一次資料載入
+                this.handleCountryChange();
+            },
+
+            // 3. Firebase 初始化
+            initializeFirebase() {
+                try {
+                    // 嘗試讀取 Canvas 提供的全域變數
+                    const firebaseConfig = JSON.parse(typeof __firebase_config !== 'undefined' ? __firebase_config : '{}');
+                    const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+
+                    if (!firebaseConfig.apiKey) {
+                        console.warn("Firebase config 未設定，分類覆寫功能將無法使用。");
+                        this.showError("Firebase 未設定，覆寫功能已停用。");
+                        return;
+                    }
+
+                    const firebaseApp = initializeApp(firebaseConfig);
+                    this.db = getFirestore(firebaseApp);
+                    this.auth = getAuth(firebaseApp);
+
+                    // 監聽登入狀態
+                    onAuthStateChanged(this.auth, (user) => {
+                        if (user) {
+                            console.log("Firebase 驗證成功:", user.uid);
+                            this.isAuthReady = true;
+                        } else {
+                            // 如果未登入，嘗試使用 Token 登入或匿名登入
+                            this.authenticate(initialAuthToken);
+                        }
+                    });
+                } catch (error) {
+                    console.error("Firebase 初始化失敗:", error);
+                    this.showError("Firebase 初始化失敗。");
+                }
+            },
+
+            // 4. Firebase 登入邏輯
+            async authenticate(token) {
+                try {
+                    if (token) {
+                        console.log("嘗試使用 Custom Token 登入...");
+                        await signInWithCustomToken(this.auth, token);
+                    } else {
+                        console.log("嘗試匿名登入...");
+                        await signInAnonymously(this.auth);
+                    }
+                } catch (error) {
+                    console.error("Firebase 登入失敗:", error);
+                    this.showError("Firebase 登入失敗，無法使用分類覆寫功能。");
+                }
+            },
+
+            // 5. 綁定所有 DOM 事件監聽
+            bindEvents() {
+                document.getElementById('platform-select').addEventListener('change', () => this.handleFilterChange());
+                document.getElementById('country-select').addEventListener('change', () => this.handleCountryChange());
+                document.getElementById('chart-select').addEventListener('change', () => this.handleFilterChange());
+                document.getElementById('date-select').addEventListener('change', () => this.handleFilterChange());
+                
+                document.getElementById('rank-list').addEventListener('click', (e) => {
+                    if (e.target.id === 'toggle-expand') {
+                        this.toggleRankListExpand(e.target);
+                    }
+                });
+
+                document.getElementById('toggle-history-btn').addEventListener('click', () => this.toggleHistoryMode());
+                document.getElementById('run-history-btn').addEventListener('click', () => this.runHistoryAnalysis());
+                document.getElementById('rank-list').addEventListener('click', (e) => this.handleHistorySelection(e));
+                
+                document.getElementById('close-history-modal').addEventListener('click', () => {
+                    document.getElementById('history-modal').classList.add('hidden');
+                });
+            },
+
+            // 6. 渲染篩選器
+            renderFilters() {
+                this.populateSelect('platform-select', this.platforms);
+                this.populateSelect('country-select', this.countries);
+                this.populateSelect('chart-select', this.charts);
+            },
+
+            populateSelect(elementId, options) {
+                const select = document.getElementById(elementId);
+                select.innerHTML = options.map(opt => `<option value="${opt.id}">${opt.name}</option>`).join('');
+            },
+
+            // 7. 核心資料載入邏輯
+            
+            async handleCountryChange() {
+                const country = document.getElementById('country-select').value;
+                const dateSelect = document.getElementById('date-select');
+                dateSelect.disabled = true;
+                dateSelect.innerHTML = '<option>載入日期中...</option>';
+
+                try {
+                    // === 修正：使用 URL 物件來確保路徑正確 ===
+                    const dates = await this.fetchJson(`data/ranks/${country}/available_dates_${country}.json`);
+                    if (dates && dates.length > 0) {
+                        dateSelect.innerHTML = dates.map(date => `<option value="${date}">${date}</option>`).join('');
+                        dateSelect.disabled = false;
+                        this.handleFilterChange();
+                    } else {
+                        dateSelect.innerHTML = '<option>無可用日期</option>';
+                        this.clearUI();
+                        this.setLoading(false);
+                    }
+                } catch (error) {
+                    console.error("載入日期失敗:", error);
+                    dateSelect.innerHTML = '<option>載入失敗</option>';
+                    this.showError(`載入 ${country} 日期列表失敗。`);
+                    this.clearUI();
+                    this.setLoading(false);
+                }
+            },
+
+            async handleFilterChange() {
+                if (this.isLoading) return;
+                this.setLoading(true);
+
+                this.clearUI();
+
+                const platform = document.getElementById('platform-select').value;
+                const country = document.getElementById('country-select').value;
+                const chart = document.getElementById('chart-select').value;
+                const date = document.getElementById('date-select').value;
+
+                if (!date || date === '無可用日期' || date === '載入日期中...' || date === '載入失敗') {
+                    this.setLoading(false);
+                    return;
+                }
+
+                const countryLower = country.toLowerCase();
+                const platformLower = platform.toLowerCase();
+
+                try {
+                    // === 修正：使用 URL 物件來確保路徑正確 ===
+                    const rankFile = `data/ranks/${country}/${platformLower}_${countryLower}_${chart}_${date}_classified.json`;
+                    const rankData = await this.fetchJson(rankFile);
+                    if (rankData) {
+                        this.renderRankList(rankData.rows || []);
+                        this.renderStatistics(rankData.type_percentages_ai || {});
+                    } else {
+                        this.showError(`找不到榜單資料: ${rankFile}`);
+                    }
+
+                    // === 修正：使用 URL 物件來確保路徑正確 ===
+                    const moversFile = `data/movers/movers_${date}.json`;
+                    const moversData = await this.fetchJson(moversFile);
+                    if (moversData && moversData[countryLower] && moversData[countryLower][chart]) {
+                        this.renderMovers(moversData[countryLower][chart]);
+                    } else {
+                        this.renderMovers([]);
+                    }
+
+                } catch (error) {
+                    console.error("載入資料時發生錯誤:", error);
+                    this.showError("載入資料時發生錯誤，請檢查主控台。");
+                } finally {
+                    this.setLoading(false);
+                }
+            },
+
+            // 8. 渲染 UI 元件
+            renderRankList(rows) {
+                const listElement = document.getElementById('rank-list-body');
+                if (rows.length === 0) {
+                    listElement.innerHTML = '<tr><td colspan="4" class="py-4 text-center text-gray-500">此篩選條件下無榜單資料。</td></tr>';
+                    document.getElementById('toggle-expand').classList.add('hidden');
+                    return;
+                }
+
+                listElement.innerHTML = rows.map((row, index) => {
+                    const delta = row.delta || 0;
+                    const deltaColor = delta > 0 ? 'text-green-500' : (delta < 0 ? 'text-red-500' : 'text-gray-400');
+                    const deltaIcon = delta > 0 ? '▲' : (delta < 0 ? '▼' : '—');
+                    
+                    return `
+                        <tr id="app-row-${row.app_id}" class="bg-white border-b hover:bg-gray-50 ${index >= 10 ? 'hidden' : ''} rank-row" data-app-id="${row.app_id}" data-app-name="${row.app_name}">
+                            <td class="py-3 px-4 text-sm text-gray-500">${row.rank}</td>
+                            <td class="py-3 px-4 font-medium text-gray-900">
+                                ${row.app_name}
+                                <button data-action="toggle-history" class="history-add-btn hidden ml-2 px-2 py-0.5 text-xs text-blue-600 bg-blue-100 rounded-full hover:bg-blue-200">+</button>
+                            </td>
+                            <td class="py-3 px-4 text-sm ${deltaColor}">${deltaIcon} ${Math.abs(delta)}</td>
+                            <td class="py-3 px-4 text-sm">
+                                <div class="relative inline-block">
+                                    <select data-app-id="${row.app_id}" class="category-select appearance-none bg-gray-100 border border-gray-300 rounded-md py-1 px-2 pr-8 text-sm text-gray-700 hover:bg-gray-200 focus:outline-none">
+                                        ${this.categories.map(cat => `
+                                            <option value="${cat}" ${row.ai_type === cat ? 'selected' : ''}>${cat}</option>
+                                        `).join('')}
+                                    </select>
+                                    <span class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none text-gray-500">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                    `;
+                }).join('');
+                
+                document.querySelectorAll('.category-select').forEach(select => {
+                    select.addEventListener('change', (e) => this.handleCategoryOverride(e));
+                });
+
+                const toggleBtn = document.getElementById('toggle-expand');
+                if (rows.length > 10) {
+                    toggleBtn.classList.remove('hidden');
+                    toggleBtn.textContent = '展開全部';
+                } else {
+                    toggleBtn.classList.add('hidden');
+                }
+            },
+
+            renderStatistics(percentages) {
+                const container = document.getElementById('stats-body');
+                if (Object.keys(percentages).length === 0) {
+                    container.innerHTML = '<p class="text-sm text-gray-500">無統計資料。</p>';
+                    return;
+                }
+                const sortedPercentages = Object.entries(percentages).sort(([,a],[,b]) => b-a);
+                
+                container.innerHTML = sortedPercentages.map(([name, percent]) => `
+                    <div class="text-sm mb-1">
+                        <span class="font-medium">${name}:</span>
+                        <span class="text-blue-600 font-bold">${percent}%</span>
+                    </div>
+                `).join('');
+            },
+
+            renderMovers(movers) {
+                const riseList = document.getElementById('movers-rise');
+                const fallList = document.getElementById('movers-fall');
+                
+                const rising = movers.filter(m => m.direction === 'rise');
+                const falling = movers.filter(m => m.direction === 'fall');
+
+                riseList.innerHTML = rising.length > 0 ? 
+                    rising.map(m => `<li>${m.name} (+${m.delta})</li>`).join('') : 
+                    '<li>無</li>';
+                
+                fallList.innerHTML = falling.length > 0 ? 
+                    falling.map(m => `<li>${m.name} (${m.delta})</li>`).join('') : 
+                    '<li>無</li>';
+            },
+
+            // 9. 互動功能
+            toggleRankListExpand(button) {
+                const rows = document.querySelectorAll('.rank-row');
+                const isExpanded = button.textContent.includes('收合');
+
+                rows.forEach((row, index) => {
+                    if (index >= 10) {
+                        row.classList.toggle('hidden', isExpanded);
+                    }
+                });
+
+                button.textContent = isExpanded ? '展開全部' : '收合榜單';
+            },
+
+            async handleCategoryOverride(event) {
+                if (!this.db || !this.isAuthReady) {
+                    this.showError("Firebase 未連線，無法儲存覆寫。");
+                    event.target.value = event.target.options[event.target.selectedIndex - 1]?.value || event.target.options[0].value;
+                    return;
+                }
+
+                const appId = event.target.dataset.appId;
+                const newCategory = event.target.value;
+                const appName = document.getElementById(`app-row-${appId}`).dataset.appName;
+
+                console.log(`準備覆寫 App ID: ${appId} (${appName}) -> 新分類: ${newCategory}`);
+                this.showLoadingMessage(`正在儲存 ${appName} 的分類...`);
+
+                try {
+                    const docRef = doc(this.db, "overrides", appId);
+                    await setDoc(docRef, {
+                        app_id: appId,
+                        app_name: appName,
+                        category: newCategory,
+                        updated_at: serverTimestamp()
+                    });
+                    this.showSuccess(`已成功儲存 ${appName} 的分類！下次自動化執行時將會套用。`);
+                } catch (error) {
+                    console.error("寫入 Firestore 失敗:", error);
+                    this.showError("儲存覆寫失敗，請檢查主控台。");
+                }
+            },
+
+            // 10. 歷史分析功能
+            toggleHistoryMode() {
+                this.isHistoryMode = !this.isHistoryMode;
+                const btn = document.getElementById('toggle-history-btn');
+                const runBtn = document.getElementById('run-history-btn');
+                const addBtns = document.querySelectorAll('.history-add-btn');
+
+                if (this.isHistoryMode) {
+                    btn.textContent = '取消分析';
+                    btn.classList.replace('bg-green-600', 'bg-gray-500');
+                    btn.classList.replace('hover:bg-green-700', 'hover:bg-gray-600');
+                    runBtn.classList.remove('hidden');
+                    addBtns.forEach(b => b.classList.remove('hidden'));
+                    this.updateHistorySelectionCount();
+                } else {
+                    btn.textContent = '歷史分析';
+                    btn.classList.replace('bg-gray-500', 'bg-green-600');
+                    btn.classList.replace('hover:bg-gray-600', 'hover:bg-green-700');
+                    runBtn.classList.add('hidden');
+                    addBtns.forEach(b => b.classList.add('hidden'));
+                    
+                    this.historySelection.clear();
+                    document.querySelectorAll('.selected-for-analysis').forEach(row => {
+                        row.classList.remove('selected-for-analysis');
+                    });
+                    document.querySelectorAll('.history-add-btn').forEach(b => {
+                        b.textContent = '+';
+                        b.classList.replace('bg-red-100', 'bg-blue-100');
+                        b.classList.replace('hover:bg-red-200', 'hover:bg-blue-200');
+                        b.classList.replace('text-red-600', 'text-blue-600');
+                    });
+                }
+            },
+            
+            handleHistorySelection(event) {
+                if (!this.isHistoryMode) return;
+                
+                const button = event.target.closest('[data-action="toggle-history"]');
+                if (!button) return;
+                
+                const row = button.closest('tr');
+                const appId = row.dataset.appId;
+                const appName = row.dataset.appName;
+                
+                if (this.historySelection.has(appId)) {
+                    this.historySelection.delete(appId);
+                    row.classList.remove('selected-for-analysis');
+                    button.textContent = '+';
+                    button.classList.replace('bg-red-100', 'bg-blue-100');
+                    button.classList.replace('hover:bg-red-200', 'hover:bg-blue-200');
+                    button.classList.replace('text-red-600', 'text-blue-600');
+                } else {
+                    if (this.historySelection.size >= 10) {
+                        this.showError("最多只能選取 10 款遊戲進行分析。");
+                        return;
+                    }
+                    this.historySelection.set(appId, appName);
+                    row.classList.add('selected-for-analysis');
+                    button.textContent = '—';
+                    button.classList.replace('bg-blue-100', 'bg-red-100');
+                    button.classList.replace('hover:bg-blue-200', 'hover:bg-red-200');
+                    button.classList.replace('text-blue-600', 'text-red-600');
+                }
+                
+                this.updateHistorySelectionCount();
+            },
+            
+            updateHistorySelectionCount() {
+                const runBtn = document.getElementById('run-history-btn');
+                const count = this.historySelection.size;
+                runBtn.textContent = `分析 ${count} 款遊戲`;
+                runBtn.disabled = count === 0;
+            },
+
+            async runHistoryAnalysis() {
+                if (this.historySelection.size === 0) {
+                    this.showError("請至少選取 1 款遊戲。");
+                    return;
+                }
+
+                const modal = document.getElementById('history-modal');
+                const modalBody = document.getElementById('history-modal-body');
+                modalBody.innerHTML = '<div class="flex justify-center items-center h-64"><div class="loader"></div><p class="ml-4">正在載入歷史資料...</p></div>';
+                modal.classList.remove('hidden');
+
+                const country = document.getElementById('country-select').value;
+                const platform = document.getElementById('platform-select').value;
+                const chart = document.getElementById('chart-select').value;
+                const platformLower = platform.toLowerCase();
+                const countryLower = country.toLowerCase();
+
+                try {
+                    // === 修正：使用 URL 物件來確保路徑正確 ===
+                    const dates = await this.fetchJson(`data/ranks/${country}/available_dates_${country}.json`);
+                    if (!dates || dates.length === 0) {
+                        throw new Error("找不到可用日期。");
+                    }
+                    
+                    const sortedDates = dates.slice().reverse(); 
+
+                    const datasets = new Map(); 
+                    this.historySelection.forEach((appName, appId) => {
+                        datasets.set(appId, {
+                            label: appName,
+                            data: [],
+                            borderColor: `hsl(${Math.random() * 360}, 70%, 50%)`,
+                            fill: false,
+                            tension: 0.1
+                        });
+                    });
+
+                    for (const date of sortedDates) {
+                        // === 修正：使用 URL 物件來確保路徑正確 ===
+                        const rankFile = `data/ranks/${country}/${platformLower}_${countryLower}_${chart}_${date}_classified.json`;
+                        const rankData = await this.fetchJson(rankFile);
+                        
+                        const rankMap = rankData ? new Map(rankData.rows.map(row => [row.app_id, row.rank])) : new Map();
+
+                        datasets.forEach((appData, appId) => {
+                            const rank = rankMap.get(appId) || null; 
+                            appData.data.push(rank);
+                        });
+                    }
+                    
+                    modalBody.innerHTML = '<canvas id="history-chart"></canvas>';
+                    const ctx = document.getElementById('history-chart').getContext('2d');
+                    
+                    if (this.historyChartInstance) {
+                        this.historyChartInstance.destroy(); 
+                    }
+
+                    this.historyChartInstance = new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: sortedDates, 
+                            datasets: Array.from(datasets.values()) 
+                        },
+                        options: {
+                            responsive: true,
+                            scales: {
+                                y: {
+                                    reverse: true, 
+                                    beginAtZero: true,
+                                    title: {
+                                        display: true,
+                                        text: '排名 (Rank)'
+                                    }
+                                }
+                            },
+                            plugins: {
+                                title: {
+                                    display: true,
+                                    text: `歷史排名分析 - ${platform} ${country} ${chart}`
+                                },
+                                tooltip: {
+                                    mode: 'index',
+                                    intersect: false
+                                }
+                            },
+                            interaction: {
+                                intersect: false,
+                                mode: 'index',
+                            }
+                        }
+                    });
+
+                } catch (error) {
+                    console.error("歷史分析失敗:", error);
+                    modalBody.innerHTML = `<p class="text-red-500">載入歷史圖表失敗: ${error.message}</p>`;
+                }
+            },
+
+            // 11. 輔助工具
+            setLoading(isLoading) {
+                this.isLoading = isLoading;
+                document.getElementById('loading-indicator').classList.toggle('hidden', !isLoading);
+                
+                document.getElementById('platform-select').disabled = isLoading;
+                document.getElementById('country-select').disabled = isLoading;
+                document.getElementById('chart-select').disabled = isLoading;
+                if (!isLoading && document.getElementById('date-select').options.length > 0 && !document.getElementById('date-select').options[0].text.includes('載入')) {
+                     document.getElementById('date-select').disabled = false;
+                } else if (isLoading) {
+                    document.getElementById('date-select').disabled = true;
+                }
+            },
+            
+            clearUI() {
+                document.getElementById('rank-list-body').innerHTML = '<tr><td colspan="4" class="py-10 text-center text-gray-500">載入資料中...</td></tr>';
+                document.getElementById('stats-body').innerHTML = '<p class="text-sm text-gray-500">載入中...</p>';
+                document.getElementById('movers-rise').innerHTML = '<li>載入中...</li>';
+                document.getElementById('movers-fall').innerHTML = '<li>載入中...</li>';
+            },
+
+            async fetchJson(url) {
+                try {
+                    // === 修正：使用 new URL() 來建構一個保證正確的絕對 URL ===
+                    // 這會將 'data/ranks/...' 這種相對路徑
+                    // 轉換為 'https://<your-site-domain>/data/ranks/...'
+                    const absoluteUrl = new URL(url, window.location.origin);
+                    
+                    const response = await fetch(absoluteUrl, { cache: 'no-cache' });
+                    if (!response.ok) {
+                        if (response.status === 404) {
+                            console.warn(`找不到檔案: ${absoluteUrl}`);
+                            return null;
+                        }
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return await response.json();
+                } catch (error) {
+                    console.error(`Fetch 錯誤 ${url}:`, error);
+                    throw error;
+                }
+            },
+            
+            showError(message) {
+                this.showMessage(message, 'bg-red-500');
+            },
+            showSuccess(message) {
+                this.showMessage(message, 'bg-green-500');
+            },
+            showLoadingMessage(message) {
+                this.showMessage(message, 'bg-blue-500', 0);
+            },
+            showMessage(message, bgColor, duration = 3000) {
+                const container = document.getElementById('toast-container');
+                const oldLoading = document.getElementById('toast-loading');
+                if (oldLoading) oldLoading.remove();
+
+                const toast = document.createElement('div');
+                toast.id = (duration === 0) ? 'toast-loading' : '';
+                toast.className = `fixed bottom-5 right-5 p-4 rounded-md text-white shadow-lg transform transition-all ${bgColor}`;
+                toast.textContent = message;
+                
+                container.appendChild(toast);
+
+                if (duration > 0) {
+                    setTimeout(() => {
+                        toast.remove();
+                    }, duration);
+                }
+            }
+        };
+
+        // DOM 載入完成後，啟動應用程式
+        document.addEventListener('DOMContentLoaded', () => {
+            app.initialize();
+        });
+
+    </script>
+</body>
+</html>
+
