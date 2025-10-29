@@ -26,13 +26,14 @@
             background-color: #fffbeb !important; /* 淺黃色背景 */
             border-left: 4px solid #f59e0b; /* 黃色左邊框 */
         }
-        /* 更新圖示樣式 */
+        
+        /* === START: Tooltip 優化 === */
+        /* 更新圖示樣式 (移除 margin 和 cursor) */
         .update-icon {
             display: inline-block;
-            margin-left: 0.25rem; /* 4px */
             color: #2563eb; /* blue-600 */
-            cursor: help; /* 顯示問號鼠標，提示有 tooltip */
         }
+        /* === END: Tooltip 優化 === */
     </style>
 </head>
 <body class="bg-gray-100 font-sans text-gray-800">
@@ -122,7 +123,7 @@
                 </div>
 
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-lg font-semibold mb-4">這裡沒用了</h3>
+                    <h3 class="text-lg font-semibold mb-4">最新版本資訊 (Metadata)</h3>
                     <ul id="updates-list" class="list-disc list-inside space-y-1 text-sm text-gray-700">
                         <li>版本資訊已整合到排行榜圖示中。</li>
                     </ul>
@@ -264,7 +265,19 @@
 
                 document.getElementById('toggle-history-btn').addEventListener('click', () => this.toggleHistoryMode());
                 document.getElementById('run-history-btn').addEventListener('click', () => this.runHistoryAnalysis());
-                document.getElementById('rank-list').addEventListener('click', (e) => this.handleHistorySelection(e));
+                
+                // === START: Tooltip 優化 (綁定事件) ===
+                // 1. 綁定排行榜表格的點擊事件 (用於點擊開關)
+                document.getElementById('rank-list').addEventListener('click', (e) => {
+                    this.handleHistorySelection(e);
+                    this.handleTooltipToggle(e); // 新增：處理 tooltip 點擊
+                });
+                
+                // 2. 綁定全域點擊事件 (用於點擊空白處關閉)
+                window.addEventListener('click', (e) => {
+                    this.handleGlobalClick(e); // 新增：處理全域點擊
+                });
+                // === END: Tooltip 優化 ===
 
                 document.getElementById('close-history-modal').addEventListener('click', () => {
                     document.getElementById('history-modal').classList.add('hidden');
@@ -346,13 +359,10 @@
                     if (rankData) {
                         this.renderRankList(rankData.rows || [], this.currentMetadata); 
                         
-                        // === START: 圓餅圖優化 (傳入原始計數) ===
-                        // 將 "百分比" 和 "原始計數" 都傳遞給渲染函式
                         this.renderStatistics(
                             rankData.type_percentages_ai || {},
                             rankData.type_counts_ai || {} 
                         );
-                        // === END: 圓餅圖優化 ===
                         
                     } else {
                         this.showError(`找不到榜單資料: data/ranks/${country}/${platformLower}_${countryLower}_${chart}_${date}_classified.json`);
@@ -386,22 +396,43 @@
                     const deltaColor = delta > 0 ? 'text-green-500' : (delta < 0 ? 'text-red-500' : 'text-gray-400');
                     const deltaIcon = delta > 0 ? '▲' : (delta < 0 ? '▼' : '—');
                     
+                    // === START: Tooltip 優化 (產生自訂 Tooltip HTML) ===
                     const metadataInfo = metadataMap.get(row.app_name); 
                     
                     let updateIconHtml = '';
                     if (metadataInfo) {
                         const version = metadataInfo.version || 'N/A';
                         const updatedTime = metadataInfo.updated ? new Date(metadataInfo.updated).toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }) : 'N/A';
-                        updateIconHtml = `<span class="update-icon" title="最新版本: ${version}\nApp Store 更新時間: ${updatedTime}">🔄</span>`;
+                        
+                        updateIconHtml = `
+                            <div class="relative group inline-block ml-1 align-middle">
+                                <span data-action="toggle-tooltip" class="update-icon cursor-pointer">🔄</span>
+                                
+                                <div class="custom-tooltip absolute z-20 bottom-full mb-2 left-1/2 -translate-x-1/2 w-64
+                                            bg-white border border-gray-300 rounded-md shadow-lg p-3
+                                            text-sm text-left text-gray-700
+                                            hidden group-hover:block
+                                            pointer-events-none">
+                                    <strong class="block font-medium text-gray-900">最新版本: ${version}</strong>
+                                    <span class="block mt-1">App Store 更新時間: ${updatedTime}</span>
+                                    <div class="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0
+                                                border-l-8 border-l-transparent
+                                                border-r-8 border-r-transparent
+                                                border-t-8 border-t-white
+                                                drop-shadow-sm" style="margin-left: -8px;"></div>
+                                </div>
+                            </div>
+                        `;
                     }
+                    // === END: Tooltip 優化 ===
 
                     return `
                         <tr id="app-row-${row.app_id}" class="bg-white border-b hover:bg-gray-50 ${index >= 10 ? 'hidden rank-collapsed' : ''} rank-row" data-app-id="${row.app_id}" data-app-name="${row.app_name}">
                             <td class="py-3 px-4 text-sm text-gray-500">${row.rank}</td>
                             <td class="py-3 px-4 font-medium text-gray-900">
-                                ${row.app_name}
+                                <span class="align-middle">${row.app_name}</span>
                                 ${updateIconHtml}
-                                <button data-action="toggle-history" class="history-add-btn hidden ml-2 px-2 py-0.5 text-xs text-blue-600 bg-blue-100 rounded-full hover:bg-blue-200">+</button>
+                                <button data-action="toggle-history" class="history-add-btn hidden ml-2 px-2 py-0.5 text-xs text-blue-600 bg-blue-100 rounded-full hover:bg-blue-200 align-middle">+</button>
                             </td>
                             <td class="py-3 px-4 text-sm ${deltaColor}">${deltaIcon} ${Math.abs(delta)}</td>
                             <td class="py-3 px-4 text-sm">
@@ -434,34 +465,29 @@
                 }
             },
 
-            // === START: 圓餅圖優化 (重寫 renderStatistics 函式以滿足新需求) ===
+            // (圓餅圖優化後的 renderStatistics 函式)
             renderStatistics(percentages, counts) {
                 const container = document.getElementById('stats-body');
 
-                // 1. 銷毀舊的圖表實例
                 if (this.pieChartInstance) {
                     this.pieChartInstance.destroy();
                     this.pieChartInstance = null;
                 }
 
-                // 2. 檢查是否有資料
                 if (Object.keys(percentages).length === 0) {
                     container.innerHTML = '<p class="text-sm text-gray-500">無統計資料。</p>';
                     return;
                 }
 
-                // 3. 清空容器並建立 Canvas
                 container.innerHTML = '<canvas id="category-pie-chart"></canvas>';
                 const ctx = document.getElementById('category-pie-chart').getContext('2d');
 
-                // 4. 準備 Chart.js 所需的資料
                 const sortedPercentages = Object.entries(percentages).sort(([,a],[,b]) => b-a);
                 
                 const labels = sortedPercentages.map(([name]) => name);
                 const data = sortedPercentages.map(([, percent]) => percent);
                 const backgroundColors = labels.map(label => this.categoryColors[label] || '#C9CBCF'); 
 
-                // 5. 建立新的 Chart.js 圖表
                 this.pieChartInstance = new Chart(ctx, {
                     type: 'doughnut', 
                     data: {
@@ -474,16 +500,13 @@
                             borderWidth: 2
                         }]
                     },
-                    // 註冊 DataLabels 外掛 (使其生效)
                     plugins: [ChartDataLabels],
                     options: {
                         responsive: true,
                         maintainAspectRatio: false, 
                         plugins: {
-                            // === 需求 1: 在圖表上顯示 % ===
                             datalabels: {
                                 formatter: (value, context) => {
-                                    // 僅顯示大於 5% 的標籤，避免擁擠
                                     if (value < 5) {
                                         return null;
                                     }
@@ -494,12 +517,9 @@
                                     weight: 'bold',
                                     size: 14,
                                 },
-                                // 增加黑色細邊，讓白色文字在淺色背景上更易讀
                                 textStrokeColor: 'rgba(0,0,0,0.6)',
                                 textStrokeWidth: 1.5
                             },
-                            
-                            // === 需求 2: 在圖例上顯示 "數量" ===
                             legend: {
                                 position: 'right', 
                                 labels: {
@@ -507,19 +527,15 @@
                                         size: 12
                                     },
                                     boxWidth: 20,
-                                    // 使用 generateLabels 回呼來自訂圖例文字
                                     generateLabels: function(chart) {
                                         const data = chart.data;
                                         if (data.labels.length && data.datasets.length) {
                                             return data.labels.map((label, i) => {
                                                 const meta = chart.getDatasetMeta(0);
                                                 const style = meta.controller.getStyle(i);
-                                                
-                                                // 從外部 counts 物件獲取實際數量
                                                 const categoryCount = counts[label] || 0; 
                                                 
                                                 return {
-                                                    // 產生新文字: "分類 (數量款)"
                                                     text: `${label} (${categoryCount}款)`,
                                                     fillStyle: style.backgroundColor,
                                                     strokeStyle: style.borderColor,
@@ -538,7 +554,6 @@
                                     label: function(context) {
                                         let label = context.label || '';
                                         let value = context.raw || 0;
-                                        // 提示框同時顯示 % 和 數量
                                         let count = counts[label] || 0;
                                         return `${label}: ${value}% (${count}款)`;
                                     }
@@ -548,7 +563,6 @@
                     }
                 });
             },
-            // === END: 圓餅圖優化 ===
 
             renderMovers(movers) {
                 const riseList = document.getElementById('movers-rise');
@@ -565,6 +579,44 @@
                     falling.map(m => `<li>${m.name} (${m.delta})</li>`).join('') :
                     '<li>無</li>';
             },
+
+            // === START: Tooltip 優化 (新增 JS 處理函式) ===
+            handleTooltipToggle(event) {
+                const trigger = event.target.closest('[data-action="toggle-tooltip"]');
+                if (!trigger) return; // 點擊的不是 tooltip 觸發器
+
+                event.stopPropagation(); // 阻止事件冒泡到 window
+
+                // 找到這個觸發器對應的彈窗
+                const tooltip = trigger.nextElementSibling;
+                if (!tooltip || !tooltip.classList.contains('custom-tooltip')) {
+                    console.error("Could not find tooltip sibling for", trigger);
+                    return;
+                }
+
+                const isOpen = !tooltip.classList.contains('hidden');
+
+                // 先關閉所有 *其他* 彈窗
+                document.querySelectorAll('.custom-tooltip').forEach(tt => {
+                    if (tt !== tooltip) {
+                        tt.classList.add('hidden'); 
+                    }
+                });
+
+                // 然後切換當前這一個的狀態
+                tooltip.classList.toggle('hidden');
+            },
+
+            handleGlobalClick(event) {
+                // 如果點擊的不是觸發器，則關閉所有已打開的彈窗
+                if (!event.target.closest('[data-action="toggle-tooltip"]')) {
+                    document.querySelectorAll('.custom-tooltip').forEach(tooltip => {
+                        tooltip.classList.add('hidden');
+                    });
+                }
+            },
+            // === END: Tooltip 優化 ===
+
 
             // 9. 互動功能
             toggleRankListExpand(button) {
@@ -653,6 +705,12 @@
 
             handleHistorySelection(event) {
                 if (!this.isHistoryMode) return;
+                
+                // === Tooltip 優化：確保點擊 tooltip 區域時不會觸發歷史分析 ===
+                if (event.target.closest('[data-action="toggle-tooltip"]')) {
+                    return; // 如果點擊的是 tooltip 圖示，則中止
+                }
+                // === END: Tooltip 優化 ===
 
                 const button = event.target.closest('[data-action="toggle-history"]');
                 if (!button) return;
