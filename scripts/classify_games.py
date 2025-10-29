@@ -116,6 +116,9 @@ def get_ai_classification(app_name: str, app_genre: str):
         return "其他"
 
 def process_country_folder(country_folder: Path, game_type_cache: dict):
+    # === 修正 1：確保 is_cache_updated 總是被初始化 ===
+    is_cache_updated = False 
+    
     # 使用 glob 匹配 ios_* 或 gp_* 的榜單檔案
     for json_file in sorted(country_folder.glob("*.json")):
         if json_file.name.endswith(OUTPUT_SUFFIX) or json_file.name.startswith("available_dates_"):
@@ -142,7 +145,7 @@ def process_country_folder(country_folder: Path, game_type_cache: dict):
         print(f"[INFO] 正在分類排行榜檔案：{json_file.name}")
 
         # === 進行分類 (優先使用快取/覆寫) ===
-        is_cache_updated = False # 標記快取是否被更動
+        # is_cache_updated = False # (原始位置，已移至函式頂部)
         
         for app in rows:
             app_id = app.get("app_id")
@@ -211,7 +214,8 @@ def main():
     
     # 遍歷所有國家資料夾
     for cc_folder in RANKS_DIR.iterdir():
-        if cc_folder.is_dir():
+        # === 修正 2：確保只處理資料夾，並明確跳過 'updates' 資料夾 ===
+        if cc_folder.is_dir() and cc_folder.name != "updates":
             print(f"\n--- 處理國家資料夾: {cc_folder.name} ---")
             # 傳入快取，並接收快取是否有被更新
             was_updated = process_country_folder(cc_folder, game_type_cache)
