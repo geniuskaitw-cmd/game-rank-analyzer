@@ -9,60 +9,65 @@ on:
 jobs:
   run_analysis:
     runs-on: ubuntu-latest
+
+    # === 修正 1：賦予工作 "寫入" 權限 ===
+    permissions:
+      contents: write
+        
     steps:
-      - name: Checkout repository code
+      - name: 1. Checkout repository code
         uses: actions/checkout@v4
         with:
-          # 允許 actions/checkout 使用 token 來提交更改
-          persist-credentials: false
+          # === 修正 2：移除 "persist-credentials: false" ===
+          # 確保憑證被保留，以便 auto-commit-action 可以推送
           fetch-depth: 0 
           
-      - name: Set up Python
+      - name: 2. Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
-      - name: Install dependencies
+      - name: 3. Install dependencies
         run: |
           # 您的腳本需要這些函式庫
           pip install requests firebase-admin openai
           
       # === 準備 Firebase 憑證檔案 (Secrets) ===
-      - name: Create Firebase Key File
+      - name: 4. Create Firebase Key File
         run: |
           # 將密鑰內容寫入 sync_overrides.py 所需的 firebase_key.json 檔案
           echo '${{ secrets.FIREBASE_CRED_JSON }}' > scripts/firebase_key.json
           
       # === 依序執行腳本 (使用修正後的正確檔名) ===
       
-      # 1. 同步人工覆寫分類
-      - name: 1. Run sync_overrides.py (Fetch Firebase overrides)
+      # 5. 同步人工覆寫分類
+      - name: 5. Run sync_overrides.py (Fetch Firebase overrides)
         run: python scripts/sync_overrides.py
         env:
           # 設定環境變數，讓 sync_overrides.py 知道金鑰檔案的路徑
           FIREBASE_CRED_JSON: scripts/firebase_key.json
           
-      # 2. 抓取原始榜單數據、格式化、計算 delta
-      - name: 2. Run fetch_ios_rss.py (Fetch Ranks)
+      # 6. 抓取原始榜單數據、格式化、計算 delta
+      - name: 6. Run fetch_ios_rss.py (Fetch Ranks)
         run: python scripts/fetch_ios_rss.py
         
-      # 3. 根據覆寫和 AI 邏輯分類遊戲
-      - name: 3. Run classify_games.py (Classify Ranks)
+      # 7. 根據覆寫和 AI 邏輯分類遊戲
+      - name: 7. Run classify_games.py (Classify Ranks)
         run: python scripts/classify_games.py
         env:
           # 將 OpenAI 金鑰傳遞給腳本
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           
-      # 4. 分析名次變動者
-      - name: 4. Run analyze_rank_movers.py (Analyze Movers)
+      # 8. 分析名次變動者
+      - name: 8. Run analyze_rank_movers.py (Analyze Movers)
         run: python scripts/analyze_rank_movers.py
         
-      # 5. 偵測版本更新 (iOS API 呼叫)
-      - name: 5. Run fetch_app_updates.py (Fetch App Updates)
+      # 9. 偵測版本更新 (iOS API 呼叫)
+      - name: 9. Run fetch_app_updates.py (Fetch App Updates)
         run: python scripts/fetch_app_updates.py
 
       # === 提交變動 (將 JSON 數據推回儲存庫) ===
-      - name: Commit and Push generated data
+      - name: 10. Commit and Push generated data
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           # 只提交 data 資料夾中的內容
