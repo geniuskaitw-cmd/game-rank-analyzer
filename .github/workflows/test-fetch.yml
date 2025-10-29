@@ -6,6 +6,12 @@ on:
 jobs:
   run_fetch_test:
     runs-on: ubuntu-latest
+
+    # === 新增：賦予工作 "寫入" 權限 ===
+    permissions:
+      contents: write
+    # ==================================
+
     steps:
       - name: 1. Checkout repository code
         uses: actions/checkout@v4
@@ -37,3 +43,4 @@ jobs:
           commit_message: "🤖 Test: Auto-generated raw rank data"
           commit_user_name: GitHub Actions Bot
           commit_user_email: actions@github.com
+
