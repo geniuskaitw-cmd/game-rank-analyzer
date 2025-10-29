@@ -1,0 +1,70 @@
+name: Data Analysis & Update
+on:
+  schedule:
+    # 每週日 UTC 時間 00:00 (台灣時間 08:00) 執行一次
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+    # 允許手動從 Actions 分頁執行此工作流
+
+jobs:
+  run_analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+        with:
+          # 允許 actions/checkout 使用 token 來提交更改
+          persist-credentials: false
+          fetch-depth: 0 
+          
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          # 您的腳本需要這些函式庫
+          pip install requests firebase-admin
+          
+      # === 準備 Firebase 憑證檔案 (Secrets) ===
+      - name: Create Firebase Key File
+        run: |
+          # 將密鑰內容寫入 sync_overrides.py 所需的 firebase_key.json 檔案
+          echo '${{ secrets.FIREBASE_CRED_JSON }}' > scripts/firebase_key.json
+          
+      # === 依序執行腳本 (確保資料流向正確) ===
+      
+      # 1. 同步人工覆寫分類
+      - name: 1. Run sync_overrides.py (Fetch Firebase overrides)
+        run: python scripts/sync_overrides.py
+        env:
+          # 設定環境變數，讓 sync_overrides.py 知道金鑰檔案的路徑
+          FIREBASE_CRED_JSON: scripts/firebase_key.json
+          
+      # 2. 抓取原始榜單數據、格式化、計算 delta
+      - name: 2. Run fetch_ios_rss.py (Fetch Ranks)
+        run: python scripts/fetch_ios_rss (4).py
+        
+      # 3. 根據覆寫和 AI 邏輯分類遊戲
+      - name: 3. Run classify_games.py (Classify Ranks)
+        run: python scripts/classify_games (2).py
+        
+      # 4. 分析名次變動者
+      - name: 4. Run analyze_rank_movers.py (Analyze Movers)
+        run: python scripts/analyze_rank_movers (2).py
+        
+      # 5. 偵測版本更新 (iOS API 呼叫)
+      - name: 5. Run fetch_app_updates.py (Fetch App Updates)
+        run: python scripts/fetch_app_updates (2).py
+
+      # === 提交變動 (將 JSON 數據推回儲存庫) ===
+      - name: Commit and Push generated data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          # 只提交 data 資料夾中的內容
+          file_pattern: data/*
+          commit_message: "🤖 Feat: Auto-generated data update"
+          # 使用預設的 GitHub Token
+          commit_user_name: GitHub Actions Bot
+          commit_user_email: actions@github.com
