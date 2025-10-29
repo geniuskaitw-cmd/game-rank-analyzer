@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>遊戲市場趨勢儀表板 (AI 版)</title>
+    <title>遊戲市場趨勢儀表板</title>
     <!-- 載入 Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- 載入 Chart.js (用於歷史圖表) -->
@@ -44,7 +44,7 @@
     <!-- 頁首 -->
     <header class="bg-white shadow-md">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-gray-800">遊戲市場趨勢儀表板 (AI 版)</h1>
+            <h1 class="text-2xl font-bold text-gray-800">遊戲市場趨勢儀表板</h1>
             <div id="loading-indicator" class="loader hidden"></div>
         </div>
     </header>
@@ -83,7 +83,7 @@
 
             <!-- 左側：排行榜 -->
             <section class="lg:w-2/3 bg-white p-6 rounded-lg shadow-md">
-                <h2 class="text-xl font-semibold mb-4">排行榜 (Top 50)</h2>
+                <h2 class="text-xl font-semibold mb-4">排行榜</h2>
                 <div class="overflow-x-auto">
                     <table class="w-full min-w-max" id="rank-list">
                         <thead>
@@ -132,15 +132,7 @@
                     </div>
                 </div>
 
-                <!-- 新增：最新Metadata (取代原本的今日更新) -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-lg font-semibold mb-4">最新版本資訊 (Metadata)</h3>
-                    <ul id="updates-list" class="list-disc list-inside space-y-1 text-sm text-gray-700">
-                        <li>版本資訊已整合到排行榜圖示中。</li>
-                    </ul>
-                </div>
-
-            </aside>
+                            </aside>
         </div>
     </main>
 
