@@ -24,7 +24,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          # 您的腳本需要這些函式庫 (已新增 openai)
+          # 您的腳本需要這些函式庫
           pip install requests firebase-admin openai
           
       # === 準備 Firebase 憑證檔案 (Secrets) ===
@@ -33,7 +33,7 @@ jobs:
           # 將密鑰內容寫入 sync_overrides.py 所需的 firebase_key.json 檔案
           echo '${{ secrets.FIREBASE_CRED_JSON }}' > scripts/firebase_key.json
           
-      # === 依序執行腳本 (確保資料流向正確) ===
+      # === 依序執行腳本 (使用修正後的正確檔名) ===
       
       # 1. 同步人工覆寫分類
       - name: 1. Run sync_overrides.py (Fetch Firebase overrides)
@@ -44,22 +44,22 @@ jobs:
           
       # 2. 抓取原始榜單數據、格式化、計算 delta
       - name: 2. Run fetch_ios_rss.py (Fetch Ranks)
-        run: python scripts/fetch_ios_rss (4).py
+        run: python scripts/fetch_ios_rss.py
         
-      # 3. 根據覆寫和 AI 邏輯分類遊戲 (已新增 OPENAI_API_KEY)
+      # 3. 根據覆寫和 AI 邏輯分類遊戲
       - name: 3. Run classify_games.py (Classify Ranks)
-        run: python scripts/classify_games (2).py
+        run: python scripts/classify_games.py
         env:
           # 將 OpenAI 金鑰傳遞給腳本
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           
       # 4. 分析名次變動者
       - name: 4. Run analyze_rank_movers.py (Analyze Movers)
-        run: python scripts/analyze_rank_movers (2).py
+        run: python scripts/analyze_rank_movers.py
         
       # 5. 偵測版本更新 (iOS API 呼叫)
       - name: 5. Run fetch_app_updates.py (Fetch App Updates)
-        run: python scripts/fetch_app_updates (2).py
+        run: python scripts/fetch_app_updates.py
 
       # === 提交變動 (將 JSON 數據推回儲存庫) ===
       - name: Commit and Push generated data
@@ -71,3 +71,4 @@ jobs:
           # 使用預設的 GitHub Token
           commit_user_name: GitHub Actions Bot
           commit_user_email: actions@github.com
+
