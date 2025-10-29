@@ -401,12 +401,13 @@
                         ? `<span class="update-icon" title="版本: ${updateInfo.version || 'N/A'}\n更新時間: ${updateInfo.updated ? new Date(updateInfo.updated).toLocaleString('zh-TW') : 'N/A'}">🔄</span>`
                         : '';
 
+                    // === 修正：移除錯誤的註解語法 ===
                     return `
                         <tr id="app-row-${row.app_id}" class="bg-white border-b hover:bg-gray-50 ${index >= 10 ? 'hidden rank-collapsed' : ''} rank-row" data-app-id="${row.app_id}" data-app-name="${row.app_name}">
                             <td class="py-3 px-4 text-sm text-gray-500">${row.rank}</td>
                             <td class="py-3 px-4 font-medium text-gray-900">
                                 ${row.app_name}
-                                ${updateIconHtml} {/* 新增：更新圖示 */}
+                                ${updateIconHtml}
                                 <button data-action="toggle-history" class="history-add-btn hidden ml-2 px-2 py-0.5 text-xs text-blue-600 bg-blue-100 rounded-full hover:bg-blue-200">+</button>
                             </td>
                             <td class="py-3 px-4 text-sm ${deltaColor}">${deltaIcon} ${Math.abs(delta)}</td>
@@ -424,6 +425,7 @@
                             </td>
                         </tr>
                     `;
+                    // ===================================
                 }).join('');
 
                 document.querySelectorAll('.category-select').forEach(select => {
@@ -789,4 +791,5 @@
     </script>
 </body>
 </html>
+" between the  and  tags.
 
