@@ -10,8 +10,8 @@ analyze_rank_movers.py
 import os, json, pathlib, datetime
 from collections import defaultdict
 
-# --- 路徑與常數設定 ---
-BASE_DIR = pathlib.Path(__file__).resolve().parent.parent
+# --- 路徑與常數設定 (修正後的地圖) ---
+BASE_DIR = pathlib.Path(".").resolve() 
 RANKS_DIR = BASE_DIR / "data" / "ranks"
 MOVERS_DIR = BASE_DIR / "data" / "movers"
 MOVERS_DIR.mkdir(parents=True, exist_ok=True)
