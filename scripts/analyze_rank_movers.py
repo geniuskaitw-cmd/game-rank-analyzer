@@ -100,7 +100,13 @@ def main():
         for i in range(len(dates) - 1):
             today_str = dates[i]    # 較新的日期
             yesterday_str = dates[i+1] # 較舊的日期
-            
+          
+            # === START: 新增的優化邏輯 ===
+            out_path = MOVERS_DIR / f"movers_{today_str}.json"
+            if out_path.exists():
+                print(f"[SKIP] {cc}: movers_{today_str}.json 已存在，跳過計算。")
+                continue
+            # === END: 新增的優化邏輯 ===
             for platform in PLATFORMS:
                 # 這裡假設只分析 iOS 榜單（因為 Google Sheet 尚未提供 GP 數據）
                 if platform == "gp": 
