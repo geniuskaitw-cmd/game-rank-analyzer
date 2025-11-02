@@ -9,15 +9,15 @@
           "app_id": "1482155847"
         },
         "MONOPOLY GO!": {
-          "version": "1.56.1",
-          "updated": "2025-10-17T15:58:34Z",
-          "releaseNotes": "Feeling cozy, Tycoon?\nA new Sticker album is now live — time to get ready to collect, trade, and complete your set!\nBugs swept off the board\nTournaments tuned for smoother play\nGameplay touched up for a better experience\nUpdate now and stay ahead of the game!",
+          "version": "1.57.0",
+          "updated": "2025-10-31T08:58:32Z",
+          "releaseNotes": "A new version has made its way to your Boards, Tycoons!\nThis time, Mr. M focused on squashing bugs and smoothing out your gameplay experience—all to get things ready for the next Sticker collection!\nSo update now and GO for the Stickers you need while you can to win A-list rewards!",
           "app_id": "1621328561"
         },
         "Last War:Survival": {
-          "version": "1.0.316",
-          "updated": "2025-10-23T09:29:11Z",
-          "releaseNotes": "1. Optimized the text display for offline time in the Alliance member list.\n2. Optimized the maximum zoom ratio for maps in teleport mode and adapted the top layout display effects for some devices during zooming.",
+          "version": "1.0.317",
+          "updated": "2025-10-29T08:55:44Z",
+          "releaseNotes": "1. Gift level cap increased to Level 25, with new dynamic emotes and Avatar Frame rewards added.\n2. Optimized the interface display of Arena [Battle Record] to more clearly show defense and win/loss information.",
           "app_id": "6448786147"
         },
         "Candy Crush Saga": {
@@ -39,8 +39,8 @@
           "app_id": "6739554056"
         },
         "Pokémon GO": {
-          "version": "0.385.0",
-          "updated": "2025-10-27T17:23:13Z",
+          "version": "0.385.1",
+          "updated": "2025-10-31T18:08:22Z",
           "releaseNotes": "Trainers, we hope you’re enjoying your adventure in Pokémon GO! We update the app regularly with new events and features, so make sure to check the in-game News to stay up to date.",
           "app_id": "1094591345"
         },
@@ -111,15 +111,15 @@
           "app_id": "1300146617"
         },
         "Travel Town - Merge Adventure": {
-          "version": "2.12.1280",
-          "updated": "2025-10-19T12:36:34Z",
+          "version": "2.12.1291",
+          "updated": "2025-10-29T09:45:15Z",
           "releaseNotes": "Welcome to the latest update of Travel Town!\nWe’ve been busy improving the game and addressing bugs for you. \nEnjoy!",
           "app_id": "1521236603"
         },
         "Dark War:Survival": {
-          "version": "1.250.619",
-          "updated": "2025-10-24T09:55:34Z",
-          "releaseNotes": "[Adjustments & Optimizations]\n\n[State of Supremacy]\n- Points adjustment during the Invasion Right contest phase\nBefore: Successfully seize the enemy State Dark Syndicate Truck once\nAfter: Escort an S-Tier Dark Syndicate Truck once (points awarded based on whether it is plundered).\n\n[Capital Clash]\nAdjustments for point acquisition ways: \n- Garrison the Capital\n- Garrison Turrets\n- Kill enemy units at the Capital\n- Suffer severe injuries or unit losses at the Capital\n- Kill units during turret battles\n- Suffer severe injuries or unit losses during turret battles\n\n[Territory Triumph]\n- Added the [Schedule War] feature. Alliance members can view scheduled information in the event interface.\n- Once the scheduled time is reached, the war will automatically start.\n- Cities with scheduled war plans can still be attacked immediately.\n\n[Zombie Siege]\n- When the event time conflicts with [Blood Moon Shroud], a secondary confirmation prompt will appear.\n- Each season will feature zombies with different themed appearances.\n\n[Other Improvements]\n- Chat channels now support recalling text and images sent within 2 minutes.\n- [Allied Power] now allows viewing of daily refreshable exclusive tasks.\n- After zooming the world map, survivors can still view the [Peace Shield] status of shelters.",
+          "version": "1.250.620",
+          "updated": "2025-10-30T09:02:15Z",
+          "releaseNotes": "[Optimization & Adjustments]\n- After canceling the Bio-Mutant's Engage Offline function, a pop-up notification will be added.\n- When tapping an alliance that has been disbanded in the Rankings, a pop-up notification will now indicate that the alliance has been disbanded.\n- Optimized some in-game visuals and details.",
           "app_id": "6670441558"
         },
         "Love and Deepspace": {
@@ -147,14 +147,14 @@
           "app_id": "664575829"
         },
         "Lightning Link Casino Slots": {
-          "version": "9.5.0",
-          "updated": "2025-10-09T11:18:44Z",
+          "version": "9.6.0",
+          "updated": "2025-10-29T13:37:29Z",
           "releaseNotes": "Thank you for playing Lightning Link Casino!\n\nNew amazing slots are on their way for you to enjoy! Stay tuned for more amazing events, seasons and coins to be won.\n\nWe hope you enjoy Lightning Link Casino!",
           "app_id": "1243005112"
         },
         "Age of Origins:Tower Defense": {
-          "version": "1.3.803",
-          "updated": "2025-10-24T02:49:48Z",
+          "version": "1.3.804",
+          "updated": "2025-10-31T03:14:11Z",
           "releaseNotes": "Optimized some of the game play.",
           "app_id": "1376515087"
         },
@@ -171,9 +171,9 @@
           "app_id": "1123582513"
         },
         "Color Block Jam": {
-          "version": "1.28.15",
-          "updated": "2025-10-24T06:33:08Z",
-          "releaseNotes": "New look, same fun! We’ve refreshed our shimmering new game icon, perfectly matching the sparkle and excitement of our new event — BLOCK HEIST! It brings shimmering Gold, Emerald, and Diamond blocks. Pass them through matching gates before time runs out and earn incredible rewards. Plan your moves, time your actions, and complete the heist before the blocks slip away. Are you up for the challenge? Don’t miss the new update!",
+          "version": "1.28.32",
+          "updated": "2025-10-31T17:34:53Z",
+          "releaseNotes": "New look, same fun! We’ve refreshed our game icon, so you’ll spot us more easily on your home screen. Get ready to take your skills to the next level with our LATEST NEW OBSTACLE! This update introduces the COLORFUL CRATE and FRESH NEW LEVELS! Colorful crates are cleared once all blocks of the same color are removed from the board. Watch carefully which colors you have, plan your moves wisely, and clear your path with perfect timing! Strategy, timing, and precision will decide your success. Don’t miss the new update!",
           "app_id": "6504332779"
         },
         "Umamusume: Pretty Derby": {
@@ -189,8 +189,8 @@
           "app_id": "575980917"
         },
         "Total Battle: Strategy Game": {
-          "version": "339.2.1086",
-          "updated": "2025-10-23T06:45:02Z",
+          "version": "339.3.1107",
+          "updated": "2025-10-30T07:27:18Z",
           "releaseNotes": "Bug fixes and stability improvements.\nWe would be happy to hear your feedback and suggestions. Please send them to support@totalbattle.com",
           "app_id": "1274132545"
         },
@@ -261,14 +261,14 @@
           "app_id": "945621521"
         },
         "All in Hole: Black Hole Games": {
-          "version": "5.1.4",
-          "updated": "2025-10-23T06:18:11Z",
+          "version": "6.0.1",
+          "updated": "2025-10-30T08:24:06Z",
           "releaseNotes": "NEW PACKS WITH FRESH LEVELS!\n\nOct 27 – WITCH Pack: Brew Halloween magic with 100 spellbinding levels!  \nNov 10 – OUTDOOR Pack: Pitch tents, roast marshmallows & explore 100 camping-themed levels!  \nNov 24 – THANKSGIVING Pack: Celebrate the harvest in 100 festive and flavorful levels!\n\nAnd don’t miss the new TREASURE PASS season starting Nov 1!\n\nUpdate regularly so you never miss fresh levels, events & surprises!",
           "app_id": "6503284107"
         },
         "Puzzles & Survival": {
-          "version": "4.0.195",
-          "updated": "2025-10-15T12:19:13Z",
+          "version": "4.0.196",
+          "updated": "2025-11-01T05:13:40Z",
           "releaseNotes": "[New Hero] Economy Hero, Lilian, is here! \n[New Event] Experience a magical Halloween! \n[New Appearance] Check out the new Halloween-themed skins! \n[Optimizations and Upgrades] Changes to the Lucky Golden Egg, and various other optimizations!",
           "app_id": "1517980891"
         },
@@ -285,8 +285,8 @@
           "app_id": "890378044"
         },
         "Merge Cooking®": {
-          "version": "1.14.0",
-          "updated": "2025-10-22T02:24:05Z",
+          "version": "1.15.0",
+          "updated": "2025-10-30T02:30:28Z",
           "releaseNotes": "Welcome back, Chef!\nA new version of Merge Cooking is available!\nTo provide a better experience, we're working hard to optimize the game performance as well as bring you exciting content.\nWe hope you can enjoy the time playing!\nNew to the game? Don't worry. We've prepared step-by-step instructions to guide you through. Join us and have some fun.",
           "app_id": "1643509748"
         },
@@ -317,8 +317,8 @@
           "app_id": "1053012308"
         },
         "Block Blast！": {
-          "version": "6.4.5",
-          "updated": "2025-10-27T02:11:11Z",
+          "version": "6.4.7",
+          "updated": "2025-10-31T09:16:17Z",
           "releaseNotes": "We’re always improving Block Blast! Turn on auto-updates to get the latest features.\n\nSuggestions? Email us: blockblast-support@hungrystudio.com\nFollow us on TikTok for updates: @blockblastofficial",
           "app_id": "1617391485"
         },
@@ -329,9 +329,9 @@
           "app_id": "1602508478"
         },
         "Foundation: Galactic Frontier": {
-          "version": "1.0.15",
-          "updated": "2025-10-22T21:35:27Z",
-          "releaseNotes": "- A few bugs fixed.",
+          "version": "1.0.18",
+          "updated": "2025-10-30T08:37:59Z",
+          "releaseNotes": "This update focuses on improving combat mechanics and overall gaming experience. The key adjustments are as follows:\n\n1. [War Frenzy] Mechanism Adjustments\n• Fleets that initiate attacks against other traders will enter the [War Frenzy] status, gaining increased Attack and applying a Slow effect to targets. Fleets in this status cannot teleport, be recalled, or be repaired. The duration resets if the status is triggered again.\n• Leaving a rally or garrison during War Frenzy will temporarily prevent you from rejoining.\n• Removed the special War Frenzy and Slow effect when flanked in the \"Disciple Hunting Grounds\" event. Future events will now uniformly apply the standard [War Frenzy] mechanics.\n\n2. Port Garrison Improvements\n• Garrisoned fleets now have a default Defense bonus.\n• When any fleet garrisoned at a Port triggers [War Frenzy], all fleets garrisoned at that Port will receive the [War Frenzy] bonus.\n\n3. New [Home Port Logistics] Feature\n• When not engaged in combat, fleets at your Home Port reduce Major Damage over time.\n\n4. Reporting System Launch\n• You can now report in-game violations such as inappropriate names, custom avatars, and chat content.\n\n5. Daily Quest Simplification\n• Reduced progress requirements, making rewards easier to obtain.\n\n6. Visual Enhancements\n• Optimized certain visual assets and UI elements to improve the overall experience.",
           "app_id": "6737595599"
         },
         "Magic Sort!": {
@@ -359,21 +359,21 @@
           "app_id": "638689075"
         },
         "Roblox": {
-          "version": "2.696.799",
-          "updated": "2025-10-27T16:21:46Z",
+          "version": "2.697.925",
+          "updated": "2025-10-30T16:08:29Z",
           "releaseNotes": "To make Roblox work better for you, we deliver updates regularly. These updates include bug fixes and improvements for speed and reliability.",
           "app_id": "431946152"
         },
         "Vita Mahjong": {
-          "version": "2.63.0",
-          "updated": "2025-10-27T02:44:42Z",
+          "version": "2.63.2",
+          "updated": "2025-10-28T15:56:07Z",
           "releaseNotes": "-Bug fixes and performance improvements.",
           "app_id": "6468921495"
         },
         "Fortnite": {
-          "version": "37.51",
-          "updated": "2025-10-22T08:11:17Z",
-          "releaseNotes": "General Bug & Stability Fixes",
+          "version": "38.00",
+          "updated": "2025-11-01T16:10:35Z",
+          "releaseNotes": "Mobile Optimization\nWe’re continuing our efforts to make it faster and easier to jump into Fortnite!\nWith v38.00, Blitz Royale is now the only experience included in new installs, letting you get into the action quicker and play your way. You can also play and update creator-made islands without waiting for other experiences to download or update. That way, you can choose when to download experiences like Battle Royale, Creative, Reload, OG, LEGO Fortnite, Rocket Racing or Fortnite Festival - keeping the initial install smaller.\n\nFortnite | Simpsons\nSpringfield is the Island in the new Battle Royale Season! Unlock Homer, Marge, and more in the Battle Pass.\n\nGet a Trusty Sidekick\nUnlock the first Sidekick in Fortnite, Peels, in the Battle Pass. Sidekicks tag along with you!",
           "app_id": "6483539426"
         },
         "Royal Kingdom": {
@@ -383,9 +383,9 @@
           "app_id": "1606549505"
         },
         "MONOPOLY GO!": {
-          "version": "1.56.1",
-          "updated": "2025-10-17T15:58:34Z",
-          "releaseNotes": "Feeling cozy, Tycoon?\nA new Sticker album is now live — time to get ready to collect, trade, and complete your set!\nBugs swept off the board\nTournaments tuned for smoother play\nGameplay touched up for a better experience\nUpdate now and stay ahead of the game!",
+          "version": "1.57.0",
+          "updated": "2025-10-31T08:58:32Z",
+          "releaseNotes": "A new version has made its way to your Boards, Tycoons!\nThis time, Mr. M focused on squashing bugs and smoothing out your gameplay experience—all to get things ready for the next Sticker collection!\nSo update now and GO for the Stickers you need while you can to win A-list rewards!",
           "app_id": "1621328561"
         },
         "Sorry! World - Board Game": {
@@ -407,15 +407,15 @@
           "app_id": "6475757306"
         },
         "Drop the Cat": {
-          "version": "1.10.8",
-          "updated": "2025-10-28T06:13:12Z",
-          "releaseNotes": "New Stage Added!\n\nHalloween is Coming!\n\nRaise your own Cats!",
+          "version": "1.10.9",
+          "updated": "2025-10-30T07:55:32Z",
+          "releaseNotes": "-Stage Added\n-Bug Fixed",
           "app_id": "6749132002"
         },
         "Last War:Survival": {
-          "version": "1.0.316",
-          "updated": "2025-10-23T09:29:11Z",
-          "releaseNotes": "1. Optimized the text display for offline time in the Alliance member list.\n2. Optimized the maximum zoom ratio for maps in teleport mode and adapted the top layout display effects for some devices during zooming.",
+          "version": "1.0.317",
+          "updated": "2025-10-29T08:55:44Z",
+          "releaseNotes": "1. Gift level cap increased to Level 25, with new dynamic emotes and Avatar Frame rewards added.\n2. Optimized the interface display of Arena [Battle Record] to more clearly show defense and win/loss information.",
           "app_id": "6448786147"
         },
         "Wool Crush -Escape Traffic Jam": {
@@ -437,9 +437,9 @@
           "app_id": "6739554056"
         },
         "Hexa Sort": {
-          "version": "4.8.00",
-          "updated": "2025-10-28T07:42:30Z",
-          "releaseNotes": "Events of October:\n- Get ready to collect them all - Maple Collection is here! Will you become the ultimate card collector?\n- The wicked pumpkins are watching. Collect them all if you dare! Jack O’ Lantern Season has just begun!\n- Join the Pumpkin Smash Party! Take a swing and watch pumpkins burst into a shower of treats!\n- The Wicked Mansion is about to be discovered, where every hall whispers secrets!",
+          "version": "4.8.10",
+          "updated": "2025-10-30T19:42:58Z",
+          "releaseNotes": "New Month, New Excitement!\n- Dive into the calmness of KOI SERENITY and unlock spectacular rewards.\n- It's time to fire up the Special DRILL MACHINE Tile and conquer ALL-NEW LEVELS!\n- Unlock, and let the orchestral melodies take over in the world of SYMPHONY STAGE",
           "app_id": "6463127238"
         },
         "Subway Surfers": {
@@ -467,9 +467,9 @@
           "app_id": "1623318294"
         },
         "Wool Craze -Yarn Color Sort 3D": {
-          "version": "4.1",
-          "updated": "2025-10-24T06:03:33Z",
-          "releaseNotes": "Added interesting new levels to enrich your adventure:)",
+          "version": "4.2",
+          "updated": "2025-10-30T15:35:55Z",
+          "releaseNotes": "Stability improvements and bug fixes.",
           "app_id": "6744317674"
         },
         "Royal Match": {
@@ -485,9 +485,9 @@
           "app_id": "1443446174"
         },
         "Goods Puzzle: Sort Challenge": {
-          "version": "4.30",
-          "updated": "2025-10-26T01:04:14Z",
-          "releaseNotes": "- Fix some bugs",
+          "version": "4.32",
+          "updated": "2025-10-31T08:17:41Z",
+          "releaseNotes": "- New collections: Winter",
           "app_id": "6482849843"
         },
         "Homescapes": {
@@ -515,14 +515,14 @@
           "app_id": "1287282214"
         },
         "Color Block Jam": {
-          "version": "1.28.15",
-          "updated": "2025-10-24T06:33:08Z",
-          "releaseNotes": "New look, same fun! We’ve refreshed our shimmering new game icon, perfectly matching the sparkle and excitement of our new event — BLOCK HEIST! It brings shimmering Gold, Emerald, and Diamond blocks. Pass them through matching gates before time runs out and earn incredible rewards. Plan your moves, time your actions, and complete the heist before the blocks slip away. Are you up for the challenge? Don’t miss the new update!",
+          "version": "1.28.32",
+          "updated": "2025-10-31T17:34:53Z",
+          "releaseNotes": "New look, same fun! We’ve refreshed our game icon, so you’ll spot us more easily on your home screen. Get ready to take your skills to the next level with our LATEST NEW OBSTACLE! This update introduces the COLORFUL CRATE and FRESH NEW LEVELS! Colorful crates are cleared once all blocks of the same color are removed from the board. Watch carefully which colors you have, plan your moves wisely, and clear your path with perfect timing! Strategy, timing, and precision will decide your success. Don’t miss the new update!",
           "app_id": "6504332779"
         },
         "Block Crush！": {
-          "version": "3.2.4",
-          "updated": "2025-10-22T11:55:02Z",
+          "version": "3.2.5",
+          "updated": "2025-11-01T06:26:03Z",
           "releaseNotes": "This update brings performance improvements and a smoother gameplay experience.",
           "app_id": "1638139403"
         },
@@ -533,9 +533,9 @@
           "app_id": "307569751"
         },
         "Pixel Flow!": {
-          "version": "0.6.0",
-          "updated": "2025-10-26T14:56:52Z",
-          "releaseNotes": "New levels are here! We’re thrilled to bring you a new version packed with improvements! This update adds exciting new content, refined visuals, and smoother controls. Alongside these upgrades, we’ve resolved several pesky issues to make your gameplay feel better than ever. Update now and enjoy the enhanced experience!",
+          "version": "0.7.0",
+          "updated": "2025-10-31T09:20:20Z",
+          "releaseNotes": "The latest update has landed! Discover new challenges, improved stability, and a more responsive experience all around. We’ve expanded the game with new levels, refined old ones, and made everything run smoother. Your journey just got even better, dive in and explore the upgrades!",
           "app_id": "6751056652"
         },
         "Triumph: Play for Cash": {
@@ -557,15 +557,15 @@
           "app_id": "6471572249"
         },
         "Tile Explorer: Tiles Clear!": {
-          "version": "1.59.0",
-          "updated": "2025-10-23T14:58:23Z",
+          "version": "1.60.0",
+          "updated": "2025-10-30T05:04:05Z",
           "releaseNotes": "◆ Feature updates\n◆ Bug fixes and other optimizations",
           "app_id": "6498883328"
         },
         "ColorBlock : Combo Blast": {
-          "version": "5.6",
-          "updated": "2025-10-29T08:42:44Z",
-          "releaseNotes": "Explore Color Block version 5.6!\n\n- Performance and stability improvements\n- Minor bug fixes",
+          "version": "5.8",
+          "updated": "2025-11-01T09:38:28Z",
+          "releaseNotes": "Explore Color Block version 5.8!\n\n- Performance and stability improvements\n- Minor bug fixes",
           "app_id": "6478063606"
         },
         "Clash of Clans": {
@@ -617,15 +617,15 @@
           "app_id": "6443575749"
         },
         "星城Online-普發一萬現領現玩": {
-          "version": "6.44",
-          "updated": "2025-10-23T00:46:57Z",
-          "releaseNotes": "【火爆辣椒】HOT！越辣越補倍數狂飆\n【星城刮好運】新增【女王克麗奧】【魔法萬聖夜】刮刮卡\n大廳音樂新增【蝠影狂歡】\n啦啦隊李多慧跟中秋節慶卡刮刮卡離開星城",
+          "version": "6.45",
+          "updated": "2025-10-30T03:12:35Z",
+          "releaseNotes": "新增經典區可遊玩【新悟空】【六角SLOT】【惡魔天使】\n【血咒德古拉】開放銀幣遊玩\n【天才釣手】開放銅幣遊玩\n【鯊很大2】新增「德古鯊」「崩鎚獸」「波蘿龜」\n【鯊很大4】新增BOSS「冰果鴨」\n優化調整【火爆辣椒】\n移除「賽事區」",
           "app_id": "919043762"
         },
         "最後的戰爭 - Last War": {
-          "version": "1.0.316",
-          "updated": "2025-10-23T09:29:11Z",
-          "releaseNotes": "1. Optimized the text display for offline time in the Alliance member list.\n2. Optimized the maximum zoom ratio for maps in teleport mode and adapted the top layout display effects for some devices during zooming.",
+          "version": "1.0.317",
+          "updated": "2025-10-29T08:55:44Z",
+          "releaseNotes": "1. Gift level cap increased to Level 25, with new dynamic emotes and Avatar Frame rewards added.\n2. Optimized the interface display of Arena [Battle Record] to more clearly show defense and win/loss information.",
           "app_id": "6448786147"
         },
         "Kingshot": {
@@ -635,9 +635,9 @@
           "app_id": "6739554056"
         },
         "麻將明星3缺1": {
-          "version": "6.9.158",
-          "updated": "2025-10-07T01:27:04Z",
-          "releaseNotes": "【联名合作】贴图NO.1的白烂猫也来明星3缺1啦\n【全新角色】无论麻将牌桌、炮塔对决通通有白烂猫主题角色可以使用\n【更多游戏】更多风格的休闲小游戏，在明星3缺1都玩得到\n【问题修正】修正并且优化了一些游戏体验",
+          "version": "6.9.159",
+          "updated": "2025-10-31T02:41:55Z",
+          "releaseNotes": "【联名合作】新增白烂猫更多游戏体验\n【更多游戏】众多免费休闲小游戏，免看广告畅快玩\n【问题修正】修正并且优化了一些游戏体验",
           "app_id": "501306812"
         },
         "Last Z:Survival Shooter（倖存者逃亡）": {
@@ -653,21 +653,21 @@
           "app_id": "553834731"
         },
         "Dark War:Survival": {
-          "version": "1.250.619",
-          "updated": "2025-10-24T09:55:34Z",
-          "releaseNotes": "[Adjustments & Optimizations]\n\n[State of Supremacy]\n- Points adjustment during the Invasion Right contest phase\nBefore: Successfully seize the enemy State Dark Syndicate Truck once\nAfter: Escort an S-Tier Dark Syndicate Truck once (points awarded based on whether it is plundered).\n\n[Capital Clash]\nAdjustments for point acquisition ways: \n- Garrison the Capital\n- Garrison Turrets\n- Kill enemy units at the Capital\n- Suffer severe injuries or unit losses at the Capital\n- Kill units during turret battles\n- Suffer severe injuries or unit losses during turret battles\n\n[Territory Triumph]\n- Added the [Schedule War] feature. Alliance members can view scheduled information in the event interface.\n- Once the scheduled time is reached, the war will automatically start.\n- Cities with scheduled war plans can still be attacked immediately.\n\n[Zombie Siege]\n- When the event time conflicts with [Blood Moon Shroud], a secondary confirmation prompt will appear.\n- Each season will feature zombies with different themed appearances.\n\n[Other Improvements]\n- Chat channels now support recalling text and images sent within 2 minutes.\n- [Allied Power] now allows viewing of daily refreshable exclusive tasks.\n- After zooming the world map, survivors can still view the [Peace Shield] status of shelters.",
+          "version": "1.250.620",
+          "updated": "2025-10-30T09:02:15Z",
+          "releaseNotes": "[Optimization & Adjustments]\n- After canceling the Bio-Mutant's Engage Offline function, a pop-up notification will be added.\n- When tapping an alliance that has been disbanded in the Rankings, a pop-up notification will now indicate that the alliance has been disbanded.\n- Optimized some in-game visuals and details.",
           "app_id": "6670441558"
         },
         "Pokémon GO": {
-          "version": "0.385.0",
-          "updated": "2025-10-27T17:23:13Z",
+          "version": "0.385.1",
+          "updated": "2025-10-31T18:08:22Z",
           "releaseNotes": "Trainers, we hope you’re enjoying your adventure in Pokémon GO! We update the app regularly with new events and features, so make sure to check the in-game News to stay up to date.",
           "app_id": "1094591345"
         },
         "MLB：9局職棒25": {
-          "version": "10.1.0",
-          "updated": "2025-09-25T02:00:50Z",
-          "releaseNotes": "- New Supreme Players have been added.\n- Upgrade Storage has been added.\n- The 2025 Postseason Event Shop has been added.\n- A 9th Anniversary Special Gift has been added.\n- Custom Game mode has been added.\n\nGot feedback? Leave a review or contact our Customer Support by visiting http://customer-m.withhive.com/ask",
+          "version": "10.1.2",
+          "updated": "2025-10-30T01:59:48Z",
+          "releaseNotes": "- Revamped Stage Challenge difficulty and rewards.\n- Added Extreme difficulty to Club Challenge.\n- Updated various QoL features.\n\nGot feedback? Leave a review or contact our Customer Support by visiting http://customer-m.withhive.com/ask",
           "app_id": "1059665257"
         },
         "緋聞港口：合併&故事": {
@@ -689,9 +689,9 @@
           "app_id": "406889139"
         },
         "七騎士 Re:BIRTH": {
-          "version": "1.07.04",
-          "updated": "2025-10-03T01:51:28Z",
-          "releaseNotes": "[New Additions]\n- New Legendary Hero [Kagura] added.\n- New Legendary Hero [Amelia] added.\n- New content [Advent Expedition] added.\n- New Adventure area [Earth Gate] added.\n- 7 new costumes added.\n- Accessory Crafting added.\n-Equipment Presets added.\n\n[Improvements and Fixes]\n- Improved Content Convenience\n- Bug Fixes and Other Improvements",
+          "version": "1.08.06",
+          "updated": "2025-10-31T12:42:31Z",
+          "releaseNotes": "[New Additions]\n- New Legendary Hero [Kyrielle] added.\n- 7 new costumes added.\n\n[Improvements and Fixes]\n- Improved Content Convenience\n- Bug Fixes and Other Improvements",
           "app_id": "6479595079"
         },
         "滿貫大亨 - 快打旋風登場": {
@@ -719,8 +719,8 @@
           "app_id": "6479970832"
         },
         "小兵特攻隊": {
-          "version": "3.3.2",
-          "updated": "2025-10-20T03:07:52Z",
+          "version": "3.4.0",
+          "updated": "2025-10-30T02:28:47Z",
           "releaseNotes": "Bug fixes and performance improvements",
           "app_id": "6746140478"
         },
@@ -737,9 +737,9 @@
           "app_id": "6502820653"
         },
         "大福Online-老虎機、捕魚、推幣機、刮刮樂、拉霸 娛樂城": {
-          "version": "14.5",
-          "updated": "2025-10-21T09:14:55Z",
-          "releaseNotes": "Hey! NEW SLOT GAMES served!\nInstall to enjoy better experience and holiday events now!\n\n– NEW SLOT GAMES!\nThunder Fire Sparkle，Crazy Mine Bomber, The Halloween Bats ...\n\n– IMPROVED EXPERIENCE!\nSeveral bugs have been fixed to provide better user experience!",
+          "version": "14.6",
+          "updated": "2025-10-31T09:02:40Z",
+          "releaseNotes": "Hey! NEW SLOT GAMES served!\nInstall to enjoy better experience and holiday events now!\n\n– NEW SLOT GAMES!\nDemoness's Wheel, Wicked Riches,  Melody in Memoriam ...\n\n– IMPROVED EXPERIENCE!\nSeveral bugs have been fixed to provide better user experience!",
           "app_id": "1356980152"
         },
         "Royal Match": {
@@ -761,8 +761,8 @@
           "app_id": "1229016807"
         },
         "Sky光·遇": {
-          "version": "0.31.1",
-          "updated": "2025-10-28T18:51:28Z",
+          "version": "0.31.2",
+          "updated": "2025-10-29T21:26:18Z",
           "releaseNotes": "Take to the skies with Season of Migration! Guide a herd of migrating light creatures above clouds, through forests, and beyond mountains in weekly quests.\n\nMeanwhile—It's Mischief time! Head to the Cackling Crab to solve puzzles and surprise friends.",
           "app_id": "1462117269"
         },
@@ -779,9 +779,9 @@
           "app_id": "6479391944"
         },
         "點點大作戰": {
-          "version": "2.3.800",
-          "updated": "2025-10-16T07:19:06Z",
-          "releaseNotes": "[New Content]\n- [Underground Goldmine] event grandly debuts! Deep underground lie rare gold resources, but also hidden are infected monster guards and other Chiefs pursuing the treasure. Will you dig deeper into the veins, protect the resources you’ve already gathered, or plunder others? This thrilling contest for gold resources awaits your command!\n\n- Eligible States will open the [Alliance Duel – Cross-State League] based on the Alliance Duel event! The brand-new league mode expands the matching range, introduces tiered grouping and promotion/relegation matching mechanisms, and offers richer rewards based on final tier. Heroes from all sides gather—come claim your Alliance glory!\n\n[Optimizations & Fixes]\n- Optimized the [Friend Gift] feature. After the update, a gift administrator will be added outside the shelter, allowing Chiefs to check gift history at any time so that every token of friendship is preserved.\n\n- Optimized animations and interface performance for survivor events.\n\n- Optimized the [Reservoir Raid] event:\n1. Added [Total Wins] display for each Alliance within the same group on the battle record page.\n2. Added [Total Wins] rewards on the achievement tab, so that whenever an Alliance reaches a certain number of victories in the Reservoir Raid event, all members of the Alliance will receive the corresponding achievement rewards!\n\n- Optimized hero Layla’s war skill [Rejuvenate]. On top of retaining the original skill effects, Layla now deals damage to enemies when casting this skill. The detailed description can be viewed on the hero skill screen.",
+          "version": "2.3.900",
+          "updated": "2025-10-30T07:33:36Z",
+          "releaseNotes": "[New Content]\n- [Wilderness Map] exploration gameplay opens a brand-new map [A Night at the Museum]. Update to the latest version to immediately experience more exciting storylines and collect exquisite decorative buildings!\n\n- After reaching a certain progress in [Expedition] mode, the new [Quick Raid] feature will be unlocked.. If your formation can easily defeat enemies in multiple upcoming stages, you can use this feature to complete several stages at once and receive the corresponding rewards.\n\n- Rosie’s exclusive showcase [Neon Stage] is now available in the shelter! Chiefs can unlock this decoration and watch Rosie’s stunning performance after purchasing the [1st Buy] bundle. Players who have already purchased the [1st Buy] bundle will automatically unlock [Neon Stage] after updating to the latest version and can manually place it.\n\n[Optimizations & Fixes]\n- Hero Signature Weapon Optimization:\n1. Signature Weapon level cap increased from 6 to 15, providing extraordinary power to your heroes!\n- Each hero’s Signature Weapon now has its own unique skill, which will further enhance at levels 10 and 15, granting even stronger bonuses!\n\n- Hero Gear Reforge Optimization:\n1. Added more types of attributes obtainable through reforging.\n2. After this update, all Reforge Hammers consumed by Chiefs before 00:00 UTC on October 30 will be returned via mail. (This will not affect the current reforge progress of Chiefs.)\n3. Further user experience improvements for Gear Reforging will be implemented in future updates.\n\n- Major Hero System Upgrade:\n1. Added a [Faction] tag on top of existing hero classes. \n2. Multiple heroes have received class adjustments and skill enhancements. \n\n- [Underground Goldmine] Event Optimization:\n1. Cross-server matching added, allowing you to explore this opportunity- and challenge-filled underground alongside Chiefs from different States!\n2. Added a gathering leaderboard, which tracks the total gold acquired by each Chief in a round through mining, plundering, and revenge, with generous ranking rewards!\n3. After the update, the number of minefields per layer will dynamically adjust based on the current mining progress of that layer, allowing Chiefs to more quickly view and select target mines.\n\n- Adjusted the size of some decorative buildings to better display your collection. Due to these size changes, all decorations will temporarily revert to an unplaced state after the update (no effect on attribute bonuses). Chiefs can reposition them according to preference.\n\n- Chat Optimizations:\n1. Private chat limit increased to 100 users.\n2. Maximum chat message length increased to 1000 characters.\n3. Season chat channels will not close immediately after the season ends but will remain open until new season matchmaking is completed.\n\n- Optimized the custom avatar upload process in Chief info, adding a status display for “Avatar Under Review.”",
           "app_id": "6738109752"
         }
       },
@@ -793,27 +793,27 @@
           "app_id": "6502326151"
         },
         "小兵特攻隊": {
-          "version": "3.3.2",
-          "updated": "2025-10-20T03:07:52Z",
+          "version": "3.4.0",
+          "updated": "2025-10-30T02:28:47Z",
           "releaseNotes": "Bug fixes and performance improvements",
           "app_id": "6746140478"
         },
         "Block Blast!": {
-          "version": "6.4.5",
-          "updated": "2025-10-27T02:11:11Z",
+          "version": "6.4.7",
+          "updated": "2025-10-31T09:16:17Z",
           "releaseNotes": "We’re always improving Block Blast! Turn on auto-updates to get the latest features.\n\nSuggestions? Email us: blockblast-support@hungrystudio.com\nFollow us on TikTok for updates: @blockblastofficial",
           "app_id": "1617391485"
         },
         "Foodie Sizzle: 美食滋滋": {
-          "version": "1.41",
-          "updated": "2025-10-25T07:23:21Z",
-          "releaseNotes": "- Bug fixes\n- Adjusted level difficulty\n- Added new Halloween event",
+          "version": "1.43",
+          "updated": "2025-10-31T15:11:57Z",
+          "releaseNotes": "- Performance optimization  \n- Bug fixes",
           "app_id": "6746246179"
         },
         "Grill Sort - 燒烤時光 物品分類遊戲": {
-          "version": "2.6",
-          "updated": "2025-10-22T09:02:04Z",
-          "releaseNotes": "We added many new levels, waiting for you to conquer!",
+          "version": "2.7",
+          "updated": "2025-11-01T01:01:55Z",
+          "releaseNotes": "‌New enhanced features added! Experience the upgraded peripherals now!",
           "app_id": "6742812903"
         },
         "Last Z:Survival Shooter（倖存者逃亡）": {
@@ -871,9 +871,9 @@
           "app_id": "6468921495"
         },
         "Drop the Cat": {
-          "version": "1.10.8",
-          "updated": "2025-10-28T06:13:12Z",
-          "releaseNotes": "New Stage Added!\n\nHalloween is Coming!\n\nRaise your own Cats!",
+          "version": "1.10.9",
+          "updated": "2025-10-30T07:55:32Z",
+          "releaseNotes": "-Stage Added\n-Bug Fixed",
           "app_id": "6749132002"
         },
         "不用網路的遊戲 - 無網路遊戲 - 離線 遊戲 - 無網遊戲": {
@@ -895,8 +895,8 @@
           "app_id": "6739124364"
         },
         "Roblox": {
-          "version": "2.696.799",
-          "updated": "2025-10-27T16:21:46Z",
+          "version": "2.697.925",
+          "updated": "2025-10-30T16:08:29Z",
           "releaseNotes": "To make Roblox work better for you, we deliver updates regularly. These updates include bug fixes and improvements for speed and reliability.",
           "app_id": "431946152"
         },
@@ -919,26 +919,26 @@
           "app_id": "6738469826"
         },
         "Pikmin Bloom": {
-          "version": "131.1",
-          "updated": "2025-10-28T04:39:01Z",
-          "releaseNotes": "Thanks for playing Pikmin Bloom! New in this version:\n\n- You can now set rewards animation for Event Challenges to play automatically.\n- Minor improvements and bug fixes.\n\n*Please download the latest version of the app from the store for the changes above to be reflected.",
+          "version": "131.2",
+          "updated": "2025-11-01T04:59:03Z",
+          "releaseNotes": "Thanks for playing Pikmin Bloom! New in this version:\n\n- Minor improvements and bug fixes.\n\n*Please download the latest version of the app from the store for the changes above to be reflected.",
           "app_id": "1556357398"
         },
         "Dark War:Survival": {
-          "version": "1.250.619",
-          "updated": "2025-10-24T09:55:34Z",
-          "releaseNotes": "[Adjustments & Optimizations]\n\n[State of Supremacy]\n- Points adjustment during the Invasion Right contest phase\nBefore: Successfully seize the enemy State Dark Syndicate Truck once\nAfter: Escort an S-Tier Dark Syndicate Truck once (points awarded based on whether it is plundered).\n\n[Capital Clash]\nAdjustments for point acquisition ways: \n- Garrison the Capital\n- Garrison Turrets\n- Kill enemy units at the Capital\n- Suffer severe injuries or unit losses at the Capital\n- Kill units during turret battles\n- Suffer severe injuries or unit losses during turret battles\n\n[Territory Triumph]\n- Added the [Schedule War] feature. Alliance members can view scheduled information in the event interface.\n- Once the scheduled time is reached, the war will automatically start.\n- Cities with scheduled war plans can still be attacked immediately.\n\n[Zombie Siege]\n- When the event time conflicts with [Blood Moon Shroud], a secondary confirmation prompt will appear.\n- Each season will feature zombies with different themed appearances.\n\n[Other Improvements]\n- Chat channels now support recalling text and images sent within 2 minutes.\n- [Allied Power] now allows viewing of daily refreshable exclusive tasks.\n- After zooming the world map, survivors can still view the [Peace Shield] status of shelters.",
+          "version": "1.250.620",
+          "updated": "2025-10-30T09:02:15Z",
+          "releaseNotes": "[Optimization & Adjustments]\n- After canceling the Bio-Mutant's Engage Offline function, a pop-up notification will be added.\n- When tapping an alliance that has been disbanded in the Rankings, a pop-up notification will now indicate that the alliance has been disbanded.\n- Optimized some in-game visuals and details.",
           "app_id": "6670441558"
         },
         "Travel Town - Merge Adventure": {
-          "version": "2.12.1280",
-          "updated": "2025-10-19T12:36:34Z",
+          "version": "2.12.1291",
+          "updated": "2025-10-29T09:45:15Z",
           "releaseNotes": "Welcome to the latest update of Travel Town!\nWe’ve been busy improving the game and addressing bugs for you. \nEnjoy!",
           "app_id": "1521236603"
         },
         "劍士物語-呼吸奧義": {
           "version": "1.3",
-          "updated": "2025-10-16T03:58:37Z",
+          "updated": "2025-10-20T07:00:00Z",
           "releaseNotes": "fix some bugs",
           "app_id": "6752481184"
         },
@@ -961,8 +961,8 @@
           "app_id": "1484468651"
         },
         "Pokémon GO": {
-          "version": "0.385.0",
-          "updated": "2025-10-27T17:23:13Z",
+          "version": "0.385.1",
+          "updated": "2025-10-31T18:08:22Z",
           "releaseNotes": "Trainers, we hope you’re enjoying your adventure in Pokémon GO! We update the app regularly with new events and features, so make sure to check the in-game News to stay up to date.",
           "app_id": "1094591345"
         },
@@ -979,9 +979,9 @@
           "app_id": "1484208629"
         },
         "野蠻生存錄：侏羅紀": {
-          "version": "1.3.369",
-          "updated": "2025-10-24T06:49:46Z",
-          "releaseNotes": "[New Content]\n1. Turkish is now available.\n\n[Optimizations & Adjustments]\n1. Minimum price for new listings set to 100,000 in Auction Harbor.\n2. Improved task sequence for better flow in Chief of the Continent.\n\n[Other Changes]\n1. Outside squads returning, and Clan under attack notification added\n2. Chief Skill Immediate Return new alert added\n3. Building Contribution optimized",
+          "version": "1.3.392",
+          "updated": "2025-10-31T17:27:19Z",
+          "releaseNotes": "[New Content]\n1. SVIP3+ players can send images after updating the game (limits apply).\n2. New Tree Ornament available.\n\n[Optimizations & Adjustments]\n1. Akaham Rush: New timing is Friday UTC 12:00.\n2. Auto-Hunt: Added battle predictions for top-level Wildlings.\n3. Auction Harbor: Gems and Aurelith Core usage won't count in events.\n\n[Other Changes]\n1. Pop-ups for building upgrades.\n2. Removed custom notes in coordinates sharing.\n3. Improved event shortcuts and prompts.",
           "app_id": "6737189862"
         }
       }
