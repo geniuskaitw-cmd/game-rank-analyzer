@@ -38,7 +38,7 @@
       "genre": "益智",
       "delta": 7,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 1,
@@ -49,7 +49,7 @@
       "genre": "卡牌",
       "delta": 1,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 2,
@@ -60,7 +60,7 @@
       "genre": "休闲",
       "delta": -1,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 2,
@@ -71,7 +71,7 @@
       "genre": "策略",
       "delta": 1,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 3,
@@ -82,7 +82,7 @@
       "genre": "益智",
       "delta": -1,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 3,
@@ -93,7 +93,7 @@
       "genre": "休闲",
       "delta": -2,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 4,
@@ -104,7 +104,7 @@
       "genre": "冒险",
       "delta": -1,
       "alert": false,
-      "ai_type": null
+      "ai_type": "角色扮演"
     },
     {
       "rank": 4,
@@ -115,7 +115,7 @@
       "genre": "益智解谜",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 5,
@@ -126,7 +126,7 @@
       "genre": "策略",
       "delta": -1,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 5,
@@ -137,7 +137,7 @@
       "genre": "冒险",
       "delta": 5,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 6,
@@ -148,7 +148,7 @@
       "genre": "桌面和棋类",
       "delta": -1,
       "alert": false,
-      "ai_type": null
+      "ai_type": "社交賭場"
     },
     {
       "rank": 6,
@@ -159,7 +159,7 @@
       "genre": "休闲",
       "delta": 3,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 7,
@@ -170,7 +170,7 @@
       "genre": "益智",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 7,
@@ -181,7 +181,7 @@
       "genre": "动作",
       "delta": -2,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 8,
@@ -192,7 +192,7 @@
       "genre": "文字",
       "delta": -2,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 8,
@@ -203,7 +203,7 @@
       "genre": "字谜",
       "delta": -1,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 9,
@@ -214,7 +214,7 @@
       "genre": "桌面和棋类",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "社交賭場"
     },
     {
       "rank": 9,
@@ -225,7 +225,7 @@
       "genre": "字谜",
       "delta": 8,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 10,
@@ -236,7 +236,7 @@
       "genre": "策略",
       "delta": 15,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 10,
@@ -247,7 +247,7 @@
       "genre": "益智解谜",
       "delta": -2,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 11,
@@ -258,7 +258,7 @@
       "genre": "街机",
       "delta": 6,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 11,
@@ -269,7 +269,7 @@
       "genre": "卡牌",
       "delta": -5,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 12,
@@ -280,7 +280,7 @@
       "genre": "休闲",
       "delta": 67,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 12,
@@ -291,7 +291,7 @@
       "genre": "策略",
       "delta": 3,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 13,
@@ -302,7 +302,7 @@
       "genre": "益智",
       "delta": 3,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 13,
@@ -313,7 +313,7 @@
       "genre": "卡牌",
       "delta": -1,
       "alert": false,
-      "ai_type": null
+      "ai_type": "社交賭場"
     },
     {
       "rank": 14,
@@ -324,7 +324,7 @@
       "genre": "益智",
       "delta": 14,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 14,
@@ -335,7 +335,7 @@
       "genre": "策略",
       "delta": 13,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 15,
@@ -346,7 +346,7 @@
       "genre": "角色扮演",
       "delta": 4,
       "alert": false,
-      "ai_type": null
+      "ai_type": "角色扮演"
     },
     {
       "rank": 15,
@@ -357,7 +357,7 @@
       "genre": "益智解谜",
       "delta": 19,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 16,
@@ -368,7 +368,7 @@
       "genre": "街机",
       "delta": 11,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 16,
@@ -379,7 +379,7 @@
       "genre": "卡牌",
       "delta": 10,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 17,
@@ -390,7 +390,7 @@
       "genre": "休闲",
       "delta": 22,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 17,
@@ -401,7 +401,7 @@
       "genre": "家庭聚会",
       "delta": -3,
       "alert": false,
-      "ai_type": null
+      "ai_type": "社交賭場"
     },
     {
       "rank": 18,
@@ -412,7 +412,7 @@
       "genre": "桌面和棋类",
       "delta": -6,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 18,
@@ -423,7 +423,7 @@
       "genre": "家庭聚会",
       "delta": 5,
       "alert": false,
-      "ai_type": null
+      "ai_type": "其他"
     },
     {
       "rank": 19,
@@ -434,7 +434,7 @@
       "genre": "模拟",
       "delta": 10,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 19,
@@ -445,7 +445,7 @@
       "genre": "休闲",
       "delta": 2,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 20,
@@ -456,7 +456,7 @@
       "genre": "卡牌",
       "delta": -7,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 20,
@@ -467,7 +467,7 @@
       "genre": "动作",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 21,
@@ -478,7 +478,7 @@
       "genre": "音乐",
       "delta": 20,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 21,
@@ -489,7 +489,7 @@
       "genre": "休闲",
       "delta": 57,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 22,
@@ -500,7 +500,7 @@
       "genre": "休闲",
       "delta": 24,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 22,
@@ -511,7 +511,7 @@
       "genre": "益智解谜",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 23,
@@ -522,7 +522,7 @@
       "genre": "休闲",
       "delta": -5,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 23,
@@ -533,7 +533,7 @@
       "genre": "益智解谜",
       "delta": -10,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 24,
@@ -544,7 +544,7 @@
       "genre": "策略",
       "delta": 19,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 24,
@@ -555,7 +555,7 @@
       "genre": "休闲",
       "delta": 21,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 25,
@@ -566,7 +566,7 @@
       "genre": "休闲",
       "delta": -10,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 25,
@@ -577,7 +577,7 @@
       "genre": "益智解谜",
       "delta": 28,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 26,
@@ -588,7 +588,7 @@
       "genre": "模拟",
       "delta": 9,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 26,
@@ -599,7 +599,7 @@
       "genre": "休闲",
       "delta": 4,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 27,
@@ -610,7 +610,7 @@
       "genre": "休闲",
       "delta": 35,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 27,
@@ -621,7 +621,7 @@
       "genre": "动作",
       "delta": 4,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 28,
@@ -632,7 +632,7 @@
       "genre": "休闲",
       "delta": 9,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 28,
@@ -643,7 +643,7 @@
       "genre": "策略",
       "delta": 15,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 29,
@@ -654,7 +654,7 @@
       "genre": "休闲",
       "delta": 42,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 29,
@@ -665,7 +665,7 @@
       "genre": "卡牌",
       "delta": -1,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 30,
@@ -676,7 +676,7 @@
       "genre": "街机",
       "delta": 6,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 30,
@@ -687,7 +687,7 @@
       "genre": "体育",
       "delta": 6,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 31,
@@ -698,7 +698,7 @@
       "genre": "卡牌",
       "delta": 57,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 31,
@@ -709,7 +709,7 @@
       "genre": "休闲",
       "delta": -7,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 32,
@@ -720,7 +720,7 @@
       "genre": "模拟",
       "delta": 2,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 32,
@@ -731,7 +731,7 @@
       "genre": "益智解谜",
       "delta": 3,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 33,
@@ -742,7 +742,7 @@
       "genre": "模拟",
       "delta": -7,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 33,
@@ -753,7 +753,7 @@
       "genre": "动作",
       "delta": -1,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 34,
@@ -764,7 +764,7 @@
       "genre": "模拟",
       "delta": 13,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 34,
@@ -775,7 +775,7 @@
       "genre": "益智解谜",
       "delta": 22,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 35,
@@ -786,7 +786,7 @@
       "genre": "策略",
       "delta": -14,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 35,
@@ -797,7 +797,7 @@
       "genre": "益智解谜",
       "delta": -10,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 36,
@@ -808,7 +808,7 @@
       "genre": "音乐",
       "delta": -14,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 36,
@@ -819,7 +819,7 @@
       "genre": "动作",
       "delta": 1,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 37,
@@ -830,7 +830,7 @@
       "genre": "益智",
       "delta": 41,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 37,
@@ -841,7 +841,7 @@
       "genre": "益智解谜",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 38,
@@ -852,7 +852,7 @@
       "genre": "益智",
       "delta": 2,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 38,
@@ -863,7 +863,7 @@
       "genre": "模拟",
       "delta": 1,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 39,
@@ -874,7 +874,7 @@
       "genre": "动作",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 39,
@@ -885,7 +885,7 @@
       "genre": "益智解谜",
       "delta": 102,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 40,
@@ -896,7 +896,7 @@
       "genre": "策略",
       "delta": -8,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 40,
@@ -907,7 +907,7 @@
       "genre": "娱乐场",
       "delta": -2,
       "alert": false,
-      "ai_type": null
+      "ai_type": "社交賭場"
     },
     {
       "rank": 41,
@@ -918,7 +918,7 @@
       "genre": "益智",
       "delta": 36,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 41,
@@ -929,7 +929,7 @@
       "genre": "益智解谜",
       "delta": 85,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 42,
@@ -940,7 +940,7 @@
       "genre": "益智",
       "delta": -22,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 42,
@@ -951,7 +951,7 @@
       "genre": "动作",
       "delta": 2,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 43,
@@ -962,7 +962,7 @@
       "genre": "益智",
       "delta": -1,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 43,
@@ -973,7 +973,7 @@
       "genre": "休闲",
       "delta": 68,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 44,
@@ -984,7 +984,7 @@
       "genre": "益智",
       "delta": -6,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 44,
@@ -995,7 +995,7 @@
       "genre": "益智解谜",
       "delta": -11,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 45,
@@ -1006,7 +1006,7 @@
       "genre": "卡牌",
       "delta": 8,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 45,
@@ -1017,7 +1017,7 @@
       "genre": "益智解谜",
       "delta": -16,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 46,
@@ -1028,7 +1028,7 @@
       "genre": "冒险",
       "delta": 53,
       "alert": false,
-      "ai_type": null
+      "ai_type": "角色扮演"
     },
     {
       "rank": 46,
@@ -1039,7 +1039,7 @@
       "genre": "冒险",
       "delta": 15,
       "alert": false,
-      "ai_type": null
+      "ai_type": "角色扮演"
     },
     {
       "rank": 47,
@@ -1050,7 +1050,7 @@
       "genre": "策略",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 47,
@@ -1061,7 +1061,7 @@
       "genre": "家庭聚会",
       "delta": 4,
       "alert": false,
-      "ai_type": null
+      "ai_type": "其他"
     },
     {
       "rank": 48,
@@ -1072,7 +1072,7 @@
       "genre": "街机",
       "delta": 9,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 48,
@@ -1083,7 +1083,7 @@
       "genre": "动作",
       "delta": 84,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 49,
@@ -1094,7 +1094,7 @@
       "genre": "桌面和棋类",
       "delta": -38,
       "alert": false,
-      "ai_type": null
+      "ai_type": "其他"
     },
     {
       "rank": 49,
@@ -1105,7 +1105,7 @@
       "genre": "休闲",
       "delta": 1,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 50,
@@ -1116,7 +1116,7 @@
       "genre": "文字",
       "delta": 15,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 50,
@@ -1127,7 +1127,7 @@
       "genre": "益智解谜",
       "delta": -32,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 51,
@@ -1138,7 +1138,7 @@
       "genre": "桌面和棋类",
       "delta": 13,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 51,
@@ -1149,7 +1149,7 @@
       "genre": "字谜",
       "delta": -4,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 52,
@@ -1160,7 +1160,7 @@
       "genre": "教育",
       "delta": -2,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 52,
@@ -1171,7 +1171,7 @@
       "genre": "体育",
       "delta": -4,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 53,
@@ -1182,7 +1182,7 @@
       "genre": "益智",
       "delta": 40,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 53,
@@ -1193,7 +1193,7 @@
       "genre": "益智解谜",
       "delta": -1,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 54,
@@ -1204,7 +1204,7 @@
       "genre": "益智",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 54,
@@ -1215,7 +1215,7 @@
       "genre": "益智解谜",
       "delta": -5,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 55,
@@ -1226,7 +1226,7 @@
       "genre": "音乐",
       "delta": -24,
       "alert": false,
-      "ai_type": null
+      "ai_type": "其他"
     },
     {
       "rank": 55,
@@ -1237,7 +1237,7 @@
       "genre": "休闲",
       "delta": 19,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 56,
@@ -1248,7 +1248,7 @@
       "genre": "动作",
       "delta": 12,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 56,
@@ -1259,7 +1259,7 @@
       "genre": "动作",
       "delta": -10,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 57,
@@ -1270,7 +1270,7 @@
       "genre": "音乐",
       "delta": 29,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 57,
@@ -1281,7 +1281,7 @@
       "genre": "休闲",
       "delta": 7,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 58,
@@ -1292,7 +1292,7 @@
       "genre": "益智",
       "delta": -6,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 58,
@@ -1303,7 +1303,7 @@
       "genre": "桌面",
       "delta": -47,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 59,
@@ -1314,7 +1314,7 @@
       "genre": "街机",
       "delta": -8,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 59,
@@ -1325,7 +1325,7 @@
       "genre": "益智解谜",
       "delta": 26,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 60,
@@ -1336,7 +1336,7 @@
       "genre": "休闲",
       "delta": 24,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 60,
@@ -1347,7 +1347,7 @@
       "genre": "娱乐场",
       "delta": 16,
       "alert": false,
-      "ai_type": null
+      "ai_type": "社交賭場"
     },
     {
       "rank": 61,
@@ -1358,7 +1358,7 @@
       "genre": "桌面和棋类",
       "delta": -38,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 61,
@@ -1369,7 +1369,7 @@
       "genre": "桌面",
       "delta": 23,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 62,
@@ -1380,7 +1380,7 @@
       "genre": "益智",
       "delta": 13,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 62,
@@ -1391,7 +1391,7 @@
       "genre": "桌面",
       "delta": 6,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 63,
@@ -1402,7 +1402,7 @@
       "genre": "益智",
       "delta": -9,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 63,
@@ -1413,7 +1413,7 @@
       "genre": "游戏",
       "delta": -1,
       "alert": false,
-      "ai_type": null
+      "ai_type": "社交賭場"
     },
     {
       "rank": 64,
@@ -1424,7 +1424,7 @@
       "genre": "桌面和棋类",
       "delta": -9,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 64,
@@ -1435,7 +1435,7 @@
       "genre": "游戏",
       "delta": -1,
       "alert": false,
-      "ai_type": null
+      "ai_type": "社交賭場"
     },
     {
       "rank": 65,
@@ -1446,7 +1446,7 @@
       "genre": "冒险",
       "delta": 1,
       "alert": false,
-      "ai_type": null
+      "ai_type": "角色扮演"
     },
     {
       "rank": 65,
@@ -1457,7 +1457,7 @@
       "genre": "冒险",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 66,
@@ -1468,7 +1468,7 @@
       "genre": "休闲",
       "delta": -36,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 66,
@@ -1479,7 +1479,7 @@
       "genre": "卡牌",
       "delta": 1,
       "alert": false,
-      "ai_type": null
+      "ai_type": "社交賭場"
     },
     {
       "rank": 67,
@@ -1490,7 +1490,7 @@
       "genre": "角色扮演",
       "delta": -53,
       "alert": false,
-      "ai_type": null
+      "ai_type": "角色扮演"
     },
     {
       "rank": 67,
@@ -1501,7 +1501,7 @@
       "genre": "动作",
       "delta": 31,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 68,
@@ -1512,7 +1512,7 @@
       "genre": "动作",
       "delta": -5,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 68,
@@ -1523,7 +1523,7 @@
       "genre": "娱乐场",
       "delta": -10,
       "alert": false,
-      "ai_type": null
+      "ai_type": "社交賭場"
     },
     {
       "rank": 69,
@@ -1534,7 +1534,7 @@
       "genre": "益智",
       "delta": 35,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 69,
@@ -1545,7 +1545,7 @@
       "genre": "桌面",
       "delta": 20,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 70,
@@ -1556,7 +1556,7 @@
       "genre": "卡牌",
       "delta": 10,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 70,
@@ -1567,7 +1567,7 @@
       "genre": "桌面",
       "delta": 7,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 71,
@@ -1578,7 +1578,7 @@
       "genre": "休闲",
       "delta": 27,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 71,
@@ -1589,7 +1589,7 @@
       "genre": "家庭聚会",
       "delta": 98,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 72,
@@ -1600,7 +1600,7 @@
       "genre": "角色扮演",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "角色扮演"
     },
     {
       "rank": 72,
@@ -1611,7 +1611,7 @@
       "genre": "卡牌",
       "delta": 106,
       "alert": false,
-      "ai_type": null
+      "ai_type": "社交賭場"
     },
     {
       "rank": 73,
@@ -1622,7 +1622,7 @@
       "genre": "赌场",
       "delta": 92,
       "alert": false,
-      "ai_type": null
+      "ai_type": "社交賭場"
     },
     {
       "rank": 73,
@@ -1633,7 +1633,7 @@
       "genre": "休闲",
       "delta": -2,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 74,
@@ -1644,7 +1644,7 @@
       "genre": "动作",
       "delta": 117,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 74,
@@ -1655,7 +1655,7 @@
       "genre": "角色扮演",
       "delta": 42,
       "alert": false,
-      "ai_type": null
+      "ai_type": "角色扮演"
     },
     {
       "rank": 75,
@@ -1666,7 +1666,7 @@
       "genre": "益智",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 75,
@@ -1677,7 +1677,7 @@
       "genre": "动作",
       "delta": 12,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 76,
@@ -1688,7 +1688,7 @@
       "genre": "休闲",
       "delta": -4,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 76,
@@ -1699,7 +1699,7 @@
       "genre": "模拟",
       "delta": 122,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 77,
@@ -1710,7 +1710,7 @@
       "genre": "益智",
       "delta": -28,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 77,
@@ -1721,7 +1721,7 @@
       "genre": "益智解谜",
       "delta": -11,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 78,
@@ -1732,7 +1732,7 @@
       "genre": "文字",
       "delta": 31,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 78,
@@ -1743,7 +1743,7 @@
       "genre": "字谜",
       "delta": 41,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 79,
@@ -1754,7 +1754,7 @@
       "genre": "桌面和棋类",
       "delta": -3,
       "alert": false,
-      "ai_type": null
+      "ai_type": "社交賭場"
     },
     {
       "rank": 79,
@@ -1765,7 +1765,7 @@
       "genre": "休闲",
       "delta": 3,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 80,
@@ -1776,7 +1776,7 @@
       "genre": "体育",
       "delta": 5,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 80,
@@ -1787,7 +1787,7 @@
       "genre": "冒险",
       "delta": 60,
       "alert": false,
-      "ai_type": null
+      "ai_type": "社交賭場"
     },
     {
       "rank": 81,
@@ -1798,7 +1798,7 @@
       "genre": "动作",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 81,
@@ -1809,7 +1809,7 @@
       "genre": "家庭聚会",
       "delta": 32,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 82,
@@ -1820,7 +1820,7 @@
       "genre": "益智",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 82,
@@ -1831,7 +1831,7 @@
       "genre": "卡牌",
       "delta": 6,
       "alert": false,
-      "ai_type": null
+      "ai_type": "社交賭場"
     },
     {
       "rank": 83,
@@ -1842,7 +1842,7 @@
       "genre": "街机",
       "delta": -24,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 83,
@@ -1853,7 +1853,7 @@
       "genre": "桌面",
       "delta": -8,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 84,
@@ -1864,7 +1864,7 @@
       "genre": "桌面和棋类",
       "delta": 3,
       "alert": false,
-      "ai_type": null
+      "ai_type": "社交賭場"
     },
     {
       "rank": 84,
@@ -1875,7 +1875,7 @@
       "genre": "策略",
       "delta": -4,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 85,
@@ -1886,7 +1886,7 @@
       "genre": "街机",
       "delta": 33,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 85,
@@ -1897,7 +1897,7 @@
       "genre": "模拟",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 86,
@@ -1908,7 +1908,7 @@
       "genre": "休闲",
       "delta": 3,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 86,
@@ -1919,7 +1919,7 @@
       "genre": "益智解谜",
       "delta": -26,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 87,
@@ -1930,7 +1930,7 @@
       "genre": "策略",
       "delta": 44,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 87,
@@ -1941,7 +1941,7 @@
       "genre": "休闲",
       "delta": 15,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 88,
@@ -1952,7 +1952,7 @@
       "genre": "模拟",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 88,
@@ -1963,7 +1963,7 @@
       "genre": "益智解谜",
       "delta": -9,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 89,
@@ -1974,7 +1974,7 @@
       "genre": "休闲",
       "delta": -29,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 89,
@@ -1985,7 +1985,7 @@
       "genre": "休闲",
       "delta": -35,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 90,
@@ -1996,7 +1996,7 @@
       "genre": "休闲",
       "delta": 15,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 90,
@@ -2007,7 +2007,7 @@
       "genre": "益智解谜",
       "delta": 24,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 91,
@@ -2018,7 +2018,7 @@
       "genre": "益智",
       "delta": 69,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 91,
@@ -2029,7 +2029,7 @@
       "genre": "益智解谜",
       "delta": -22,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 92,
@@ -2040,7 +2040,7 @@
       "genre": "文字",
       "delta": 45,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 92,
@@ -2051,7 +2051,7 @@
       "genre": "模拟",
       "delta": 12,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 93,
@@ -2062,7 +2062,7 @@
       "genre": "桌面和棋类",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 93,
@@ -2073,7 +2073,7 @@
       "genre": "字谜",
       "delta": 61,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 94,
@@ -2084,7 +2084,7 @@
       "genre": "益智",
       "delta": -49,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 94,
@@ -2095,7 +2095,7 @@
       "genre": "字谜",
       "delta": -21,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 95,
@@ -2106,7 +2106,7 @@
       "genre": "益智",
       "delta": -26,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 95,
@@ -2117,7 +2117,7 @@
       "genre": "桌面",
       "delta": -9,
       "alert": false,
-      "ai_type": null
+      "ai_type": "社交賭場"
     },
     {
       "rank": 96,
@@ -2128,7 +2128,7 @@
       "genre": "益智",
       "delta": 45,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 96,
@@ -2139,7 +2139,7 @@
       "genre": "卡牌",
       "delta": -24,
       "alert": false,
-      "ai_type": null
+      "ai_type": "社交賭場"
     },
     {
       "rank": 97,
@@ -2150,7 +2150,7 @@
       "genre": "模拟",
       "delta": 19,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 97,
@@ -2161,7 +2161,7 @@
       "genre": "益智解谜",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 98,
@@ -2172,7 +2172,7 @@
       "genre": "益智",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 98,
@@ -2183,7 +2183,7 @@
       "genre": "桌面",
       "delta": -58,
       "alert": false,
-      "ai_type": null
+      "ai_type": "其他"
     },
     {
       "rank": 99,
@@ -2194,7 +2194,7 @@
       "genre": "益智",
       "delta": 1,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 99,
@@ -2205,7 +2205,7 @@
       "genre": "休闲",
       "delta": 23,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 100,
@@ -2216,7 +2216,7 @@
       "genre": "益智",
       "delta": 15,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 100,
@@ -2227,7 +2227,7 @@
       "genre": "模拟",
       "delta": 58,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 101,
@@ -2238,7 +2238,7 @@
       "genre": "动作",
       "delta": 47,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 101,
@@ -2249,7 +2249,7 @@
       "genre": "模拟",
       "delta": -6,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 102,
@@ -2260,7 +2260,7 @@
       "genre": "角色扮演",
       "delta": -20,
       "alert": false,
-      "ai_type": null
+      "ai_type": "角色扮演"
     },
     {
       "rank": 102,
@@ -2271,7 +2271,7 @@
       "genre": "模拟",
       "delta": -3,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 103,
@@ -2282,7 +2282,7 @@
       "genre": "益智",
       "delta": 71,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 103,
@@ -2293,7 +2293,7 @@
       "genre": "字谜",
       "delta": -61,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 104,
@@ -2304,7 +2304,7 @@
       "genre": "益智",
       "delta": 6,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 104,
@@ -2315,7 +2315,7 @@
       "genre": "休闲",
       "delta": -10,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 105,
@@ -2326,7 +2326,7 @@
       "genre": "桌面和棋类",
       "delta": 6,
       "alert": false,
-      "ai_type": null
+      "ai_type": "社交賭場"
     },
     {
       "rank": 105,
@@ -2337,7 +2337,7 @@
       "genre": "休闲",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 106,
@@ -2348,7 +2348,7 @@
       "genre": "模拟",
       "delta": 1,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 106,
@@ -2359,7 +2359,7 @@
       "genre": "字谜",
       "delta": 11,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 107,
@@ -2370,7 +2370,7 @@
       "genre": "益智",
       "delta": -33,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 107,
@@ -2381,7 +2381,7 @@
       "genre": "休闲",
       "delta": 32,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 108,
@@ -2392,7 +2392,7 @@
       "genre": "动作",
       "delta": 21,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 108,
@@ -2403,7 +2403,7 @@
       "genre": "角色扮演",
       "delta": 20,
       "alert": false,
-      "ai_type": null
+      "ai_type": "角色扮演"
     },
     {
       "rank": 109,
@@ -2414,7 +2414,7 @@
       "genre": "休闲",
       "delta": -36,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 109,
@@ -2425,7 +2425,7 @@
       "genre": "卡牌",
       "delta": 6,
       "alert": false,
-      "ai_type": null
+      "ai_type": "社交賭場"
     },
     {
       "rank": 110,
@@ -2436,7 +2436,7 @@
       "genre": "角色扮演",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "角色扮演"
     },
     {
       "rank": 110,
@@ -2447,7 +2447,7 @@
       "genre": "模拟",
       "delta": 76,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 111,
@@ -2458,7 +2458,7 @@
       "genre": "益智",
       "delta": 15,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 111,
@@ -2469,7 +2469,7 @@
       "genre": "休闲",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 112,
@@ -2480,7 +2480,7 @@
       "genre": "音乐",
       "delta": 5,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 112,
@@ -2491,7 +2491,7 @@
       "genre": "策略",
       "delta": -3,
       "alert": false,
-      "ai_type": null
+      "ai_type": "角色扮演"
     },
     {
       "rank": 113,
@@ -2502,7 +2502,7 @@
       "genre": "休闲",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 113,
@@ -2513,7 +2513,7 @@
       "genre": "竞速",
       "delta": 43,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 114,
@@ -2524,7 +2524,7 @@
       "genre": "桌面和棋类",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 114,
@@ -2535,7 +2535,7 @@
       "genre": "益智解谜",
       "delta": -21,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 115,
@@ -2546,7 +2546,7 @@
       "genre": "竞速",
       "delta": 56,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 115,
@@ -2557,7 +2557,7 @@
       "genre": "体育",
       "delta": -8,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 116,
@@ -2568,7 +2568,7 @@
       "genre": "休闲",
       "delta": -10,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 116,
@@ -2579,7 +2579,7 @@
       "genre": "冒险",
       "delta": 15,
       "alert": false,
-      "ai_type": null
+      "ai_type": "角色扮演"
     },
     {
       "rank": 117,
@@ -2590,7 +2590,7 @@
       "genre": "益智",
       "delta": -34,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 117,
@@ -2601,7 +2601,7 @@
       "genre": "动作",
       "delta": 8,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 118,
@@ -2612,7 +2612,7 @@
       "genre": "益智",
       "delta": 5,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 118,
@@ -2623,7 +2623,7 @@
       "genre": "模拟",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 119,
@@ -2634,7 +2634,7 @@
       "genre": "模拟",
       "delta": 16,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 119,
@@ -2645,7 +2645,7 @@
       "genre": "模拟",
       "delta": -23,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 120,
@@ -2656,7 +2656,7 @@
       "genre": "策略",
       "delta": -8,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 120,
@@ -2667,7 +2667,7 @@
       "genre": "模拟",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 121,
@@ -2678,7 +2678,7 @@
       "genre": "音乐",
       "delta": 15,
       "alert": false,
-      "ai_type": null
+      "ai_type": "其他"
     },
     {
       "rank": 121,
@@ -2689,7 +2689,7 @@
       "genre": "益智解谜",
       "delta": -18,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 122,
@@ -2700,7 +2700,7 @@
       "genre": "卡牌",
       "delta": -61,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 122,
@@ -2711,7 +2711,7 @@
       "genre": "游戏",
       "delta": -1,
       "alert": false,
-      "ai_type": null
+      "ai_type": "其他"
     },
     {
       "rank": 123,
@@ -2722,7 +2722,7 @@
       "genre": "知识问答",
       "delta": 50,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 123,
@@ -2733,7 +2733,7 @@
       "genre": "益智解谜",
       "delta": 54,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 124,
@@ -2744,7 +2744,7 @@
       "genre": "动作",
       "delta": -2,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 124,
@@ -2755,7 +2755,7 @@
       "genre": "游戏",
       "delta": 21,
       "alert": false,
-      "ai_type": null
+      "ai_type": "社交賭場"
     },
     {
       "rank": 125,
@@ -2766,7 +2766,7 @@
       "genre": "益智",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 125,
@@ -2777,7 +2777,7 @@
       "genre": "字谜",
       "delta": -2,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 126,
@@ -2788,7 +2788,7 @@
       "genre": "模拟",
       "delta": -34,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 126,
@@ -2799,7 +2799,7 @@
       "genre": "休闲",
       "delta": -26,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 127,
@@ -2810,7 +2810,7 @@
       "genre": "益智",
       "delta": 37,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 127,
@@ -2821,7 +2821,7 @@
       "genre": "益智解谜",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 128,
@@ -2832,7 +2832,7 @@
       "genre": "策略",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 128,
@@ -2843,7 +2843,7 @@
       "genre": "桌面",
       "delta": 5,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 129,
@@ -2854,7 +2854,7 @@
       "genre": "动作",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 129,
@@ -2865,7 +2865,7 @@
       "genre": "字谜",
       "delta": -70,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 130,
@@ -2876,7 +2876,7 @@
       "genre": "益智",
       "delta": -27,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 130,
@@ -2887,7 +2887,7 @@
       "genre": "动作",
       "delta": 13,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 131,
@@ -2898,7 +2898,7 @@
       "genre": "益智",
       "delta": -50,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 131,
@@ -2909,7 +2909,7 @@
       "genre": "字谜",
       "delta": -7,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 132,
@@ -2920,7 +2920,7 @@
       "genre": "体育",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 132,
@@ -2931,7 +2931,7 @@
       "genre": "模拟",
       "delta": 25,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 133,
@@ -2942,7 +2942,7 @@
       "genre": "动作",
       "delta": 5,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 133,
@@ -2953,7 +2953,7 @@
       "genre": "休闲",
       "delta": 30,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 134,
@@ -2964,7 +2964,7 @@
       "genre": "动作",
       "delta": 12,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 134,
@@ -2975,7 +2975,7 @@
       "genre": "益智解谜",
       "delta": -44,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 135,
@@ -2986,7 +2986,7 @@
       "genre": "休闲",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 135,
@@ -2997,7 +2997,7 @@
       "genre": "休闲",
       "delta": 1,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 136,
@@ -3008,7 +3008,7 @@
       "genre": "休闲",
       "delta": 44,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 136,
@@ -3019,7 +3019,7 @@
       "genre": "模拟",
       "delta": -2,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 137,
@@ -3030,7 +3030,7 @@
       "genre": "益智",
       "delta": -41,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 137,
@@ -3041,7 +3041,7 @@
       "genre": "益智解谜",
       "delta": -2,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 138,
@@ -3052,7 +3052,7 @@
       "genre": "休闲",
       "delta": -25,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 138,
@@ -3063,7 +3063,7 @@
       "genre": "模拟",
       "delta": -55,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 139,
@@ -3074,7 +3074,7 @@
       "genre": "策略",
       "delta": 12,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 139,
@@ -3085,7 +3085,7 @@
       "genre": "娱乐场",
       "delta": -10,
       "alert": false,
-      "ai_type": null
+      "ai_type": "社交賭場"
     },
     {
       "rank": 140,
@@ -3096,7 +3096,7 @@
       "genre": "动作",
       "delta": -6,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 140,
@@ -3107,7 +3107,7 @@
       "genre": "娱乐场",
       "delta": 10,
       "alert": false,
-      "ai_type": null
+      "ai_type": "社交賭場"
     },
     {
       "rank": 141,
@@ -3118,7 +3118,7 @@
       "genre": "策略",
       "delta": 46,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 141,
@@ -3129,7 +3129,7 @@
       "genre": "休闲",
       "delta": -29,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 142,
@@ -3140,7 +3140,7 @@
       "genre": "休闲",
       "delta": -40,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 142,
@@ -3151,7 +3151,7 @@
       "genre": "体育",
       "delta": -32,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 143,
@@ -3162,7 +3162,7 @@
       "genre": "休闲",
       "delta": -24,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 143,
@@ -3173,7 +3173,7 @@
       "genre": "休闲",
       "delta": -23,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 144,
@@ -3184,7 +3184,7 @@
       "genre": "休闲",
       "delta": -49,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 144,
@@ -3195,7 +3195,7 @@
       "genre": "模拟",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 145,
@@ -3206,7 +3206,7 @@
       "genre": "动作",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 145,
@@ -3217,7 +3217,7 @@
       "genre": "桌面",
       "delta": 10,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 146,
@@ -3228,7 +3228,7 @@
       "genre": "休闲",
       "delta": -56,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 146,
@@ -3239,7 +3239,7 @@
       "genre": "休闲",
       "delta": 3,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 147,
@@ -3250,7 +3250,7 @@
       "genre": "休闲",
       "delta": 20,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 147,
@@ -3261,7 +3261,7 @@
       "genre": "家庭聚会",
       "delta": -10,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 148,
@@ -3272,7 +3272,7 @@
       "genre": "角色扮演",
       "delta": -21,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 148,
@@ -3283,7 +3283,7 @@
       "genre": "模拟",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 149,
@@ -3294,7 +3294,7 @@
       "genre": "模拟",
       "delta": -48,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 149,
@@ -3305,7 +3305,7 @@
       "genre": "益智解谜",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 150,
@@ -3316,7 +3316,7 @@
       "genre": "益智",
       "delta": -59,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 150,
@@ -3327,7 +3327,7 @@
       "genre": "益智解谜",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 151,
@@ -3338,7 +3338,7 @@
       "genre": "冒险",
       "delta": 33,
       "alert": false,
-      "ai_type": null
+      "ai_type": "角色扮演"
     },
     {
       "rank": 151,
@@ -3349,7 +3349,7 @@
       "genre": "休闲",
       "delta": -94,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 152,
@@ -3360,7 +3360,7 @@
       "genre": "益智",
       "delta": 6,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 152,
@@ -3371,7 +3371,7 @@
       "genre": "益智解谜",
       "delta": -34,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 153,
@@ -3382,7 +3382,7 @@
       "genre": "休闲",
       "delta": 17,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 153,
@@ -3393,7 +3393,7 @@
       "genre": "桌面",
       "delta": -98,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 154,
@@ -3404,7 +3404,7 @@
       "genre": "卡牌",
       "delta": -9,
       "alert": false,
-      "ai_type": null
+      "ai_type": "其他"
     },
     {
       "rank": 154,
@@ -3415,7 +3415,7 @@
       "genre": "模拟",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 155,
@@ -3426,7 +3426,7 @@
       "genre": "休闲",
       "delta": -107,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 155,
@@ -3437,7 +3437,7 @@
       "genre": "益智解谜",
       "delta": -49,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 156,
@@ -3448,7 +3448,7 @@
       "genre": "休闲",
       "delta": -1,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 156,
@@ -3459,7 +3459,7 @@
       "genre": "体育",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 157,
@@ -3470,7 +3470,7 @@
       "genre": "文字",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 157,
@@ -3481,7 +3481,7 @@
       "genre": "休闲",
       "delta": 11,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 158,
@@ -3492,7 +3492,7 @@
       "genre": "休闲",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 158,
@@ -3503,7 +3503,7 @@
       "genre": "冒险",
       "delta": -10,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 159,
@@ -3514,7 +3514,7 @@
       "genre": "休闲",
       "delta": -92,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 159,
@@ -3525,7 +3525,7 @@
       "genre": "益智解谜",
       "delta": -54,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 160,
@@ -3536,7 +3536,7 @@
       "genre": "休闲",
       "delta": -4,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 160,
@@ -3547,7 +3547,7 @@
       "genre": "桌面",
       "delta": 21,
       "alert": false,
-      "ai_type": null
+      "ai_type": "社交賭場"
     },
     {
       "rank": 161,
@@ -3558,7 +3558,7 @@
       "genre": "休闲",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 161,
@@ -3569,7 +3569,7 @@
       "genre": "休闲",
       "delta": -14,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 162,
@@ -3580,7 +3580,7 @@
       "genre": "竞速",
       "delta": -32,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 162,
@@ -3591,7 +3591,7 @@
       "genre": "益智解谜",
       "delta": -81,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 163,
@@ -3602,7 +3602,7 @@
       "genre": "模拟",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 163,
@@ -3613,7 +3613,7 @@
       "genre": "娱乐场",
       "delta": 1,
       "alert": false,
-      "ai_type": null
+      "ai_type": "社交賭場"
     },
     {
       "rank": 164,
@@ -3624,7 +3624,7 @@
       "genre": "体育",
       "delta": -15,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 164,
@@ -3635,7 +3635,7 @@
       "genre": "卡牌",
       "delta": -73,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 165,
@@ -3646,7 +3646,7 @@
       "genre": "休闲",
       "delta": -32,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 165,
@@ -3657,7 +3657,7 @@
       "genre": "休闲",
       "delta": -5,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 166,
@@ -3668,7 +3668,7 @@
       "genre": "益智",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 166,
@@ -3679,7 +3679,7 @@
       "genre": "休闲",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 167,
@@ -3690,7 +3690,7 @@
       "genre": "桌面和棋类",
       "delta": -15,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 167,
@@ -3701,7 +3701,7 @@
       "genre": "桌面",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 168,
@@ -3712,7 +3712,7 @@
       "genre": "街机",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 168,
@@ -3723,7 +3723,7 @@
       "genre": "模拟",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "角色扮演"
     },
     {
       "rank": 169,
@@ -3734,7 +3734,7 @@
       "genre": "休闲",
       "delta": 19,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 169,
@@ -3745,7 +3745,7 @@
       "genre": "策略",
       "delta": -42,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 170,
@@ -3756,7 +3756,7 @@
       "genre": "模拟",
       "delta": -8,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 170,
@@ -3767,7 +3767,7 @@
       "genre": "卡牌",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 171,
@@ -3778,7 +3778,7 @@
       "genre": "休闲",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 171,
@@ -3789,7 +3789,7 @@
       "genre": "策略",
       "delta": 12,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 172,
@@ -3800,7 +3800,7 @@
       "genre": "益智",
       "delta": -51,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 172,
@@ -3811,7 +3811,7 @@
       "genre": "娱乐场",
       "delta": 7,
       "alert": false,
-      "ai_type": null
+      "ai_type": "社交賭場"
     },
     {
       "rank": 173,
@@ -3822,7 +3822,7 @@
       "genre": "益智",
       "delta": -29,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 173,
@@ -3833,7 +3833,7 @@
       "genre": "休闲",
       "delta": -81,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 174,
@@ -3844,7 +3844,7 @@
       "genre": "动作",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 174,
@@ -3855,7 +3855,7 @@
       "genre": "模拟",
       "delta": 17,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 175,
@@ -3866,7 +3866,7 @@
       "genre": "益智",
       "delta": -25,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 175,
@@ -3877,7 +3877,7 @@
       "genre": "冒险",
       "delta": 5,
       "alert": false,
-      "ai_type": null
+      "ai_type": "角色扮演"
     },
     {
       "rank": 176,
@@ -3888,7 +3888,7 @@
       "genre": "模拟",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 176,
@@ -3899,7 +3899,7 @@
       "genre": "益智解谜",
       "delta": -25,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 177,
@@ -3910,7 +3910,7 @@
       "genre": "休闲",
       "delta": -20,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 177,
@@ -3921,7 +3921,7 @@
       "genre": "休闲",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 178,
@@ -3932,7 +3932,7 @@
       "genre": "音乐",
       "delta": -54,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 178,
@@ -3943,7 +3943,7 @@
       "genre": "休闲",
       "delta": -16,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 179,
@@ -3954,7 +3954,7 @@
       "genre": "益智",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 179,
@@ -3965,7 +3965,7 @@
       "genre": "冒险",
       "delta": -35,
       "alert": false,
-      "ai_type": null
+      "ai_type": "角色扮演"
     },
     {
       "rank": 180,
@@ -3976,7 +3976,7 @@
       "genre": "文字",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 180,
@@ -3987,7 +3987,7 @@
       "genre": "益智解谜",
       "delta": -15,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 181,
@@ -3998,7 +3998,7 @@
       "genre": "休闲",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 181,
@@ -4009,7 +4009,7 @@
       "genre": "动作",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 182,
@@ -4020,7 +4020,7 @@
       "genre": "休闲",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 182,
@@ -4031,7 +4031,7 @@
       "genre": "字谜",
       "delta": 5,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 183,
@@ -4042,7 +4042,7 @@
       "genre": "益智",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 183,
@@ -4053,7 +4053,7 @@
       "genre": "休闲",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 184,
@@ -4064,7 +4064,7 @@
       "genre": "策略",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 184,
@@ -4075,7 +4075,7 @@
       "genre": "策略",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 185,
@@ -4086,7 +4086,7 @@
       "genre": "卡牌",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 185,
@@ -4097,7 +4097,7 @@
       "genre": "益智解谜",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 186,
@@ -4108,7 +4108,7 @@
       "genre": "街机",
       "delta": -1,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 186,
@@ -4119,7 +4119,7 @@
       "genre": "益智解谜",
       "delta": -44,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 187,
@@ -4130,7 +4130,7 @@
       "genre": "模拟",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 187,
@@ -4141,7 +4141,7 @@
       "genre": "游戏",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 188,
@@ -4152,7 +4152,7 @@
       "genre": "益智",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 188,
@@ -4163,7 +4163,7 @@
       "genre": "体育",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 189,
@@ -4174,7 +4174,7 @@
       "genre": "动作",
       "delta": 6,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 189,
@@ -4185,7 +4185,7 @@
       "genre": "益智解谜",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 190,
@@ -4196,7 +4196,7 @@
       "genre": "休闲",
       "delta": -93,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 190,
@@ -4207,7 +4207,7 @@
       "genre": "模拟",
       "delta": 2,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 191,
@@ -4218,7 +4218,7 @@
       "genre": "休闲",
       "delta": -8,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 191,
@@ -4229,7 +4229,7 @@
       "genre": "益智解谜",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 192,
@@ -4240,7 +4240,7 @@
       "genre": "益智",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 192,
@@ -4251,7 +4251,7 @@
       "genre": "休闲",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 193,
@@ -4262,7 +4262,7 @@
       "genre": "桌面和棋类",
       "delta": -27,
       "alert": false,
-      "ai_type": null
+      "ai_type": "其他"
     },
     {
       "rank": 193,
@@ -4273,7 +4273,7 @@
       "genre": "卡牌",
       "delta": -34,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 194,
@@ -4284,7 +4284,7 @@
       "genre": "体育",
       "delta": -18,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 194,
@@ -4295,7 +4295,7 @@
       "genre": "家庭聚会",
       "delta": -10,
       "alert": false,
-      "ai_type": null
+      "ai_type": "其他"
     },
     {
       "rank": 195,
@@ -4306,7 +4306,7 @@
       "genre": "益智",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 195,
@@ -4317,7 +4317,7 @@
       "genre": "模拟",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "角色扮演"
     },
     {
       "rank": 196,
@@ -4328,7 +4328,7 @@
       "genre": "街机",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "動作競技"
     },
     {
       "rank": 196,
@@ -4339,7 +4339,7 @@
       "genre": "角色扮演",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "角色扮演"
     },
     {
       "rank": 197,
@@ -4350,7 +4350,7 @@
       "genre": "文字",
       "delta": -19,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 197,
@@ -4361,7 +4361,7 @@
       "genre": "益智解谜",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 198,
@@ -4372,7 +4372,7 @@
       "genre": "益智",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 198,
@@ -4383,7 +4383,7 @@
       "genre": "模拟",
       "delta": -25,
       "alert": false,
-      "ai_type": null
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 199,
@@ -4394,7 +4394,7 @@
       "genre": "策略",
       "delta": -27,
       "alert": false,
-      "ai_type": null
+      "ai_type": "策略對戰"
     },
     {
       "rank": 199,
@@ -4405,7 +4405,7 @@
       "genre": "角色扮演",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "角色扮演"
     },
     {
       "rank": 200,
@@ -4416,7 +4416,7 @@
       "genre": "益智",
       "delta": 0,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     },
     {
       "rank": 200,
@@ -4427,7 +4427,25 @@
       "genre": "益智解谜",
       "delta": -25,
       "alert": false,
-      "ai_type": null
+      "ai_type": "休閒益智"
     }
-  ]
+  ],
+  "type_counts_ai": {
+    "休閒益智": 223,
+    "策略對戰": 29,
+    "角色扮演": 20,
+    "動作競技": 51,
+    "社交賭場": 26,
+    "其他": 10,
+    "模擬沙盒": 41
+  },
+  "type_percentages_ai": {
+    "休閒益智": 56,
+    "策略對戰": 7,
+    "角色扮演": 5,
+    "動作競技": 13,
+    "社交賭場": 6,
+    "其他": 2,
+    "模擬沙盒": 10
+  }
 }

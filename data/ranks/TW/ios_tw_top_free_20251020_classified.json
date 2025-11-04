@@ -4,22 +4,29 @@
   "country": "TW",
   "chart": "top_free",
   "type_counts": {
-    "动作": 18,
-    "模拟": 25,
-    "策略": 14,
-    "冒险": 13,
+    "动作": 28,
+    "角色扮演": 47,
+    "模拟": 44,
+    "休闲": 71,
+    "策略": 34,
+    "益智": 41,
+    "冒险": 21,
     "益智解谜": 39,
-    "卡牌": 9,
-    "角色扮演": 17,
-    "休闲": 39,
+    "卡牌": 14,
+    "知识问答": 1,
+    "文字": 6,
+    "桌面和棋类": 3,
     "桌面": 10,
-    "竞速": 4,
-    "体育": 4,
+    "街机": 7,
+    "音乐": 9,
+    "竞速": 8,
+    "体育": 5,
     "家庭聚会": 3,
-    "音乐": 1,
+    "赌场": 4,
     "问答": 1,
     "字谜": 1,
-    "游戏": 2
+    "游戏": 2,
+    "教育": 1
   },
   "rows": [
     {
@@ -34,6 +41,17 @@
       "ai_type": "動作競技"
     },
     {
+      "rank": 1,
+      "app_id": "com.mechanist.dream2.aos",
+      "app_name": "盜夢英雄2：幻野",
+      "app_name_zh": "盜夢英雄2：幻野",
+      "developer": "DreamPlus Games",
+      "genre": "角色扮演",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "角色扮演"
+    },
+    {
       "rank": 2,
       "app_id": "6743147434",
       "app_name": "盜夢英雄2：幻野",
@@ -43,6 +61,17 @@
       "delta": 0,
       "alert": false,
       "ai_type": "角色扮演"
+    },
+    {
+      "rank": 2,
+      "app_id": "com.qs.bptq",
+      "app_name": "八零找茬",
+      "app_name_zh": "八零找茬",
+      "developer": "QinsGames",
+      "genre": "休闲",
+      "delta": 1,
+      "alert": false,
+      "ai_type": "休閒益智"
     },
     {
       "rank": 3,
@@ -56,6 +85,17 @@
       "ai_type": "策略對戰"
     },
     {
+      "rank": 3,
+      "app_id": "com.block.juggle",
+      "app_name": "Block Blast!",
+      "app_name_zh": "Block Blast!",
+      "developer": "HungryStudio",
+      "genre": "益智",
+      "delta": 1,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 4,
       "app_id": "6739806001",
       "app_name": "勇者活下去",
@@ -67,6 +107,17 @@
       "ai_type": "角色扮演"
     },
     {
+      "rank": 4,
+      "app_id": "com.floralgames.hjxp",
+      "app_name": "我的花園世界 - 真的收到花！",
+      "app_name_zh": "我的花園世界 - 真的收到花！",
+      "developer": "FLORAL GAMES LIMITED",
+      "genre": "休闲",
+      "delta": -2,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 5,
       "app_id": "1617391485",
       "app_name": "Block Blast!",
@@ -74,6 +125,17 @@
       "developer": "Hungry Studio",
       "genre": "益智解谜",
       "delta": -2,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
+      "rank": 5,
+      "app_id": "com.gamovation.tileclub",
+      "app_name": "Tile Club - Match Puzzle Game",
+      "app_name_zh": "Tile Club - Match Puzzle Game",
+      "developer": "GamoVation",
+      "genre": "益智",
+      "delta": 37,
       "alert": false,
       "ai_type": "休閒益智"
     },
@@ -89,12 +151,34 @@
       "ai_type": "模擬沙盒"
     },
     {
+      "rank": 6,
+      "app_id": "com.allstarunion.cdw.tw",
+      "app_name": "貓狗世界：人類消失之後",
+      "app_name_zh": "貓狗世界：人類消失之後",
+      "developer": "StarFortune",
+      "genre": "策略",
+      "delta": 7,
+      "alert": false,
+      "ai_type": "策略對戰"
+    },
+    {
       "rank": 7,
       "app_id": "6680191526",
       "app_name": "貪婪洞窟：重生",
       "app_name_zh": "貪婪洞窟：重生",
       "developer": "Avalon Games",
       "genre": "冒险",
+      "delta": -6,
+      "alert": false,
+      "ai_type": "角色扮演"
+    },
+    {
+      "rank": 7,
+      "app_id": "com.bilibili.trickcal",
+      "app_name": "嘟嘟臉惡作劇",
+      "app_name_zh": "嘟嘟臉惡作劇",
+      "developer": "BILIBILI",
+      "genre": "角色扮演",
       "delta": -6,
       "alert": false,
       "ai_type": "角色扮演"
@@ -111,6 +195,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 8,
+      "app_id": "com.readygo.barrel.gp",
+      "app_name": "Last Z：Survival Shooter（倖存者逃亡）",
+      "app_name_zh": "Last Z：Survival Shooter（倖存者逃亡）",
+      "developer": "Florere Game",
+      "genre": "策略",
+      "delta": 4,
+      "alert": false,
+      "ai_type": "策略對戰"
+    },
+    {
       "rank": 9,
       "app_id": "6748932117",
       "app_name": "八零找茬",
@@ -120,6 +215,17 @@
       "delta": -1,
       "alert": false,
       "ai_type": "休閒益智"
+    },
+    {
+      "rank": 9,
+      "app_id": "com.daerigame.babysasin",
+      "app_name": "小死神傳奇",
+      "app_name_zh": "小死神傳奇",
+      "developer": "DAERI SOFT Inc",
+      "genre": "角色扮演",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "角色扮演"
     },
     {
       "rank": 10,
@@ -133,6 +239,17 @@
       "ai_type": "動作競技"
     },
     {
+      "rank": 10,
+      "app_id": "grill.sort.food.games.match.puzzle",
+      "app_name": "Grill Sort - 燒烤遊戲，三消遊戲，模擬餐廳遊戲",
+      "app_name_zh": "Grill Sort - 燒烤遊戲，三消遊戲，模擬餐廳遊戲",
+      "developer": "Gloryway Puzzle Hub",
+      "genre": "益智",
+      "delta": -5,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 11,
       "app_id": "6739561266",
       "app_name": "LINE 數獨達人",
@@ -142,6 +259,17 @@
       "delta": 12,
       "alert": false,
       "ai_type": "休閒益智"
+    },
+    {
+      "rank": 11,
+      "app_id": "com.appxplore.crabwar",
+      "app_name": "猛蟹戰爭 (Crab War)",
+      "app_name_zh": "猛蟹戰爭 (Crab War)",
+      "developer": "Appxplore (iCandy)",
+      "genre": "冒险",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "角色扮演"
     },
     {
       "rank": 12,
@@ -155,6 +283,17 @@
       "ai_type": "角色扮演"
     },
     {
+      "rank": 12,
+      "app_id": "com.xman.tw.gp",
+      "app_name": "超能戰爭",
+      "app_name_zh": "超能戰爭",
+      "developer": "Glaciers Game",
+      "genre": "休闲",
+      "delta": 45,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 13,
       "app_id": "6463856475",
       "app_name": "斗羅大陸：史萊克學院",
@@ -162,6 +301,17 @@
       "developer": "SuperNova Overseas Limited",
       "genre": "动作",
       "delta": 0,
+      "alert": false,
+      "ai_type": "角色扮演"
+    },
+    {
+      "rank": 13,
+      "app_id": "com.roblox.client",
+      "app_name": "Roblox",
+      "app_name_zh": "Roblox",
+      "developer": "Roblox Corporation",
+      "genre": "冒险",
+      "delta": -5,
       "alert": false,
       "ai_type": "角色扮演"
     },
@@ -177,6 +327,17 @@
       "ai_type": "角色扮演"
     },
     {
+      "rank": 14,
+      "app_id": "com.cola.game",
+      "app_name": "火辣餐廳：合併&烹飪",
+      "app_name_zh": "火辣餐廳：合併&烹飪",
+      "developer": "Microfun Limited",
+      "genre": "益智",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 15,
       "app_id": "6742812903",
       "app_name": "Grill Sort - 燒烤時光 物品分類遊戲",
@@ -184,6 +345,17 @@
       "developer": "Smart Imagine",
       "genre": "休闲",
       "delta": 3,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
+      "rank": 15,
+      "app_id": "com.etermax.preguntados.lite",
+      "app_name": "Trivia Crack : Fun Quiz Games",
+      "app_name_zh": "Trivia Crack : Fun Quiz Games",
+      "developer": "etermax",
+      "genre": "知识问答",
+      "delta": 0,
       "alert": false,
       "ai_type": "休閒益智"
     },
@@ -199,6 +371,17 @@
       "ai_type": "策略對戰"
     },
     {
+      "rank": 16,
+      "app_id": "com.tg.xscs5.tw",
+      "app_name": "異能獵人",
+      "app_name_zh": "異能獵人",
+      "developer": "俠米遊戲",
+      "genre": "角色扮演",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "角色扮演"
+    },
+    {
       "rank": 17,
       "app_id": "6747099027",
       "app_name": "LINE 秘寶挖挖哇",
@@ -208,6 +391,17 @@
       "delta": -7,
       "alert": false,
       "ai_type": "休閒益智"
+    },
+    {
+      "rank": 17,
+      "app_id": "com.avalon.c1p.googleplay",
+      "app_name": "貪婪洞窟：重生",
+      "app_name_zh": "貪婪洞窟：重生",
+      "developer": "Avalon Network Media",
+      "genre": "角色扮演",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "角色扮演"
     },
     {
       "rank": 18,
@@ -221,6 +415,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 18,
+      "app_id": "com.garena.game.df",
+      "app_name": "Garena® 三角洲行動",
+      "app_name_zh": "Garena® 三角洲行動",
+      "developer": "Garena Mobile Private Limited",
+      "genre": "动作",
+      "delta": -2,
+      "alert": false,
+      "ai_type": "動作競技"
+    },
+    {
       "rank": 19,
       "app_id": "431946152",
       "app_name": "Roblox",
@@ -230,6 +435,17 @@
       "delta": 3,
       "alert": false,
       "ai_type": "動作競技"
+    },
+    {
+      "rank": 19,
+      "app_id": "com.funplus.ts.global",
+      "app_name": "點點大作戰",
+      "app_name_zh": "點點大作戰",
+      "developer": "FunPlus International AG",
+      "genre": "策略",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "策略對戰"
     },
     {
       "rank": 20,
@@ -243,6 +459,17 @@
       "ai_type": "策略對戰"
     },
     {
+      "rank": 20,
+      "app_id": "com.red.sortingstore.android",
+      "app_name": "Water Match™- ASMR Water Sort",
+      "app_name_zh": "Water Match™- ASMR Water Sort",
+      "developer": "TAP GAMES",
+      "genre": "休闲",
+      "delta": 1,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 21,
       "app_id": "6746465127",
       "app_name": "細胞保衛戰 - 生存射擊大亂鬥",
@@ -252,6 +479,17 @@
       "delta": 0,
       "alert": false,
       "ai_type": "策略對戰"
+    },
+    {
+      "rank": 21,
+      "app_id": "associations.connect.words.match.puzzle",
+      "app_name": "腦洞大爆炸",
+      "app_name_zh": "腦洞大爆炸",
+      "developer": "BitEpoch",
+      "genre": "文字",
+      "delta": 80,
+      "alert": false,
+      "ai_type": "休閒益智"
     },
     {
       "rank": 22,
@@ -265,6 +503,17 @@
       "ai_type": "動作競技"
     },
     {
+      "rank": 22,
+      "app_id": "com.linecorp.LGSTTTW",
+      "app_name": "LINE 秘寶挖挖哇",
+      "app_name_zh": "LINE 秘寶挖挖哇",
+      "developer": "LINE (LY Corporation)",
+      "genre": "益智",
+      "delta": 3,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 23,
       "app_id": "6670789598",
       "app_name": "Brain Puzzle: Tricky Quest",
@@ -274,6 +523,17 @@
       "delta": 7,
       "alert": false,
       "ai_type": "休閒益智"
+    },
+    {
+      "rank": 23,
+      "app_id": "com.Stargazer.StellaSora",
+      "app_name": "星塔旅人",
+      "app_name_zh": "星塔旅人",
+      "developer": "Stargazer Limited",
+      "genre": "冒险",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "角色扮演"
     },
     {
       "rank": 24,
@@ -287,6 +547,17 @@
       "ai_type": "策略對戰"
     },
     {
+      "rank": 24,
+      "app_id": "defense.roguelike.cell.shoot.survivor",
+      "app_name": "細胞保衛戰",
+      "app_name_zh": "細胞保衛戰",
+      "developer": "Yelo Hood",
+      "genre": "角色扮演",
+      "delta": -10,
+      "alert": false,
+      "ai_type": "角色扮演"
+    },
+    {
       "rank": 25,
       "app_id": "6504542886",
       "app_name": "杖劍傳說：坎斯汀之約",
@@ -296,6 +567,17 @@
       "delta": 2,
       "alert": false,
       "ai_type": "角色扮演"
+    },
+    {
+      "rank": 25,
+      "app_id": "com.gof.global",
+      "app_name": "寒霜啟示錄",
+      "app_name_zh": "寒霜啟示錄",
+      "developer": "Century Games PTE. LTD.",
+      "genre": "策略",
+      "delta": -5,
+      "alert": false,
+      "ai_type": "策略對戰"
     },
     {
       "rank": 26,
@@ -309,6 +591,17 @@
       "ai_type": "社交賭場"
     },
     {
+      "rank": 26,
+      "app_id": "com.garena.game.kgtw",
+      "app_name": "Garena 傳說對決 X 關於我轉生變成史萊姆這檔事",
+      "app_name_zh": "Garena 傳說對決 X 關於我轉生變成史萊姆這檔事",
+      "developer": "Garena Games Online",
+      "genre": "动作",
+      "delta": 29,
+      "alert": false,
+      "ai_type": "動作競技"
+    },
+    {
       "rank": 27,
       "app_id": "6618142292",
       "app_name": "火辣餐廳：合併&烹飪",
@@ -318,6 +611,17 @@
       "delta": 0,
       "alert": false,
       "ai_type": "休閒益智"
+    },
+    {
+      "rank": 27,
+      "app_id": "com.gearpaw.defenders.td.game",
+      "app_name": "齒輪獸衛隊",
+      "app_name_zh": "齒輪獸衛隊",
+      "developer": "Perfeggs",
+      "genre": "策略",
+      "delta": 8,
+      "alert": false,
+      "ai_type": "策略對戰"
     },
     {
       "rank": 28,
@@ -331,6 +635,17 @@
       "ai_type": "策略對戰"
     },
     {
+      "rank": 28,
+      "app_id": "com.fattoy.shelter",
+      "app_name": "小小生存隊",
+      "app_name_zh": "小小生存隊",
+      "developer": "FATTOY",
+      "genre": "休闲",
+      "delta": -11,
+      "alert": false,
+      "ai_type": "模擬沙盒"
+    },
+    {
       "rank": 29,
       "app_id": "6448104157",
       "app_name": "不用網路的遊戲 - 無網路遊戲 - 離線 遊戲 - 無網遊戲",
@@ -338,6 +653,17 @@
       "developer": "Moreno Maio",
       "genre": "益智解谜",
       "delta": 16,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
+      "rank": 29,
+      "app_id": "com.abi.skewer.sort",
+      "app_name": "Foodie Sizzle: 美食滋滋",
+      "app_name_zh": "Foodie Sizzle: 美食滋滋",
+      "developer": "ABI GLOBAL LTD.",
+      "genre": "益智",
+      "delta": 15,
       "alert": false,
       "ai_type": "休閒益智"
     },
@@ -353,6 +679,17 @@
       "ai_type": "其他"
     },
     {
+      "rank": 30,
+      "app_id": "com.mover.twqyfhl",
+      "app_name": "異界三國：死神契約",
+      "app_name_zh": "異界三國：死神契約",
+      "developer": "Mover Games Limited",
+      "genre": "卡牌",
+      "delta": -8,
+      "alert": false,
+      "ai_type": "策略對戰"
+    },
+    {
       "rank": 31,
       "app_id": "6738469826",
       "app_name": "可獄不可囚",
@@ -364,6 +701,17 @@
       "ai_type": "模擬沙盒"
     },
     {
+      "rank": 31,
+      "app_id": "com.slg.savagesurvival",
+      "app_name": "野蠻生存錄:侏羅紀",
+      "app_name_zh": "野蠻生存錄:侏羅紀",
+      "developer": "YOTTA GAMES",
+      "genre": "策略",
+      "delta": -8,
+      "alert": false,
+      "ai_type": "策略對戰"
+    },
+    {
       "rank": 32,
       "app_id": "6751221730",
       "app_name": "超級全明星",
@@ -371,6 +719,17 @@
       "developer": "GameCaff",
       "genre": "角色扮演",
       "delta": -28,
+      "alert": false,
+      "ai_type": "角色扮演"
+    },
+    {
+      "rank": 32,
+      "app_id": "com.smdjmy.aok",
+      "app_name": "木葉·宿命對決",
+      "app_name_zh": "木葉·宿命對決",
+      "developer": "Big Dedi",
+      "genre": "角色扮演",
+      "delta": 0,
       "alert": false,
       "ai_type": "角色扮演"
     },
@@ -386,6 +745,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 33,
+      "app_id": "com.blackhammer.md",
+      "app_name": "小小軍團",
+      "app_name_zh": "小小軍團",
+      "developer": "Black Hammer",
+      "genre": "休闲",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 34,
       "app_id": "6749132002",
       "app_name": "Drop the Cat",
@@ -393,6 +763,17 @@
       "developer": "ACTIONFIT",
       "genre": "益智解谜",
       "delta": 32,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
+      "rank": 34,
+      "app_id": "org.gg.crazy.brain",
+      "app_name": "瘋狂大腦洞",
+      "app_name_zh": "瘋狂大腦洞",
+      "developer": "Hainan Play Hi Cultural Entertainment Co., Ltd",
+      "genre": "休闲",
+      "delta": -7,
       "alert": false,
       "ai_type": "休閒益智"
     },
@@ -408,6 +789,17 @@
       "ai_type": "角色扮演"
     },
     {
+      "rank": 35,
+      "app_id": "com.vitastudio.mahjong",
+      "app_name": "Vita 麻將",
+      "app_name_zh": "Vita 麻將",
+      "developer": "Vita Studio.",
+      "genre": "桌面和棋类",
+      "delta": 12,
+      "alert": false,
+      "ai_type": "社交賭場"
+    },
+    {
       "rank": 36,
       "app_id": "1521236603",
       "app_name": "Travel Town - Merge Adventure",
@@ -417,6 +809,17 @@
       "delta": 7,
       "alert": false,
       "ai_type": "休閒益智"
+    },
+    {
+      "rank": 36,
+      "app_id": "com.rsgjmnq.sfchuanglian",
+      "app_name": "人生軌跡模擬器",
+      "app_name_zh": "人生軌跡模擬器",
+      "developer": "SF Group",
+      "genre": "模拟",
+      "delta": -12,
+      "alert": false,
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 37,
@@ -430,6 +833,17 @@
       "ai_type": "角色扮演"
     },
     {
+      "rank": 37,
+      "app_id": "com.wood.block.sudoku.puzzle.bm",
+      "app_name": "Block Crush!",
+      "app_name_zh": "Block Crush!",
+      "developer": "Wonderful  Studio",
+      "genre": "益智",
+      "delta": 13,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 38,
       "app_id": "6471045672",
       "app_name": "食光旅行",
@@ -439,6 +853,17 @@
       "delta": 2,
       "alert": false,
       "ai_type": "休閒益智"
+    },
+    {
+      "rank": 38,
+      "app_id": "com.kiloo.subwaysurf",
+      "app_name": "Subway Surfers",
+      "app_name_zh": "Subway Surfers",
+      "developer": "SYBO Games",
+      "genre": "街机",
+      "delta": 14,
+      "alert": false,
+      "ai_type": "動作競技"
     },
     {
       "rank": 39,
@@ -452,6 +877,17 @@
       "ai_type": "角色扮演"
     },
     {
+      "rank": 39,
+      "app_id": "com.mathbrain.sudoku",
+      "app_name": "數獨大師 - Sudoku Master!",
+      "app_name_zh": "數獨大師 - Sudoku Master!",
+      "developer": "HungryStudio",
+      "genre": "益智",
+      "delta": -3,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 40,
       "app_id": "1606549505",
       "app_name": "Royal Kingdom",
@@ -459,6 +895,17 @@
       "developer": "Dream Games",
       "genre": "益智解谜",
       "delta": -4,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
+      "rank": 40,
+      "app_id": "com.dreamgames.royalkingdom",
+      "app_name": "Royal Kingdom",
+      "app_name_zh": "Royal Kingdom",
+      "developer": "Dream Games, Ltd.",
+      "genre": "益智",
+      "delta": -7,
       "alert": false,
       "ai_type": "休閒益智"
     },
@@ -474,6 +921,17 @@
       "ai_type": "模擬沙盒"
     },
     {
+      "rank": 41,
+      "app_id": "com.digeam.a.srtw",
+      "app_name": "萌塔娘",
+      "app_name_zh": "萌塔娘",
+      "developer": "DiGeamOfficial",
+      "genre": "角色扮演",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "角色扮演"
+    },
+    {
       "rank": 42,
       "app_id": "1623318294",
       "app_name": "緋聞港口：合併&故事",
@@ -485,6 +943,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 42,
+      "app_id": "com.fun.lastwar.gp",
+      "app_name": "最後的戰爭 - Last War",
+      "app_name_zh": "最後的戰爭 - Last War",
+      "developer": "FUNFLY PTE. LTD.",
+      "genre": "策略",
+      "delta": -16,
+      "alert": false,
+      "ai_type": "策略對戰"
+    },
+    {
       "rank": 43,
       "app_id": "6751585358",
       "app_name": "華夏千秋-NPC自由攻略",
@@ -492,6 +961,17 @@
       "developer": "Hainan Huoyu Information Technology Co., Ltd",
       "genre": "角色扮演",
       "delta": 0,
+      "alert": false,
+      "ai_type": "角色扮演"
+    },
+    {
+      "rank": 43,
+      "app_id": "com.nianticlabs.pokemongo",
+      "app_name": "Pokémon GO",
+      "app_name_zh": "Pokémon GO",
+      "developer": "Niantic, Inc.",
+      "genre": "冒险",
+      "delta": 31,
       "alert": false,
       "ai_type": "角色扮演"
     },
@@ -507,6 +987,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 44,
+      "app_id": "com.oakever.tiletrip",
+      "app_name": "Tile Explorer - Triple Match",
+      "app_name_zh": "Tile Explorer - Triple Match",
+      "developer": "Oakever Games",
+      "genre": "益智",
+      "delta": -4,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 45,
       "app_id": "6749109328",
       "app_name": "超能戰爭",
@@ -516,6 +1007,17 @@
       "delta": 0,
       "alert": false,
       "ai_type": "策略對戰"
+    },
+    {
+      "rank": 45,
+      "app_id": "com.fun.brain.game",
+      "app_name": "Brain Puzzle: Tricky Quest",
+      "app_name_zh": "Brain Puzzle: Tricky Quest",
+      "developer": "JoyGame Studio",
+      "genre": "益智",
+      "delta": -6,
+      "alert": false,
+      "ai_type": "休閒益智"
     },
     {
       "rank": 46,
@@ -529,6 +1031,17 @@
       "ai_type": "社交賭場"
     },
     {
+      "rank": 46,
+      "app_id": "com.leged.pathe",
+      "app_name": "訓練師之征途",
+      "app_name_zh": "訓練師之征途",
+      "developer": "ZarrySoft",
+      "genre": "角色扮演",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "角色扮演"
+    },
+    {
       "rank": 47,
       "app_id": "638689075",
       "app_name": "夢想小鎮 (Township)",
@@ -540,6 +1053,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 47,
+      "app_id": "com.playcharge.weaponball",
+      "app_name": "Weapon Ball Battles",
+      "app_name_zh": "Weapon Ball Battles",
+      "developer": "SayGames Ltd",
+      "genre": "模拟",
+      "delta": -38,
+      "alert": false,
+      "ai_type": "模擬沙盒"
+    },
+    {
       "rank": 48,
       "app_id": "1484208629",
       "app_name": "Family Style: Co-op Kitchen",
@@ -547,6 +1071,17 @@
       "developer": "Co-op Kitchen LLC",
       "genre": "休闲",
       "delta": 2,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
+      "rank": 48,
+      "app_id": "com.dimsumshop.sort.com",
+      "app_name": "我的點心鋪",
+      "app_name_zh": "我的點心鋪",
+      "developer": "Ehsan Khaled",
+      "genre": "益智",
+      "delta": 8,
       "alert": false,
       "ai_type": "休閒益智"
     },
@@ -562,6 +1097,17 @@
       "ai_type": "角色扮演"
     },
     {
+      "rank": 49,
+      "app_id": "com.bunbunstudio.magicblocktiles",
+      "app_name": "音乐钢琴 7: 极速歌曲游戏",
+      "app_name_zh": "音乐钢琴 7: 极速歌曲游戏",
+      "developer": "Melodya Muses",
+      "genre": "音乐",
+      "delta": -3,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 50,
       "app_id": "6479595079",
       "app_name": "七騎士 Re:BIRTH",
@@ -571,6 +1117,17 @@
       "delta": -12,
       "alert": false,
       "ai_type": "角色扮演"
+    },
+    {
+      "rank": 50,
+      "app_id": "com.netease.eggypartyhmt",
+      "app_name": "蛋仔派對",
+      "app_name_zh": "蛋仔派對",
+      "developer": "EnvoyGames",
+      "genre": "休闲",
+      "delta": 19,
+      "alert": false,
+      "ai_type": "休閒益智"
     },
     {
       "rank": 51,
@@ -584,6 +1141,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 51,
+      "app_id": "com.webzen.muidle.google",
+      "app_name": "奇蹟MU：騎士袋你飛",
+      "app_name_zh": "奇蹟MU：騎士袋你飛",
+      "developer": "Webzen Inc.",
+      "genre": "角色扮演",
+      "delta": -20,
+      "alert": false,
+      "ai_type": "角色扮演"
+    },
+    {
       "rank": 52,
       "app_id": "6745937584",
       "app_name": "異界三國：死神契約",
@@ -593,6 +1161,17 @@
       "delta": -27,
       "alert": false,
       "ai_type": "策略對戰"
+    },
+    {
+      "rank": 52,
+      "app_id": "wool.match.color.sort.jam.puzzle",
+      "app_name": "毛線衝擊 - 救救小貓 顏色排序遊戲",
+      "app_name_zh": "毛線衝擊 - 救救小貓 顏色排序遊戲",
+      "developer": "BitEpoch",
+      "genre": "益智",
+      "delta": -15,
+      "alert": false,
+      "ai_type": "休閒益智"
     },
     {
       "rank": 53,
@@ -606,6 +1185,17 @@
       "ai_type": "角色扮演"
     },
     {
+      "rank": 53,
+      "app_id": "com.igg.android.doomsdaylastsurvivors",
+      "app_name": "黎明再現(Doomsday: Last Survivors)",
+      "app_name_zh": "黎明再現(Doomsday: Last Survivors)",
+      "developer": "IGG.COM",
+      "genre": "策略",
+      "delta": -8,
+      "alert": false,
+      "ai_type": "策略對戰"
+    },
+    {
       "rank": 54,
       "app_id": "6745251520",
       "app_name": "幸福都市 - 市長模擬器",
@@ -615,6 +1205,17 @@
       "delta": 7,
       "alert": false,
       "ai_type": "模擬沙盒"
+    },
+    {
+      "rank": 54,
+      "app_id": "io.supercent.linkedcubic",
+      "app_name": "蛇衝突 (Snake Clash)",
+      "app_name_zh": "蛇衝突 (Snake Clash)",
+      "developer": "Supercent, Inc.",
+      "genre": "街机",
+      "delta": 9,
+      "alert": false,
+      "ai_type": "動作競技"
     },
     {
       "rank": 55,
@@ -628,6 +1229,17 @@
       "ai_type": "策略對戰"
     },
     {
+      "rank": 55,
+      "app_id": "com.ningningstudio.kpopmagictiles",
+      "app_name": "Kpop 鋼琴塊 3 - 音樂遊戲",
+      "app_name_zh": "Kpop 鋼琴塊 3 - 音樂遊戲",
+      "developer": "Sonata Studio",
+      "genre": "音乐",
+      "delta": -25,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 56,
       "app_id": "1229016807",
       "app_name": "《荒野亂鬥》",
@@ -637,6 +1249,17 @@
       "delta": 3,
       "alert": false,
       "ai_type": "動作競技"
+    },
+    {
+      "rank": 56,
+      "app_id": "com.andaman.games.block.puzzle.free",
+      "app_name": "Block Puzzle：Bloom Journey",
+      "app_name_zh": "Block Puzzle：Bloom Journey",
+      "developer": "Andaman",
+      "genre": "益智",
+      "delta": -7,
+      "alert": false,
+      "ai_type": "休閒益智"
     },
     {
       "rank": 57,
@@ -650,6 +1273,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 57,
+      "app_id": "com.linecorp.LGATF",
+      "app_name": "LINE Rangers 放置戰爭",
+      "app_name_zh": "LINE Rangers 放置戰爭",
+      "developer": "LINE (LY Corporation)",
+      "genre": "角色扮演",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "角色扮演"
+    },
+    {
       "rank": 58,
       "app_id": "6448786147",
       "app_name": "最後的戰爭 - Last War",
@@ -659,6 +1293,17 @@
       "delta": -19,
       "alert": false,
       "ai_type": "策略對戰"
+    },
+    {
+      "rank": 58,
+      "app_id": "com.screw3d.match.nuts.bolts.pin.jam.away.puzzle",
+      "app_name": "3D螺絲大師：螺絲消消樂遊戲",
+      "app_name_zh": "3D螺絲大師：螺絲消消樂遊戲",
+      "developer": "Joymaster Puzzle Game Studio",
+      "genre": "休闲",
+      "delta": -7,
+      "alert": false,
+      "ai_type": "休閒益智"
     },
     {
       "rank": 59,
@@ -672,6 +1317,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 59,
+      "app_id": "com.a3.topgirl.gplay",
+      "app_name": "創造女團77",
+      "app_name_zh": "創造女團77",
+      "developer": "A3Games",
+      "genre": "策略",
+      "delta": -31,
+      "alert": false,
+      "ai_type": "策略對戰"
+    },
+    {
       "rank": 60,
       "app_id": "6741799620",
       "app_name": "串燒時光",
@@ -681,6 +1337,17 @@
       "delta": 28,
       "alert": false,
       "ai_type": "休閒益智"
+    },
+    {
+      "rank": 60,
+      "app_id": "com.readygo.dark.gp",
+      "app_name": "Dark War Survival",
+      "app_name_zh": "Dark War Survival",
+      "developer": "Florere Game",
+      "genre": "策略",
+      "delta": -1,
+      "alert": false,
+      "ai_type": "策略對戰"
     },
     {
       "rank": 61,
@@ -694,6 +1361,17 @@
       "ai_type": "其他"
     },
     {
+      "rank": 61,
+      "app_id": "com.mergegames.gossipharbor",
+      "app_name": "緋聞港口：合併&故事",
+      "app_name_zh": "緋聞港口：合併&故事",
+      "developer": "Microfun Limited",
+      "genre": "益智",
+      "delta": -29,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 62,
       "app_id": "455902495",
       "app_name": "麻將 神來也麻將－台灣16張、麻雀",
@@ -703,6 +1381,17 @@
       "delta": -5,
       "alert": false,
       "ai_type": "社交賭場"
+    },
+    {
+      "rank": 62,
+      "app_id": "com.sea.miniworldroyale.sparkgame",
+      "app_name": "迷你槍戰精英",
+      "app_name_zh": "迷你槍戰精英",
+      "developer": "MINOVATE HONG KONG LIMITED",
+      "genre": "角色扮演",
+      "delta": 28,
+      "alert": false,
+      "ai_type": "角色扮演"
     },
     {
       "rank": 63,
@@ -716,6 +1405,17 @@
       "ai_type": "動作競技"
     },
     {
+      "rank": 63,
+      "app_id": "com.youmusic.magictiles",
+      "app_name": "Magic Tiles 3™ - 鋼琴遊戲",
+      "app_name_zh": "Magic Tiles 3™ - 鋼琴遊戲",
+      "developer": "AMANOTES PTE. LTD.",
+      "genre": "音乐",
+      "delta": -34,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 64,
       "app_id": "6749519929",
       "app_name": "我的點心舖",
@@ -725,6 +1425,17 @@
       "delta": 26,
       "alert": false,
       "ai_type": "休閒益智"
+    },
+    {
+      "rank": 64,
+      "app_id": "com.run.tower.defense",
+      "app_name": "Kingshot",
+      "app_name_zh": "Kingshot",
+      "developer": "Century Games PTE. LTD.",
+      "genre": "策略",
+      "delta": -16,
+      "alert": false,
+      "ai_type": "策略對戰"
     },
     {
       "rank": 65,
@@ -738,6 +1449,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 65,
+      "app_id": "com.netmarble.rfnext",
+      "app_name": "RF ONLINE NEXT",
+      "app_name_zh": "RF ONLINE NEXT",
+      "developer": "Netmarble",
+      "genre": "角色扮演",
+      "delta": -54,
+      "alert": false,
+      "ai_type": "角色扮演"
+    },
+    {
       "rank": 66,
       "app_id": "6449517782",
       "app_name": "嚦咕麻將-ATG戰神賽特x女神曾莞婷唯一推薦",
@@ -749,6 +1471,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 66,
+      "app_id": "com.m88.idleXX",
+      "app_name": "杖劍傳說：坎斯汀之約",
+      "app_name_zh": "杖劍傳說：坎斯汀之約",
+      "developer": "LTGAMES GLOBAL",
+      "genre": "角色扮演",
+      "delta": 1,
+      "alert": false,
+      "ai_type": "角色扮演"
+    },
+    {
       "rank": 67,
       "app_id": "6504332779",
       "app_name": "Color Block Jam",
@@ -756,6 +1489,17 @@
       "developer": "Rollic Games",
       "genre": "益智解谜",
       "delta": -21,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
+      "rank": 67,
+      "app_id": "puzzle.snakes.puzzle.slithereat.gaming",
+      "app_name": "Snake Puzzle: Slither to Eat",
+      "app_name_zh": "Snake Puzzle: Slither to Eat",
+      "developer": "UniPuzz Games",
+      "genre": "益智",
+      "delta": -24,
       "alert": false,
       "ai_type": "休閒益智"
     },
@@ -771,6 +1515,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 68,
+      "app_id": "com.brain.logic.joygame",
+      "app_name": "Brain Puzzle 2: Logic Twist",
+      "app_name_zh": "Brain Puzzle 2: Logic Twist",
+      "developer": "JoyGame Studio",
+      "genre": "益智",
+      "delta": -7,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 69,
       "app_id": "543186831",
       "app_name": "8 Ball Pool™",
@@ -780,6 +1535,17 @@
       "delta": 43,
       "alert": false,
       "ai_type": "動作競技"
+    },
+    {
+      "rank": 69,
+      "app_id": "com.playrix.township",
+      "app_name": "夢想小鎮",
+      "app_name_zh": "夢想小鎮",
+      "developer": "Playrix",
+      "genre": "休闲",
+      "delta": 15,
+      "alert": false,
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 70,
@@ -793,6 +1559,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 70,
+      "app_id": "com.justgame.jails",
+      "app_name": "可獄不可囚",
+      "app_name_zh": "可獄不可囚",
+      "developer": "SINGAPORE JUST GAME TECHNOLOGY PTE. LTD.",
+      "genre": "策略",
+      "delta": 64,
+      "alert": false,
+      "ai_type": "策略對戰"
+    },
+    {
       "rank": 71,
       "app_id": "6450953550",
       "app_name": "王國之歌（Top Heroes）",
@@ -800,6 +1577,17 @@
       "developer": "River Game HK Limited",
       "genre": "角色扮演",
       "delta": -2,
+      "alert": false,
+      "ai_type": "角色扮演"
+    },
+    {
+      "rank": 71,
+      "app_id": "com.magic.village.gp",
+      "app_name": "魔法村物語",
+      "app_name_zh": "魔法村物語",
+      "developer": "Grid games",
+      "genre": "角色扮演",
+      "delta": -17,
       "alert": false,
       "ai_type": "角色扮演"
     },
@@ -815,6 +1603,17 @@
       "ai_type": "社交賭場"
     },
     {
+      "rank": 72,
+      "app_id": "com.hygame.hxqq.tw.gp",
+      "app_name": "華夏千秋",
+      "app_name_zh": "華夏千秋",
+      "developer": "HuoYuGame",
+      "genre": "模拟",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "模擬沙盒"
+    },
+    {
       "rank": 73,
       "app_id": "6751377873",
       "app_name": "腦洞大爆炸 - 詞語分類 單機益智文字遊戲",
@@ -822,6 +1621,17 @@
       "developer": "Stellars",
       "genre": "休闲",
       "delta": 12,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
+      "rank": 73,
+      "app_id": "com.merge.monster.fight",
+      "app_name": "Brainbot S2 Merge Battle",
+      "app_name_zh": "Brainbot S2 Merge Battle",
+      "developer": "Bareera Inc",
+      "genre": "休闲",
+      "delta": 0,
       "alert": false,
       "ai_type": "休閒益智"
     },
@@ -837,6 +1647,17 @@
       "ai_type": "角色扮演"
     },
     {
+      "rank": 74,
+      "app_id": "com.linecorp.lgtoy.aos",
+      "app_name": "熊大玩具",
+      "app_name_zh": "熊大玩具",
+      "developer": "LINE NEXT Corp.",
+      "genre": "休闲",
+      "delta": 26,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 75,
       "app_id": "6737189862",
       "app_name": "野蠻生存錄：侏羅紀",
@@ -846,6 +1667,17 @@
       "delta": 22,
       "alert": false,
       "ai_type": "模擬沙盒"
+    },
+    {
+      "rank": 75,
+      "app_id": "jp.pokemon.pokemontcgp",
+      "app_name": "Pokémon TCG Pocket",
+      "app_name_zh": "Pokémon TCG Pocket",
+      "developer": "The Pokémon Company",
+      "genre": "卡牌",
+      "delta": -2,
+      "alert": false,
+      "ai_type": "策略對戰"
     },
     {
       "rank": 76,
@@ -859,6 +1691,17 @@
       "ai_type": "角色扮演"
     },
     {
+      "rank": 76,
+      "app_id": "com.ecffri.arrows",
+      "app_name": "Arrows – Puzzle Escape",
+      "app_name_zh": "Arrows – Puzzle Escape",
+      "developer": "Lessmore UG",
+      "genre": "益智",
+      "delta": -58,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 77,
       "app_id": "6748180418",
       "app_name": "魔法村物語",
@@ -868,6 +1711,17 @@
       "delta": -13,
       "alert": false,
       "ai_type": "角色扮演"
+    },
+    {
+      "rank": 77,
+      "app_id": "com.dots.connect.puzzle",
+      "app_name": "點點拼圖：連結與放鬆",
+      "app_name_zh": "點點拼圖：連結與放鬆",
+      "developer": "ABI GAME",
+      "genre": "益智",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "休閒益智"
     },
     {
       "rank": 78,
@@ -881,6 +1735,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 78,
+      "app_id": "com.mover.twzqzs",
+      "app_name": "最強宗師",
+      "app_name_zh": "最強宗師",
+      "developer": "Mover Games Limited",
+      "genre": "卡牌",
+      "delta": -12,
+      "alert": false,
+      "ai_type": "策略對戰"
+    },
+    {
       "rank": 79,
       "app_id": "6498883328",
       "app_name": "Tile Explorer - 三消配對",
@@ -888,6 +1753,17 @@
       "developer": "Oakever Games",
       "genre": "休闲",
       "delta": 64,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
+      "rank": 79,
+      "app_id": "magic.hop.beat.tile.music",
+      "app_name": "音樂節奏遊戲：球球遊戲 & 鋼琴遊戲",
+      "app_name_zh": "音樂節奏遊戲：球球遊戲 & 鋼琴遊戲",
+      "developer": "Beatwave Studio",
+      "genre": "音乐",
+      "delta": 23,
       "alert": false,
       "ai_type": "休閒益智"
     },
@@ -903,6 +1779,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 80,
+      "app_id": "com.godplace.twgp",
+      "app_name": "第七天災",
+      "app_name_zh": "第七天災",
+      "developer": "SPGFun",
+      "genre": "角色扮演",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "角色扮演"
+    },
+    {
       "rank": 81,
       "app_id": "6689516366",
       "app_name": "Bus Escape: Traffic Jam",
@@ -914,6 +1801,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 81,
+      "app_id": "com.abi.cook.chill",
+      "app_name": "Cookingdom - 烹飪之地",
+      "app_name_zh": "Cookingdom - 烹飪之地",
+      "developer": "ABI Games Studio",
+      "genre": "模拟",
+      "delta": 14,
+      "alert": false,
+      "ai_type": "模擬沙盒"
+    },
+    {
       "rank": 82,
       "app_id": "1577533842",
       "app_name": "Goods Master 3D: 收納遊戲 貨櫃整理達人",
@@ -921,6 +1819,17 @@
       "developer": "HIGGS TECHNOLOGY CO., LIMITED",
       "genre": "休闲",
       "delta": 10,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
+      "rank": 82,
+      "app_id": "com.media720.games2020",
+      "app_name": "離線遊戲: 無網單機好玩的桌遊 - Offline 100+",
+      "app_name_zh": "離線遊戲: 無網單機好玩的桌遊 - Offline 100+",
+      "developer": "Fun Offline Games",
+      "genre": "休闲",
+      "delta": -6,
       "alert": false,
       "ai_type": "休閒益智"
     },
@@ -936,6 +1845,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 83,
+      "app_id": "com.choice.craft",
+      "app_name": "趣穿書ChoiceCraft",
+      "app_name_zh": "趣穿書ChoiceCraft",
+      "developer": "SPHERE NEWRGY PTE. LTD.",
+      "genre": "休闲",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 84,
       "app_id": "6740189002",
       "app_name": "太空防禦(Galaxy Defense)",
@@ -947,6 +1867,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 84,
+      "app_id": "com.rekoo.pubgm",
+      "app_name": "PUBG MOBILE：絕地求生M",
+      "app_name_zh": "PUBG MOBILE：絕地求生M",
+      "developer": "HotCool Game",
+      "genre": "动作",
+      "delta": 47,
+      "alert": false,
+      "ai_type": "動作競技"
+    },
+    {
       "rank": 85,
       "app_id": "1443446174",
       "app_name": "魔法琴键3",
@@ -954,6 +1885,17 @@
       "developer": "Amanotes Pte. Ltd.",
       "genre": "休闲",
       "delta": -6,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
+      "rank": 85,
+      "app_id": "com.ig.skewer.jam.food.sort",
+      "app_name": "Skewer Jam: Food Sort",
+      "app_name_zh": "Skewer Jam: Food Sort",
+      "developer": "iKame Games - Zego Studio",
+      "genre": "益智",
+      "delta": -47,
       "alert": false,
       "ai_type": "休閒益智"
     },
@@ -969,6 +1911,17 @@
       "ai_type": "社交賭場"
     },
     {
+      "rank": 86,
+      "app_id": "com.fanimax.cyberparkour",
+      "app_name": "Cyber Parkour 電馭跑酷",
+      "app_name_zh": "Cyber Parkour 電馭跑酷",
+      "developer": "FANIMAX",
+      "genre": "竞速",
+      "delta": 52,
+      "alert": false,
+      "ai_type": "動作競技"
+    },
+    {
       "rank": 87,
       "app_id": "6752996310",
       "app_name": "異能獵人",
@@ -978,6 +1931,17 @@
       "delta": 0,
       "alert": false,
       "ai_type": "動作競技"
+    },
+    {
+      "rank": 87,
+      "app_id": "com.igs.mjstar31",
+      "app_name": "麻將 明星3缺1麻將",
+      "app_name_zh": "麻將 明星3缺1麻將",
+      "developer": "International Games System Co., Ltd.",
+      "genre": "赌场",
+      "delta": -22,
+      "alert": false,
+      "ai_type": "社交賭場"
     },
     {
       "rank": 88,
@@ -991,6 +1955,17 @@
       "ai_type": "策略對戰"
     },
     {
+      "rank": 88,
+      "app_id": "io.voodoo.holeio",
+      "app_name": "Hole.io",
+      "app_name_zh": "Hole.io",
+      "developer": "VOODOO",
+      "genre": "街机",
+      "delta": -35,
+      "alert": false,
+      "ai_type": "動作競技"
+    },
+    {
       "rank": 89,
       "app_id": "6744547461",
       "app_name": "Happy Screw Trip 3D",
@@ -1000,6 +1975,17 @@
       "delta": -21,
       "alert": false,
       "ai_type": "休閒益智"
+    },
+    {
+      "rank": 89,
+      "app_id": "com.cliffs.pro.cell.building.crazy.clever.craft",
+      "app_name": "Block Crazy Robo World Craft",
+      "app_name_zh": "Block Crazy Robo World Craft",
+      "developer": "Prokids Studio",
+      "genre": "模拟",
+      "delta": 61,
+      "alert": false,
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 90,
@@ -1013,6 +1999,17 @@
       "ai_type": "角色扮演"
     },
     {
+      "rank": 90,
+      "app_id": "com.igs.starparty.aos",
+      "app_name": "玩星派對",
+      "app_name_zh": "玩星派對",
+      "developer": "International Games System Co., Ltd.",
+      "genre": "休闲",
+      "delta": 57,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 91,
       "app_id": "1015322991",
       "app_name": "Rummikub",
@@ -1020,6 +2017,17 @@
       "developer": "Kinkajoo Ltd",
       "genre": "桌面",
       "delta": -13,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
+      "rank": 91,
+      "app_id": "com.pronetis.ironball2",
+      "app_name": "Going Balls",
+      "app_name_zh": "Going Balls",
+      "developer": "Supersonic Studios LTD",
+      "genre": "休闲",
+      "delta": -57,
       "alert": false,
       "ai_type": "休閒益智"
     },
@@ -1035,6 +2043,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 92,
+      "app_id": "connect.word.association.sort.puzzle.games",
+      "app_name": "關聯詞分類謎題",
+      "app_name_zh": "關聯詞分類謎題",
+      "developer": "BitEpoch",
+      "genre": "文字",
+      "delta": 2,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 93,
       "app_id": "6742088839",
       "app_name": "怪獸 8號 THE GAME",
@@ -1042,6 +2061,17 @@
       "developer": "Akatsuki Games Inc.",
       "genre": "冒险",
       "delta": -21,
+      "alert": false,
+      "ai_type": "角色扮演"
+    },
+    {
+      "rank": 93,
+      "app_id": "com.dmpslg.hmukong",
+      "app_name": "全明星對決",
+      "app_name_zh": "全明星對決",
+      "developer": "Raiesi Sadegh",
+      "genre": "角色扮演",
+      "delta": -15,
       "alert": false,
       "ai_type": "角色扮演"
     },
@@ -1057,6 +2087,17 @@
       "ai_type": "動作競技"
     },
     {
+      "rank": 94,
+      "app_id": "com.hermes.mk.asia",
+      "app_name": "世界計畫 繽紛舞台！feat. 初音未來",
+      "app_name_zh": "世界計畫 繽紛舞台！feat. 初音未來",
+      "developer": "Nuverse",
+      "genre": "音乐",
+      "delta": -32,
+      "alert": false,
+      "ai_type": "其他"
+    },
+    {
       "rank": 95,
       "app_id": "1195621598",
       "app_name": "夢幻家園 (Homescapes)",
@@ -1064,6 +2105,17 @@
       "developer": "Playrix",
       "genre": "益智解谜",
       "delta": 34,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
+      "rank": 95,
+      "app_id": "io.voodoo.paper2",
+      "app_name": "Paper.io 2",
+      "app_name_zh": "Paper.io 2",
+      "developer": "VOODOO",
+      "genre": "街机",
+      "delta": -16,
       "alert": false,
       "ai_type": "休閒益智"
     },
@@ -1079,6 +2131,17 @@
       "ai_type": "策略對戰"
     },
     {
+      "rank": 96,
+      "app_id": "com.sunsetgames.copcarscan",
+      "app_name": "交通警察 3D",
+      "app_name_zh": "交通警察 3D",
+      "developer": "Kwalee Ltd",
+      "genre": "休闲",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 97,
       "app_id": "6739828673",
       "app_name": "小兵來支援！",
@@ -1088,6 +2151,17 @@
       "delta": -22,
       "alert": false,
       "ai_type": "休閒益智"
+    },
+    {
+      "rank": 97,
+      "app_id": "com.v20.gptw",
+      "app_name": "邪門鬼道",
+      "app_name_zh": "邪門鬼道",
+      "developer": "SPGFun",
+      "genre": "角色扮演",
+      "delta": -17,
+      "alert": false,
+      "ai_type": "角色扮演"
     },
     {
       "rank": 98,
@@ -1101,6 +2175,17 @@
       "ai_type": "動作競技"
     },
     {
+      "rank": 98,
+      "app_id": "com.tfv.block.line.fill.puzzle",
+      "app_name": "Single Line Block Fill Puzzle",
+      "app_name_zh": "Single Line Block Fill Puzzle",
+      "developer": "The Fashion Valley",
+      "genre": "益智",
+      "delta": -38,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 99,
       "app_id": "6450006659",
       "app_name": "巔峰極速",
@@ -1108,6 +2193,17 @@
       "developer": "LongE Corporation",
       "genre": "体育",
       "delta": 14,
+      "alert": false,
+      "ai_type": "動作競技"
+    },
+    {
+      "rank": 99,
+      "app_id": "com.miniclip.eightballpool",
+      "app_name": "8 Ball Pool",
+      "app_name_zh": "8 Ball Pool",
+      "developer": "Miniclip.com",
+      "genre": "体育",
+      "delta": 0,
       "alert": false,
       "ai_type": "動作競技"
     },
@@ -1123,6 +2219,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 100,
+      "app_id": "com.fc.p.bb.ice.cream.perfect.mukbang.asmr.diy",
+      "app_name": "Ice Cream Perfect: Mukbang DIY",
+      "app_name_zh": "Ice Cream Perfect: Mukbang DIY",
+      "developer": "Think Different FC.",
+      "genre": "模拟",
+      "delta": 22,
+      "alert": false,
+      "ai_type": "模擬沙盒"
+    },
+    {
       "rank": 101,
       "app_id": "6480174499",
       "app_name": "TDS - Tower Destiny Survive",
@@ -1130,6 +2237,17 @@
       "developer": "SayGames LTD",
       "genre": "休闲",
       "delta": 13,
+      "alert": false,
+      "ai_type": "策略對戰"
+    },
+    {
+      "rank": 101,
+      "app_id": "idle.cooking.defense.high",
+      "app_name": "魔物美食塔防",
+      "app_name_zh": "魔物美食塔防",
+      "developer": "HIGHSCORE GAMES",
+      "genre": "休闲",
+      "delta": 16,
       "alert": false,
       "ai_type": "策略對戰"
     },
@@ -1145,6 +2263,17 @@
       "ai_type": "策略對戰"
     },
     {
+      "rank": 102,
+      "app_id": "com.slsmsecond.tw.and",
+      "app_name": "遺跡的地平線",
+      "app_name_zh": "遺跡的地平線",
+      "developer": "Rhinos",
+      "genre": "角色扮演",
+      "delta": 37,
+      "alert": false,
+      "ai_type": "角色扮演"
+    },
+    {
       "rank": 103,
       "app_id": "6749265128",
       "app_name": "發呆救世界",
@@ -1154,6 +2283,17 @@
       "delta": 0,
       "alert": false,
       "ai_type": "角色扮演"
+    },
+    {
+      "rank": 103,
+      "app_id": "com.linecorp.LGSNPTW",
+      "app_name": "LINE 數獨達人",
+      "app_name_zh": "LINE 數獨達人",
+      "developer": "LINE (LY Corporation)",
+      "genre": "街机",
+      "delta": -35,
+      "alert": false,
+      "ai_type": "休閒益智"
     },
     {
       "rank": 104,
@@ -1167,6 +2307,17 @@
       "ai_type": "其他"
     },
     {
+      "rank": 104,
+      "app_id": "com.higame.par.idol.prank.video.call.chat.phone.fun",
+      "app_name": "Idol Prank Video Call & Chat",
+      "app_name_zh": "Idol Prank Video Call & Chat",
+      "developer": "FG Game Studios",
+      "genre": "休闲",
+      "delta": -1,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 105,
       "app_id": "1465688043",
       "app_name": "決勝時刻: Mobile - Garena",
@@ -1176,6 +2327,17 @@
       "delta": 11,
       "alert": false,
       "ai_type": "動作競技"
+    },
+    {
+      "rank": 105,
+      "app_id": "com.wood.bolt.wordle.screw.nuts.puzzle",
+      "app_name": "Woodle Screw Jam: 螺帽與螺栓",
+      "app_name_zh": "Woodle Screw Jam: 螺帽與螺栓",
+      "developer": "LifePulse Puzzle Game Studio",
+      "genre": "益智",
+      "delta": 41,
+      "alert": false,
+      "ai_type": "休閒益智"
     },
     {
       "rank": 106,
@@ -1189,6 +2351,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 106,
+      "app_id": "com.kiwigames.happycitizen.gp",
+      "app_name": "幸福都市 - 市長模擬器",
+      "app_name_zh": "幸福都市 - 市長模擬器",
+      "developer": "LifeSim",
+      "genre": "模拟",
+      "delta": -36,
+      "alert": false,
+      "ai_type": "模擬沙盒"
+    },
+    {
       "rank": 107,
       "app_id": "6453700466",
       "app_name": "魚吃魚：生存與進化-Fish Eat Fish.io",
@@ -1198,6 +2371,17 @@
       "delta": 24,
       "alert": false,
       "ai_type": "休閒益智"
+    },
+    {
+      "rank": 107,
+      "app_id": "com.love.idol.dressup.doll.makeover.avatar.makeup.games",
+      "app_name": "Love Idol - 愛豆化妝・換裝遊戲",
+      "app_name_zh": "Love Idol - 愛豆化妝・換裝遊戲",
+      "developer": "Joy GAMES",
+      "genre": "模拟",
+      "delta": 25,
+      "alert": false,
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 108,
@@ -1211,6 +2395,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 108,
+      "app_id": "com.gtsy.annoying.punch.game",
+      "app_name": "Annoying Uncle - 拳擊遊戲",
+      "app_name_zh": "Annoying Uncle - 拳擊遊戲",
+      "developer": "GOOD TO SEE YOU",
+      "genre": "模拟",
+      "delta": -25,
+      "alert": false,
+      "ai_type": "模擬沙盒"
+    },
+    {
       "rank": 109,
       "app_id": "6746141921",
       "app_name": "伊瑟",
@@ -1220,6 +2415,17 @@
       "delta": -51,
       "alert": false,
       "ai_type": "角色扮演"
+    },
+    {
+      "rank": 109,
+      "app_id": "com.igs.TMD",
+      "app_name": "滿貫大亨 - 快打旋風登場",
+      "app_name_zh": "滿貫大亨 - 快打旋風登場",
+      "developer": "SHIZI TECH LTD CO.",
+      "genre": "赌场",
+      "delta": 2,
+      "alert": false,
+      "ai_type": "社交賭場"
     },
     {
       "rank": 110,
@@ -1233,6 +2439,17 @@
       "ai_type": "動作競技"
     },
     {
+      "rank": 110,
+      "app_id": "com.sanguosp.twgp",
+      "app_name": "侍寢三國志",
+      "app_name_zh": "侍寢三國志",
+      "developer": "SP-Game",
+      "genre": "卡牌",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "策略對戰"
+    },
+    {
       "rank": 111,
       "app_id": "1644103900",
       "app_name": "超能世界",
@@ -1242,6 +2459,17 @@
       "delta": 0,
       "alert": false,
       "ai_type": "休閒益智"
+    },
+    {
+      "rank": 111,
+      "app_id": "com.mr.car.offroad.driving",
+      "app_name": "Mr. Car",
+      "app_name_zh": "Mr. Car",
+      "developer": "Garumgolkum Tolakumgat",
+      "genre": "竞速",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "動作競技"
     },
     {
       "rank": 112,
@@ -1255,6 +2483,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 112,
+      "app_id": "com.jdgames.p20n.googleplay",
+      "app_name": "戰國布武：朕的江山戰國篇",
+      "app_name_zh": "戰國布武：朕的江山戰國篇",
+      "developer": "BEKKO GAMES",
+      "genre": "策略",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "策略對戰"
+    },
+    {
       "rank": 113,
       "app_id": "6503284107",
       "app_name": "All in Hole: Black Hole Games",
@@ -1266,6 +2505,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 113,
+      "app_id": "com.garena.game.codm",
+      "app_name": "決勝時刻®: Mobile - Garena",
+      "app_name_zh": "決勝時刻®: Mobile - Garena",
+      "developer": "Garena Mobile Private",
+      "genre": "动作",
+      "delta": 5,
+      "alert": false,
+      "ai_type": "動作競技"
+    },
+    {
       "rank": 114,
       "app_id": "6738771575",
       "app_name": "3D螺絲大師：螺絲消消樂遊戲",
@@ -1273,6 +2523,17 @@
       "developer": "静 杜",
       "genre": "休闲",
       "delta": -4,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
+      "rank": 114,
+      "app_id": "com.sh.fidget.toys.mini.relaxing.antistress.games",
+      "app_name": "迷你放鬆遊戲 - pop it",
+      "app_name_zh": "迷你放鬆遊戲 - pop it",
+      "developer": "stick hunter",
+      "genre": "休闲",
+      "delta": -26,
       "alert": false,
       "ai_type": "休閒益智"
     },
@@ -1288,6 +2549,17 @@
       "ai_type": "模擬沙盒"
     },
     {
+      "rank": 115,
+      "app_id": "com.zyzt.kjpfl",
+      "app_name": "开局破防了",
+      "app_name_zh": "开局破防了",
+      "developer": "ZhongYouZhiTou",
+      "genre": "模拟",
+      "delta": 30,
+      "alert": false,
+      "ai_type": "模擬沙盒"
+    },
+    {
       "rank": 116,
       "app_id": "1635530810",
       "app_name": "侍寢三國志",
@@ -1297,6 +2569,17 @@
       "delta": 67,
       "alert": false,
       "ai_type": "角色扮演"
+    },
+    {
+      "rank": 116,
+      "app_id": "word.games.puzzle.offline.games",
+      "app_name": "成語填填看 - 單字測驗、單字和文字遊戲、大腦訓練和現實遊戲",
+      "app_name_zh": "成語填填看 - 單字測驗、單字和文字遊戲、大腦訓練和現實遊戲",
+      "developer": "Astrasen Play",
+      "genre": "文字",
+      "delta": -3,
+      "alert": false,
+      "ai_type": "休閒益智"
     },
     {
       "rank": 117,
@@ -1310,6 +2593,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 117,
+      "app_id": "io.supercent.pizzaidle",
+      "app_name": "Pizza Ready",
+      "app_name_zh": "Pizza Ready",
+      "developer": "Supercent, Inc.",
+      "genre": "模拟",
+      "delta": 20,
+      "alert": false,
+      "ai_type": "模擬沙盒"
+    },
+    {
       "rank": 118,
       "app_id": "6748728877",
       "app_name": "Sand Crush",
@@ -1319,6 +2613,17 @@
       "delta": 23,
       "alert": false,
       "ai_type": "休閒益智"
+    },
+    {
+      "rank": 118,
+      "app_id": "com.godgame.mj.android",
+      "app_name": "麻將 神來也麻將－台灣16張、麻雀",
+      "app_name_zh": "麻將 神來也麻將－台灣16張、麻雀",
+      "developer": "Gamesofa Inc.",
+      "genre": "赌场",
+      "delta": -14,
+      "alert": false,
+      "ai_type": "社交賭場"
     },
     {
       "rank": 119,
@@ -1332,6 +2637,17 @@
       "ai_type": "模擬沙盒"
     },
     {
+      "rank": 119,
+      "app_id": "find.difference.spot.differences.hidden.puzzle.games.free",
+      "app_name": "找不同 - 發現並找出所有不同",
+      "app_name_zh": "找不同 - 發現並找出所有不同",
+      "developer": "Guru Puzzle Game",
+      "genre": "益智",
+      "delta": -4,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 120,
       "app_id": "1105855019",
       "app_name": "夢幻花園 (Gardenscapes)",
@@ -1339,6 +2655,17 @@
       "developer": "Playrix",
       "genre": "益智解谜",
       "delta": 30,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
+      "rank": 120,
+      "app_id": "com.sl.hzxns",
+      "app_name": "汉字小能手",
+      "app_name_zh": "汉字小能手",
+      "developer": "HelloWorldGame",
+      "genre": "文字",
+      "delta": 0,
       "alert": false,
       "ai_type": "休閒益智"
     },
@@ -1354,6 +2681,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 121,
+      "app_id": "com.save.princess.girl.dragon.out.and",
+      "app_name": "營救女孩",
+      "app_name_zh": "營救女孩",
+      "developer": "WONDER GROUP",
+      "genre": "休闲",
+      "delta": -9,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 122,
       "app_id": "6475709488",
       "app_name": "Carnival Tycoon: Coin Games",
@@ -1363,6 +2701,17 @@
       "delta": -51,
       "alert": false,
       "ai_type": "模擬沙盒"
+    },
+    {
+      "rank": 122,
+      "app_id": "com.snake.twgp",
+      "app_name": "瘋狂的蛇姬",
+      "app_name_zh": "瘋狂的蛇姬",
+      "developer": "GAMERVISION NETWORK TECHNOLOGY CO.,LIMITED",
+      "genre": "角色扮演",
+      "delta": -107,
+      "alert": false,
+      "ai_type": "角色扮演"
     },
     {
       "rank": 123,
@@ -1376,6 +2725,17 @@
       "ai_type": "其他"
     },
     {
+      "rank": 123,
+      "app_id": "com.fungames.sniper3d",
+      "app_name": "3D狙擊刺客：槍戰遊戲",
+      "app_name_zh": "3D狙擊刺客：槍戰遊戲",
+      "developer": "Wildlife Studios",
+      "genre": "动作",
+      "delta": -9,
+      "alert": false,
+      "ai_type": "動作競技"
+    },
+    {
       "rank": 124,
       "app_id": "6743486517",
       "app_name": "Ricochet Squad: 多人射擊對戰遊戲",
@@ -1385,6 +2745,17 @@
       "delta": -48,
       "alert": false,
       "ai_type": "動作競技"
+    },
+    {
+      "rank": 124,
+      "app_id": "com.king.candycrushsaga",
+      "app_name": "糖果傳奇",
+      "app_name_zh": "糖果傳奇",
+      "developer": "King",
+      "genre": "休闲",
+      "delta": 3,
+      "alert": false,
+      "ai_type": "休閒益智"
     },
     {
       "rank": 125,
@@ -1398,6 +2769,17 @@
       "ai_type": "角色扮演"
     },
     {
+      "rank": 125,
+      "app_id": "com.whoyaho.tanghulu",
+      "app_name": "糖葫蘆達人－便利店、學校午餐、聖代咖啡館吃播ASMR",
+      "app_name_zh": "糖葫蘆達人－便利店、學校午餐、聖代咖啡館吃播ASMR",
+      "developer": "Whoyaho Corp.",
+      "genre": "模拟",
+      "delta": -20,
+      "alert": false,
+      "ai_type": "模擬沙盒"
+    },
+    {
       "rank": 126,
       "app_id": "6743422594",
       "app_name": "靈魂獵手：離線遊戲",
@@ -1407,6 +2789,17 @@
       "delta": 55,
       "alert": false,
       "ai_type": "角色扮演"
+    },
+    {
+      "rank": 126,
+      "app_id": "com.pd.vehiclemasters",
+      "app_name": "Vehicle Masters",
+      "app_name_zh": "Vehicle Masters",
+      "developer": "SayGames Ltd",
+      "genre": "模拟",
+      "delta": 2,
+      "alert": false,
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 127,
@@ -1420,6 +2813,17 @@
       "ai_type": "模擬沙盒"
     },
     {
+      "rank": 127,
+      "app_id": "com.dreamgames.royalmatch",
+      "app_name": "Royal Match",
+      "app_name_zh": "Royal Match",
+      "developer": "Dream Games, Ltd.",
+      "genre": "益智",
+      "delta": 22,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 128,
       "app_id": "6751493448",
       "app_name": "Hot Pot Sort - 火鍋分類三消遊戲",
@@ -1429,6 +2833,17 @@
       "delta": -24,
       "alert": false,
       "ai_type": "休閒益智"
+    },
+    {
+      "rank": 128,
+      "app_id": "com.netmarble.tskgb",
+      "app_name": "七騎士 Re:BIRTH",
+      "app_name_zh": "七騎士 Re:BIRTH",
+      "developer": "Netmarble",
+      "genre": "角色扮演",
+      "delta": 2,
+      "alert": false,
+      "ai_type": "角色扮演"
     },
     {
       "rank": 129,
@@ -1442,6 +2857,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 129,
+      "app_id": "com.playstrom.hero.tower",
+      "app_name": "TDS - Tower Destiny Survive",
+      "app_name_zh": "TDS - Tower Destiny Survive",
+      "developer": "SayGames Ltd",
+      "genre": "动作",
+      "delta": 41,
+      "alert": false,
+      "ai_type": "策略對戰"
+    },
+    {
       "rank": 130,
       "app_id": "6747369877",
       "app_name": "魔法師之徒",
@@ -1451,6 +2877,17 @@
       "delta": 7,
       "alert": false,
       "ai_type": "角色扮演"
+    },
+    {
+      "rank": 130,
+      "app_id": "com.game.thatsmyseat",
+      "app_name": "别抢我的座 - 我是大侦探",
+      "app_name_zh": "别抢我的座 - 我是大侦探",
+      "developer": "Rooftop Game",
+      "genre": "益智",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "休閒益智"
     },
     {
       "rank": 131,
@@ -1464,6 +2901,17 @@
       "ai_type": "模擬沙盒"
     },
     {
+      "rank": 131,
+      "app_id": "com.nianticlabs.pikmin",
+      "app_name": "Pikmin Bloom",
+      "app_name_zh": "Pikmin Bloom",
+      "developer": "Niantic, Inc.",
+      "genre": "冒险",
+      "delta": -21,
+      "alert": false,
+      "ai_type": "其他"
+    },
+    {
       "rank": 132,
       "app_id": "6711333809",
       "app_name": "客滿啦! 我的幸福旅店",
@@ -1473,6 +2921,17 @@
       "delta": 39,
       "alert": false,
       "ai_type": "模擬沙盒"
+    },
+    {
+      "rank": 132,
+      "app_id": "com.tgc.sky.android",
+      "app_name": "Sky光·遇",
+      "app_name_zh": "Sky光·遇",
+      "developer": "thatgamecompany inc",
+      "genre": "角色扮演",
+      "delta": 58,
+      "alert": false,
+      "ai_type": "角色扮演"
     },
     {
       "rank": 133,
@@ -1486,6 +2945,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 133,
+      "app_id": "com.egtaz.marketstore",
+      "app_name": "海盜團很忙：Team RPG",
+      "app_name_zh": "海盜團很忙：Team RPG",
+      "developer": "InnoColor E-Tech",
+      "genre": "冒险",
+      "delta": 63,
+      "alert": false,
+      "ai_type": "角色扮演"
+    },
+    {
       "rank": 134,
       "app_id": "1618888667",
       "app_name": "我要當房東",
@@ -1497,6 +2967,17 @@
       "ai_type": "模擬沙盒"
     },
     {
+      "rank": 134,
+      "app_id": "tw.twhawk.reversedfront",
+      "app_name": "逆統戰：烽火",
+      "app_name_zh": "逆統戰：烽火",
+      "developer": "ESC Taiwan",
+      "genre": "策略",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "策略對戰"
+    },
+    {
       "rank": 135,
       "app_id": "6468690398",
       "app_name": "Disney Magic Match 3D",
@@ -1504,6 +2985,17 @@
       "developer": "Jam City, Inc.",
       "genre": "益智解谜",
       "delta": -93,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
+      "rank": 135,
+      "app_id": "com.bigcake.android.mahjongmatch",
+      "app_name": "每日麻將配對",
+      "app_name_zh": "每日麻將配對",
+      "developer": "Big Cake",
+      "genre": "桌面和棋类",
+      "delta": 53,
       "alert": false,
       "ai_type": "休閒益智"
     },
@@ -1519,6 +3011,17 @@
       "ai_type": "模擬沙盒"
     },
     {
+      "rank": 136,
+      "app_id": "com.goodjobgames.matchvillains",
+      "app_name": "Match Villains",
+      "app_name_zh": "Match Villains",
+      "developer": "Good Job Games",
+      "genre": "益智",
+      "delta": 38,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 137,
       "app_id": "1402384531",
       "app_name": "天天玩樂園：我的農場",
@@ -1528,6 +3031,17 @@
       "delta": 41,
       "alert": false,
       "ai_type": "模擬沙盒"
+    },
+    {
+      "rank": 137,
+      "app_id": "com.abi.busjam.sortpuzzle",
+      "app_name": "巴士逃生 - 交通堵塞",
+      "app_name_zh": "巴士逃生 - 交通堵塞",
+      "developer": "ABI GAME",
+      "genre": "益智",
+      "delta": 46,
+      "alert": false,
+      "ai_type": "休閒益智"
     },
     {
       "rank": 138,
@@ -1541,6 +3055,17 @@
       "ai_type": "角色扮演"
     },
     {
+      "rank": 138,
+      "app_id": "com.racing.realcar.simulator3d",
+      "app_name": "Car Racing:Drive Simulator 3D",
+      "app_name_zh": "Car Racing:Drive Simulator 3D",
+      "developer": "Club Team Caliente Mx Sports e Casino",
+      "genre": "竞速",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "動作競技"
+    },
+    {
       "rank": 139,
       "app_id": "1465731199",
       "app_name": "2 Player Games : Offline Games",
@@ -1552,6 +3077,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 139,
+      "app_id": "com.global.sgdbztw",
+      "app_name": "時光大爆炸",
+      "app_name_zh": "時光大爆炸",
+      "developer": "頑星遊戲",
+      "genre": "模拟",
+      "delta": -10,
+      "alert": false,
+      "ai_type": "模擬沙盒"
+    },
+    {
       "rank": 140,
       "app_id": "6714470154",
       "app_name": "拼拼世界",
@@ -1559,6 +3095,17 @@
       "developer": "Minimax PTE LTD",
       "genre": "休闲",
       "delta": -103,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
+      "rank": 140,
+      "app_id": "puzzle.merge.maid.cafe",
+      "app_name": "合併女僕咖啡廳－異世界物語",
+      "app_name_zh": "合併女僕咖啡廳－異世界物語",
+      "developer": "HIGHSCORE GAMES",
+      "genre": "益智",
+      "delta": 0,
       "alert": false,
       "ai_type": "休閒益智"
     },
@@ -1574,6 +3121,17 @@
       "ai_type": "角色扮演"
     },
     {
+      "rank": 141,
+      "app_id": "com.cat.hole.puzzle.aos",
+      "app_name": "Drop the Cat!",
+      "app_name_zh": "Drop the Cat!",
+      "developer": "ACTIONFIT",
+      "genre": "休闲",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 142,
       "app_id": "6503113088",
       "app_name": "新武俠大明星-功夫打猛鬼",
@@ -1581,6 +3139,17 @@
       "developer": "CloudOcean Star",
       "genre": "休闲",
       "delta": 0,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
+      "rank": 142,
+      "app_id": "com.skewertime.sort.match",
+      "app_name": "串燒時光",
+      "app_name_zh": "串燒時光",
+      "developer": "Ehsan Khaled",
+      "genre": "益智",
+      "delta": 10,
       "alert": false,
       "ai_type": "休閒益智"
     },
@@ -1596,6 +3165,17 @@
       "ai_type": "社交賭場"
     },
     {
+      "rank": 143,
+      "app_id": "com.mover.twjxsj",
+      "app_name": "新劍俠世界3：2025福利版",
+      "app_name_zh": "新劍俠世界3：2025福利版",
+      "developer": "Mover Games Limited",
+      "genre": "角色扮演",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "角色扮演"
+    },
+    {
       "rank": 144,
       "app_id": "6469999573",
       "app_name": "全明星街球派對",
@@ -1605,6 +3185,17 @@
       "delta": 0,
       "alert": false,
       "ai_type": "動作競技"
+    },
+    {
+      "rank": 144,
+      "app_id": "com.teco.magicduel",
+      "app_name": "魔法師之徒",
+      "app_name_zh": "魔法師之徒",
+      "developer": "Tecozone Limited",
+      "genre": "角色扮演",
+      "delta": -59,
+      "alert": false,
+      "ai_type": "角色扮演"
     },
     {
       "rank": 145,
@@ -1618,6 +3209,17 @@
       "ai_type": "動作競技"
     },
     {
+      "rank": 145,
+      "app_id": "com.DigiJello.EidolonsCross",
+      "app_name": "幻牌交鋒",
+      "app_name_zh": "幻牌交鋒",
+      "developer": "DIGI JELLO LTD.",
+      "genre": "策略",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "策略對戰"
+    },
+    {
       "rank": 146,
       "app_id": "1643509748",
       "app_name": "摩奇料理 主題餐廳",
@@ -1625,6 +3227,17 @@
       "developer": "Happibits",
       "genre": "模拟",
       "delta": 0,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
+      "rank": 146,
+      "app_id": "com.gamincat.jigsolitaire",
+      "app_name": "拼圖接龍",
+      "app_name_zh": "拼圖接龍",
+      "developer": "Gamincat",
+      "genre": "益智",
+      "delta": 48,
       "alert": false,
       "ai_type": "休閒益智"
     },
@@ -1640,6 +3253,17 @@
       "ai_type": "動作競技"
     },
     {
+      "rank": 147,
+      "app_id": "com.syubestgames.teachersimulator",
+      "app_name": "我是班導",
+      "app_name_zh": "我是班導",
+      "developer": "Kwalee Ltd",
+      "genre": "模拟",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "模擬沙盒"
+    },
+    {
       "rank": 148,
       "app_id": "911121200",
       "app_name": "可口的披薩，美味的披薩！",
@@ -1649,6 +3273,17 @@
       "delta": 0,
       "alert": false,
       "ai_type": "休閒益智"
+    },
+    {
+      "rank": 148,
+      "app_id": "game.xin.hd.g",
+      "app_name": "星城Online-普發一萬現領現玩",
+      "app_name_zh": "星城Online-普發一萬現領現玩",
+      "developer": "網銀國際 股份有限 公司",
+      "genre": "赌场",
+      "delta": 15,
+      "alert": false,
+      "ai_type": "社交賭場"
     },
     {
       "rank": 149,
@@ -1662,6 +3297,17 @@
       "ai_type": "模擬沙盒"
     },
     {
+      "rank": 149,
+      "app_id": "com.funfinity.knitzy.thread",
+      "app_name": "Color Knitzy",
+      "app_name_zh": "Color Knitzy",
+      "developer": "FUNFINITY HK",
+      "genre": "益智",
+      "delta": 19,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 150,
       "app_id": "6505095234",
       "app_name": "Car Jam - 公車逃脫，塞車遊戲",
@@ -1671,6 +3317,17 @@
       "delta": -2,
       "alert": false,
       "ai_type": "休閒益智"
+    },
+    {
+      "rank": 150,
+      "app_id": "com.bandainamcoent.gget_WW",
+      "app_name": "SD鋼彈 G世代 永恆",
+      "app_name_zh": "SD鋼彈 G世代 永恆",
+      "developer": "Bandai Namco Entertainment Inc.",
+      "genre": "模拟",
+      "delta": -27,
+      "alert": false,
+      "ai_type": "策略對戰"
     },
     {
       "rank": 151,
@@ -1684,6 +3341,17 @@
       "ai_type": "模擬沙盒"
     },
     {
+      "rank": 151,
+      "app_id": "com.scopely.monopolygo",
+      "app_name": "MONOPOLY GO!",
+      "app_name_zh": "MONOPOLY GO!",
+      "developer": "Scopely",
+      "genre": "桌面和棋类",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "社交賭場"
+    },
+    {
       "rank": 152,
       "app_id": "6445880165",
       "app_name": "暗影英雄：突襲",
@@ -1693,6 +3361,17 @@
       "delta": 0,
       "alert": false,
       "ai_type": "策略對戰"
+    },
+    {
+      "rank": 152,
+      "app_id": "com.newtv.mantis",
+      "app_name": "極品螳螂",
+      "app_name_zh": "極品螳螂",
+      "developer": "Future TV Co. Ltd",
+      "genre": "模拟",
+      "delta": 6,
+      "alert": false,
+      "ai_type": "模擬沙盒"
     },
     {
       "rank": 153,
@@ -1706,6 +3385,17 @@
       "ai_type": "其他"
     },
     {
+      "rank": 153,
+      "app_id": "com.uc.minigame.relax",
+      "app_name": "Mini Games: Calm & Relax",
+      "app_name_zh": "Mini Games: Calm & Relax",
+      "developer": "Unicorn Studio Official",
+      "genre": "休闲",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 154,
       "app_id": "6450706268",
       "app_name": "電鋸果汁大亂鬥",
@@ -1715,6 +3405,17 @@
       "delta": -12,
       "alert": false,
       "ai_type": "模擬沙盒"
+    },
+    {
+      "rank": 154,
+      "app_id": "com.neowizgames.game.browndust2",
+      "app_name": "棕色塵埃2- 冒汗心跳的RPG",
+      "app_name_zh": "棕色塵埃2- 冒汗心跳的RPG",
+      "developer": "NEOWIZ",
+      "genre": "角色扮演",
+      "delta": -12,
+      "alert": false,
+      "ai_type": "角色扮演"
     },
     {
       "rank": 155,
@@ -1728,6 +3429,17 @@
       "ai_type": "模擬沙盒"
     },
     {
+      "rank": 155,
+      "app_id": "com.sl.tbpp",
+      "app_name": "Tricky Brain: Prank Puzzles",
+      "app_name_zh": "Tricky Brain: Prank Puzzles",
+      "developer": "HelloWorldGame",
+      "genre": "休闲",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 156,
       "app_id": "1577970257",
       "app_name": "Merge Hotel Empire－Design Game",
@@ -1739,6 +3451,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 156,
+      "app_id": "tiles.song.game.piano.surf",
+      "app_name": "Kpop Tiles: Piano Rhythm Game",
+      "app_name_zh": "Kpop Tiles: Piano Rhythm Game",
+      "developer": "Rhythm Hero: Good Music Games",
+      "genre": "音乐",
+      "delta": -57,
+      "alert": false,
+      "ai_type": "其他"
+    },
+    {
       "rank": 157,
       "app_id": "1176027022",
       "app_name": "Toon Blast",
@@ -1746,6 +3469,17 @@
       "developer": "Peak Games",
       "genre": "休闲",
       "delta": -49,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
+      "rank": 157,
+      "app_id": "com.FishEatFish.FeedGrow",
+      "app_name": "魚吃魚：成長与進化！-Fish Eat Fish.io",
+      "app_name_zh": "魚吃魚：成長与進化！-Fish Eat Fish.io",
+      "developer": "MOBIBRAIN TECHNOLOGY PTE. LTD.",
+      "genre": "休闲",
+      "delta": -41,
       "alert": false,
       "ai_type": "休閒益智"
     },
@@ -1761,6 +3495,17 @@
       "ai_type": "模擬沙盒"
     },
     {
+      "rank": 158,
+      "app_id": "com.nebula.mahjongtile",
+      "app_name": "Mahjong Wonders™",
+      "app_name_zh": "Mahjong Wonders™",
+      "developer": "Nebula  Studio",
+      "genre": "益智",
+      "delta": -25,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 159,
       "app_id": "6747998558",
       "app_name": "Water Out Puzzle",
@@ -1768,6 +3513,17 @@
       "developer": "HM Games Pty Ltd",
       "genre": "休闲",
       "delta": -52,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
+      "rank": 159,
+      "app_id": "com.actgames.HelloKittyMDS",
+      "app_name": "Hello Kitty My Dream Store",
+      "app_name_zh": "Hello Kitty My Dream Store",
+      "developer": "ACTGames Co., Ltd.",
+      "genre": "益智",
+      "delta": -11,
       "alert": false,
       "ai_type": "休閒益智"
     },
@@ -1783,6 +3539,17 @@
       "ai_type": "角色扮演"
     },
     {
+      "rank": 160,
+      "app_id": "com.JindoBlu.OfflineGames",
+      "app_name": "Offline Games - No Wifi Games",
+      "app_name_zh": "Offline Games - No Wifi Games",
+      "developer": "JindoBlu",
+      "genre": "休闲",
+      "delta": 15,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 161,
       "app_id": "6746253182",
       "app_name": "Oops! Croco",
@@ -1790,6 +3557,17 @@
       "developer": "Touka Technology Limited",
       "genre": "休闲",
       "delta": 0,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
+      "rank": 161,
+      "app_id": "com.agedstudio.word.puzzle.chengyucaicai",
+      "app_name": "成語猜猜",
+      "app_name_zh": "成語猜猜",
+      "developer": "Aged Studio Limited",
+      "genre": "文字",
+      "delta": -86,
       "alert": false,
       "ai_type": "休閒益智"
     },
@@ -1805,6 +3583,17 @@
       "ai_type": "角色扮演"
     },
     {
+      "rank": 162,
+      "app_id": "com.Garawell.BridgeRace",
+      "app_name": "Bridge Race",
+      "app_name_zh": "Bridge Race",
+      "developer": "Supersonic Studios LTD",
+      "genre": "休闲",
+      "delta": -22,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 163,
       "app_id": "1501301571",
       "app_name": "TFT: 聯盟戰棋",
@@ -1812,6 +3601,17 @@
       "developer": "Taiwan Mobile Co., Ltd.",
       "genre": "动作",
       "delta": -25,
+      "alert": false,
+      "ai_type": "策略對戰"
+    },
+    {
+      "rank": 163,
+      "app_id": "games.vaveda.militaryoverturn",
+      "app_name": "Tower War - Tactical Conquest",
+      "app_name_zh": "Tower War - Tactical Conquest",
+      "developer": "SayGames Ltd",
+      "genre": "街机",
+      "delta": -37,
       "alert": false,
       "ai_type": "策略對戰"
     },
@@ -1827,6 +3627,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 164,
+      "app_id": "com.haunteddorm.mihuan",
+      "app_name": "Haunted Dorm - 猛鬼宿舍",
+      "app_name_zh": "Haunted Dorm - 猛鬼宿舍",
+      "developer": "Mihuan Limited",
+      "genre": "策略",
+      "delta": -45,
+      "alert": false,
+      "ai_type": "策略對戰"
+    },
+    {
       "rank": 165,
       "app_id": "6743834900",
       "app_name": "我的勇者外傳",
@@ -1836,6 +3647,17 @@
       "delta": -105,
       "alert": false,
       "ai_type": "角色扮演"
+    },
+    {
+      "rank": 165,
+      "app_id": "com.wonderfultown.wonderfultown",
+      "app_name": "My little unicorn:girl games",
+      "app_name_zh": "My little unicorn:girl games",
+      "developer": "guihua",
+      "genre": "休闲",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "休閒益智"
     },
     {
       "rank": 166,
@@ -1849,6 +3671,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 166,
+      "app_id": "com.BMGames.GunHero",
+      "app_name": "Gun Hero: Cat Survival Shooter",
+      "app_name_zh": "Gun Hero: Cat Survival Shooter",
+      "developer": "Freeplay Inc",
+      "genre": "动作",
+      "delta": -89,
+      "alert": false,
+      "ai_type": "動作競技"
+    },
+    {
       "rank": 167,
       "app_id": "6547835725",
       "app_name": "Screw Away: 3D Pin Puzzle",
@@ -1856,6 +3689,17 @@
       "developer": "WONDER GROUP HOLDINGS LIMITED",
       "genre": "休闲",
       "delta": 0,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
+      "rank": 167,
+      "app_id": "hotpot.sort.hot.pot.puzzle.match",
+      "app_name": "Hot Pot Sort:Hotpot Match Game",
+      "app_name_zh": "Hot Pot Sort:Hotpot Match Game",
+      "developer": "Wing Soft",
+      "genre": "益智",
+      "delta": -80,
       "alert": false,
       "ai_type": "休閒益智"
     },
@@ -1871,6 +3715,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 168,
+      "app_id": "screw.puzzle.match3.brain.puzz",
+      "app_name": "擰螺絲消除專家 - 擰開螺絲和螺帽的解謎遊戲，好玩的螺栓遊戲",
+      "app_name_zh": "擰螺絲消除專家 - 擰開螺絲和螺帽的解謎遊戲，好玩的螺栓遊戲",
+      "developer": "BitEpoch",
+      "genre": "益智",
+      "delta": -24,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 169,
       "app_id": "6746658019",
       "app_name": "Wool Escape 3D",
@@ -1880,6 +3735,17 @@
       "delta": -86,
       "alert": false,
       "ai_type": "策略對戰"
+    },
+    {
+      "rank": 169,
+      "app_id": "com.get.rbx.counter.videost.rblx.calc",
+      "app_name": "RBX Counters - Get Rbux Calc",
+      "app_name_zh": "RBX Counters - Get Rbux Calc",
+      "developer": "Videos Status Zone",
+      "genre": "冒险",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "角色扮演"
     },
     {
       "rank": 170,
@@ -1893,6 +3759,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 170,
+      "app_id": "com.playakor.clashofcolor",
+      "app_name": "Color Clash",
+      "app_name_zh": "Color Clash",
+      "developer": "VOODOO",
+      "genre": "策略",
+      "delta": -15,
+      "alert": false,
+      "ai_type": "策略對戰"
+    },
+    {
       "rank": 171,
       "app_id": "6749851329",
       "app_name": "星球防衛戰(Planet Defense)",
@@ -1902,6 +3779,17 @@
       "delta": -78,
       "alert": false,
       "ai_type": "策略對戰"
+    },
+    {
+      "rank": 171,
+      "app_id": "com.morefun.dwdtw",
+      "app_name": "大武道 – 暢銷網文授權改編",
+      "app_name_zh": "大武道 – 暢銷網文授權改編",
+      "developer": "Morefun Technology Limited",
+      "genre": "卡牌",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "角色扮演"
     },
     {
       "rank": 172,
@@ -1915,6 +3803,17 @@
       "ai_type": "模擬沙盒"
     },
     {
+      "rank": 172,
+      "app_id": "com.left.right.girl.dressup.game",
+      "app_name": "Style Star: Left Right Fashion",
+      "app_name_zh": "Style Star: Left Right Fashion",
+      "developer": "Getsmart LLC",
+      "genre": "休闲",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 173,
       "app_id": "6745091349",
       "app_name": "Sushi Sort - 壽司料理 分類整理遊戯",
@@ -1922,6 +3821,17 @@
       "developer": "Bitepoch",
       "genre": "益智解谜",
       "delta": 14,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
+      "rank": 173,
+      "app_id": "com.ig.screwdom",
+      "app_name": "Screwdom 3D",
+      "app_name_zh": "Screwdom 3D",
+      "developer": "iKame Games - Zego Studio",
+      "genre": "益智",
+      "delta": 0,
       "alert": false,
       "ai_type": "休閒益智"
     },
@@ -1937,6 +3847,17 @@
       "ai_type": "策略對戰"
     },
     {
+      "rank": 174,
+      "app_id": "com.higame.par.left.and.right.fashion.dressup",
+      "app_name": "Left or Right: Star Girl Style",
+      "app_name_zh": "Left or Right: Star Girl Style",
+      "developer": "JUMBO GAMES Studio",
+      "genre": "休闲",
+      "delta": -17,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 175,
       "app_id": "1300146617",
       "app_name": "Free Fire",
@@ -1946,6 +3867,17 @@
       "delta": 10,
       "alert": false,
       "ai_type": "角色扮演"
+    },
+    {
+      "rank": 175,
+      "app_id": "easy.sudoku.puzzle.solver.free",
+      "app_name": "數獨 - 經典數獨謎題",
+      "app_name_zh": "數獨 - 經典數獨謎題",
+      "developer": "Oakever Games",
+      "genre": "益智",
+      "delta": 12,
+      "alert": false,
+      "ai_type": "休閒益智"
     },
     {
       "rank": 176,
@@ -1959,6 +3891,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 176,
+      "app_id": "com.easygames.race",
+      "app_name": "飛車大師 (Race Master 3D)",
+      "app_name_zh": "飛車大師 (Race Master 3D)",
+      "developer": "Beresnev Games",
+      "genre": "竞速",
+      "delta": -40,
+      "alert": false,
+      "ai_type": "動作競技"
+    },
+    {
       "rank": 177,
       "app_id": "6480390337",
       "app_name": "桃源深處有人家 - 蘿蘿一週年慶典",
@@ -1968,6 +3911,17 @@
       "delta": 0,
       "alert": false,
       "ai_type": "模擬沙盒"
+    },
+    {
+      "rank": 177,
+      "app_id": "jp.co.drecom.wizardry.daphne",
+      "app_name": "Wizardry Variants Daphne",
+      "app_name_zh": "Wizardry Variants Daphne",
+      "developer": "株式会社ドリコム",
+      "genre": "角色扮演",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "角色扮演"
     },
     {
       "rank": 178,
@@ -1981,6 +3935,17 @@
       "ai_type": "動作競技"
     },
     {
+      "rank": 178,
+      "app_id": "com.lqmrm.ccxxkfq",
+      "app_name": "浮嵐聽泉",
+      "app_name_zh": "浮嵐聽泉",
+      "developer": "Dreamcare Developers",
+      "genre": "角色扮演",
+      "delta": -86,
+      "alert": false,
+      "ai_type": "角色扮演"
+    },
+    {
       "rank": 179,
       "app_id": "6449094229",
       "app_name": "Match Factory!",
@@ -1988,6 +3953,17 @@
       "developer": "Peak Games",
       "genre": "益智解谜",
       "delta": -15,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
+      "rank": 179,
+      "app_id": "com.tripledot.blockbash",
+      "app_name": "Woodoku Blast",
+      "app_name_zh": "Woodoku Blast",
+      "developer": "Tripledot Studios Limited",
+      "genre": "益智",
+      "delta": -3,
       "alert": false,
       "ai_type": "休閒益智"
     },
@@ -2003,6 +3979,17 @@
       "ai_type": "角色扮演"
     },
     {
+      "rank": 180,
+      "app_id": "com.kayac.DrawFight",
+      "app_name": "Draw Action: Freestyle Fight",
+      "app_name_zh": "Draw Action: Freestyle Fight",
+      "developer": "KAYAC Inc.",
+      "genre": "动作",
+      "delta": 20,
+      "alert": false,
+      "ai_type": "動作競技"
+    },
+    {
       "rank": 181,
       "app_id": "6753351455",
       "app_name": "Street Motor Rider Racing",
@@ -2014,12 +4001,34 @@
       "ai_type": "動作競技"
     },
     {
+      "rank": 181,
+      "app_id": "com.tapblaze.pizzabusiness",
+      "app_name": "可口的披薩，美味的披薩",
+      "app_name_zh": "可口的披薩，美味的披薩",
+      "developer": "TapBlaze",
+      "genre": "休闲",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 182,
       "app_id": "6747243774",
       "app_name": "萌塔娘",
       "app_name_zh": "萌塔娘",
       "developer": "掘夢網股份有限公司",
       "genre": "游戏",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "角色扮演"
+    },
+    {
+      "rank": 182,
+      "app_id": "com.xh.qjshw.Android",
+      "app_name": "國王駕到！堡堡大作戰",
+      "app_name_zh": "國王駕到！堡堡大作戰",
+      "developer": "CloudOceanStar",
+      "genre": "角色扮演",
       "delta": 0,
       "alert": false,
       "ai_type": "角色扮演"
@@ -2036,6 +4045,17 @@
       "ai_type": "社交賭場"
     },
     {
+      "rank": 183,
+      "app_id": "com.statewill.shzz",
+      "app_name": "三國志Thrones",
+      "app_name_zh": "三國志Thrones",
+      "developer": "LUCKYFUN ENTERTAINMENT NETWORK LIMITED",
+      "genre": "策略",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "策略對戰"
+    },
+    {
       "rank": 184,
       "app_id": "6747218021",
       "app_name": "Cookzii: Cozy Cooking ASMR",
@@ -2047,6 +4067,17 @@
       "ai_type": "模擬沙盒"
     },
     {
+      "rank": 184,
+      "app_id": "com.miHoYo.GenshinImpact",
+      "app_name": "原神·空月之歌",
+      "app_name_zh": "原神·空月之歌",
+      "developer": "COGNOSPHERE PTE. LTD.",
+      "genre": "冒险",
+      "delta": -19,
+      "alert": false,
+      "ai_type": "角色扮演"
+    },
+    {
       "rank": 185,
       "app_id": "1542776143",
       "app_name": "Pocket Champs: PVP 競速遊戲",
@@ -2054,6 +4085,17 @@
       "developer": "MADBOX",
       "genre": "竞速",
       "delta": -10,
+      "alert": false,
+      "ai_type": "動作競技"
+    },
+    {
+      "rank": 185,
+      "app_id": "com.vincentb.MobControl",
+      "app_name": "Mob Control",
+      "app_name_zh": "Mob Control",
+      "developer": "VOODOO",
+      "genre": "街机",
+      "delta": -50,
       "alert": false,
       "ai_type": "動作競技"
     },
@@ -2069,6 +4111,17 @@
       "ai_type": "策略對戰"
     },
     {
+      "rank": 186,
+      "app_id": "com.ddianle.lovedance.tw",
+      "app_name": "熱舞",
+      "app_name_zh": "熱舞",
+      "developer": "点点乐",
+      "genre": "音乐",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "其他"
+    },
+    {
       "rank": 187,
       "app_id": "1467648713",
       "app_name": "Critical Strike CS: 射擊遊戲",
@@ -2080,6 +4133,17 @@
       "ai_type": "動作競技"
     },
     {
+      "rank": 187,
+      "app_id": "com.moe.aylalife",
+      "app_name": "艾拉世界：小鎮生活",
+      "app_name_zh": "艾拉世界：小鎮生活",
+      "developer": "Kitten doll",
+      "genre": "角色扮演",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "角色扮演"
+    },
+    {
       "rank": 188,
       "app_id": "6648791704",
       "app_name": "Drop Away: Color Puzzle",
@@ -2087,6 +4151,17 @@
       "developer": "Rollic Games",
       "genre": "桌面",
       "delta": -8,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
+      "rank": 188,
+      "app_id": "com.hitappsgames.connectwords",
+      "app_name": "Connect Word: Association Game",
+      "app_name_zh": "Connect Word: Association Game",
+      "developer": "Hitapps Games",
+      "genre": "文字",
+      "delta": 0,
       "alert": false,
       "ai_type": "休閒益智"
     },
@@ -2102,6 +4177,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 189,
+      "app_id": "com.ztgame.wzzt.tw",
+      "app_name": "王者征途",
+      "app_name_zh": "王者征途",
+      "developer": "Giant Network",
+      "genre": "角色扮演",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "角色扮演"
+    },
+    {
       "rank": 190,
       "app_id": "1528941310",
       "app_name": "噠噠特攻",
@@ -2111,6 +4197,17 @@
       "delta": 0,
       "alert": false,
       "ai_type": "動作競技"
+    },
+    {
+      "rank": 190,
+      "app_id": "com.galaxy.piano.moonlight",
+      "app_name": "Galaxy Piano: 滾動衝刺",
+      "app_name_zh": "Galaxy Piano: 滾動衝刺",
+      "developer": "Moonlight Studio2025",
+      "genre": "音乐",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "休閒益智"
     },
     {
       "rank": 191,
@@ -2124,11 +4221,33 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 191,
+      "app_id": "com.leisure.tw",
+      "app_name": "我的休閒時光",
+      "app_name_zh": "我的休閒時光",
+      "developer": "YUEYOO GAMES",
+      "genre": "模拟",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "模擬沙盒"
+    },
+    {
       "rank": 192,
       "app_id": "6453025143",
       "app_name": "拍賣大師",
       "app_name_zh": "拍賣大師",
       "developer": "SHENZHEN BRAINPOWER TECHNOLOGY CO.LTD",
+      "genre": "模拟",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "模擬沙盒"
+    },
+    {
+      "rank": 192,
+      "app_id": "com.game.fashion.magic.princess.dressup",
+      "app_name": "Magic Fashion: Doll Dressup",
+      "app_name_zh": "Magic Fashion: Doll Dressup",
+      "developer": "XGame Global",
       "genre": "模拟",
       "delta": 0,
       "alert": false,
@@ -2146,6 +4265,17 @@
       "ai_type": "休閒益智"
     },
     {
+      "rank": 193,
+      "app_id": "com.dts.freefireth",
+      "app_name": "Free Fire",
+      "app_name_zh": "Free Fire",
+      "developer": "Garena International I",
+      "genre": "动作",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "動作競技"
+    },
+    {
       "rank": 194,
       "app_id": "1482155847",
       "app_name": "Royal Match",
@@ -2155,6 +4285,17 @@
       "delta": -89,
       "alert": false,
       "ai_type": "休閒益智"
+    },
+    {
+      "rank": 194,
+      "app_id": "com.greenmushroom.boomblitz.gp",
+      "app_name": "王國之歌（Top Heroes）",
+      "app_name_zh": "王國之歌（Top Heroes）",
+      "developer": "RiverGame",
+      "genre": "策略",
+      "delta": -87,
+      "alert": false,
+      "ai_type": "策略對戰"
     },
     {
       "rank": 195,
@@ -2168,6 +4309,17 @@
       "ai_type": "動作競技"
     },
     {
+      "rank": 195,
+      "app_id": "water.sort.puzzle.game.color.sorting.free",
+      "app_name": "水排序益智解謎遊戲 - 好玩又鍛煉腦力的顏色分類游戲",
+      "app_name_zh": "水排序益智解謎遊戲 - 好玩又鍛煉腦力的顏色分類游戲",
+      "developer": "Guru Puzzle Game",
+      "genre": "益智",
+      "delta": -87,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 196,
       "app_id": "930574573",
       "app_name": "Sniper 3D: Gun Shooting Games",
@@ -2177,6 +4329,17 @@
       "delta": 0,
       "alert": false,
       "ai_type": "動作競技"
+    },
+    {
+      "rank": 196,
+      "app_id": "com.igg.android.lordsmobile",
+      "app_name": "王國紀元 (Lords Mobile)：全面戰爭",
+      "app_name_zh": "王國紀元 (Lords Mobile)：全面戰爭",
+      "developer": "IGG.COM",
+      "genre": "策略",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "策略對戰"
     },
     {
       "rank": 197,
@@ -2190,6 +4353,17 @@
       "ai_type": "角色扮演"
     },
     {
+      "rank": 197,
+      "app_id": "com.survival.tileconnect.jnwq",
+      "app_name": "Survival Tile Connect",
+      "app_name_zh": "Survival Tile Connect",
+      "developer": "Casual Games For Fun",
+      "genre": "益智",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "休閒益智"
+    },
+    {
       "rank": 198,
       "app_id": "6499293571",
       "app_name": "喵喵煉金術師：貓咪合併大亨",
@@ -2199,6 +4373,17 @@
       "delta": -52,
       "alert": false,
       "ai_type": "休閒益智"
+    },
+    {
+      "rank": 198,
+      "app_id": "com.mobile.legends",
+      "app_name": "Mobile Legends: Bang Bang",
+      "app_name_zh": "Mobile Legends: Bang Bang",
+      "developer": "MOONTON",
+      "genre": "动作",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "動作競技"
     },
     {
       "rank": 199,
@@ -2212,6 +4397,17 @@
       "ai_type": "動作競技"
     },
     {
+      "rank": 199,
+      "app_id": "com.miaworld.life.avatar.doll.dressup.design.makeover",
+      "app_name": "Mia World - 迷你童話王國",
+      "app_name_zh": "Mia World - 迷你童話王國",
+      "developer": "31 Dress up Games",
+      "genre": "教育",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "模擬沙盒"
+    },
+    {
       "rank": 200,
       "app_id": "529479190",
       "app_name": "部落衝突 (Clash of Clans)",
@@ -2221,24 +4417,35 @@
       "delta": 0,
       "alert": false,
       "ai_type": "策略對戰"
+    },
+    {
+      "rank": 200,
+      "app_id": "ball.sort.color.puz.game.puzzle",
+      "app_name": "Ball Sort - Color Puz Game",
+      "app_name_zh": "Ball Sort - Color Puz Game",
+      "developer": "Infinite Joy Ltd.",
+      "genre": "益智",
+      "delta": 0,
+      "alert": false,
+      "ai_type": "休閒益智"
     }
   ],
   "type_counts_ai": {
-    "動作競技": 25,
-    "角色扮演": 36,
-    "策略對戰": 21,
-    "休閒益智": 83,
-    "模擬沙盒": 23,
-    "社交賭場": 7,
-    "其他": 5
+    "動作競技": 43,
+    "角色扮演": 74,
+    "休閒益智": 168,
+    "策略對戰": 49,
+    "模擬沙盒": 44,
+    "社交賭場": 13,
+    "其他": 9
   },
   "type_percentages_ai": {
-    "動作競技": 12,
+    "動作競技": 11,
     "角色扮演": 18,
-    "策略對戰": 10,
     "休閒益智": 42,
-    "模擬沙盒": 12,
-    "社交賭場": 4,
+    "策略對戰": 12,
+    "模擬沙盒": 11,
+    "社交賭場": 3,
     "其他": 2
   }
 }

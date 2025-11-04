@@ -4,20 +4,24 @@
   "country": "TW",
   "chart": "top_grossing",
   "type_counts": {
-    "卡牌": 16,
-    "策略": 22,
+    "卡牌": 25,
+    "赌场": 20,
+    "策略": 50,
+    "角色扮演": 125,
     "桌面": 5,
+    "冒险": 30,
     "益智解谜": 12,
-    "冒险": 20,
-    "角色扮演": 48,
-    "休闲": 16,
+    "模拟": 26,
+    "休闲": 33,
+    "益智": 10,
     "娱乐场": 11,
-    "模拟": 17,
-    "动作": 23,
-    "竞速": 1,
-    "体育": 6,
+    "动作": 37,
+    "竞速": 2,
+    "体育": 9,
     "家庭聚会": 2,
-    "游戏": 1
+    "游戏": 1,
+    "桌面和棋类": 1,
+    "音乐": 1
   },
   "rows": [
     {
@@ -32,12 +36,34 @@
       "ai_type": null
     },
     {
+      "rank": 1,
+      "app_id": "game.xin.hd.g",
+      "app_name": "星城Online-普發一萬現領現玩",
+      "app_name_zh": "星城Online-普發一萬現領現玩",
+      "developer": "網銀國際 股份有限 公司",
+      "genre": "赌场",
+      "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 2,
       "app_id": "6443575749",
       "app_name": "寒霜啟示錄",
       "app_name_zh": "寒霜啟示錄",
       "developer": "Century Games Pte. Ltd.",
       "genre": "策略",
+      "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 2,
+      "app_id": "com.gamania.lineagem",
+      "app_name": "天堂M",
+      "app_name_zh": "天堂M",
+      "developer": "Gamania Digital Entertainment Co Ltd",
+      "genre": "角色扮演",
       "delta": 0,
       "alert": false,
       "ai_type": null
@@ -54,11 +80,33 @@
       "ai_type": null
     },
     {
+      "rank": 3,
+      "app_id": "com.ncsoft.lineagew",
+      "app_name": "天堂W",
+      "app_name_zh": "天堂W",
+      "developer": "NCSOFT",
+      "genre": "角色扮演",
+      "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 4,
       "app_id": "6739554056",
       "app_name": "Kingshot",
       "app_name_zh": "Kingshot",
       "developer": "Century Games Pte. Ltd.",
+      "genre": "策略",
+      "delta": 1,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 4,
+      "app_id": "com.gof.global",
+      "app_name": "寒霜啟示錄",
+      "app_name_zh": "寒霜啟示錄",
+      "developer": "Century Games PTE. LTD.",
       "genre": "策略",
       "delta": 1,
       "alert": false,
@@ -76,6 +124,17 @@
       "ai_type": null
     },
     {
+      "rank": 5,
+      "app_id": "com.fun.lastwar.gp",
+      "app_name": "最後的戰爭 - Last War",
+      "app_name_zh": "最後的戰爭 - Last War",
+      "developer": "FUNFLY PTE. LTD.",
+      "genre": "策略",
+      "delta": -1,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 6,
       "app_id": "6670441558",
       "app_name": "Dark War:Survival",
@@ -83,6 +142,17 @@
       "developer": "Florere Game Limited",
       "genre": "卡牌",
       "delta": 6,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 6,
+      "app_id": "com.readygo.barrel.gp",
+      "app_name": "Last Z：Survival Shooter（倖存者逃亡）",
+      "app_name_zh": "Last Z：Survival Shooter（倖存者逃亡）",
+      "developer": "Florere Game",
+      "genre": "策略",
+      "delta": 2,
       "alert": false,
       "ai_type": null
     },
@@ -98,12 +168,34 @@
       "ai_type": null
     },
     {
+      "rank": 7,
+      "app_id": "com.miHoYo.GenshinImpact",
+      "app_name": "原神·空月之歌",
+      "app_name_zh": "原神·空月之歌",
+      "developer": "COGNOSPHERE PTE. LTD.",
+      "genre": "冒险",
+      "delta": 49,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 8,
       "app_id": "6503272652",
       "app_name": "Last Z:Survival Shooter（倖存者逃亡）",
       "app_name_zh": "Last Z:Survival Shooter（倖存者逃亡）",
       "developer": "Florere Game Limited",
       "genre": "卡牌",
+      "delta": -1,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 8,
+      "app_id": "com.run.tower.defense",
+      "app_name": "Kingshot",
+      "app_name_zh": "Kingshot",
+      "developer": "Century Games PTE. LTD.",
+      "genre": "策略",
       "delta": -1,
       "alert": false,
       "ai_type": null
@@ -120,6 +212,17 @@
       "ai_type": null
     },
     {
+      "rank": 9,
+      "app_id": "com.smilegate.chaoszero.stove.google",
+      "app_name": "卡厄思夢境",
+      "app_name_zh": "卡厄思夢境",
+      "developer": "Smilegate Holdings, Inc",
+      "genre": "角色扮演",
+      "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 10,
       "app_id": "553834731",
       "app_name": "糖果傳奇",
@@ -127,6 +230,17 @@
       "developer": "King",
       "genre": "益智解谜",
       "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 10,
+      "app_id": "com.papegames.lysk.tw",
+      "app_name": "戀與深空",
+      "app_name_zh": "戀與深空",
+      "developer": "InFold Pte. Ltd.",
+      "genre": "模拟",
+      "delta": 33,
       "alert": false,
       "ai_type": null
     },
@@ -142,6 +256,17 @@
       "ai_type": null
     },
     {
+      "rank": 11,
+      "app_id": "com.king.candycrushsaga",
+      "app_name": "糖果傳奇",
+      "app_name_zh": "糖果傳奇",
+      "developer": "King",
+      "genre": "休闲",
+      "delta": 1,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 12,
       "app_id": "406889139",
       "app_name": "Coin Master",
@@ -153,12 +278,34 @@
       "ai_type": null
     },
     {
+      "rank": 12,
+      "app_id": "com.m88.idleXX",
+      "app_name": "杖劍傳說：坎斯汀之約",
+      "app_name_zh": "杖劍傳說：坎斯汀之約",
+      "developer": "LTGAMES GLOBAL",
+      "genre": "角色扮演",
+      "delta": -2,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 13,
       "app_id": "1339550728",
       "app_name": "包你發 - 王識賢、安心亞推薦休閒娛樂城",
       "app_name_zh": "包你發 - 王識賢、安心亞推薦休閒娛樂城",
       "developer": "YILE TECHNOLOGY CO., LTD.",
       "genre": "卡牌",
+      "delta": 1,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 13,
+      "app_id": "com.mergegames.gossipharbor",
+      "app_name": "緋聞港口：合併&故事",
+      "app_name_zh": "緋聞港口：合併&故事",
+      "developer": "Microfun Limited",
+      "genre": "益智",
       "delta": 1,
       "alert": false,
       "ai_type": null
@@ -175,6 +322,17 @@
       "ai_type": null
     },
     {
+      "rank": 14,
+      "app_id": "com.mechanist.dream2.aos",
+      "app_name": "盜夢英雄2：幻野",
+      "app_name_zh": "盜夢英雄2：幻野",
+      "developer": "DreamPlus Games",
+      "genre": "角色扮演",
+      "delta": 184,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 15,
       "app_id": "6449517782",
       "app_name": "嚦咕麻將-ATG戰神賽特x女神曾莞婷唯一推薦",
@@ -182,6 +340,17 @@
       "developer": "BOGE NETWORK TECHNOLOGY LTD.",
       "genre": "休闲",
       "delta": 7,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 15,
+      "app_id": "com.jumbo.yirufa",
+      "app_name": "包你發－王識賢、安心亞推薦休閒娛樂城－老虎機、捕魚機、柏青",
+      "app_name_zh": "包你發－王識賢、安心亞推薦休閒娛樂城－老虎機、捕魚機、柏青",
+      "developer": "YILE TECHNOLOGY CO., LTD.",
+      "genre": "赌场",
+      "delta": -2,
       "alert": false,
       "ai_type": null
     },
@@ -197,6 +366,17 @@
       "ai_type": null
     },
     {
+      "rank": 16,
+      "app_id": "com.godgame.mj.android",
+      "app_name": "麻將 神來也麻將－台灣16張、麻雀",
+      "app_name_zh": "麻將 神來也麻將－台灣16張、麻雀",
+      "developer": "Gamesofa Inc.",
+      "genre": "赌场",
+      "delta": 2,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 17,
       "app_id": "1007924271",
       "app_name": "滿貫大亨 - 快打旋風登場",
@@ -204,6 +384,17 @@
       "developer": "獅子科技",
       "genre": "娱乐场",
       "delta": 6,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 17,
+      "app_id": "com.moonactive.coinmaster",
+      "app_name": "Coin Master",
+      "app_name_zh": "Coin Master",
+      "developer": "Moon Active",
+      "genre": "休闲",
+      "delta": 2,
       "alert": false,
       "ai_type": null
     },
@@ -219,6 +410,17 @@
       "ai_type": null
     },
     {
+      "rank": 18,
+      "app_id": "com.grandegames.slots.dafu.casino",
+      "app_name": "大福Online- 老虎機、麻將、捕魚、柏青斯洛、拉霸娛樂城",
+      "app_name_zh": "大福Online- 老虎機、麻將、捕魚、柏青斯洛、拉霸娛樂城",
+      "developer": "SpinX Games Limited",
+      "genre": "赌场",
+      "delta": -1,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 19,
       "app_id": "1267732467",
       "app_name": "金好運",
@@ -226,6 +428,17 @@
       "developer": "ARC PLAY LTD CO.",
       "genre": "卡牌",
       "delta": 1,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 19,
+      "app_id": "com.goodluck777.panther",
+      "app_name": "金好運－戰神賽特、吉宗、南國育、黃門喝、捕魚、老虎機、麻將",
+      "app_name_zh": "金好運－戰神賽特、吉宗、南國育、黃門喝、捕魚、老虎機、麻將",
+      "developer": "ARC PLAY LTD CO.",
+      "genre": "赌场",
+      "delta": -3,
       "alert": false,
       "ai_type": null
     },
@@ -241,6 +454,17 @@
       "ai_type": null
     },
     {
+      "rank": 20,
+      "app_id": "com.bandainamcoent.gget_WW",
+      "app_name": "SD鋼彈 G世代 永恆",
+      "app_name_zh": "SD鋼彈 G世代 永恆",
+      "developer": "Bandai Namco Entertainment Inc.",
+      "genre": "模拟",
+      "delta": -9,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 21,
       "app_id": "6743147434",
       "app_name": "盜夢英雄2：幻野",
@@ -248,6 +472,17 @@
       "developer": "Dream Plus",
       "genre": "模拟",
       "delta": 5,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 21,
+      "app_id": "com.garena.game.kgtw",
+      "app_name": "Garena 傳說對決 X 關於我轉生變成史萊姆這檔事",
+      "app_name_zh": "Garena 傳說對決 X 關於我轉生變成史萊姆這檔事",
+      "developer": "Garena Games Online",
+      "genre": "动作",
+      "delta": 6,
       "alert": false,
       "ai_type": null
     },
@@ -263,6 +498,17 @@
       "ai_type": null
     },
     {
+      "rank": 22,
+      "app_id": "com.igs.TMD",
+      "app_name": "滿貫大亨 - 快打旋風登場",
+      "app_name_zh": "滿貫大亨 - 快打旋風登場",
+      "developer": "SHIZI TECH LTD CO.",
+      "genre": "赌场",
+      "delta": -1,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 23,
       "app_id": "1501301871",
       "app_name": "《英雄聯盟：激鬥峽谷》",
@@ -270,6 +516,17 @@
       "developer": "Taiwan Mobile Co., Ltd.",
       "genre": "动作",
       "delta": 60,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 23,
+      "app_id": "com.Stargazer.StellaSora",
+      "app_name": "星塔旅人",
+      "app_name_zh": "星塔旅人",
+      "developer": "Stargazer Limited",
+      "genre": "冒险",
+      "delta": 0,
       "alert": false,
       "ai_type": null
     },
@@ -285,6 +542,17 @@
       "ai_type": null
     },
     {
+      "rank": 24,
+      "app_id": "com.neowizgames.game.browndust2",
+      "app_name": "棕色塵埃2- 冒汗心跳的RPG",
+      "app_name_zh": "棕色塵埃2- 冒汗心跳的RPG",
+      "developer": "NEOWIZ",
+      "genre": "角色扮演",
+      "delta": 11,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 25,
       "app_id": "6479970832",
       "app_name": "Pokémon TCG Pocket",
@@ -292,6 +560,17 @@
       "developer": "The Pokemon Company",
       "genre": "休闲",
       "delta": 2,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 25,
+      "app_id": "com.readygo.dark.gp",
+      "app_name": "Dark War Survival",
+      "app_name_zh": "Dark War Survival",
+      "developer": "Florere Game",
+      "genre": "策略",
+      "delta": 6,
       "alert": false,
       "ai_type": null
     },
@@ -307,6 +586,17 @@
       "ai_type": null
     },
     {
+      "rank": 26,
+      "app_id": "com.igs.mjstar31",
+      "app_name": "麻將 明星3缺1麻將",
+      "app_name_zh": "麻將 明星3缺1麻將",
+      "developer": "International Games System Co., Ltd.",
+      "genre": "赌场",
+      "delta": -4,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 27,
       "app_id": "1094591345",
       "app_name": "Pokémon GO",
@@ -314,6 +604,17 @@
       "developer": "Niantic, Inc.",
       "genre": "策略",
       "delta": -14,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 27,
+      "app_id": "com.greenmushroom.boomblitz.gp",
+      "app_name": "王國之歌（Top Heroes）",
+      "app_name_zh": "王國之歌（Top Heroes）",
+      "developer": "RiverGame",
+      "genre": "策略",
+      "delta": 7,
       "alert": false,
       "ai_type": null
     },
@@ -329,6 +630,17 @@
       "ai_type": null
     },
     {
+      "rank": 28,
+      "app_id": "com.netmarble.rfnext",
+      "app_name": "RF ONLINE NEXT",
+      "app_name_zh": "RF ONLINE NEXT",
+      "developer": "Netmarble",
+      "genre": "角色扮演",
+      "delta": 9,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 29,
       "app_id": "6479595079",
       "app_name": "七騎士 Re:BIRTH",
@@ -336,6 +648,17 @@
       "developer": "Netmarble Corporation",
       "genre": "角色扮演",
       "delta": -12,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 29,
+      "app_id": "com.soulgamechst.majsoul",
+      "app_name": "雀魂麻將",
+      "app_name_zh": "雀魂麻將",
+      "developer": "SoulCreator",
+      "genre": "策略",
+      "delta": 0,
       "alert": false,
       "ai_type": null
     },
@@ -351,6 +674,17 @@
       "ai_type": null
     },
     {
+      "rank": 30,
+      "app_id": "com.netease.nshmhmt",
+      "app_name": "逆水寒",
+      "app_name_zh": "逆水寒",
+      "developer": "EnvoyGames",
+      "genre": "角色扮演",
+      "delta": 16,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 31,
       "app_id": "1105855019",
       "app_name": "夢幻花園 (Gardenscapes)",
@@ -358,6 +692,17 @@
       "developer": "Playrix",
       "genre": "益智解谜",
       "delta": -3,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 31,
+      "app_id": "com.more.laozi",
+      "app_name": "老子有錢 - 業界最強10萬倍賽特",
+      "app_name_zh": "老子有錢 - 業界最強10萬倍賽特",
+      "developer": "Xiang Shang Games Co., Ltd.",
+      "genre": "赌场",
+      "delta": -1,
       "alert": false,
       "ai_type": null
     },
@@ -373,6 +718,17 @@
       "ai_type": null
     },
     {
+      "rank": 32,
+      "app_id": "com.ncsoft.lineage2mtw",
+      "app_name": "天堂2M",
+      "app_name_zh": "天堂2M",
+      "developer": "NCSOFT",
+      "genre": "角色扮演",
+      "delta": -3,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 33,
       "app_id": "1276508585",
       "app_name": "天堂M",
@@ -380,6 +736,17 @@
       "developer": "Gamania Digital Entertainment",
       "genre": "冒险",
       "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 33,
+      "app_id": "com.sialiagames.szgd.gp.tw",
+      "app_name": "救世者之樹：新世界",
+      "app_name_zh": "救世者之樹：新世界",
+      "developer": "Sialia Games",
+      "genre": "角色扮演",
+      "delta": 34,
       "alert": false,
       "ai_type": null
     },
@@ -395,6 +762,17 @@
       "ai_type": null
     },
     {
+      "rank": 34,
+      "app_id": "com.roblox.client",
+      "app_name": "Roblox",
+      "app_name_zh": "Roblox",
+      "developer": "Roblox Corporation",
+      "genre": "冒险",
+      "delta": 5,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 35,
       "app_id": "6474654939",
       "app_name": "逆水寒",
@@ -402,6 +780,17 @@
       "developer": "Envoy Interactive Entertainment Co.Ltd.",
       "genre": "角色扮演",
       "delta": 38,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 35,
+      "app_id": "com.ntrance.dkr.and",
+      "app_name": "DK Mobile : Reborn",
+      "app_name_zh": "DK Mobile : Reborn",
+      "developer": "NTRANCE CORP.",
+      "genre": "角色扮演",
+      "delta": 20,
       "alert": false,
       "ai_type": null
     },
@@ -417,6 +806,17 @@
       "ai_type": null
     },
     {
+      "rank": 36,
+      "app_id": "com.finger.hsgame",
+      "app_name": "豪神娛樂城-戰神賽特、麻將、捕魚、賓果、水果盤、拉霸、老虎機",
+      "app_name_zh": "豪神娛樂城-戰神賽特、麻將、捕魚、賓果、水果盤、拉霸、老虎機",
+      "developer": "FingerGame Corp: 線上娛樂城, 線上博弈, CASINO ONLINE, SLOT",
+      "genre": "赌场",
+      "delta": -3,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 37,
       "app_id": "6469999573",
       "app_name": "全明星街球派對",
@@ -424,6 +824,17 @@
       "developer": "LongE Corporation",
       "genre": "动作",
       "delta": 64,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 37,
+      "app_id": "com.miHoYo.bh3tw",
+      "app_name": "崩壞3rd",
+      "app_name_zh": "崩壞3rd",
+      "developer": "COGNOSPHERE PTE. LTD.",
+      "genre": "动作",
+      "delta": 0,
       "alert": false,
       "ai_type": null
     },
@@ -439,6 +850,17 @@
       "ai_type": null
     },
     {
+      "rank": 38,
+      "app_id": "com.netmarble.tskgb",
+      "app_name": "七騎士 Re:BIRTH",
+      "app_name_zh": "七騎士 Re:BIRTH",
+      "developer": "Netmarble",
+      "genre": "角色扮演",
+      "delta": -18,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 39,
       "app_id": "6738897614",
       "app_name": "時光大爆炸",
@@ -446,6 +868,17 @@
       "developer": "U-LIKE ENTERTAINMENT LIMITED",
       "genre": "模拟",
       "delta": 26,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 39,
+      "app_id": "com.v20.gptw",
+      "app_name": "邪門鬼道",
+      "app_name_zh": "邪門鬼道",
+      "developer": "SPGFun",
+      "genre": "角色扮演",
+      "delta": -11,
       "alert": false,
       "ai_type": null
     },
@@ -461,6 +894,17 @@
       "ai_type": null
     },
     {
+      "rank": 40,
+      "app_id": "com.boge.lgmahjong",
+      "app_name": "嚦咕麻將-ATG戰神賽特x女神曾莞婷唯一推薦",
+      "app_name_zh": "嚦咕麻將-ATG戰神賽特x女神曾莞婷唯一推薦",
+      "developer": "BOGE NETWORK TECHNOLOGY LIMITED",
+      "genre": "赌场",
+      "delta": -4,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 41,
       "app_id": "1517783697",
       "app_name": "原神·空月之歌",
@@ -468,6 +912,17 @@
       "developer": "COGNOSPHERE PTE. LTD.",
       "genre": "角色扮演",
       "delta": 25,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 41,
+      "app_id": "com.userjoy.LetsVegasSlots",
+      "app_name": "拉斯維加斯娛樂城 (Let's Vegas Slots)",
+      "app_name_zh": "拉斯維加斯娛樂城 (Let's Vegas Slots)",
+      "developer": "USERJOY",
+      "genre": "赌场",
+      "delta": -3,
       "alert": false,
       "ai_type": null
     },
@@ -483,6 +938,17 @@
       "ai_type": null
     },
     {
+      "rank": 42,
+      "app_id": "com.heyyogame.gd",
+      "app_name": "一個官人一個妻-7.5週年",
+      "app_name_zh": "一個官人一個妻-7.5週年",
+      "developer": "heyyogame",
+      "genre": "角色扮演",
+      "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 43,
       "app_id": "907432647",
       "app_name": "老子有錢 - 業界最強10萬倍賽特",
@@ -490,6 +956,17 @@
       "developer": "Xiang Shang Games Co., Ltd.",
       "genre": "娱乐场",
       "delta": -19,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 43,
+      "app_id": "com.com2us.ninepb3d.normal.freefull.google.global.android.common",
+      "app_name": "MLB：9局職棒25",
+      "app_name_zh": "MLB：9局職棒25",
+      "developer": "Com2uS",
+      "genre": "体育",
+      "delta": -18,
       "alert": false,
       "ai_type": null
     },
@@ -505,6 +982,17 @@
       "ai_type": null
     },
     {
+      "rank": 44,
+      "app_id": "com.playrix.gardenscapes",
+      "app_name": "夢幻花園 (Gardenscapes)",
+      "app_name_zh": "夢幻花園 (Gardenscapes)",
+      "developer": "Playrix",
+      "genre": "休闲",
+      "delta": 5,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 45,
       "app_id": "1195621598",
       "app_name": "夢幻家園 (Homescapes)",
@@ -512,6 +1000,17 @@
       "developer": "Playrix",
       "genre": "益智解谜",
       "delta": 5,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 45,
+      "app_id": "com.funplus.ts.global",
+      "app_name": "點點大作戰",
+      "app_name_zh": "點點大作戰",
+      "developer": "FunPlus International AG",
+      "genre": "策略",
+      "delta": 2,
       "alert": false,
       "ai_type": null
     },
@@ -527,6 +1026,17 @@
       "ai_type": null
     },
     {
+      "rank": 46,
+      "app_id": "com.nianticlabs.pokemongo",
+      "app_name": "Pokémon GO",
+      "app_name_zh": "Pokémon GO",
+      "developer": "Niantic, Inc.",
+      "genre": "冒险",
+      "delta": -20,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 47,
       "app_id": "1059665257",
       "app_name": "MLB：9局職棒25",
@@ -534,6 +1044,17 @@
       "developer": "Com2uS Corp.",
       "genre": "模拟",
       "delta": -13,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 47,
+      "app_id": "com.a3.topgirl.gplay",
+      "app_name": "創造女團77",
+      "app_name_zh": "創造女團77",
+      "developer": "A3Games",
+      "genre": "策略",
+      "delta": -7,
       "alert": false,
       "ai_type": null
     },
@@ -549,6 +1070,17 @@
       "ai_type": null
     },
     {
+      "rank": 48,
+      "app_id": "com.bilibili.trickcal",
+      "app_name": "嘟嘟臉惡作劇",
+      "app_name_zh": "嘟嘟臉惡作劇",
+      "developer": "BILIBILI",
+      "genre": "角色扮演",
+      "delta": -25,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 49,
       "app_id": "6737753806",
       "app_name": "星痕共鳴",
@@ -556,6 +1088,17 @@
       "developer": "HaoPlay Limited",
       "genre": "角色扮演",
       "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 49,
+      "app_id": "com.ageofempiresmobile.tw",
+      "app_name": "世紀帝國M",
+      "app_name_zh": "世紀帝國M",
+      "developer": "ROCGAME PTE",
+      "genre": "策略",
+      "delta": -8,
       "alert": false,
       "ai_type": null
     },
@@ -571,6 +1114,17 @@
       "ai_type": null
     },
     {
+      "rank": 50,
+      "app_id": "com.HoYoverse.hkrpgoversea",
+      "app_name": "崩壞：星穹鐵道",
+      "app_name_zh": "崩壞：星穹鐵道",
+      "developer": "COGNOSPHERE PTE. LTD.",
+      "genre": "冒险",
+      "delta": -35,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 51,
       "app_id": "1595039719",
       "app_name": "大頭家娛樂城 - 週週上新機",
@@ -578,6 +1132,17 @@
       "developer": "MEGA GAME GLOBAL TECH LIMITED",
       "genre": "娱乐场",
       "delta": 13,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 51,
+      "app_id": "jp.co.mixi.monsterstrikeTW",
+      "app_name": "怪物彈珠 - RPG手機遊戲",
+      "app_name_zh": "怪物彈珠 - RPG手機遊戲",
+      "developer": "XFLAG, Inc.",
+      "genre": "动作",
+      "delta": -3,
       "alert": false,
       "ai_type": null
     },
@@ -593,6 +1158,17 @@
       "ai_type": null
     },
     {
+      "rank": 52,
+      "app_id": "com.sanguosp.twgp",
+      "app_name": "侍寢三國志",
+      "app_name_zh": "侍寢三國志",
+      "developer": "SP-Game",
+      "genre": "卡牌",
+      "delta": 1,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 53,
       "app_id": "6743704037",
       "app_name": "邪門鬼道",
@@ -600,6 +1176,17 @@
       "developer": "FUNFORGE TECHNOLOGY CO.,LTD",
       "genre": "动作",
       "delta": -7,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 53,
+      "app_id": "com.xiaomeng.fategrandorder",
+      "app_name": "Fate/Grand Order",
+      "app_name_zh": "Fate/Grand Order",
+      "developer": "Komoe",
+      "genre": "卡牌",
+      "delta": -47,
       "alert": false,
       "ai_type": null
     },
@@ -615,6 +1202,17 @@
       "ai_type": null
     },
     {
+      "rank": 54,
+      "app_id": "com.devsisters.ck",
+      "app_name": "薑餅人王國",
+      "app_name_zh": "薑餅人王國",
+      "developer": "Devsisters Corporation",
+      "genre": "角色扮演",
+      "delta": 83,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 55,
       "app_id": "6740075555",
       "app_name": "奇蹟MU：暴走之翼",
@@ -622,6 +1220,17 @@
       "developer": "SHARK ENTERTAINMENT LIMITED",
       "genre": "角色扮演",
       "delta": 8,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 55,
+      "app_id": "com.kurogame.wutheringwaves.global",
+      "app_name": "鳴潮",
+      "app_name_zh": "鳴潮",
+      "developer": "HK KURO GAMES LIMITED",
+      "genre": "动作",
+      "delta": -23,
       "alert": false,
       "ai_type": null
     },
@@ -637,11 +1246,33 @@
       "ai_type": null
     },
     {
+      "rank": 56,
+      "app_id": "com.longe.racehmt",
+      "app_name": "巔峰極速",
+      "app_name_zh": "巔峰極速",
+      "developer": "LongE Play",
+      "genre": "竞速",
+      "delta": -6,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 57,
       "app_id": "1290086677",
       "app_name": "楓之谷M - 奇幻冒險MMORPG",
       "app_name_zh": "楓之谷M - 奇幻冒險MMORPG",
       "developer": "NEXON Company",
+      "genre": "角色扮演",
+      "delta": 5,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 57,
+      "app_id": "com.godplace.twgp",
+      "app_name": "第七天災",
+      "app_name_zh": "第七天災",
+      "developer": "SPGFun",
       "genre": "角色扮演",
       "delta": 5,
       "alert": false,
@@ -659,6 +1290,17 @@
       "ai_type": null
     },
     {
+      "rank": 58,
+      "app_id": "jp.pokemon.pokemontcgp",
+      "app_name": "Pokémon TCG Pocket",
+      "app_name_zh": "Pokémon TCG Pocket",
+      "developer": "The Pokémon Company",
+      "genre": "卡牌",
+      "delta": -13,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 59,
       "app_id": "6471045672",
       "app_name": "食光旅行",
@@ -666,6 +1308,17 @@
       "developer": "Century Games Pte. Ltd.",
       "genre": "益智解谜",
       "delta": 17,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 59,
+      "app_id": "com.gamamobi.nikke",
+      "app_name": "勝利女神：妮姬",
+      "app_name_zh": "勝利女神：妮姬",
+      "developer": "HotCool Game",
+      "genre": "角色扮演",
+      "delta": -15,
       "alert": false,
       "ai_type": null
     },
@@ -681,6 +1334,17 @@
       "ai_type": null
     },
     {
+      "rank": 60,
+      "app_id": "com.szckhd.jwgly.azfanti",
+      "app_name": "叫我官老爺：八週年慶典",
+      "app_name_zh": "叫我官老爺：八週年慶典",
+      "developer": "Hong Kong Pixel Peak Technology Co., Limited",
+      "genre": "角色扮演",
+      "delta": 13,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 61,
       "app_id": "1356980152",
       "app_name": "大福Online-老虎機、捕魚、推幣機、刮刮樂、拉霸 娛樂城",
@@ -688,6 +1352,17 @@
       "developer": "SpinX Games Limited",
       "genre": "卡牌",
       "delta": -14,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 61,
+      "app_id": "com.tg.sgzhd.tw",
+      "app_name": "時光雜貨店-終極一班聯動開始！",
+      "app_name_zh": "時光雜貨店-終極一班聯動開始！",
+      "developer": "絕妙遊戲M",
+      "genre": "模拟",
+      "delta": -4,
       "alert": false,
       "ai_type": null
     },
@@ -703,6 +1378,17 @@
       "ai_type": null
     },
     {
+      "rank": 62,
+      "app_id": "com.sayyo.huga",
+      "app_name": "HUGA野蠻世界-真人麻將、老虎機、捕魚、百家樂-陳雷代言",
+      "app_name_zh": "HUGA野蠻世界-真人麻將、老虎機、捕魚、百家樂-陳雷代言",
+      "developer": "SayYo Games",
+      "genre": "赌场",
+      "delta": 8,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 63,
       "app_id": "1530758357",
       "app_name": "三國志・戰略版",
@@ -710,6 +1396,17 @@
       "developer": "Sialia Games",
       "genre": "模拟",
       "delta": -22,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 63,
+      "app_id": "com.Tonwa.Cash7",
+      "app_name": "錢街Online-戰神賽特、財神捕魚、老虎機、百家樂、21點",
+      "app_name_zh": "錢街Online-戰神賽特、財神捕魚、老虎機、百家樂、21點",
+      "developer": "Tonwa online entertainment Co Ltd",
+      "genre": "赌场",
+      "delta": 3,
       "alert": false,
       "ai_type": null
     },
@@ -725,6 +1422,17 @@
       "ai_type": null
     },
     {
+      "rank": 64,
+      "app_id": "air.tw.com.bonuswinner.bwmj16tw",
+      "app_name": "麻將 宅神爺麻將、捕魚機、老虎機、黃金馬、骰寶",
+      "app_name_zh": "麻將 宅神爺麻將、捕魚機、老虎機、黃金馬、骰寶",
+      "developer": "Bonus Winner Online Entertainment Co. Ltd.",
+      "genre": "赌场",
+      "delta": -1,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 65,
       "app_id": "638689075",
       "app_name": "夢想小鎮 (Township)",
@@ -732,6 +1440,17 @@
       "developer": "Playrix",
       "genre": "益智解谜",
       "delta": 6,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 65,
+      "app_id": "com.garena.game.df",
+      "app_name": "Garena® 三角洲行動",
+      "app_name_zh": "Garena® 三角洲行動",
+      "developer": "Garena Mobile Private Limited",
+      "genre": "动作",
+      "delta": -11,
       "alert": false,
       "ai_type": null
     },
@@ -747,6 +1466,17 @@
       "ai_type": null
     },
     {
+      "rank": 66,
+      "app_id": "com.mover.twqyfhl",
+      "app_name": "異界三國：死神契約",
+      "app_name_zh": "異界三國：死神契約",
+      "developer": "Mover Games Limited",
+      "genre": "卡牌",
+      "delta": -14,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 67,
       "app_id": "6740021133",
       "app_name": "龍族幻想：勇者集結",
@@ -754,6 +1484,17 @@
       "developer": "Focent Technology Limited",
       "genre": "卡牌",
       "delta": 105,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 67,
+      "app_id": "com.gravityus.romtwzeny.aos",
+      "app_name": "RO仙境傳說：守護永恆的愛 Classic",
+      "app_name_zh": "RO仙境傳說：守護永恆的愛 Classic",
+      "developer": "Gravity Interactive, Inc.",
+      "genre": "角色扮演",
+      "delta": 18,
       "alert": false,
       "ai_type": null
     },
@@ -769,6 +1510,17 @@
       "ai_type": null
     },
     {
+      "rank": 68,
+      "app_id": "com.Rich.MegaRich",
+      "app_name": "大頭家娛樂城 - 週週上新機",
+      "app_name_zh": "大頭家娛樂城 - 週週上新機",
+      "developer": "Mega Game Global Tech Limited",
+      "genre": "赌场",
+      "delta": -4,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 69,
       "app_id": "439159270",
       "app_name": "德州撲克 神來也德州撲克(Texas Poker)",
@@ -776,6 +1528,17 @@
       "developer": "Gamesofa Inc.",
       "genre": "卡牌",
       "delta": 16,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 69,
+      "app_id": "com.floralgames.hjxp",
+      "app_name": "我的花園世界 - 真的收到花！",
+      "app_name_zh": "我的花園世界 - 真的收到花！",
+      "developer": "FLORAL GAMES LIMITED",
+      "genre": "休闲",
+      "delta": 20,
       "alert": false,
       "ai_type": null
     },
@@ -791,6 +1554,17 @@
       "ai_type": null
     },
     {
+      "rank": 70,
+      "app_id": "com.gonline.AppBravoCasino",
+      "app_name": "角子共玩-賽特、老虎機、柏青斯洛",
+      "app_name_zh": "角子共玩-賽特、老虎機、柏青斯洛",
+      "developer": "Megata Ltd.",
+      "genre": "赌场",
+      "delta": 16,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 71,
       "app_id": "6482291732",
       "app_name": "運氣拚輸贏",
@@ -798,6 +1572,17 @@
       "developer": "111%",
       "genre": "策略",
       "delta": 32,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 71,
+      "app_id": "com.gamedots.seasideescape",
+      "app_name": "漫遊小鎮®：合併&故事",
+      "app_name_zh": "漫遊小鎮®：合併&故事",
+      "developer": "Microfun Limited",
+      "genre": "益智",
+      "delta": -2,
       "alert": false,
       "ai_type": null
     },
@@ -813,6 +1598,17 @@
       "ai_type": null
     },
     {
+      "rank": 72,
+      "app_id": "com.dlw.gat.google",
+      "app_name": "戰靈異聞社-神話鍾馗搶先玩",
+      "app_name_zh": "戰靈異聞社-神話鍾馗搶先玩",
+      "developer": "XStargames",
+      "genre": "角色扮演",
+      "delta": -13,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 73,
       "app_id": "6692615881",
       "app_name": "SD鋼彈 G世代 永恆",
@@ -820,6 +1616,17 @@
       "developer": "Bandai Namco Entertainment Inc.",
       "genre": "模拟",
       "delta": -48,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 73,
+      "app_id": "com.riotgames.league.wildrifttw",
+      "app_name": "《英雄聯盟：激鬥峽谷》",
+      "app_name_zh": "《英雄聯盟：激鬥峽谷》",
+      "developer": "台灣大哥大",
+      "genre": "策略",
+      "delta": 76,
       "alert": false,
       "ai_type": null
     },
@@ -835,6 +1642,17 @@
       "ai_type": null
     },
     {
+      "rank": 74,
+      "app_id": "tw.txwy.and.arknights",
+      "app_name": "明日方舟",
+      "app_name_zh": "明日方舟",
+      "developer": "GRYPHLINE",
+      "genre": "角色扮演",
+      "delta": -23,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 75,
       "app_id": "1580691683",
       "app_name": "MLB 勁旅對決",
@@ -842,6 +1660,17 @@
       "developer": "Com2uS Corp.",
       "genre": "体育",
       "delta": 51,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 75,
+      "app_id": "com.playrix.homescapes",
+      "app_name": "夢幻家園 (Homescapes)",
+      "app_name_zh": "夢幻家園 (Homescapes)",
+      "developer": "Playrix",
+      "genre": "休闲",
+      "delta": 24,
       "alert": false,
       "ai_type": null
     },
@@ -857,6 +1686,17 @@
       "ai_type": null
     },
     {
+      "rank": 76,
+      "app_id": "com.gamania.tosm",
+      "app_name": "救世者之樹M",
+      "app_name_zh": "救世者之樹M",
+      "developer": "Gamania Digital Entertainment Co Ltd",
+      "genre": "角色扮演",
+      "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 77,
       "app_id": "1465688043",
       "app_name": "決勝時刻: Mobile - Garena",
@@ -864,6 +1704,17 @@
       "developer": "Garena Mobile Private",
       "genre": "动作",
       "delta": -25,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 77,
+      "app_id": "com.global.ztmslgtw",
+      "app_name": "末日喧囂",
+      "app_name_zh": "末日喧囂",
+      "developer": "BLANCOZONE NETWORK CO., LIMITED",
+      "genre": "策略",
+      "delta": -5,
       "alert": false,
       "ai_type": null
     },
@@ -879,6 +1730,17 @@
       "ai_type": null
     },
     {
+      "rank": 78,
+      "app_id": "com.xd.etheria.gp.asia",
+      "app_name": "伊瑟",
+      "app_name_zh": "伊瑟",
+      "developer": "XD Entertainment Co., Ltd.",
+      "genre": "角色扮演",
+      "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 79,
       "app_id": "1551574670",
       "app_name": "末日喧囂",
@@ -886,6 +1748,17 @@
       "developer": "BlancoZone",
       "genre": "角色扮演",
       "delta": 8,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 79,
+      "app_id": "com.yblbtw.gpgat",
+      "app_name": "超蝦大作戰",
+      "app_name_zh": "超蝦大作戰",
+      "developer": "Gamezaaa",
+      "genre": "卡牌",
+      "delta": -11,
       "alert": false,
       "ai_type": null
     },
@@ -901,6 +1774,17 @@
       "ai_type": null
     },
     {
+      "rank": 80,
+      "app_id": "jp.co.ponos.battlecatstw",
+      "app_name": "貓咪大戰爭",
+      "app_name_zh": "貓咪大戰爭",
+      "developer": "PONOS Corporation",
+      "genre": "休闲",
+      "delta": -20,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 81,
       "app_id": "1621328561",
       "app_name": "MONOPOLY GO!",
@@ -908,6 +1792,17 @@
       "developer": "Scopely, Inc.",
       "genre": "家庭聚会",
       "delta": -12,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 81,
+      "app_id": "com.longe.allstarhmt",
+      "app_name": "全明星街球派對",
+      "app_name_zh": "全明星街球派對",
+      "developer": "LongE Play",
+      "genre": "体育",
+      "delta": 0,
       "alert": false,
       "ai_type": null
     },
@@ -923,6 +1818,17 @@
       "ai_type": null
     },
     {
+      "rank": 82,
+      "app_id": "com.global.sgdbztw",
+      "app_name": "時光大爆炸",
+      "app_name_zh": "時光大爆炸",
+      "developer": "頑星遊戲",
+      "genre": "模拟",
+      "delta": 39,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 83,
       "app_id": "1502673857",
       "app_name": "雀魂麻將",
@@ -930,6 +1836,17 @@
       "developer": "Catfood Studio",
       "genre": "桌面",
       "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 83,
+      "app_id": "tw.sonet.princessconnect",
+      "app_name": "超異域公主連結！Re:Dive",
+      "app_name_zh": "超異域公主連結！Re:Dive",
+      "developer": "SO-NET ENTERTAINMENT TAIWAN LIMITED",
+      "genre": "角色扮演",
+      "delta": 12,
       "alert": false,
       "ai_type": null
     },
@@ -945,6 +1862,17 @@
       "ai_type": null
     },
     {
+      "rank": 84,
+      "app_id": "com.dreamgames.royalmatch",
+      "app_name": "Royal Match",
+      "app_name_zh": "Royal Match",
+      "developer": "Dream Games, Ltd.",
+      "genre": "益智",
+      "delta": 9,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 85,
       "app_id": "1053012308",
       "app_name": "Clash Royale",
@@ -952,6 +1880,17 @@
       "developer": "Supercell",
       "genre": "策略",
       "delta": -18,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 85,
+      "app_id": "com.muqiji.shark",
+      "app_name": "奇蹟MU：暴走之翼",
+      "app_name_zh": "奇蹟MU：暴走之翼",
+      "developer": "SHARK ENTERTAINMENT LIMITED",
+      "genre": "角色扮演",
+      "delta": 9,
       "alert": false,
       "ai_type": null
     },
@@ -967,6 +1906,17 @@
       "ai_type": null
     },
     {
+      "rank": 86,
+      "app_id": "com.xq.archeroii",
+      "app_name": "弓箭傳說2",
+      "app_name_zh": "弓箭傳說2",
+      "developer": "Habby",
+      "genre": "动作",
+      "delta": 33,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 87,
       "app_id": "1501301571",
       "app_name": "TFT: 聯盟戰棋",
@@ -974,6 +1924,17 @@
       "developer": "Taiwan Mobile Co., Ltd.",
       "genre": "动作",
       "delta": 47,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 87,
+      "app_id": "com.lightcore.endlessgradespixelsaga",
+      "app_name": "像素大冒險Endless Grades Pixel Saga",
+      "app_name_zh": "像素大冒險Endless Grades Pixel Saga",
+      "developer": "Lightcore Games Limited",
+      "genre": "角色扮演",
+      "delta": 70,
       "alert": false,
       "ai_type": null
     },
@@ -989,6 +1950,17 @@
       "ai_type": null
     },
     {
+      "rank": 88,
+      "app_id": "jp.co.drecom.wizardry.daphne",
+      "app_name": "Wizardry Variants Daphne",
+      "app_name_zh": "Wizardry Variants Daphne",
+      "developer": "株式会社ドリコム",
+      "genre": "角色扮演",
+      "delta": -27,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 89,
       "app_id": "1376515087",
       "app_name": "Age of Origins:Tower Defense",
@@ -996,6 +1968,17 @@
       "developer": "Hong Kong Ke Mo software Co., Limited",
       "genre": "策略",
       "delta": 33,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 89,
+      "app_id": "com.HoYoverse.Nap",
+      "app_name": "絕區零",
+      "app_name_zh": "絕區零",
+      "developer": "COGNOSPHERE PTE. LTD.",
+      "genre": "角色扮演",
+      "delta": -65,
       "alert": false,
       "ai_type": null
     },
@@ -1011,6 +1994,17 @@
       "ai_type": null
     },
     {
+      "rank": 90,
+      "app_id": "com.byxjy.cxx.hw",
+      "app_name": "捕魚新紀元Online - 歡樂捕魚大作戰",
+      "app_name_zh": "捕魚新紀元Online - 歡樂捕魚大作戰",
+      "developer": "Joyous.games",
+      "genre": "赌场",
+      "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 91,
       "app_id": "6747065546",
       "app_name": "雲上城之歌：勇者再出發",
@@ -1018,6 +2012,17 @@
       "developer": "Lucky koi network technology Co.,Ltd",
       "genre": "角色扮演",
       "delta": -36,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 91,
+      "app_id": "com.topwar.gp",
+      "app_name": "口袋奇兵（Top War）-超休閒的策略遊戲",
+      "app_name_zh": "口袋奇兵（Top War）-超休閒的策略遊戲",
+      "developer": "RiverGame",
+      "genre": "策略",
+      "delta": 26,
       "alert": false,
       "ai_type": null
     },
@@ -1033,6 +2038,17 @@
       "ai_type": null
     },
     {
+      "rank": 92,
+      "app_id": "com.kakaogames.twodin",
+      "app_name": "奧丁 : 神叛",
+      "app_name_zh": "奧丁 : 神叛",
+      "developer": "Kakao Games Corp.",
+      "genre": "角色扮演",
+      "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 93,
       "app_id": "1192272619",
       "app_name": "錢街Online -戰神賽特、財神捕魚、老虎機、7PK、吉宗",
@@ -1040,6 +2056,17 @@
       "developer": "糖蛙線上娛樂股份有限公司",
       "genre": "娱乐场",
       "delta": -36,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 93,
+      "app_id": "com.rekoo.pubgm",
+      "app_name": "PUBG MOBILE：絕地求生M",
+      "app_name_zh": "PUBG MOBILE：絕地求生M",
+      "developer": "HotCool Game",
+      "genre": "动作",
+      "delta": 5,
       "alert": false,
       "ai_type": null
     },
@@ -1055,6 +2082,17 @@
       "ai_type": null
     },
     {
+      "rank": 94,
+      "app_id": "com.madhead.tos.zh",
+      "app_name": "神魔之塔",
+      "app_name_zh": "神魔之塔",
+      "developer": "Mad Head Limited",
+      "genre": "益智",
+      "delta": -85,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 95,
       "app_id": "6446141770",
       "app_name": "肥鵝健身房",
@@ -1062,6 +2100,17 @@
       "developer": "THE HORTOR TECHNOLOGY PTE.LTD.",
       "genre": "模拟",
       "delta": 10,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 95,
+      "app_id": "com.ltgames.android.m71.tw",
+      "app_name": "一念逍遙",
+      "app_name_zh": "一念逍遙",
+      "developer": "LTGAMES GLOBAL",
+      "genre": "角色扮演",
+      "delta": -37,
       "alert": false,
       "ai_type": null
     },
@@ -1077,6 +2126,17 @@
       "ai_type": null
     },
     {
+      "rank": 96,
+      "app_id": "com.agame.hmt.gp",
+      "app_name": "主公快逃：歡樂擰螺絲",
+      "app_name_zh": "主公快逃：歡樂擰螺絲",
+      "developer": "Glaciers Game",
+      "genre": "休闲",
+      "delta": 44,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 97,
       "app_id": "1328213172",
       "app_name": "一個官人一個妻",
@@ -1084,6 +2144,17 @@
       "developer": "COCOGAME HK LIMITED",
       "genre": "模拟",
       "delta": 10,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 97,
+      "app_id": "com.playrix.township",
+      "app_name": "夢想小鎮",
+      "app_name_zh": "夢想小鎮",
+      "developer": "Playrix",
+      "genre": "休闲",
+      "delta": -9,
       "alert": false,
       "ai_type": null
     },
@@ -1099,6 +2170,17 @@
       "ai_type": null
     },
     {
+      "rank": 98,
+      "app_id": "com.habby.capybara",
+      "app_name": "卡皮巴拉 Go!",
+      "app_name_zh": "卡皮巴拉 Go!",
+      "developer": "Habby",
+      "genre": "角色扮演",
+      "delta": -15,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 99,
       "app_id": "6738902933",
       "app_name": "星塔旅人",
@@ -1106,6 +2188,17 @@
       "developer": "Stargazer",
       "genre": "动作",
       "delta": -11,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 99,
+      "app_id": "com.and.klxqb.tw",
+      "app_name": "見習骷髏王",
+      "app_name_zh": "見習骷髏王",
+      "developer": "TOGAADO TECH PTE. LTD.",
+      "genre": "角色扮演",
+      "delta": -28,
       "alert": false,
       "ai_type": null
     },
@@ -1121,6 +2214,17 @@
       "ai_type": null
     },
     {
+      "rank": 100,
+      "app_id": "com.playrix.fishdomdd.gplay",
+      "app_name": "夢幻水族箱 (Fishdom)",
+      "app_name_zh": "夢幻水族箱 (Fishdom)",
+      "developer": "Playrix",
+      "genre": "益智",
+      "delta": 6,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 101,
       "app_id": "730209957",
       "app_name": "拉斯維加斯娛樂城 (Let's Vegas Slots)",
@@ -1128,6 +2232,17 @@
       "developer": "Userjoy Technology Co., Ltd.",
       "genre": "卡牌",
       "delta": -1,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 101,
+      "app_id": "com.netease.eggypartyhmt",
+      "app_name": "蛋仔派對",
+      "app_name_zh": "蛋仔派對",
+      "developer": "EnvoyGames",
+      "genre": "休闲",
+      "delta": 7,
       "alert": false,
       "ai_type": null
     },
@@ -1143,6 +2258,17 @@
       "ai_type": null
     },
     {
+      "rank": 102,
+      "app_id": "com.justgame.jails",
+      "app_name": "可獄不可囚",
+      "app_name_zh": "可獄不可囚",
+      "developer": "SINGAPORE JUST GAME TECHNOLOGY PTE. LTD.",
+      "genre": "策略",
+      "delta": -6,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 103,
       "app_id": "1566814309",
       "app_name": "國粹天天樂-台灣麻將四隻刀13支大老二排7接龍",
@@ -1150,6 +2276,17 @@
       "developer": "Abacus Technology Limited",
       "genre": "卡牌",
       "delta": -23,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 103,
+      "app_id": "com.hygame.mhxy.tw.gp",
+      "app_name": "守住呀道友-塔防肉鴿手遊",
+      "app_name_zh": "守住呀道友-塔防肉鴿手遊",
+      "developer": "HuoYuGame",
+      "genre": "策略",
+      "delta": -2,
       "alert": false,
       "ai_type": null
     },
@@ -1165,6 +2302,17 @@
       "ai_type": null
     },
     {
+      "rank": 104,
+      "app_id": "com.nctaiwan.lsnct",
+      "app_name": "遺忘之劍",
+      "app_name_zh": "遺忘之劍",
+      "developer": "NC TAIWAN CO., LTD.",
+      "genre": "角色扮演",
+      "delta": -30,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 105,
       "app_id": "1579464667",
       "app_name": "Pokémon Sleep",
@@ -1172,6 +2320,17 @@
       "developer": "The Pokemon Company",
       "genre": "模拟",
       "delta": 62,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 105,
+      "app_id": "com.gearpaw.defenders.td.game",
+      "app_name": "齒輪獸衛隊",
+      "app_name_zh": "齒輪獸衛隊",
+      "developer": "Perfeggs",
+      "genre": "策略",
+      "delta": 10,
       "alert": false,
       "ai_type": null
     },
@@ -1187,6 +2346,17 @@
       "ai_type": null
     },
     {
+      "rank": 106,
+      "app_id": "com.fingerhero.tw.and",
+      "app_name": "救世主超忙",
+      "app_name_zh": "救世主超忙",
+      "developer": "ALICE GAME",
+      "genre": "角色扮演",
+      "delta": -30,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 107,
       "app_id": "6446155179",
       "app_name": "出發吧麥芬-香格里拉·開拓異境聯動",
@@ -1194,6 +2364,17 @@
       "developer": "XD Entertainment Pte Ltd",
       "genre": "冒险",
       "delta": 70,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 107,
+      "app_id": "com.tg.ysczg.tw",
+      "app_name": "雲上城之歌：勇者再出發",
+      "app_name_zh": "雲上城之歌：勇者再出發",
+      "developer": "絕妙遊戲",
+      "genre": "角色扮演",
+      "delta": -4,
       "alert": false,
       "ai_type": null
     },
@@ -1209,6 +2390,17 @@
       "ai_type": null
     },
     {
+      "rank": 108,
+      "app_id": "com.ggv.rogames.gat",
+      "app_name": "RO仙境傳說：曙光",
+      "app_name_zh": "RO仙境傳說：曙光",
+      "developer": "Gravity Game Vision",
+      "genre": "角色扮演",
+      "delta": -24,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 109,
       "app_id": "1516214913",
       "app_name": "RO仙境傳說：新世代的誕生",
@@ -1216,6 +2408,17 @@
       "developer": "Nuverse",
       "genre": "冒险",
       "delta": -20,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 109,
+      "app_id": "com.tgc.sky.android",
+      "app_name": "Sky光·遇",
+      "app_name_zh": "Sky光·遇",
+      "developer": "thatgamecompany inc",
+      "genre": "角色扮演",
+      "delta": 0,
       "alert": false,
       "ai_type": null
     },
@@ -1231,6 +2434,17 @@
       "ai_type": null
     },
     {
+      "rank": 110,
+      "app_id": "com.kakaogames.aaw",
+      "app_name": "上古世紀：戰爭",
+      "app_name_zh": "上古世紀：戰爭",
+      "developer": "Kakao Games Corp.",
+      "genre": "角色扮演",
+      "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 111,
       "app_id": "6746141921",
       "app_name": "伊瑟",
@@ -1238,6 +2452,17 @@
       "developer": "XD Entertainment Co., Ltd.",
       "genre": "角色扮演",
       "delta": -41,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 111,
+      "app_id": "com.nexters.herowars",
+      "app_name": "勇士爭霸：群雄聯盟",
+      "app_name_zh": "勇士爭霸：群雄聯盟",
+      "developer": "NEXTERS GLOBAL LTD",
+      "genre": "角色扮演",
+      "delta": 14,
       "alert": false,
       "ai_type": null
     },
@@ -1253,6 +2478,17 @@
       "ai_type": null
     },
     {
+      "rank": 112,
+      "app_id": "tw.haoplay.game.gp.xhgm",
+      "app_name": "星痕共鳴",
+      "app_name_zh": "星痕共鳴",
+      "developer": "HaoPlay Limited",
+      "genre": "角色扮演",
+      "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 113,
       "app_id": "6741502281",
       "app_name": "第七天災",
@@ -1260,6 +2496,17 @@
       "developer": "FUNFORGE TECHNOLOGY CO.,LTD",
       "genre": "角色扮演",
       "delta": -18,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 113,
+      "app_id": "com.and.mecharoguejp.online",
+      "app_name": "機甲變變變",
+      "app_name_zh": "機甲變變變",
+      "developer": "ONEMT SGP",
+      "genre": "冒险",
+      "delta": -13,
       "alert": false,
       "ai_type": null
     },
@@ -1275,6 +2522,17 @@
       "ai_type": null
     },
     {
+      "rank": 114,
+      "app_id": "com.netease.idv_tw.googleplay",
+      "app_name": "第五人格",
+      "app_name_zh": "第五人格",
+      "developer": "LongE Play",
+      "genre": "角色扮演",
+      "delta": -35,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 115,
       "app_id": "6747336178",
       "app_name": "忍蛋奇兵",
@@ -1282,6 +2540,17 @@
       "developer": "HK FOREVER9 TECHNOLOGY CO., LIMITED",
       "genre": "策略",
       "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 115,
+      "app_id": "com.hkmanjuu.azurlane.gp",
+      "app_name": "碧藍航線",
+      "app_name_zh": "碧藍航線",
+      "developer": "JIMI PTE.LTD.",
+      "genre": "策略",
+      "delta": -11,
       "alert": false,
       "ai_type": null
     },
@@ -1297,6 +2566,17 @@
       "ai_type": null
     },
     {
+      "rank": 116,
+      "app_id": "com.xgame.asia.tw.gp",
+      "app_name": "超能世界",
+      "app_name_zh": "超能世界",
+      "developer": "Glaciers Game",
+      "genre": "休闲",
+      "delta": 31,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 117,
       "app_id": "1572788053",
       "app_name": "一念逍遙：涅槃重生",
@@ -1304,6 +2584,17 @@
       "developer": "LTGAMES GLOBAL",
       "genre": "策略",
       "delta": -69,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 117,
+      "app_id": "com.gamedreamer.tw.newstzbtw",
+      "app_name": "率土之濱",
+      "app_name_zh": "率土之濱",
+      "developer": "海淯股份有限公司",
+      "genre": "策略",
+      "delta": 0,
       "alert": false,
       "ai_type": null
     },
@@ -1319,6 +2610,17 @@
       "ai_type": null
     },
     {
+      "rank": 118,
+      "app_id": "com.orienjoy.heroland",
+      "app_name": "英勇之地",
+      "app_name_zh": "英勇之地",
+      "developer": "Orienjoy International Company Limited",
+      "genre": "休闲",
+      "delta": -9,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 119,
       "app_id": "895761422",
       "app_name": "LINE Bubble 2",
@@ -1326,6 +2628,17 @@
       "developer": "LINE Corporation",
       "genre": "休闲",
       "delta": 56,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 119,
+      "app_id": "com.kakaogames.gdod",
+      "app_name": "女神秘令",
+      "app_name_zh": "女神秘令",
+      "developer": "Kakao Games Corp.",
+      "genre": "动作",
+      "delta": 0,
       "alert": false,
       "ai_type": null
     },
@@ -1341,6 +2654,17 @@
       "ai_type": null
     },
     {
+      "rank": 120,
+      "app_id": "com.vnggames.cheonsangbi.twhk",
+      "app_name": "天上碑M",
+      "app_name_zh": "天上碑M",
+      "developer": "VNG SINGAPORE PTE. LTD.",
+      "genre": "角色扮演",
+      "delta": 80,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 121,
       "app_id": "1673675970",
       "app_name": "蛋仔派對",
@@ -1348,6 +2672,17 @@
       "developer": "Envoy Interactive Entertainment Co.Ltd.",
       "genre": "家庭聚会",
       "delta": 2,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 121,
+      "app_id": "com.dreamland.novastar",
+      "app_name": "桃源深處有人家 - 蘿蘿一週年慶典",
+      "app_name_zh": "桃源深處有人家 - 蘿蘿一週年慶典",
+      "developer": "NovaStar-game",
+      "genre": "模拟",
+      "delta": 0,
       "alert": false,
       "ai_type": null
     },
@@ -1363,12 +2698,34 @@
       "ai_type": null
     },
     {
+      "rank": 122,
+      "app_id": "com.nexon.maplem.global",
+      "app_name": "楓之谷M - 奇幻冒險MMORPG",
+      "app_name_zh": "楓之谷M - 奇幻冒險MMORPG",
+      "developer": "NEXON Company",
+      "genre": "角色扮演",
+      "delta": -41,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 123,
       "app_id": "1315535136",
       "app_name": "荒野行動-S42賽季",
       "app_name_zh": "荒野行動-S42賽季",
       "developer": "LongE Corporation",
       "genre": "冒险",
+      "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 123,
+      "app_id": "com.hygame.hxqq.tw.gp",
+      "app_name": "華夏千秋",
+      "app_name_zh": "華夏千秋",
+      "developer": "HuoYuGame",
+      "genre": "模拟",
       "delta": 0,
       "alert": false,
       "ai_type": null
@@ -1385,6 +2742,17 @@
       "ai_type": null
     },
     {
+      "rank": 124,
+      "app_id": "tw.com.joybomb.pi2017",
+      "app_name": "棒球殿堂Live",
+      "app_name_zh": "棒球殿堂Live",
+      "developer": "Netmarble Joybomb Inc.",
+      "genre": "体育",
+      "delta": 6,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 125,
       "app_id": "1593130084",
       "app_name": "火炬之光：無限",
@@ -1392,6 +2760,17 @@
       "developer": "XD Entertainment Pte Ltd",
       "genre": "动作",
       "delta": -51,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 125,
+      "app_id": "com.kakaogames.rom",
+      "app_name": "王權之憶",
+      "app_name_zh": "王權之憶",
+      "developer": "Kakao Games Corp.",
+      "genre": "角色扮演",
+      "delta": 0,
       "alert": false,
       "ai_type": null
     },
@@ -1407,6 +2786,17 @@
       "ai_type": null
     },
     {
+      "rank": 126,
+      "app_id": "com.xman.tw.gp",
+      "app_name": "超能戰爭",
+      "app_name_zh": "超能戰爭",
+      "developer": "Glaciers Game",
+      "genre": "休闲",
+      "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 127,
       "app_id": "1241253595",
       "app_name": "叫我官老爺",
@@ -1414,6 +2804,17 @@
       "developer": "CHUANG COOL GAME",
       "genre": "策略",
       "delta": -41,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 127,
+      "app_id": "com.com2us.smon.normal.freefull.google.kr.android.common",
+      "app_name": "魔靈召喚: 天空之役",
+      "app_name_zh": "魔靈召喚: 天空之役",
+      "developer": "Com2uS",
+      "genre": "角色扮演",
+      "delta": -16,
       "alert": false,
       "ai_type": null
     },
@@ -1429,6 +2830,17 @@
       "ai_type": null
     },
     {
+      "rank": 128,
+      "app_id": "com.sialiagames.sgzzlb.gp.tw",
+      "app_name": "三國志・戰略版",
+      "app_name_zh": "三國志・戰略版",
+      "developer": "Sialia Games",
+      "genre": "策略",
+      "delta": 6,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 129,
       "app_id": "6743824718",
       "app_name": "龍之谷：經典再現",
@@ -1436,6 +2848,17 @@
       "developer": "7road International HK Limited",
       "genre": "动作",
       "delta": 7,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 129,
+      "app_id": "com.nianticlabs.monsterhunter",
+      "app_name": "Monster Hunter Now",
+      "app_name_zh": "Monster Hunter Now",
+      "developer": "Niantic, Inc.",
+      "genre": "动作",
+      "delta": -13,
       "alert": false,
       "ai_type": null
     },
@@ -1451,6 +2874,17 @@
       "ai_type": null
     },
     {
+      "rank": 130,
+      "app_id": "com.garena.game.codm",
+      "app_name": "決勝時刻®: Mobile - Garena",
+      "app_name_zh": "決勝時刻®: Mobile - Garena",
+      "developer": "Garena Mobile Private",
+      "genre": "动作",
+      "delta": -39,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 131,
       "app_id": "529479190",
       "app_name": "部落衝突 (Clash of Clans)",
@@ -1458,6 +2892,17 @@
       "developer": "Supercell",
       "genre": "动作",
       "delta": -6,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 131,
+      "app_id": "com.ddup.zombiewaves.zw",
+      "app_name": "喪屍狂潮",
+      "app_name_zh": "喪屍狂潮",
+      "developer": "Fun Formula",
+      "genre": "冒险",
+      "delta": 34,
       "alert": false,
       "ai_type": null
     },
@@ -1473,6 +2918,17 @@
       "ai_type": null
     },
     {
+      "rank": 132,
+      "app_id": "com.xd.TLglobal",
+      "app_name": "火炬之光：無限",
+      "app_name_zh": "火炬之光：無限",
+      "developer": "XD Entertainment Pte Ltd",
+      "genre": "角色扮演",
+      "delta": -67,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 133,
       "app_id": "6739828673",
       "app_name": "小兵來支援！",
@@ -1480,6 +2936,17 @@
       "developer": "HAPPY TIME GAMES",
       "genre": "休闲",
       "delta": 50,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 133,
+      "app_id": "io.randomco.travel",
+      "app_name": "Travel Town - Merge Adventure",
+      "app_name_zh": "Travel Town - Merge Adventure",
+      "developer": "Magmatic Games LTD",
+      "genre": "益智",
+      "delta": 13,
       "alert": false,
       "ai_type": null
     },
@@ -1495,6 +2962,17 @@
       "ai_type": null
     },
     {
+      "rank": 134,
+      "app_id": "com.slsmsecond.tw.and",
+      "app_name": "遺跡的地平線",
+      "app_name_zh": "遺跡的地平線",
+      "developer": "Rhinos",
+      "genre": "角色扮演",
+      "delta": -20,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 135,
       "app_id": "6746192853",
       "app_name": "變身傳奇",
@@ -1502,6 +2980,17 @@
       "developer": "Billionairegames",
       "genre": "角色扮演",
       "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 135,
+      "app_id": "com.nexon.bluearchive",
+      "app_name": "蔚藍檔案",
+      "app_name_zh": "蔚藍檔案",
+      "developer": "NEXON Company",
+      "genre": "角色扮演",
+      "delta": 41,
       "alert": false,
       "ai_type": null
     },
@@ -1517,6 +3006,17 @@
       "ai_type": null
     },
     {
+      "rank": 136,
+      "app_id": "com.fatmerge.global",
+      "app_name": "食光旅行",
+      "app_name_zh": "食光旅行",
+      "developer": "Century Games PTE. LTD.",
+      "genre": "休闲",
+      "delta": 12,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 137,
       "app_id": "1253796614",
       "app_name": "RO仙境傳說：守護永恆的愛",
@@ -1524,6 +3024,17 @@
       "developer": "GRAVITY Co., Ltd.",
       "genre": "角色扮演",
       "delta": 52,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 137,
+      "app_id": "com.zzsj.tw.and",
+      "app_name": "不休旅途：繪卷世界",
+      "app_name_zh": "不休旅途：繪卷世界",
+      "developer": "Joy Nice Games",
+      "genre": "角色扮演",
+      "delta": 21,
       "alert": false,
       "ai_type": null
     },
@@ -1539,6 +3050,17 @@
       "ai_type": null
     },
     {
+      "rank": 138,
+      "app_id": "com.linecorp.LGBB2",
+      "app_name": "LINE Bubble 2",
+      "app_name_zh": "LINE Bubble 2",
+      "developer": "LINE (LY Corporation)",
+      "genre": "益智",
+      "delta": 3,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 139,
       "app_id": "6747746222",
       "app_name": "遺跡的地平線",
@@ -1546,6 +3068,17 @@
       "developer": "RHINOS",
       "genre": "角色扮演",
       "delta": 14,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 139,
+      "app_id": "com.netmarble.revolutionthm",
+      "app_name": "天堂2：革命",
+      "app_name_zh": "天堂2：革命",
+      "developer": "Netmarble",
+      "genre": "角色扮演",
+      "delta": -21,
       "alert": false,
       "ai_type": null
     },
@@ -1561,6 +3094,17 @@
       "ai_type": null
     },
     {
+      "rank": 140,
+      "app_id": "com.dreamv2.gptw",
+      "app_name": "深淵：不滅者",
+      "app_name_zh": "深淵：不滅者",
+      "developer": "SP-Game",
+      "genre": "角色扮演",
+      "delta": -33,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 141,
       "app_id": "1570095804",
       "app_name": "Kingdom Guard:Tower Defense TD",
@@ -1568,6 +3112,17 @@
       "developer": "TAP4FUN (HONGKONG) LIMITED",
       "genre": "策略",
       "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 141,
+      "app_id": "com.cbdfgame.hw",
+      "app_name": "三國：赤壁東風",
+      "app_name_zh": "三國：赤壁東風",
+      "developer": "Changsha Chanchan Water Flow Network T Co Ld",
+      "genre": "卡牌",
+      "delta": 38,
       "alert": false,
       "ai_type": null
     },
@@ -1583,6 +3138,17 @@
       "ai_type": null
     },
     {
+      "rank": 142,
+      "app_id": "com.blizzard.diablo.immortal",
+      "app_name": "《暗黑破壞神 永生不朽》",
+      "app_name_zh": "《暗黑破壞神 永生不朽》",
+      "developer": "Blizzard Entertainment, Inc.",
+      "genre": "角色扮演",
+      "delta": 2,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 143,
       "app_id": "6738383231",
       "app_name": "香蕉缺個芭樂-熊出沒聯動",
@@ -1590,6 +3156,17 @@
       "developer": "CloudOcean Star",
       "genre": "角色扮演",
       "delta": 36,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 143,
+      "app_id": "com.es.civilization.rise.empire",
+      "app_name": "帝國：文明的崛起",
+      "app_name_zh": "帝國：文明的崛起",
+      "developer": "NEWHOPE TECH PTE.LTD.",
+      "genre": "策略",
+      "delta": -20,
       "alert": false,
       "ai_type": null
     },
@@ -1605,6 +3182,17 @@
       "ai_type": null
     },
     {
+      "rank": 144,
+      "app_id": "com.archosaur.sea.yslzm.gp",
+      "app_name": "Life Makeover",
+      "app_name_zh": "Life Makeover",
+      "developer": "Archosaur Games",
+      "genre": "角色扮演",
+      "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 145,
       "app_id": "1610514988",
       "app_name": "凡人修仙傳M-靈界篇",
@@ -1612,6 +3200,17 @@
       "developer": "BlancoZone",
       "genre": "角色扮演",
       "delta": -1,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 145,
+      "app_id": "com.mover.twzqzs",
+      "app_name": "最強宗師",
+      "app_name_zh": "最強宗師",
+      "developer": "Mover Games Limited",
+      "genre": "卡牌",
+      "delta": -3,
       "alert": false,
       "ai_type": null
     },
@@ -1627,6 +3226,17 @@
       "ai_type": null
     },
     {
+      "rank": 146,
+      "app_id": "com.igg.android.doomsdaylastsurvivors",
+      "app_name": "黎明再現(Doomsday: Last Survivors)",
+      "app_name_zh": "黎明再現(Doomsday: Last Survivors)",
+      "developer": "IGG.COM",
+      "genre": "策略",
+      "delta": 35,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 147,
       "app_id": "6478206199",
       "app_name": "主公快逃: 拆解大師",
@@ -1634,6 +3244,17 @@
       "developer": "9z Games(HK)",
       "genre": "休闲",
       "delta": -36,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 147,
+      "app_id": "com.dxx.firenow",
+      "app_name": "噠噠特攻",
+      "app_name_zh": "噠噠特攻",
+      "developer": "Habby",
+      "genre": "冒险",
+      "delta": 0,
       "alert": false,
       "ai_type": null
     },
@@ -1649,6 +3270,17 @@
       "ai_type": null
     },
     {
+      "rank": 148,
+      "app_id": "com.smallgiantgames.empires",
+      "app_name": "帝國與解謎 (Empires & Puzzles)",
+      "app_name_zh": "帝國與解謎 (Empires & Puzzles)",
+      "developer": "Small Giant Games",
+      "genre": "益智",
+      "delta": -16,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 149,
       "app_id": "1643509748",
       "app_name": "摩奇料理 主題餐廳",
@@ -1656,6 +3288,17 @@
       "developer": "Happibits",
       "genre": "模拟",
       "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 149,
+      "app_id": "com.statewill.shzz",
+      "app_name": "三國志Thrones",
+      "app_name_zh": "三國志Thrones",
+      "developer": "LUCKYFUN ENTERTAINMENT NETWORK LIMITED",
+      "genre": "策略",
+      "delta": 17,
       "alert": false,
       "ai_type": null
     },
@@ -1671,6 +3314,17 @@
       "ai_type": null
     },
     {
+      "rank": 150,
+      "app_id": "com.magic.village.gp",
+      "app_name": "魔法村物語",
+      "app_name_zh": "魔法村物語",
+      "developer": "Grid games",
+      "genre": "角色扮演",
+      "delta": -40,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 151,
       "app_id": "1478096431",
       "app_name": "一拳超人：最強之男",
@@ -1678,6 +3332,17 @@
       "developer": "GAMENOW TECHNOLOGY LIMITED(HK)",
       "genre": "策略",
       "delta": -10,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 151,
+      "app_id": "com.cyberjoy.galaxydefense",
+      "app_name": "太空防禦(Galaxy Defense)",
+      "app_name_zh": "太空防禦(Galaxy Defense)",
+      "developer": "CyberJoy Games",
+      "genre": "策略",
+      "delta": 43,
       "alert": false,
       "ai_type": null
     },
@@ -1693,6 +3358,17 @@
       "ai_type": null
     },
     {
+      "rank": 152,
+      "app_id": "com.scopely.monopolygo",
+      "app_name": "MONOPOLY GO!",
+      "app_name_zh": "MONOPOLY GO!",
+      "developer": "Scopely",
+      "genre": "桌面和棋类",
+      "delta": -30,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 153,
       "app_id": "1528941310",
       "app_name": "噠噠特攻",
@@ -1700,6 +3376,17 @@
       "developer": "HABBY",
       "genre": "动作",
       "delta": 5,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 153,
+      "app_id": "com.nianticlabs.pikmin",
+      "app_name": "Pikmin Bloom",
+      "app_name_zh": "Pikmin Bloom",
+      "developer": "Niantic, Inc.",
+      "genre": "冒险",
+      "delta": -20,
       "alert": false,
       "ai_type": null
     },
@@ -1715,6 +3402,17 @@
       "ai_type": null
     },
     {
+      "rank": 154,
+      "app_id": "com.divine.twgp",
+      "app_name": "劍靈神域",
+      "app_name_zh": "劍靈神域",
+      "developer": "PLAY CAT NETWORK TECHNOLOGY CO., LIMITED",
+      "genre": "角色扮演",
+      "delta": -26,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 155,
       "app_id": "6752602008",
       "app_name": "逍遙仙緣",
@@ -1722,6 +3420,17 @@
       "developer": "Gillie & Lucky Network Technology Co., Limited",
       "genre": "角色扮演",
       "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 155,
+      "app_id": "com.snake.twgp",
+      "app_name": "瘋狂的蛇姬",
+      "app_name_zh": "瘋狂的蛇姬",
+      "developer": "GAMERVISION NETWORK TECHNOLOGY CO.,LIMITED",
+      "genre": "角色扮演",
+      "delta": -78,
       "alert": false,
       "ai_type": null
     },
@@ -1737,6 +3446,17 @@
       "ai_type": null
     },
     {
+      "rank": 156,
+      "app_id": "com.gm99.dzg",
+      "app_name": "叫我大掌櫃:原創正版古風經營",
+      "app_name_zh": "叫我大掌櫃:原創正版古風經營",
+      "developer": "頑星遊戲",
+      "genre": "模拟",
+      "delta": -25,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 157,
       "app_id": "1098157959",
       "app_name": "文明霸業 - 王者再臨",
@@ -1744,6 +3464,17 @@
       "developer": "TOP GAMES INC.",
       "genre": "角色扮演",
       "delta": -22,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 157,
+      "app_id": "com.morefun.dwdtw",
+      "app_name": "大武道 – 暢銷網文授權改編",
+      "app_name_zh": "大武道 – 暢銷網文授權改編",
+      "developer": "Morefun Technology Limited",
+      "genre": "卡牌",
+      "delta": 0,
       "alert": false,
       "ai_type": null
     },
@@ -1759,6 +3490,17 @@
       "ai_type": null
     },
     {
+      "rank": 158,
+      "app_id": "com.haegin.playtogether",
+      "app_name": "天天玩樂園：我的農場",
+      "app_name_zh": "天天玩樂園：我的農場",
+      "developer": "HAEGIN Co., Ltd.",
+      "genre": "休闲",
+      "delta": -34,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 159,
       "app_id": "1483058899",
       "app_name": "Project Makeover",
@@ -1766,6 +3508,17 @@
       "developer": "Magic Tavern, Inc.",
       "genre": "益智解谜",
       "delta": 36,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 159,
+      "app_id": "com.dreamgames.royalkingdom",
+      "app_name": "Royal Kingdom",
+      "app_name_zh": "Royal Kingdom",
+      "developer": "Dream Games, Ltd.",
+      "genre": "益智",
+      "delta": -14,
       "alert": false,
       "ai_type": null
     },
@@ -1781,6 +3534,17 @@
       "ai_type": null
     },
     {
+      "rank": 160,
+      "app_id": "com.supercell.brawlstars",
+      "app_name": "荒野亂鬥",
+      "app_name_zh": "荒野亂鬥",
+      "developer": "Supercell",
+      "genre": "动作",
+      "delta": -10,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 161,
       "app_id": "1124686975",
       "app_name": "角子共玩-賽特、老虎機、柏青斯洛",
@@ -1788,6 +3552,17 @@
       "developer": "Megata Ltd.",
       "genre": "娱乐场",
       "delta": -30,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 161,
+      "app_id": "com.taigusec.gptw",
+      "app_name": "暮色雙城",
+      "app_name_zh": "暮色雙城",
+      "developer": "SP-Game",
+      "genre": "角色扮演",
+      "delta": -48,
       "alert": false,
       "ai_type": null
     },
@@ -1803,6 +3578,17 @@
       "ai_type": null
     },
     {
+      "rank": 162,
+      "app_id": "com.netmarble.kofafk",
+      "app_name": "THE KING OF FIGHTERS AFK",
+      "app_name_zh": "THE KING OF FIGHTERS AFK",
+      "developer": "Netmarble",
+      "genre": "角色扮演",
+      "delta": 18,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 163,
       "app_id": "1644103900",
       "app_name": "超能世界",
@@ -1810,6 +3596,17 @@
       "developer": "9z Games(HK)",
       "genre": "休闲",
       "delta": -12,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 163,
+      "app_id": "com.nrs.tw.drc.gp",
+      "app_name": "龍族幻想：勇者集結",
+      "app_name_zh": "龍族幻想：勇者集結",
+      "developer": "Focent",
+      "genre": "角色扮演",
+      "delta": 0,
       "alert": false,
       "ai_type": null
     },
@@ -1825,12 +3622,34 @@
       "ai_type": null
     },
     {
+      "rank": 164,
+      "app_id": "com.ggv.rebirth.tw",
+      "app_name": "RO仙境傳說：重生",
+      "app_name_zh": "RO仙境傳說：重生",
+      "developer": "Gravity Game Vision",
+      "genre": "角色扮演",
+      "delta": 33,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 165,
       "app_id": "1492885094",
       "app_name": "叫我大掌櫃",
       "app_name_zh": "叫我大掌櫃",
       "developer": "U-LIKE ENTERTAINMENT LIMITED",
       "genre": "模拟",
+      "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 165,
+      "app_id": "com.gsyta.atmwwtcd",
+      "app_name": "萬妖伏魔錄",
+      "app_name_zh": "萬妖伏魔錄",
+      "developer": "PG Listener",
+      "genre": "角色扮演",
       "delta": 0,
       "alert": false,
       "ai_type": null
@@ -1847,6 +3666,17 @@
       "ai_type": null
     },
     {
+      "rank": 166,
+      "app_id": "com.play.rogt",
+      "app_name": "RO仙境傳說：新世代的誕生",
+      "app_name_zh": "RO仙境傳說：新世代的誕生",
+      "developer": "Nuverse",
+      "genre": "角色扮演",
+      "delta": -69,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 167,
       "app_id": "6749934240",
       "app_name": "女神秘令: 熱血橫向動作像素RPG",
@@ -1854,6 +3684,17 @@
       "developer": "Kakao Games Corp.",
       "genre": "动作",
       "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 167,
+      "app_id": "com.hermes.mk.asia",
+      "app_name": "世界計畫 繽紛舞台！feat. 初音未來",
+      "app_name_zh": "世界計畫 繽紛舞台！feat. 初音未來",
+      "developer": "Nuverse",
+      "genre": "音乐",
+      "delta": -87,
       "alert": false,
       "ai_type": null
     },
@@ -1869,6 +3710,17 @@
       "ai_type": null
     },
     {
+      "rank": 168,
+      "app_id": "com.poseidongame.dsl",
+      "app_name": "歡迎來到夢樂園",
+      "app_name_zh": "歡迎來到夢樂園",
+      "developer": "海淯股份有限公司",
+      "genre": "角色扮演",
+      "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 169,
       "app_id": "6449512313",
       "app_name": "Arena Breakout：暗區突圍",
@@ -1876,6 +3728,17 @@
       "developer": "MAINSTREAM UNIVERSAL CO. LTD.",
       "genre": "动作",
       "delta": -61,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 169,
+      "app_id": "com.godgame.texasholdem.android",
+      "app_name": "德州撲克 神來也德州撲克(Texas Poker)",
+      "app_name_zh": "德州撲克 神來也德州撲克(Texas Poker)",
+      "developer": "Gamesofa Inc.",
+      "genre": "赌场",
+      "delta": 0,
       "alert": false,
       "ai_type": null
     },
@@ -1891,6 +3754,17 @@
       "ai_type": null
     },
     {
+      "rank": 170,
+      "app_id": "com.avalon.c1p.googleplay",
+      "app_name": "貪婪洞窟：重生",
+      "app_name_zh": "貪婪洞窟：重生",
+      "developer": "Avalon Network Media",
+      "genre": "角色扮演",
+      "delta": 15,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 171,
       "app_id": "1628970855",
       "app_name": "劍與遠征：啟程",
@@ -1898,6 +3772,17 @@
       "developer": "Farlight Games",
       "genre": "冒险",
       "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 171,
+      "app_id": "com.gtarcade.ioe.global",
+      "app_name": "Infinity Kingdom",
+      "app_name_zh": "Infinity Kingdom",
+      "developer": "Yoozoo (Singapore) Pte. Ltd",
+      "genre": "策略",
+      "delta": -15,
       "alert": false,
       "ai_type": null
     },
@@ -1913,6 +3798,17 @@
       "ai_type": null
     },
     {
+      "rank": 172,
+      "app_id": "com.aceclub.tw",
+      "app_name": "王牌俱樂部-十萬倍賽特登場",
+      "app_name_zh": "王牌俱樂部-十萬倍賽特登場",
+      "developer": "GAMESPARCS CO.,LTD",
+      "genre": "赌场",
+      "delta": -21,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 173,
       "app_id": "6596747214",
       "app_name": "RO仙境傳說：重生",
@@ -1920,6 +3816,17 @@
       "developer": "Gravity Game Vision Limited",
       "genre": "角色扮演",
       "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 173,
+      "app_id": "com.igs.fafafa",
+      "app_name": "金猴爺娛樂城-街機捕魚遊戲",
+      "app_name_zh": "金猴爺娛樂城-街機捕魚遊戲",
+      "developer": "International Games System Co., Ltd.",
+      "genre": "赌场",
+      "delta": -12,
       "alert": false,
       "ai_type": null
     },
@@ -1935,11 +3842,33 @@
       "ai_type": null
     },
     {
+      "rank": 174,
+      "app_id": "com.softstargames.shadow",
+      "app_name": "我想成為影之強者！Master of Garden",
+      "app_name_zh": "我想成為影之強者！Master of Garden",
+      "developer": "星宇互娛",
+      "genre": "角色扮演",
+      "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 175,
       "app_id": "1662742277",
       "app_name": "我獨自升級:Arise",
       "app_name_zh": "我獨自升級:Arise",
       "developer": "Netmarble Corporation",
+      "genre": "动作",
+      "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 175,
+      "app_id": "com.netmarble.sololv",
+      "app_name": "我獨自升級:Arise",
+      "app_name_zh": "我獨自升級:Arise",
+      "developer": "Netmarble",
       "genre": "动作",
       "delta": 0,
       "alert": false,
@@ -1957,12 +3886,34 @@
       "ai_type": null
     },
     {
+      "rank": 176,
+      "app_id": "com.cola.game",
+      "app_name": "火辣餐廳：合併&烹飪",
+      "app_name_zh": "火辣餐廳：合併&烹飪",
+      "developer": "Microfun Limited",
+      "genre": "益智",
+      "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 177,
       "app_id": "1572988056",
       "app_name": "歡樂大東家",
       "app_name_zh": "歡樂大東家",
       "developer": "SINGAPORE JUST GAME TECHNOLOGY PTE.LTD.",
       "genre": "策略",
+      "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 177,
+      "app_id": "com.happyelements.happyfish",
+      "app_name": "開心水族箱",
+      "app_name_zh": "開心水族箱",
+      "developer": "Eureka Creation Limited",
+      "genre": "休闲",
       "delta": 0,
       "alert": false,
       "ai_type": null
@@ -1979,6 +3930,17 @@
       "ai_type": null
     },
     {
+      "rank": 178,
+      "app_id": "com.chuanglian.sgfml",
+      "app_name": "三國名將傳：三國趙雲開局、七日領關羽，3D國戰策略卡牌SLG",
+      "app_name_zh": "三國名將傳：三國趙雲開局、七日領關羽，3D國戰策略卡牌SLG",
+      "developer": "Ardelia JEFFERSON",
+      "genre": "策略",
+      "delta": -25,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 179,
       "app_id": "6480390337",
       "app_name": "桃源深處有人家 - 蘿蘿一週年慶典",
@@ -1986,6 +3948,17 @@
       "developer": "NovaStar",
       "genre": "模拟",
       "delta": 11,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 179,
+      "app_id": "com.riotgames.league.teamfighttacticstw",
+      "app_name": "TFT：《聯盟戰棋》",
+      "app_name_zh": "TFT：《聯盟戰棋》",
+      "developer": "台灣大哥大",
+      "genre": "策略",
+      "delta": 0,
       "alert": false,
       "ai_type": null
     },
@@ -2001,6 +3974,17 @@
       "ai_type": null
     },
     {
+      "rank": 180,
+      "app_id": "com.slg.savagesurvival",
+      "app_name": "野蠻生存錄:侏羅紀",
+      "app_name_zh": "野蠻生存錄:侏羅紀",
+      "developer": "YOTTA GAMES",
+      "genre": "策略",
+      "delta": 3,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 181,
       "app_id": "1490985322",
       "app_name": "明日方舟",
@@ -2008,6 +3992,17 @@
       "developer": "GRYPH FRONTIER PTE.LTD.",
       "genre": "角色扮演",
       "delta": -12,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 181,
+      "app_id": "com.onepunchman.ggplay.tw",
+      "app_name": "一拳超人：最強之男—特別篇",
+      "app_name_zh": "一拳超人：最強之男—特別篇",
+      "developer": "GAMENOW TECHNOLOGY",
+      "genre": "角色扮演",
+      "delta": -11,
       "alert": false,
       "ai_type": null
     },
@@ -2023,6 +4018,17 @@
       "ai_type": null
     },
     {
+      "rank": 182,
+      "app_id": "com.rxsj.ssjj",
+      "app_name": "大俠客-龍行天下",
+      "app_name_zh": "大俠客-龍行天下",
+      "developer": "ALICE GAME",
+      "genre": "角色扮演",
+      "delta": 5,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 183,
       "app_id": "1509450845",
       "app_name": "薑餅人王國",
@@ -2030,6 +4036,17 @@
       "developer": "Devsisters",
       "genre": "角色扮演",
       "delta": -33,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 183,
+      "app_id": "com.hero.may.cry.adventure.game",
+      "app_name": "合合合英雄",
+      "app_name_zh": "合合合英雄",
+      "developer": "Perfeggs",
+      "genre": "休闲",
+      "delta": 12,
       "alert": false,
       "ai_type": null
     },
@@ -2045,11 +4062,33 @@
       "ai_type": null
     },
     {
+      "rank": 184,
+      "app_id": "tw.xdg.and.rs",
+      "app_name": "藍顏清夢",
+      "app_name_zh": "藍顏清夢",
+      "developer": "HaoPlay Limited",
+      "genre": "角色扮演",
+      "delta": -55,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 185,
       "app_id": "891264481",
       "app_name": "LINE 旅遊大亨",
       "app_name_zh": "LINE 旅遊大亨",
       "developer": "LINE Corporation",
+      "genre": "冒险",
+      "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 185,
+      "app_id": "com.netease.hyxdtw",
+      "app_name": "荒野行動-Knives Out",
+      "app_name_zh": "荒野行動-Knives Out",
+      "developer": "LongE Play",
       "genre": "冒险",
       "delta": 0,
       "alert": false,
@@ -2067,6 +4106,17 @@
       "ai_type": null
     },
     {
+      "rank": 186,
+      "app_id": "com.netmarble.nanagb",
+      "app_name": "七大罪：光與暗之交戰",
+      "app_name_zh": "七大罪：光與暗之交戰",
+      "developer": "Netmarble",
+      "genre": "角色扮演",
+      "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 187,
       "app_id": "6751585358",
       "app_name": "華夏千秋-NPC自由攻略",
@@ -2078,11 +4128,33 @@
       "ai_type": null
     },
     {
+      "rank": 187,
+      "app_id": "com.newtypegames.dl2hmt",
+      "app_name": "極無雙2",
+      "app_name_zh": "極無雙2",
+      "developer": "HK TAIHE INTERACTIVE LIMITED",
+      "genre": "动作",
+      "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 188,
       "app_id": "1459091694",
       "app_name": "劍與遠征",
       "app_name_zh": "劍與遠征",
       "developer": "Original Entertainment Co., Ltd.",
+      "genre": "策略",
+      "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 188,
+      "app_id": "com.royal.conflict",
+      "app_name": "三國志：黃金城の決戰",
+      "app_name_zh": "三國志：黃金城の決戰",
+      "developer": "CLOVER GAMES",
       "genre": "策略",
       "delta": 0,
       "alert": false,
@@ -2100,6 +4172,17 @@
       "ai_type": null
     },
     {
+      "rank": 189,
+      "app_id": "jp.co.koeitecmo.Mighttc",
+      "app_name": "三國志 霸道",
+      "app_name_zh": "三國志 霸道",
+      "developer": "KOEI TECMO GAMES CO., LTD.",
+      "genre": "模拟",
+      "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 190,
       "app_id": "1464689103",
       "app_name": "Family Island — Farming game",
@@ -2107,6 +4190,17 @@
       "developer": "Melsoft",
       "genre": "冒险",
       "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 190,
+      "app_id": "com.komoe.kmumamusumegp",
+      "app_name": "賽馬娘Pretty Derby",
+      "app_name_zh": "賽馬娘Pretty Derby",
+      "developer": "KOMOE TECHNOLOGY LIMITED",
+      "genre": "模拟",
+      "delta": -88,
       "alert": false,
       "ai_type": null
     },
@@ -2122,6 +4216,17 @@
       "ai_type": null
     },
     {
+      "rank": 191,
+      "app_id": "com.mxdzz.tw.and",
+      "app_name": "菇勇者傳說-全新射擊玩法",
+      "app_name_zh": "菇勇者傳說-全新射擊玩法",
+      "developer": "Joy Nice Games",
+      "genre": "角色扮演",
+      "delta": -55,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 192,
       "app_id": "1371565796",
       "app_name": "突襲：暗影傳說",
@@ -2129,6 +4234,17 @@
       "developer": "Plarium Global Ltd",
       "genre": "角色扮演",
       "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 192,
+      "app_id": "com.wemade.nightcrowsglobal",
+      "app_name": "NIGHT CROWS",
+      "app_name_zh": "NIGHT CROWS",
+      "developer": "Wemade Co., Ltd",
+      "genre": "角色扮演",
+      "delta": -20,
       "alert": false,
       "ai_type": null
     },
@@ -2144,6 +4260,17 @@
       "ai_type": null
     },
     {
+      "rank": 193,
+      "app_id": "co.fntra.tw.oi",
+      "app_name": "石器懷舊版-官方原版,100%還原",
+      "app_name_zh": "石器懷舊版-官方原版,100%還原",
+      "developer": "Guangzhou CatPaw Information Technology Co., Ltd",
+      "genre": "角色扮演",
+      "delta": -4,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 194,
       "app_id": "6458050011",
       "app_name": "救世者之樹Ｍ",
@@ -2151,6 +4278,17 @@
       "developer": "Gamania Digital Entertainment",
       "genre": "冒险",
       "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 194,
+      "app_id": "com.netease.mrzhtw",
+      "app_name": "明日之後",
+      "app_name_zh": "明日之後",
+      "developer": "LongE Play",
+      "genre": "角色扮演",
+      "delta": -30,
       "alert": false,
       "ai_type": null
     },
@@ -2166,6 +4304,17 @@
       "ai_type": null
     },
     {
+      "rank": 195,
+      "app_id": "com.megoogames.herotw",
+      "app_name": "英雄刷刷刷",
+      "app_name_zh": "英雄刷刷刷",
+      "developer": "Megoo Games",
+      "genre": "休闲",
+      "delta": -36,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 196,
       "app_id": "1491705532",
       "app_name": "花舞宮廷",
@@ -2173,6 +4322,17 @@
       "developer": "Origin Mood Limited",
       "genre": "角色扮演",
       "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 196,
+      "app_id": "com.mjsggame.ft",
+      "app_name": "喵將三國-送999抽",
+      "app_name_zh": "喵將三國-送999抽",
+      "developer": "DilidaStudio",
+      "genre": "卡牌",
+      "delta": -36,
       "alert": false,
       "ai_type": null
     },
@@ -2188,6 +4348,17 @@
       "ai_type": null
     },
     {
+      "rank": 197,
+      "app_id": "com.y2sgames.girlwarstw",
+      "app_name": "少女戰爭",
+      "app_name_zh": "少女戰爭",
+      "developer": "Y2SGAMES",
+      "genre": "角色扮演",
+      "delta": -77,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 198,
       "app_id": "6472643035",
       "app_name": "完美世界W",
@@ -2195,6 +4366,17 @@
       "developer": "HUNT GAMES COMPANY LIMITED",
       "genre": "角色扮演",
       "delta": 0,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 198,
+      "app_id": "com.mobile.legends",
+      "app_name": "Mobile Legends: Bang Bang",
+      "app_name_zh": "Mobile Legends: Bang Bang",
+      "developer": "MOONTON",
+      "genre": "动作",
+      "delta": -93,
       "alert": false,
       "ai_type": null
     },
@@ -2210,6 +4392,17 @@
       "ai_type": null
     },
     {
+      "rank": 199,
+      "app_id": "com.plarium.raidlegends",
+      "app_name": "突襲：暗影傳說",
+      "app_name_zh": "突襲：暗影傳說",
+      "developer": "Plarium Global Ltd",
+      "genre": "角色扮演",
+      "delta": -87,
+      "alert": false,
+      "ai_type": null
+    },
+    {
       "rank": 200,
       "app_id": "1606356401",
       "app_name": "絕區零",
@@ -2217,6 +4410,17 @@
       "developer": "COGNOSPHERE PTE. LTD.",
       "genre": "动作",
       "delta": -101,
+      "alert": false,
+      "ai_type": null
+    },
+    {
+      "rank": 200,
+      "app_id": "jp.boi.mementomori.android",
+      "app_name": "MementoMori",
+      "app_name_zh": "MementoMori",
+      "developer": "Bank of Innovation, Inc.",
+      "genre": "角色扮演",
+      "delta": 0,
       "alert": false,
       "ai_type": null
     }
