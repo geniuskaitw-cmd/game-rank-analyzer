@@ -18,7 +18,7 @@ MOVERS_DIR.mkdir(parents=True, exist_ok=True)
 
 TARGET_COUNTRIES = ["TW", "US", "CN", "TH", "PH"]
 TARGET_CHARTS = ["top_grossing", "top_free"]
-PLATFORMS = ["ios", "gp"] # 目前只處理 ios 數據，但結構支援 gp
+PLATFORMS = ["ios", "gp"] 
 
 # --- 工具函式 ---
 def read_json(path):
@@ -82,8 +82,10 @@ def analyze_date_pair_movers(country, chart, platform, today_str, yesterday_str)
     return movers[:10]
 
 def main():
-    # 最終輸出結果結構: { date_str: { country: { chart: [movers] } } }
-    all_results = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
+    # 最終輸出結果結構: { date_str: { country: { chart: { platform_chart: [movers] } } } }
+    # 這裡將 all_results 的結構調整為 { date_str: { country: { platform: { chart: [movers] } } } }
+    # 以便於儲存時能正確區分平台和榜單
+    all_results = defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(list)))) 
 
     print("=== 開始分析歷史名次變動 (Movers) ===")
     
@@ -101,30 +103,22 @@ def main():
             today_str = dates[i]    # 較新的日期
             yesterday_str = dates[i+1] # 較舊的日期
           
-            # === START: 新增的優化邏輯 ===
+            # 由於我們要輸出包含 ios/gp 的綜合結果，建議先手動刪除 data/movers/ 下舊的 movers_YYYYMMDD.json
             out_path = MOVERS_DIR / f"movers_{today_str}.json"
-            if out_path.exists():
-                # 這裡原本的邏輯是跳過，但為了確保 GP 數據能被處理，我們應確保該檔案是綜合性的。
-                # 簡單起見，我們繼續保留，但如果您需要重新計算（包含 GP），請先刪除舊檔案。
-                print(f"[SKIP] {cc}: movers_{today_str}.json 已存在，跳過計算。")
-                continue
-            # === END: 新增的優化邏輯 ===
+            # 為了確保涵蓋 GP 數據，如果檔案已存在，我們仍然會重新計算，但這裡先註釋掉跳過邏輯。
+            # if out_path.exists():
+            #     print(f"[SKIP] {cc}: movers_{today_str}.json 已存在，跳過計算。")
+            #     continue
             
             for platform in PLATFORMS:
-                # 修正：移除跳過 GP 數據的邏輯
-                # 這裡假設只分析 iOS 榜單（因為 Google Sheet 尚未提供 GP 數據）的註解已失效
-                # if platform == "gp": 
-                #     continue # 舊有程式碼已移除
                 
                 for chart in TARGET_CHARTS:
                     
                     movers = analyze_date_pair_movers(cc, chart, platform, today_str, yesterday_str)
                     
                     if movers:
-                        # 將結果儲存為 all_results['20251022']['tw']['top_grossing'] = [...]
-                        # 為了區分平台，我們將結果存入一個臨時結構
-                        key = f"{platform}_{chart}"
-                        all_results[today_str][cc.lower()][key] = movers
+                        # 修正：將結果儲存到正確的層級: all_results[date][country][platform][chart]
+                        all_results[today_str][cc.lower()][platform][chart] = movers
                         print(f"[OK] {cc} {chart} ({platform.upper()}): {len(movers)} movers detected ({today_str} vs {yesterday_str}).")
                     else:
                         print(f"[INFO] {cc} {chart} ({platform.upper()}): No movers detected ({today_str} vs {yesterday_str}).")
@@ -134,8 +128,15 @@ def main():
     generated_files = []
     
     for today_str, country_data in all_results.items():
-        # 將 defaultdict 轉換為標準 dict 輸出
-        final_result = {k: dict(v) for k, v in country_data.items()}
+        
+        # 準備最終輸出結構: { country: { platform: { chart: [movers] } } }
+        final_result = {}
+        for country_code, platform_data in country_data.items():
+            final_result[country_code] = {}
+            for platform, chart_data in platform_data.items():
+                # 將 defaultdict(list) 轉換為標準 dict
+                final_result[country_code][platform] = dict(chart_data)
+
         out_path = MOVERS_DIR / f"movers_{today_str}.json"
         
         with open(out_path, "w", encoding="utf-8") as f:
