@@ -1,0 +1,990 @@
+{
+  "US": {
+    "ios": {
+      "top_grossing": {
+        "Last War:Survival": {
+          "version": "1.0.317",
+          "updated": "2025-10-29T08:55:44Z",
+          "releaseNotes": "1. Gift level cap increased to Level 25, with new dynamic emotes and Avatar Frame rewards added.\n2. Optimized the interface display of Arena [Battle Record] to more clearly show defense and win/loss information.",
+          "app_id": "6448786147"
+        },
+        "MONOPOLY GO!": {
+          "version": "1.57.0",
+          "updated": "2025-10-31T08:58:32Z",
+          "releaseNotes": "A new version has made its way to your Boards, Tycoons!\nThis time, Mr. M focused on squashing bugs and smoothing out your gameplay experience—all to get things ready for the next Sticker collection!\nSo update now and GO for the Stickers you need while you can to win A-list rewards!",
+          "app_id": "1621328561"
+        },
+        "Royal Match": {
+          "version": "32131",
+          "updated": "2025-10-27T08:01:19Z",
+          "releaseNotes": "Are you ready for a spooky new update?\n\n• Get ready for amazing 100 NEW LEVELS! Hit the CLOCK TOWER and watch the GEARS burst onto the board!\n\n• Explore the NEW AREA! Stock up on scares and sweets in the HALLOWEEN SHOP!\n\nNew levels are coming in every two weeks! Be sure to update your game to get the latest content!",
+          "app_id": "1482155847"
+        },
+        "Candy Crush Saga": {
+          "version": "1.314.1.1",
+          "updated": "2025-10-27T07:10:20Z",
+          "releaseNotes": "We hope you’re having fun playing Candy Crush Saga! \n\nWe update the game every week with sweet new features, exciting levels, and important bug fixes to keep everything running smoothly. \n\nDon't forget to download the latest version for the best experience!\n\nNew to the game? Don’t be shy, join the fun!",
+          "app_id": "553834731"
+        },
+        "Clash Royale": {
+          "version": "12.169.18",
+          "updated": "2025-10-17T07:22:03Z",
+          "releaseNotes": "New update: CLASH-O-WEEN IS BACK!\n• NEW EVOLUTIONS:\n• Skeleton Army – A General rises to lead the swarm.\n• Royal Ghost – Summons Souldiers to fight by his side.\n• NEW LUCKY CHESTS: Special Chests packed with seasonal content - Cards, Cosmetics, and Evolution Shards.\n• MERGE TACTICS: New Rulers enter the Arena and the roster expands with powerful Troops like Wizard, Witch, Electro Wizard, and more.\n• Plus, bug fixes and improvements to keep battles running smoothly",
+          "app_id": "1053012308"
+        },
+        "Kingshot": {
+          "version": "1.7.12",
+          "updated": "2025-10-28T07:10:55Z",
+          "releaseNotes": "[New Content]\n1. New Feature: Mystic Trial. A brand-new adventure awaits! \n2. New Feature: Leading Glory. During Kingdom Transfer, your Kingdom will receive a Leading Emblem each time it qualifies as a Leading Kingdom. Accumulate Leading Emblems to unlock special Leading Glory skins. Show off your Kingdom's dominance!\n3. New Feature: Mood Status. Set a status to let others know how you're feeling, making social interactions more fun and personal.",
+          "app_id": "6739554056"
+        },
+        "Gossip Harbor®: Merge & Story": {
+          "version": "3.76.0",
+          "updated": "2025-10-22T11:03:36Z",
+          "releaseNotes": "NEW EPISODE EVERY FRIDAY!\n- NEW EPISODE: With new chapter updates every Friday; follow Quinn as she exposes secrets and solves puzzles.\n- NEW EVENT:Visit the Dark Zone and unlock the Howling Factory! Join Sam, Colton and Harrison as they're transported to a strange nightmare world. Help them escape by collecting points and unlock exclusive decorations to complete the event.",
+          "app_id": "1623318294"
+        },
+        "Royal Kingdom": {
+          "version": "23120",
+          "updated": "2025-11-03T07:59:26Z",
+          "releaseNotes": "Get ready for a splendid new update!\n\n• Prepare yourself for 100 NEW LEVELS! Experience fun and exciting challenges!\n\n• Explore the new district, AIRPORT! Keep expanding the kingdom to discover new horizons!\n\nPlay Royal Kingdom now!",
+          "app_id": "1606549505"
+        },
+        "Whiteout Survival": {
+          "version": "1.28.18",
+          "updated": "2025-10-22T07:06:00Z",
+          "releaseNotes": "[New Content]\n1. New Feature: Tundra Album. Forge your legend in the icy realm! Gather Scene Fragments scattered across the tundra. And piece them together into spectacular scenes. Relive the timeless legends of the frost-bound era and make history yourself!\n2. New Feature: Leading Glory system. Each time your state qualifies as a Leading State during State Transfer, it will receive a Leading Emblem. The Leading Emblems can be used to unlock exclusive rewards such as Sunfire Castle Shield Skin, State Transfer Event State Name Card, Sunfire Castle Skin and Turret Skin, and Exclusive State Title. Stay proud of your state!\n3. New Event: Dead Shot When participating in regular events, you have a chance of earning \"Shotchits\". You can use the \"Shotchits\" to play a shooting game. Hit the bullseye for bountiful rewards! Every 2 \"Chest Keys\" collected can be used to open a chest that contains extra bonuses. By spending enough Shotchits, you can unlock the exclusive Action Emote: Hit!\n\n[Optimization & Adjustment]\n1. Bear Hunt: Added the Auto-Register feature, which automatically starts a Bear Hunt based on the last opening time once the cooldown ends.\n2. Castle Battle: Reduced the battle duration to 5 hours and the required occupation time for victory to 2.5 hours, without changing the battlefield opening hours.\n3. Daybreak Island: Added a new basic decoration, \"Marble Fence\". Introduced the Like History feature, allowing you to view likes from other Chiefs.\n4. Lighthouse Intel: Upon reaching Furnace Lv. 15 or VIP Lv. 5, you will unlock the \"Claim All\" feature for claiming your Intel rewards.\n5. Alliance Championship: Added the \"Batch-Adjust\" feature to the troop info page, allowing R4 or higher officers to adjust lanes more efficiently.\n6. Teleport: While using a \"Territory Teleporter\", you can freely adjust and select your target location before confirmation. If your target location is within your Alliance territory, \"Territory Teleporters\" will be used first.\n7. Snowbusters:\na. Increased Fuel consumption and rewards for snow clearing (numerical adjustments only without changing the overall rewards). After a certain levels, monsters in an area can drop multiple Snowbuster Maps.\nb. Added a feature that allows you to exchange Fuel for Rockets after clearing Area 16.\nc. Added the Raid feature, which becomes available once you reach Area 24. You will be able to clear stages quickly by spending Fuel.\nd. Snowbusters Pass Optimization: Using Rockets now grants Snow Points. \n8. Chief Gear: When your state age reaches a certain number of days, we will introduce T4 Legendary Gear (3-Star) and expand the sources for Chief Gear enhancement materials. The details are as follows:\na. Labyrinth Shop: \"Chief Gear Materials Chest\" will become available.\nb. Alliance Championship Shop: The weekly purchase limit for \"Polishing Solution\", \"Design Plan\", and \"Hardened Alloy\" will be increased.\nc. Crazy Joe: Personal Ranking Rewards and Alliance Ranking Rewards will be updated.\n9. Frostdragon Tyrant: Introduced State Rewards for all Chiefs at Furnace Lv. 20 or higher in the states of the top 10 Chiefs on the Occupation Ranking. Additionally, the Tyrant’s Gift will now appear at a random location near the Sunfire Castle instead of a fixed position.\n10. Tundra Arms League: Introduced rank-determined State Rewards for all Chiefs at Furnace Lv. 20 or higher in the states of the top 4 Legions, which can be claimed manually.\n11. Foundry Battle: After occupying a building for 30 minutes in Foundry Battle and Tundra Arms League, you will gain Personal Points much faster.\n12. Mercenary Prestige: When your state unlocks Fire Crystal Lv. 8, a new type of Legend's Initiation will be introduced, and the current one will be renamed as Epic Initiation.\n13. The Labyrinth: Introduced the Alliance Member Leaderboard, allowing you to view your allies' performances.",
+          "app_id": "6443575749"
+        },
+        "Township": {
+          "version": "31.0.0",
+          "updated": "2025-10-14T10:15:05Z",
+          "releaseNotes": "Get ready for a new update!\nNew adventures in Township!\n\nSeason Adventures\n* Gatsby-era fashion and medieval nobility are coming to Township! Decorate your town and win valuable resources in the Gatsby Pass and Knight Pass!\n\nThrilling new expeditions\n* While searching for traces of Vikings, Richard and Rachel end up captured by them and must fight off a mysterious monster!\n* Richard, Ellen, and Alicia take part in filming an exciting Thanksgiving TV show!\n\nNew card collection\n* Collect cards from the Winter Collection to get a unique badge and other prizes!\n\nAlso\n* Halloween and Black Friday sales\n* Travel to Loch Ness and Santa's home in new regatta seasons!\n* Enjoy new buildings—a yoga center and a spiral complex!",
+          "app_id": "638689075"
+        },
+        "Last Z: Survival Shooter": {
+          "version": "1.250.682",
+          "updated": "2025-10-23T07:21:09Z",
+          "releaseNotes": "bugs fixed.",
+          "app_id": "6503272652"
+        },
+        "Toon Blast": {
+          "version": "19991",
+          "updated": "2025-10-27T08:01:00Z",
+          "releaseNotes": "PLAY 50 NEW LEVELS!\nToon Blast introduces the Candy Crew episode with 50 new levels!\nBe sure to update to the current version of Toon Blast for the newest content.\nCome and join the fun!",
+          "app_id": "1176027022"
+        },
+        "Match Factory!": {
+          "version": "1.54.27",
+          "updated": "2025-11-03T07:10:29Z",
+          "releaseNotes": "• NEW PACK: Craft Tools\n\nNew items are coming every 2 weeks! Be sure to update your game to get the latest content!",
+          "app_id": "6449094229"
+        },
+        "Coin Master": {
+          "version": "3.5.2290",
+          "updated": "2025-10-27T07:55:07Z",
+          "releaseNotes": "Thanks for playing Coin Master!\n\nIn this version, we’ve implemented bug fixes & performance improvements.\n\nWe have also implemented our new reward calendar feature - collect your daily rewards! \n\nEnjoy a world of fun, thrills, and huge rewards right at your fingertips. \n\nInvite your friends to play Coin Master & get your FREE REWARDS! We also recommend joining our community on Facebook, Twitter, and Instagram for more fun & excitement.\n\nEnjoying Coin Master? Leave a review :)",
+          "app_id": "406889139"
+        },
+        "Free Fire": {
+          "version": "1.118.1",
+          "updated": "2025-10-29T03:30:18Z",
+          "releaseNotes": "[Flame Arena] Step into the inferno as the flames close in. The strongest will claim victory.\n[New Loadouts] 4 fresh loadouts to mix and match for ultimate team strategy.\n[New Character - Nero] Be careful not to enter and get lost in the dream space this dreamsmith creates.\n[New Weapon - Winchester] A full-auto marksman rifle with 2-round firing and high mobility, an excellent pick for long‑range combat.\n[Social Island in Custom Room] Create your own hangout and invite friends to party together.",
+          "app_id": "1300146617"
+        },
+        "Dark War:Survival": {
+          "version": "1.250.620",
+          "updated": "2025-10-30T09:02:15Z",
+          "releaseNotes": "[Optimization & Adjustments]\n- After canceling the Bio-Mutant's Engage Offline function, a pop-up notification will be added.\n- When tapping an alliance that has been disbanded in the Rankings, a pop-up notification will now indicate that the alliance has been disbanded.\n- Optimized some in-game visuals and details.",
+          "app_id": "6670441558"
+        },
+        "Pokémon GO": {
+          "version": "0.385.2",
+          "updated": "2025-11-03T01:40:33Z",
+          "releaseNotes": "Trainers, we hope you’re enjoying your adventure in Pokémon GO! We update the app regularly with new events and features, so make sure to check the in-game News to stay up to date.",
+          "app_id": "1094591345"
+        },
+        "Gardenscapes": {
+          "version": "9.1.0",
+          "updated": "2025-10-03T13:08:16Z",
+          "releaseNotes": "A fall Gardenscapes update!\nNEW EVENTS\nLegends of Transylvania: find the missing girls and complete a horror quest!\nScourge of the Seas: embark on a real pirate adventure for treasure!\n\nSTORYLINE\nFind out what Bill Young's parents were secretly working on at their oceanographic station!",
+          "app_id": "1105855019"
+        },
+        "Homescapes": {
+          "version": "8.3.6",
+          "updated": "2025-10-23T09:04:00Z",
+          "releaseNotes": "Get ready for a thrilling Homescapes update!\n \nHALLOWEEN: A NIGHT IN THE WOODS\n• Help Robbie find his daughter Chloe in the nighttime forest!\n• Uncover the mystery of the sinister masked figure!\n• Finish the event to earn a unique decoration!\n \nTHE FRONTIER'S GOLD\n• Learn the story of Austin's great-grandmother, the fearless Marshal Goldy!\n• Foil the local bandits' plans and be the first to claim the legendary treasures!\n• Finish the event to earn a unique decoration!\n \nALSO\n• Spooky Pass and Home Pass! Activate the passes to get coins, boosters, and other valuable rewards!\n• The Other Half story continues! Who will Katherine choose?",
+          "app_id": "1195621598"
+        },
+        "PUBG MOBILE": {
+          "version": "4.0.0",
+          "updated": "2025-09-04T10:00:22Z",
+          "releaseNotes": "PUBG MOBILE's Spooky Soiree version arrives on September 4! V4.0 introduces tons of ghostly content, as well as new game modes and tons of collaborations! Get ready for the most spooktacular update of the year!\n\nClassic Mode\n1. Ghost Gameplay: Unlock shield, boost, flying, and healing abilities, plus you can engage in battles even after you get knocked out!\n2. Mortar: A new weapon that deals high explosive damage. Supports both close aiming and ranged target selection, for more tactical versatility.\n3. Weapon Adjustments: Stocks and foregrips have been completely revamped for more precise shooting feedback.\nAsymmetric Game Mode: Unfail is now available! Experience the intense 1v4 pursuit and escape showdown between the Predator and the Survivors!\nMetro Royale: Challenge your friends to a 1v1, check out the new limited seasonal crates, and face a new limited-time boss.\nWOW: WOW 1.0 is officially here! Most players now have access to the editor and can win cash rewards!\nPerformance Update: The Super Smooth graphics option is now available, designed to improve the frame rate, reduce lag, minimize overheating, and lower power consumption!",
+          "app_id": "1330123889"
+        },
+        "Evony": {
+          "version": "5.11.0",
+          "updated": "2025-11-03T01:12:19Z",
+          "releaseNotes": "- Bug fixes and improvements",
+          "app_id": "1098157959"
+        },
+        "Call of Duty®: Mobile": {
+          "version": "1.0.52",
+          "updated": "2025-07-28T03:12:00Z",
+          "releaseNotes": "Descend into uncharted depths with Call of Duty®: Mobile’s Season 7: Phantom Current! Unearth the secrets of the abyss and encounter CODM’s sixth Mythic Operator, Dark Shepherd, a special crossover with Girls’ Frontline, and a refreshed Legendary reward in the Secret Cache system. \n\nNew Mythic Dark Shepherd: \nUnleash darkness with the most sinister Mythic Operator yet, Dark Shepherd – Phantom. Wield the Epic Scythe and Legendary AS-VAL to dominate the lobby with forces from another dimension. With power coursing through your veins, every fight becomes a surge of unstoppable force. \n\nNew Secret Cache Reward: \nAnother Legendary weapon skin is landing in the Secret Cache system! Log in and play to start earning the RUS-79U – Mystical Lamp… before it vanishes in a puff of smoke—and no genie can bring it back. \n \nGirls’ Frontline: \nGirls’ Frontline deploys into Call of Duty®: Mobile in Season 7! Recruit an iconic T-Doll Operator and gear up with exclusive themed items. Complete the seasonal event to de-stress, reload, and reinforce your squad with free Girls’ Frontline rewards. \n\nNew Battle Passes:  \nSeason 7 brings an all-new Battle Pass and the opportunity to earn 50 tiers of free and premium rewards, including the new MG 82 weapon and Bomb Drone Scorestreak! Gear up and stay the course—more treasures await you in the Season 8 Battle Pass! \n\nNew Battle Pass Vaults:    \nFan-favorite Battle Passes are setting sail once again in the Vault for Seasons 7 and 8—don’t miss your chance to rearm with gear from past deployments! Season 7 brings Season 11: Ultimate Frontier (2022) and Season 7: Heat Wave (2023) back on deck. Hold steady—more cargo is charted for arrival in Season 8! \n\nMajor Gameplay Updates: \nSeason 7 shifts into high gear with all-new gameplay updates for a fresh dose of chaos! Get ready to burn rubber in Mini Mayhem, where you’ll zip around the map battling for first place in an RCXD. And for the first time ever, CODM Battle Royale gets its own Gulag—fight your way back from elimination in a gritty 1v1 showdown on ‘Isolated’. \n\nFrom deep-sea secrets to Mythic mayhem, Call of Duty®: Mobile Season 7: Phantom Current plunges you into a fresh experience. The current’s pulling you in—so gear up and dive headfirst into the action!",
+          "app_id": "1287282214"
+        },
+        "Fishdom": {
+          "version": "9.3.2",
+          "updated": "2025-10-21T09:06:40Z",
+          "releaseNotes": "Check out the latest Fishdom update!\nPIRATE GOLD AND THE POWER OF THE ELEMENTS!\n- Get tons of rewards and the Traveler's Badge by collecting all the cards in the Journey Collection!\n- Embark on the Black Mark expedition and solve the mystery of Captain Black's cursed doubloon!\n- Take on the challenges in the Thunder Spear expedition and appease Tlaloc and his furious thunderstorms!\nALSO\nNew aquarium: Treasure Island\nNew fish: Frontosa Cichlid and Rainbow Darter\nEnjoy the game!",
+          "app_id": "664575829"
+        },
+        "Pokémon TCG Pocket": {
+          "version": "1.4.0",
+          "updated": "2025-10-29T01:00:40Z",
+          "releaseNotes": "● Mega Rising: Mega Gyarados, Mega Rising: Mega Blaziken, and and Mega Rising: Mega Altaria booster packs are now available.\n● New share feature.\n● More cards eligible for trading.\n● Wonder pick feature updated.\n● Flair can now be obtained automatically.\n● Increased the number of decks you can build.\n● Player level max has been increased.\n● Improvements to some features.",
+          "app_id": "6479970832"
+        },
+        "Travel Town - Merge Adventure": {
+          "version": "2.12.1291",
+          "updated": "2025-10-29T09:45:15Z",
+          "releaseNotes": "Welcome to the latest update of Travel Town!\nWe’ve been busy improving the game and addressing bugs for you. \nEnjoy!",
+          "app_id": "1521236603"
+        },
+        "Lightning Link Casino Slots": {
+          "version": "9.6.0",
+          "updated": "2025-10-29T13:37:29Z",
+          "releaseNotes": "Thank you for playing Lightning Link Casino!\n\nNew amazing slots are on their way for you to enjoy! Stay tuned for more amazing events, seasons and coins to be won.\n\nWe hope you enjoy Lightning Link Casino!",
+          "app_id": "1243005112"
+        },
+        "Clash of Clans": {
+          "version": "17.477.13",
+          "updated": "2025-10-23T10:22:37Z",
+          "releaseNotes": "Rank Up!\n·   Multiplayer split! Join Tournaments and climb new Leagues in Ranked Battles, or duke it out in regular Battles without the risk of losing Trophies.\n·   Revenge is back, and it’s sweet! Attack players that raided your Village to get your resources back!\n·   Shields have switched up! Introducing Magic Shields that protect resources and Legend Shields that skip upcoming League Days.\n·   Other Changes: We’re reworking Spring Traps and removing Town Hall Weapon Levels.",
+          "app_id": "529479190"
+        },
+        "Age of Origins:Tower Defense": {
+          "version": "1.3.804",
+          "updated": "2025-10-31T03:14:11Z",
+          "releaseNotes": "Optimized some of the game play.",
+          "app_id": "1376515087"
+        },
+        "Cashman Casino Slots Games": {
+          "version": "3.78.0",
+          "updated": "2025-10-27T10:36:33Z",
+          "releaseNotes": "Hey Mr. Cashman fans!\nGet our NEW games in our latest update!\nFor the best experience and most FUN we’ve squashed bugs and optimized your game.\nBecome a fan today using the following link to get daily bonuses and updates:\nhttps://www.facebook.com/cashmancasino/",
+          "app_id": "1123582513"
+        },
+        "Jackpot Party - Casino Slots": {
+          "version": "5064.00",
+          "updated": "2025-10-28T00:22:49Z",
+          "releaseNotes": "Hey, partiers! Get ready to take your slot-playing journey to the next level with our newest update! Download the latest version today and dive into a brand new Jackpot Party experience, including new collectable feature Party Cards, and see where you rank with Leaderboards!",
+          "app_id": "575980917"
+        },
+        "Disney Solitaire": {
+          "version": "1.7.1",
+          "updated": "2025-10-23T09:42:27Z",
+          "releaseNotes": "Get ready for an amazing update!\n* Prepare for NEW levels!\n* Unlock NEW Disney characters!\n* Join the magic with NEW DISNEY FEATURES!\n* Enjoy performance improvements for a smoother gaming experience!\nPlay Disney Solitaire!",
+          "app_id": "6475757306"
+        },
+        "Top Heroes: Kingdom Saga": {
+          "version": "1.79.12",
+          "updated": "2025-11-03T11:16:16Z",
+          "releaseNotes": "The Ancient and Frostfield Battlefields usher in a brand-new “Turnaround Moment”! When the final battle drums sound, the tides of war shift—both factions will earn double points. Comeback or domination, everything will be decided in the final moments.",
+          "app_id": "6450953550"
+        },
+        "Color Block Jam": {
+          "version": "1.29.3",
+          "updated": "2025-11-01T16:58:58Z",
+          "releaseNotes": "New look, same fun! We’ve refreshed our game icon, so you’ll spot us more easily on your home screen. Get ready to take your skills to the next level with our LATEST NEW OBSTACLE! This update introduces the COLORFUL CRATE and FRESH NEW LEVELS! Colorful crates are cleared once all blocks of the same color are removed from the board. Watch carefully which colors you have, plan your moves wisely, and clear your path with perfect timing! Strategy, timing, and precision will decide your success. Don’t miss the new update!",
+          "app_id": "6504332779"
+        },
+        "Puzzles & Survival": {
+          "version": "4.0.196",
+          "updated": "2025-11-01T05:13:40Z",
+          "releaseNotes": "[New Hero] Economy Hero, Lilian, is here! \n[New Event] Experience a magical Halloween! \n[New Appearance] Check out the new Halloween-themed skins! \n[Optimizations and Upgrades] Changes to the Lucky Golden Egg, and various other optimizations!",
+          "app_id": "1517980891"
+        },
+        "NYT Games: Wordle & Crossword": {
+          "version": "6.0.0",
+          "updated": "2025-10-27T17:49:20Z",
+          "releaseNotes": "This version contains improvements to keep you solving smoothly!                                                                               \n\nHave feedback? Email us. nytgames@nytimes.com",
+          "app_id": "307569751"
+        },
+        "Tasty Travels: Merge Game": {
+          "version": "41.0",
+          "updated": "2025-10-27T02:52:53Z",
+          "releaseNotes": "- Minor bug fixes and improvements",
+          "app_id": "6471045672"
+        },
+        "All in Hole: Black Hole Games": {
+          "version": "6.0.2",
+          "updated": "2025-11-02T14:55:24Z",
+          "releaseNotes": "NEW PACKS WITH FRESH LEVELS!\n\nOct 27 – WITCH Pack: Brew Halloween magic with 100 spellbinding levels!  \nNov 10 – OUTDOOR Pack: Pitch tents, roast marshmallows & explore 100 camping-themed levels!  \nNov 24 – THANKSGIVING Pack: Celebrate the harvest in 100 festive and flavorful levels!\n\nAnd don’t miss the new TREASURE PASS season starting Nov 1!\n\nUpdate regularly so you never miss fresh levels, events & surprises!",
+          "app_id": "6503284107"
+        },
+        "Candy Crush Soda Saga": {
+          "version": "1.305.2",
+          "updated": "2025-10-28T08:42:47Z",
+          "releaseNotes": "Sodalicious! We update our game every week with exciting levels, improvements to the game, and fun new features. Download the latest version to check it out!\nJoining us after a break? Welcome back! New to the game? You’ll be a pro before you know it!\n\nWhat are you waiting for? Let’s play!",
+          "app_id": "850417475"
+        },
+        "Screwdom": {
+          "version": "7.2.4",
+          "updated": "2025-10-24T02:56:07Z",
+          "releaseNotes": "New Event: Christmas Collection – Celebrate the holiday season! Collect festive items and unlock exclusive rewards!",
+          "app_id": "6740043080"
+        },
+        "Big Fish Casino: Slots Games": {
+          "version": "19.8.38",
+          "updated": "2025-09-26T18:34:41Z",
+          "releaseNotes": "CELEBRATE the start of AUTUMN! Exclusive sales and events are happening all month long!\n\n* NEW SLOTS! Fú Lún, Magic Spark, & Firecracker Fortunes!\n* BUG FIXES! We’re always on the lookout for pesky bugs and have also made some performance fixes.\n* FREEBIES! Check us out on Facebook & Instagram for daily FREE CHIPS, as well as important updates!",
+          "app_id": "538212549"
+        },
+        "Love and Deepspace": {
+          "version": "4.5.0",
+          "updated": "2025-10-28T21:01:14Z",
+          "releaseNotes": "Love and DeepSpace – New Version [Heartbeats Ablaze] is now open!\n\n[Brand New 5-Star Memories]\nThe limited-time event [Heartbeats Ablaze] is now open! Collect series Memories and, upon meeting certain conditions, receive an exclusive BGM for free. You can also earn rewards such as Deepspace Wish: Limited, Event Memory-Themed Outfit, and selectable Event-Limited 5-Star Memory and other Cumulative Wish Rewards!\n \n[Limited-Time Events]\n- The limited-time event [Evernit Meloride] is now open! Let the music guide you as you embark on a journey through the Polar Night City. Participate to receive Deepspace Wish: Limited, New Accessories, Photo Poses, Exclusive Title, Journal Items, and more rewards for Free!\n- The [Nightbeat Gift] event is now open! Claim multiple rewards for free, and unlock more valued packs for even greater bonuses. [Dazzle Decor Sets] are also available at a limited-time discount. Purchase the pack and enjoy your exclusive dazzling stage!\n- New Outfits will be available for a limited time on November 7, with last year's trendy costumes returning for a limited period. Don't miss this annual special: unlock a new outfit at a special price!\n \n[System Upgrades]\n- [Affinity] Cap Increase—more heartwarming moments with him are waiting to be unlocked!\n- [With Him - Decor] now features 3D preview functionality—revisit the unforgettable times you've shared together.\n- [Your Cat Misses You] widget now has dynamic expressions for more cute and heartwarming interactions.\n- Memory System search and sorting functions upgraded—easier, more precise filtering makes your Memories always within reach.",
+          "app_id": "6443467666"
+        },
+        "Magic Sort!": {
+          "version": "16.28",
+          "updated": "2025-10-26T18:10:45Z",
+          "releaseNotes": "Are you ready for a magical new update?\n\n-New 100 levels!\n-Bug Fixes & Improvements\n\nEnjoy!",
+          "app_id": "6499209744"
+        },
+        "Quick Hit Slots - Vegas Casino": {
+          "version": "3.64.02",
+          "updated": "2025-10-24T14:08:38Z",
+          "releaseNotes": "SUMMER IS STILL PUMPING over at Quick Hit Slots!\n• Our NEW COLLECTIONS season pits GOOD against EVIL!\n• Quick Hit’s BIRTHDAY PARTY is just around the corner!\n• Choose any WildBall in the Showroom with our MAGICAL WILD WILDBALL!\n• We are ready to have a big celebration this LABOR DAY - so join us!\n• SCRATCH CARDS are coming, are you ready to WIN BIG?\n \nDOWNLOAD & UPDATE NOW!",
+          "app_id": "945621521"
+        },
+        "Project Makeover": {
+          "version": "2.125.5",
+          "updated": "2025-11-03T11:20:37Z",
+          "releaseNotes": "It's our birthday, Directors! Come celebrate Project Makeover's 5th Anniversary with a brand new episode, a grand Season Pass, and a wonderful new event for all Directors to party together!\n\n-CELEBRATION: 5th Anniversary Fest！\n-TIMED BONUS CARDS: 5th Anniversary Cards!\n-SEASON PASS: Birthday Celebration!\n-OPTIMIZED EVENT: Cruising for First!\n-NEW MAKEOVER: Chill Hard!\n-60 new levels!",
+          "app_id": "1483058899"
+        },
+        "Bingo Blitz™ - BINGO Games": {
+          "version": "5.82.1",
+          "updated": "2025-10-26T07:25:42Z",
+          "releaseNotes": "Thank you for being part of the Bingo Blitz community! Discover new bingo rooms, in-game events, celebrations and above all: The BEST Bingo experience! Let's BinGo!",
+          "app_id": "529996768"
+        },
+        "DoubleDown™ Casino Vegas Slots": {
+          "version": "4.5.167",
+          "updated": "2025-10-20T06:05:59Z",
+          "releaseNotes": "Hi, DoubleDown fans!\n\nGet excited, new slots are on the way! This update includes routine maintenance and performance improvements so that the casino is in tip-top shape before our next slot launch.\n\nHappy Spinning!",
+          "app_id": "485126024"
+        },
+        "Merge Cooking®": {
+          "version": "1.15.0",
+          "updated": "2025-10-30T02:30:28Z",
+          "releaseNotes": "Welcome back, Chef!\nA new version of Merge Cooking is available!\nTo provide a better experience, we're working hard to optimize the game performance as well as bring you exciting content.\nWe hope you can enjoy the time playing!\nNew to the game? Don't worry. We've prepared step-by-step instructions to guide you through. Join us and have some fun.",
+          "app_id": "1643509748"
+        },
+        "Seaside Escape®: Merge & Story": {
+          "version": "1.83.0",
+          "updated": "2025-10-29T18:27:50Z",
+          "releaseNotes": "NEW CONTENT EVERY WEEK \n- Locations! Unlock a new location and its secrets!\n- Events! Spice up your gaming experience with this weeks' event!\n\nWe've also fixed bugs and added cool new features!",
+          "app_id": "6443755785"
+        },
+        "Toy Blast": {
+          "version": "22349",
+          "updated": "2025-11-03T08:01:43Z",
+          "releaseNotes": "Play 50 new levels to catch a city fish!\n\nA new update is here!\nThe city's been underwater for many years, but the toys have adapted a new life! Now living on floating homes and tiny boats, they've built a new world among the flood. Dive into this unique update and explore a world where the water became home!\n\nBe sure to update the current version of Toy Blast for the newest content. Every 2 weeks, we bring 50 NEW LEVELS!\nCome and have fun!",
+          "app_id": "890378044"
+        },
+        "Free Fire MAX": {
+          "version": "2.118.1",
+          "updated": "2025-10-29T03:30:49Z",
+          "releaseNotes": "[Flame Arena] Step into the inferno as the flames close in. The strongest will claim victory.\n[New Loadouts] 4 fresh loadouts to mix and match for ultimate team strategy.\n[New Character - Nero] Be careful not to enter and get lost in the dream space this dreamsmith creates.\n[New Weapon - Winchester] A full-auto marksman rifle with 2-round firing and high mobility, an excellent pick for long‑range combat.\n[Social Island in Custom Room] Create your own hangout and invite friends to party together.",
+          "app_id": "1480516829"
+        }
+      },
+      "top_free": {
+        "X-Clash: Dare": {
+          "version": "1.0.30",
+          "updated": "2025-10-25T05:40:36Z",
+          "releaseNotes": "[Optimizations]\n- Improved certain experiences in Clash of Kingdoms.\n- Coordinates in union mails can now be tapped to navigate directly.\n- Optimized translation texts for some languages.",
+          "app_id": "6744812012"
+        },
+        "Jigsolitaire": {
+          "version": "0.16",
+          "updated": "2025-07-14T21:11:52Z",
+          "releaseNotes": "Get ready to challenge your brain with fresh puzzles! We’ve added a batch of new levels for you to enjoy. Sharpen your mind and see how fast you can solve them! Thanks for playing Jigsolitaire!",
+          "app_id": "6741408932"
+        },
+        "Clash Royale": {
+          "version": "12.169.18",
+          "updated": "2025-10-17T07:22:03Z",
+          "releaseNotes": "New update: CLASH-O-WEEN IS BACK!\n• NEW EVOLUTIONS:\n• Skeleton Army – A General rises to lead the swarm.\n• Royal Ghost – Summons Souldiers to fight by his side.\n• NEW LUCKY CHESTS: Special Chests packed with seasonal content - Cards, Cosmetics, and Evolution Shards.\n• MERGE TACTICS: New Rulers enter the Arena and the roster expands with powerful Troops like Wizard, Witch, Electro Wizard, and more.\n• Plus, bug fixes and improvements to keep battles running smoothly",
+          "app_id": "1053012308"
+        },
+        "Block Blast！": {
+          "version": "6.4.8",
+          "updated": "2025-11-04T02:20:00Z",
+          "releaseNotes": "We’re always improving Block Blast! Turn on auto-updates to get the latest features.\n\nSuggestions? Email us: blockblast-support@hungrystudio.com\nFollow us on TikTok for updates: @blockblastofficial",
+          "app_id": "1617391485"
+        },
+        "Roblox": {
+          "version": "2.697.925",
+          "updated": "2025-10-30T16:08:29Z",
+          "releaseNotes": "To make Roblox work better for you, we deliver updates regularly. These updates include bug fixes and improvements for speed and reliability.",
+          "app_id": "431946152"
+        },
+        "Disney Solitaire": {
+          "version": "1.7.1",
+          "updated": "2025-10-23T09:42:27Z",
+          "releaseNotes": "Get ready for an amazing update!\n* Prepare for NEW levels!\n* Unlock NEW Disney characters!\n* Join the magic with NEW DISNEY FEATURES!\n* Enjoy performance improvements for a smoother gaming experience!\nPlay Disney Solitaire!",
+          "app_id": "6475757306"
+        },
+        "Solitaire Associations: Words": {
+          "version": "0.1.62",
+          "updated": "2025-10-21T10:17:36Z",
+          "releaseNotes": "We are ready to make your game experience even greater. \nBugs are fixed and game performance is optimized. \nEnjoy.",
+          "app_id": "6748950306"
+        },
+        "Township": {
+          "version": "31.0.0",
+          "updated": "2025-10-14T10:15:05Z",
+          "releaseNotes": "Get ready for a new update!\nNew adventures in Township!\n\nSeason Adventures\n* Gatsby-era fashion and medieval nobility are coming to Township! Decorate your town and win valuable resources in the Gatsby Pass and Knight Pass!\n\nThrilling new expeditions\n* While searching for traces of Vikings, Richard and Rachel end up captured by them and must fight off a mysterious monster!\n* Richard, Ellen, and Alicia take part in filming an exciting Thanksgiving TV show!\n\nNew card collection\n* Collect cards from the Winter Collection to get a unique badge and other prizes!\n\nAlso\n* Halloween and Black Friday sales\n* Travel to Loch Ness and Santa's home in new regatta seasons!\n* Enjoy new buildings—a yoga center and a spiral complex!",
+          "app_id": "638689075"
+        },
+        "Magic Sort!": {
+          "version": "16.28",
+          "updated": "2025-10-26T18:10:45Z",
+          "releaseNotes": "Are you ready for a magical new update?\n\n-New 100 levels!\n-Bug Fixes & Improvements\n\nEnjoy!",
+          "app_id": "6499209744"
+        },
+        "Fortnite": {
+          "version": "38.00",
+          "updated": "2025-11-01T16:10:35Z",
+          "releaseNotes": "Mobile Optimization\nWe’re continuing our efforts to make it faster and easier to jump into Fortnite!\nWith v38.00, Blitz Royale is now the only experience included in new installs, letting you get into the action quicker and play your way. You can also play and update creator-made islands without waiting for other experiences to download or update. That way, you can choose when to download experiences like Battle Royale, Creative, Reload, OG, LEGO Fortnite, Rocket Racing or Fortnite Festival - keeping the initial install smaller.\n\nFortnite | Simpsons\nSpringfield is the Island in the new Battle Royale Season! Unlock Homer, Marge, and more in the Battle Pass.\n\nGet a Trusty Sidekick\nUnlock the first Sidekick in Fortnite, Peels, in the Battle Pass. Sidekicks tag along with you!",
+          "app_id": "6483539426"
+        },
+        "Hexa Sort": {
+          "version": "4.8.10",
+          "updated": "2025-10-30T19:42:58Z",
+          "releaseNotes": "New Month, New Excitement!\n- Dive into the calmness of KOI SERENITY and unlock spectacular rewards.\n- It's time to fire up the Special DRILL MACHINE Tile and conquer ALL-NEW LEVELS!\n- Unlock, and let the orchestral melodies take over in the world of SYMPHONY STAGE",
+          "app_id": "6463127238"
+        },
+        "Vita Mahjong": {
+          "version": "2.64.1",
+          "updated": "2025-11-03T11:26:23Z",
+          "releaseNotes": "-Bug fixes and performance improvements.",
+          "app_id": "6468921495"
+        },
+        "Royal Kingdom": {
+          "version": "23120",
+          "updated": "2025-11-03T07:59:26Z",
+          "releaseNotes": "Get ready for a splendid new update!\n\n• Prepare yourself for 100 NEW LEVELS! Experience fun and exciting challenges!\n\n• Explore the new district, AIRPORT! Keep expanding the kingdom to discover new horizons!\n\nPlay Royal Kingdom now!",
+          "app_id": "1606549505"
+        },
+        "MONOPOLY GO!": {
+          "version": "1.57.0",
+          "updated": "2025-10-31T08:58:32Z",
+          "releaseNotes": "A new version has made its way to your Boards, Tycoons!\nThis time, Mr. M focused on squashing bugs and smoothing out your gameplay experience—all to get things ready for the next Sticker collection!\nSo update now and GO for the Stickers you need while you can to win A-list rewards!",
+          "app_id": "1621328561"
+        },
+        "Whiteout Survival": {
+          "version": "1.28.18",
+          "updated": "2025-10-22T07:06:00Z",
+          "releaseNotes": "[New Content]\n1. New Feature: Tundra Album. Forge your legend in the icy realm! Gather Scene Fragments scattered across the tundra. And piece them together into spectacular scenes. Relive the timeless legends of the frost-bound era and make history yourself!\n2. New Feature: Leading Glory system. Each time your state qualifies as a Leading State during State Transfer, it will receive a Leading Emblem. The Leading Emblems can be used to unlock exclusive rewards such as Sunfire Castle Shield Skin, State Transfer Event State Name Card, Sunfire Castle Skin and Turret Skin, and Exclusive State Title. Stay proud of your state!\n3. New Event: Dead Shot When participating in regular events, you have a chance of earning \"Shotchits\". You can use the \"Shotchits\" to play a shooting game. Hit the bullseye for bountiful rewards! Every 2 \"Chest Keys\" collected can be used to open a chest that contains extra bonuses. By spending enough Shotchits, you can unlock the exclusive Action Emote: Hit!\n\n[Optimization & Adjustment]\n1. Bear Hunt: Added the Auto-Register feature, which automatically starts a Bear Hunt based on the last opening time once the cooldown ends.\n2. Castle Battle: Reduced the battle duration to 5 hours and the required occupation time for victory to 2.5 hours, without changing the battlefield opening hours.\n3. Daybreak Island: Added a new basic decoration, \"Marble Fence\". Introduced the Like History feature, allowing you to view likes from other Chiefs.\n4. Lighthouse Intel: Upon reaching Furnace Lv. 15 or VIP Lv. 5, you will unlock the \"Claim All\" feature for claiming your Intel rewards.\n5. Alliance Championship: Added the \"Batch-Adjust\" feature to the troop info page, allowing R4 or higher officers to adjust lanes more efficiently.\n6. Teleport: While using a \"Territory Teleporter\", you can freely adjust and select your target location before confirmation. If your target location is within your Alliance territory, \"Territory Teleporters\" will be used first.\n7. Snowbusters:\na. Increased Fuel consumption and rewards for snow clearing (numerical adjustments only without changing the overall rewards). After a certain levels, monsters in an area can drop multiple Snowbuster Maps.\nb. Added a feature that allows you to exchange Fuel for Rockets after clearing Area 16.\nc. Added the Raid feature, which becomes available once you reach Area 24. You will be able to clear stages quickly by spending Fuel.\nd. Snowbusters Pass Optimization: Using Rockets now grants Snow Points. \n8. Chief Gear: When your state age reaches a certain number of days, we will introduce T4 Legendary Gear (3-Star) and expand the sources for Chief Gear enhancement materials. The details are as follows:\na. Labyrinth Shop: \"Chief Gear Materials Chest\" will become available.\nb. Alliance Championship Shop: The weekly purchase limit for \"Polishing Solution\", \"Design Plan\", and \"Hardened Alloy\" will be increased.\nc. Crazy Joe: Personal Ranking Rewards and Alliance Ranking Rewards will be updated.\n9. Frostdragon Tyrant: Introduced State Rewards for all Chiefs at Furnace Lv. 20 or higher in the states of the top 10 Chiefs on the Occupation Ranking. Additionally, the Tyrant’s Gift will now appear at a random location near the Sunfire Castle instead of a fixed position.\n10. Tundra Arms League: Introduced rank-determined State Rewards for all Chiefs at Furnace Lv. 20 or higher in the states of the top 4 Legions, which can be claimed manually.\n11. Foundry Battle: After occupying a building for 30 minutes in Foundry Battle and Tundra Arms League, you will gain Personal Points much faster.\n12. Mercenary Prestige: When your state unlocks Fire Crystal Lv. 8, a new type of Legend's Initiation will be introduced, and the current one will be renamed as Epic Initiation.\n13. The Labyrinth: Introduced the Alliance Member Leaderboard, allowing you to view your allies' performances.",
+          "app_id": "6443575749"
+        },
+        "Duet Night Abyss": {
+          "version": "1.0.11",
+          "updated": "2025-10-25T09:38:30Z",
+          "releaseNotes": "Duet Night Abyss, a thrilling hybrid action RPG set in a dual-narrative fantasy world, is launching globally on October 28, 2025, 10:00 AM (UTC+8).\nAll characters and weapons are free to unlock. A destined battle awaits!",
+          "app_id": "6744096826"
+        },
+        "Word Search Explorer®": {
+          "version": "1.122",
+          "updated": "2025-09-23T12:49:59Z",
+          "releaseNotes": "Bug fixes and performance boosts! Enjoy smoother gameplay and faster load times—dive right in!",
+          "app_id": "1602508478"
+        },
+        "Drop the Cat": {
+          "version": "1.10.9",
+          "updated": "2025-10-30T07:55:32Z",
+          "releaseNotes": "-Stage Added\n-Bug Fixed",
+          "app_id": "6749132002"
+        },
+        "Sort It Right: Relax Puzzle": {
+          "version": "3.06",
+          "updated": "2025-10-02T02:23:47Z",
+          "releaseNotes": "What's new in version 3.06:\n- Add more levels\n- Fix somes bugs",
+          "app_id": "6670433218"
+        },
+        "Subway Surfers": {
+          "version": "3.54.0",
+          "updated": "2025-11-03T07:18:58Z",
+          "releaseNotes": "- The crew is heading to Seoul for a season full of neon lights, K-pop vibes and fun and vibrant energy!\n- The Subway Surfers x Among Us event continues: unlock the rest of the Crewmates and find the Impostor in this amazing crossover!\n- Run through futuristic streets and unlock the new characters: Si Woo, Joo Won and Lucky’s edgy new Outfit.\n- Show off your best moves in our fun Challenges to earn rewards and exclusive content.",
+          "app_id": "512939461"
+        },
+        "Magic Tiles 3: Piano Game": {
+          "version": "12.101.007",
+          "updated": "2025-10-18T03:17:26Z",
+          "releaseNotes": "We regularly update the game to enhance your experience! Don’t forget to update and enjoy the latest improvements. Stay connected with us on TikTok, YouTube, Facebook, and Instagram @magictiles3.",
+          "app_id": "1443446174"
+        },
+        "Goods Puzzle: Sort Challenge": {
+          "version": "4.32",
+          "updated": "2025-10-31T08:17:41Z",
+          "releaseNotes": "- New collections: Winter",
+          "app_id": "6482849843"
+        },
+        "Imposter - Party Word Game": {
+          "version": "3.5.0",
+          "updated": "2025-09-03T07:02:29Z",
+          "releaseNotes": "New: Optional hint word for the Imposter. Helps them get away - can you still spot them?",
+          "app_id": "6745120053"
+        },
+        "Royal Match": {
+          "version": "32131",
+          "updated": "2025-10-27T08:01:19Z",
+          "releaseNotes": "Are you ready for a spooky new update?\n\n• Get ready for amazing 100 NEW LEVELS! Hit the CLOCK TOWER and watch the GEARS burst onto the board!\n\n• Explore the NEW AREA! Stock up on scares and sweets in the HALLOWEEN SHOP!\n\nNew levels are coming in every two weeks! Be sure to update your game to get the latest content!",
+          "app_id": "1482155847"
+        },
+        "Gossip Harbor®: Merge & Story": {
+          "version": "3.76.0",
+          "updated": "2025-10-22T11:03:36Z",
+          "releaseNotes": "NEW EPISODE EVERY FRIDAY!\n- NEW EPISODE: With new chapter updates every Friday; follow Quinn as she exposes secrets and solves puzzles.\n- NEW EVENT:Visit the Dark Zone and unlock the Howling Factory! Join Sam, Colton and Harrison as they're transported to a strange nightmare world. Help them escape by collecting points and unlock exclusive decorations to complete the event.",
+          "app_id": "1623318294"
+        },
+        "Last War:Survival": {
+          "version": "1.0.317",
+          "updated": "2025-10-29T08:55:44Z",
+          "releaseNotes": "1. Gift level cap increased to Level 25, with new dynamic emotes and Avatar Frame rewards added.\n2. Optimized the interface display of Arena [Battle Record] to more clearly show defense and win/loss information.",
+          "app_id": "6448786147"
+        },
+        "Kingshot": {
+          "version": "1.7.12",
+          "updated": "2025-10-28T07:10:55Z",
+          "releaseNotes": "[New Content]\n1. New Feature: Mystic Trial. A brand-new adventure awaits! \n2. New Feature: Leading Glory. During Kingdom Transfer, your Kingdom will receive a Leading Emblem each time it qualifies as a Leading Kingdom. Accumulate Leading Emblems to unlock special Leading Glory skins. Show off your Kingdom's dominance!\n3. New Feature: Mood Status. Set a status to let others know how you're feeling, making social interactions more fun and personal.",
+          "app_id": "6739554056"
+        },
+        "Last Z: Survival Shooter": {
+          "version": "1.250.682",
+          "updated": "2025-10-23T07:21:09Z",
+          "releaseNotes": "bugs fixed.",
+          "app_id": "6503272652"
+        },
+        "Wool Craze -Yarn Color Sort 3D": {
+          "version": "4.2",
+          "updated": "2025-10-30T15:35:55Z",
+          "releaseNotes": "Stability improvements and bug fixes.",
+          "app_id": "6744317674"
+        },
+        "Geometry Dash Lite": {
+          "version": "2.21.6",
+          "updated": "2024-12-20T15:20:54Z",
+          "releaseNotes": "- New Level: Geometrical Dominator!\n- New Demon Level: Theory of Everything 2!\n- Collect Orbs to unlock items in the Shop.\n- Play the Daily Level and earn bonuses.\n- Weekly Demon and Event Levels now live!\n- New unique Levels every week!\n- Bonus platformer levels!\n- New Achievements and unlocks.\n- Daily chests, find secrets, bonuses and more!\n- Bugfixes and tweaks.",
+          "app_id": "698255242"
+        },
+        "Among Us!": {
+          "version": "2025.10.14",
+          "updated": "2025-10-15T18:46:16Z",
+          "releaseNotes": "Bug fixes",
+          "app_id": "1351168404"
+        },
+        "Angry Birds 2": {
+          "version": "6.0.3",
+          "updated": "2025-10-30T09:47:32Z",
+          "releaseNotes": "Minor fixes and improvements. Just cleaning up around the nest.",
+          "app_id": "880047117"
+        },
+        "Homescapes": {
+          "version": "8.3.6",
+          "updated": "2025-10-23T09:04:00Z",
+          "releaseNotes": "Get ready for a thrilling Homescapes update!\n \nHALLOWEEN: A NIGHT IN THE WOODS\n• Help Robbie find his daughter Chloe in the nighttime forest!\n• Uncover the mystery of the sinister masked figure!\n• Finish the event to earn a unique decoration!\n \nTHE FRONTIER'S GOLD\n• Learn the story of Austin's great-grandmother, the fearless Marshal Goldy!\n• Foil the local bandits' plans and be the first to claim the legendary treasures!\n• Finish the event to earn a unique decoration!\n \nALSO\n• Spooky Pass and Home Pass! Activate the passes to get coins, boosters, and other valuable rewards!\n• The Other Half story continues! Who will Katherine choose?",
+          "app_id": "1195621598"
+        },
+        "Pixel Flow!": {
+          "version": "0.7.0",
+          "updated": "2025-10-31T09:20:20Z",
+          "releaseNotes": "The latest update has landed! Discover new challenges, improved stability, and a more responsive experience all around. We’ve expanded the game with new levels, refined old ones, and made everything run smoother. Your journey just got even better, dive in and explore the upgrades!",
+          "app_id": "6751056652"
+        },
+        "Differences - Find & Spot It": {
+          "version": "2.7.0",
+          "updated": "2025-11-03T21:44:50Z",
+          "releaseNotes": "Hey all players,\nThis update includes bug fixes and performance improvements.\nExplore the fun of spotting differences in tons of beautifully designed pictures!\nIf you have any questions or suggestions, feel free to contact us at af@gurugame.ai.\nThanks for choosing us!",
+          "app_id": "6504279468"
+        },
+        "Hole.io": {
+          "version": "2.34.7",
+          "updated": "2025-10-29T10:47:32Z",
+          "releaseNotes": "- Hole Escape is here! Jump into our new limited-time event! Win stages, escape being devoured by the hole and earn big rewards! Who will be the last survivor?\n- Bug Fixes",
+          "app_id": "1389111413"
+        },
+        "Call of Duty®: Mobile": {
+          "version": "1.0.52",
+          "updated": "2025-07-28T03:12:00Z",
+          "releaseNotes": "Descend into uncharted depths with Call of Duty®: Mobile’s Season 7: Phantom Current! Unearth the secrets of the abyss and encounter CODM’s sixth Mythic Operator, Dark Shepherd, a special crossover with Girls’ Frontline, and a refreshed Legendary reward in the Secret Cache system. \n\nNew Mythic Dark Shepherd: \nUnleash darkness with the most sinister Mythic Operator yet, Dark Shepherd – Phantom. Wield the Epic Scythe and Legendary AS-VAL to dominate the lobby with forces from another dimension. With power coursing through your veins, every fight becomes a surge of unstoppable force. \n\nNew Secret Cache Reward: \nAnother Legendary weapon skin is landing in the Secret Cache system! Log in and play to start earning the RUS-79U – Mystical Lamp… before it vanishes in a puff of smoke—and no genie can bring it back. \n \nGirls’ Frontline: \nGirls’ Frontline deploys into Call of Duty®: Mobile in Season 7! Recruit an iconic T-Doll Operator and gear up with exclusive themed items. Complete the seasonal event to de-stress, reload, and reinforce your squad with free Girls’ Frontline rewards. \n\nNew Battle Passes:  \nSeason 7 brings an all-new Battle Pass and the opportunity to earn 50 tiers of free and premium rewards, including the new MG 82 weapon and Bomb Drone Scorestreak! Gear up and stay the course—more treasures await you in the Season 8 Battle Pass! \n\nNew Battle Pass Vaults:    \nFan-favorite Battle Passes are setting sail once again in the Vault for Seasons 7 and 8—don’t miss your chance to rearm with gear from past deployments! Season 7 brings Season 11: Ultimate Frontier (2022) and Season 7: Heat Wave (2023) back on deck. Hold steady—more cargo is charted for arrival in Season 8! \n\nMajor Gameplay Updates: \nSeason 7 shifts into high gear with all-new gameplay updates for a fresh dose of chaos! Get ready to burn rubber in Mini Mayhem, where you’ll zip around the map battling for first place in an RCXD. And for the first time ever, CODM Battle Royale gets its own Gulag—fight your way back from elimination in a gritty 1v1 showdown on ‘Isolated’. \n\nFrom deep-sea secrets to Mythic mayhem, Call of Duty®: Mobile Season 7: Phantom Current plunges you into a fresh experience. The current’s pulling you in—so gear up and dive headfirst into the action!",
+          "app_id": "1287282214"
+        },
+        "MONOPOLY: Bingo!": {
+          "version": "1.9.2",
+          "updated": "2025-11-03T13:31:31Z",
+          "releaseNotes": "Version 1.9 introduces Special Card Packs—including Gold Packs with guaranteed Gold Cards and Master Packs with guaranteed new cards to boost your collection. Enjoy new seasonal board events like Monster Midway and themed rooms including Pie Party, Turkey Time, and Tangled Up. Plus, updated missions, tournaments, and rewards make completing the upcoming card series, Home for the Holidays, faster than ever!",
+          "app_id": "6479528256"
+        },
+        "Epic Plane Evolution": {
+          "version": "1.6.33",
+          "updated": "2025-11-03T02:15:13Z",
+          "releaseNotes": "Improvements and bug Fixing",
+          "app_id": "6504122823"
+        },
+        "Sorry! World - Board Game": {
+          "version": "0.25.0",
+          "updated": "2025-11-03T01:31:34Z",
+          "releaseNotes": "Sorry! World Update: Friend Codes & Bug Fixes! \n\nWe've got a brand new update that's all about connecting with your friends and keeping the game running smoothly!\n\nFriend Codes: Adding friends is now easier than ever! Share your unique code and connect with your buddies in Sorry! World.\nBug Fixes: We've been working hard to squash those pesky bugs and optimize performance! Enjoy a smoother, more stable Sorry! World!",
+          "app_id": "6749000283"
+        },
+        "Eatventure": {
+          "version": "1.45.1",
+          "updated": "2025-10-24T06:51:01Z",
+          "releaseNotes": "- Fixed a bug preventing usernames starting with the letter \"i\"  \n- Tech update  \n\nThanks for playing!",
+          "app_id": "1600871388"
+        },
+        "That’s My Seat – Logic Puzzle": {
+          "version": "1.8.3",
+          "updated": "2025-11-03T07:18:47Z",
+          "releaseNotes": "A huge update just landed in That's My Seat! Here's what's waiting for you:\n\n- New Levels & Story: 50 fresh levels and a brand-new Story!\n- Monthly Events: Unique mini-games every month with special prizes you won't want to miss.\n- Quality of Life: Smoother gameplay, faster loading, and bug fixes for a better puzzle experience.\n\nPlease keep your game updated for the best experience!\nNeed support? Contact us at \"contact-tms@maglab.com.tr\".",
+          "app_id": "6532601126"
+        },
+        "Triumph: Play for Cash": {
+          "version": "2.81.0",
+          "updated": "2025-11-04T00:44:24Z",
+          "releaseNotes": "Why did the chicken cross the road? To beat its high score, obviously.",
+          "app_id": "1608987929"
+        },
+        "Clash of Clans": {
+          "version": "17.477.13",
+          "updated": "2025-10-23T10:22:37Z",
+          "releaseNotes": "Rank Up!\n·   Multiplayer split! Join Tournaments and climb new Leagues in Ranked Battles, or duke it out in regular Battles without the risk of losing Trophies.\n·   Revenge is back, and it’s sweet! Attack players that raided your Village to get your resources back!\n·   Shields have switched up! Introducing Magic Shields that protect resources and Legend Shields that skip upcoming League Days.\n·   Other Changes: We’re reworking Spring Traps and removing Town Hall Weapon Levels.",
+          "app_id": "529479190"
+        },
+        "Coin Sort": {
+          "version": "2.6.2",
+          "updated": "2025-10-23T14:38:06Z",
+          "releaseNotes": "Bug Fixes and Optimizations. Thank you for playing Coin Sort!",
+          "app_id": "6446354191"
+        },
+        "Sniper 3D: Gun Shooting Games": {
+          "version": "6.6.2",
+          "updated": "2025-11-03T16:47:59Z",
+          "releaseNotes": "- Bug Fixes\n- Stability improvements",
+          "app_id": "930574573"
+        },
+        "NYT Games: Wordle & Crossword": {
+          "version": "6.0.0",
+          "updated": "2025-10-27T17:49:20Z",
+          "releaseNotes": "This version contains improvements to keep you solving smoothly!                                                                               \n\nHave feedback? Email us. nytgames@nytimes.com",
+          "app_id": "307569751"
+        },
+        "8 Ball Pool™": {
+          "version": "56.13.0",
+          "updated": "2025-10-03T16:06:35Z",
+          "releaseNotes": "- You can now search, filter, and sort your Cues!\n- Fine-tune ruler has been improved with precise accuracy\n\nBe on the lookout for the next exciting new events:\nSeptember 17 - UFC Special Collaboration with a brand new Season\nOctober 8 - Flashback Moonlight Season\nOctober 15 - Monster Madness Season\nNovember 5 - Brainrot Season\n\nUpdate 8 Ball Pool to try it now!",
+          "app_id": "543186831"
+        },
+        "Block Crush！": {
+          "version": "3.2.5",
+          "updated": "2025-11-01T06:26:03Z",
+          "releaseNotes": "This update brings performance improvements and a smoother gameplay experience.",
+          "app_id": "1638139403"
+        },
+        "Fruit Merge: Match Game": {
+          "version": "7.4",
+          "updated": "2025-11-03T14:09:02Z",
+          "releaseNotes": "Some bugs fixed",
+          "app_id": "6471572249"
+        }
+      }
+    }
+  },
+  "TW": {
+    "ios": {
+      "top_grossing": {
+        "最後的戰爭 - Last War": {
+          "version": "1.0.317",
+          "updated": "2025-10-29T08:55:44Z",
+          "releaseNotes": "1. Gift level cap increased to Level 25, with new dynamic emotes and Avatar Frame rewards added.\n2. Optimized the interface display of Arena [Battle Record] to more clearly show defense and win/loss information.",
+          "app_id": "6448786147"
+        },
+        "寒霜啟示錄": {
+          "version": "1.28.18",
+          "updated": "2025-10-22T07:06:00Z",
+          "releaseNotes": "[New Content]\n1. New Feature: Tundra Album. Forge your legend in the icy realm! Gather Scene Fragments scattered across the tundra. And piece them together into spectacular scenes. Relive the timeless legends of the frost-bound era and make history yourself!\n2. New Feature: Leading Glory system. Each time your state qualifies as a Leading State during State Transfer, it will receive a Leading Emblem. The Leading Emblems can be used to unlock exclusive rewards such as Sunfire Castle Shield Skin, State Transfer Event State Name Card, Sunfire Castle Skin and Turret Skin, and Exclusive State Title. Stay proud of your state!\n3. New Event: Dead Shot When participating in regular events, you have a chance of earning \"Shotchits\". You can use the \"Shotchits\" to play a shooting game. Hit the bullseye for bountiful rewards! Every 2 \"Chest Keys\" collected can be used to open a chest that contains extra bonuses. By spending enough Shotchits, you can unlock the exclusive Action Emote: Hit!\n\n[Optimization & Adjustment]\n1. Bear Hunt: Added the Auto-Register feature, which automatically starts a Bear Hunt based on the last opening time once the cooldown ends.\n2. Castle Battle: Reduced the battle duration to 5 hours and the required occupation time for victory to 2.5 hours, without changing the battlefield opening hours.\n3. Daybreak Island: Added a new basic decoration, \"Marble Fence\". Introduced the Like History feature, allowing you to view likes from other Chiefs.\n4. Lighthouse Intel: Upon reaching Furnace Lv. 15 or VIP Lv. 5, you will unlock the \"Claim All\" feature for claiming your Intel rewards.\n5. Alliance Championship: Added the \"Batch-Adjust\" feature to the troop info page, allowing R4 or higher officers to adjust lanes more efficiently.\n6. Teleport: While using a \"Territory Teleporter\", you can freely adjust and select your target location before confirmation. If your target location is within your Alliance territory, \"Territory Teleporters\" will be used first.\n7. Snowbusters:\na. Increased Fuel consumption and rewards for snow clearing (numerical adjustments only without changing the overall rewards). After a certain levels, monsters in an area can drop multiple Snowbuster Maps.\nb. Added a feature that allows you to exchange Fuel for Rockets after clearing Area 16.\nc. Added the Raid feature, which becomes available once you reach Area 24. You will be able to clear stages quickly by spending Fuel.\nd. Snowbusters Pass Optimization: Using Rockets now grants Snow Points. \n8. Chief Gear: When your state age reaches a certain number of days, we will introduce T4 Legendary Gear (3-Star) and expand the sources for Chief Gear enhancement materials. The details are as follows:\na. Labyrinth Shop: \"Chief Gear Materials Chest\" will become available.\nb. Alliance Championship Shop: The weekly purchase limit for \"Polishing Solution\", \"Design Plan\", and \"Hardened Alloy\" will be increased.\nc. Crazy Joe: Personal Ranking Rewards and Alliance Ranking Rewards will be updated.\n9. Frostdragon Tyrant: Introduced State Rewards for all Chiefs at Furnace Lv. 20 or higher in the states of the top 10 Chiefs on the Occupation Ranking. Additionally, the Tyrant’s Gift will now appear at a random location near the Sunfire Castle instead of a fixed position.\n10. Tundra Arms League: Introduced rank-determined State Rewards for all Chiefs at Furnace Lv. 20 or higher in the states of the top 4 Legions, which can be claimed manually.\n11. Foundry Battle: After occupying a building for 30 minutes in Foundry Battle and Tundra Arms League, you will gain Personal Points much faster.\n12. Mercenary Prestige: When your state unlocks Fire Crystal Lv. 8, a new type of Legend's Initiation will be introduced, and the current one will be renamed as Epic Initiation.\n13. The Labyrinth: Introduced the Alliance Member Leaderboard, allowing you to view your allies' performances.",
+          "app_id": "6443575749"
+        },
+        "星城Online-普發一萬現領現玩": {
+          "version": "6.45",
+          "updated": "2025-10-30T03:12:35Z",
+          "releaseNotes": "新增經典區可遊玩【新悟空】【六角SLOT】【惡魔天使】\n【血咒德古拉】開放銀幣遊玩\n【天才釣手】開放銅幣遊玩\n【鯊很大2】新增「德古鯊」「崩鎚獸」「波蘿龜」\n【鯊很大4】新增BOSS「冰果鴨」\n優化調整【火爆辣椒】\n移除「賽事區」",
+          "app_id": "919043762"
+        },
+        "Kingshot": {
+          "version": "1.7.12",
+          "updated": "2025-10-28T07:10:55Z",
+          "releaseNotes": "[New Content]\n1. New Feature: Mystic Trial. A brand-new adventure awaits! \n2. New Feature: Leading Glory. During Kingdom Transfer, your Kingdom will receive a Leading Emblem each time it qualifies as a Leading Kingdom. Accumulate Leading Emblems to unlock special Leading Glory skins. Show off your Kingdom's dominance!\n3. New Feature: Mood Status. Set a status to let others know how you're feeling, making social interactions more fun and personal.",
+          "app_id": "6739554056"
+        },
+        "麻將明星3缺1": {
+          "version": "6.9.159",
+          "updated": "2025-10-31T02:41:55Z",
+          "releaseNotes": "【联名合作】新增白烂猫更多游戏体验\n【更多游戏】众多免费休闲小游戏，免看广告畅快玩\n【问题修正】修正并且优化了一些游戏体验",
+          "app_id": "501306812"
+        },
+        "Dark War:Survival": {
+          "version": "1.250.620",
+          "updated": "2025-10-30T09:02:15Z",
+          "releaseNotes": "[Optimization & Adjustments]\n- After canceling the Bio-Mutant's Engage Offline function, a pop-up notification will be added.\n- When tapping an alliance that has been disbanded in the Rankings, a pop-up notification will now indicate that the alliance has been disbanded.\n- Optimized some in-game visuals and details.",
+          "app_id": "6670441558"
+        },
+        "Last Z:Survival Shooter（倖存者逃亡）": {
+          "version": "1.250.682",
+          "updated": "2025-10-23T07:21:09Z",
+          "releaseNotes": "bugs fixed.",
+          "app_id": "6503272652"
+        },
+        "緋聞港口：合併&故事": {
+          "version": "3.76.0",
+          "updated": "2025-10-22T11:03:36Z",
+          "releaseNotes": "NEW EPISODE EVERY FRIDAY!\n- NEW EPISODE: With new chapter updates every Friday; follow Quinn as she exposes secrets and solves puzzles.\n- NEW EVENT:Visit the Dark Zone and unlock the Howling Factory! Join Sam, Colton and Harrison as they're transported to a strange nightmare world. Help them escape by collecting points and unlock exclusive decorations to complete the event.",
+          "app_id": "1623318294"
+        },
+        "糖果傳奇": {
+          "version": "1.314.1.1",
+          "updated": "2025-10-27T07:10:20Z",
+          "releaseNotes": "We hope you’re having fun playing Candy Crush Saga! \n\nWe update the game every week with sweet new features, exciting levels, and important bug fixes to keep everything running smoothly. \n\nDon't forget to download the latest version for the best experience!\n\nNew to the game? Don’t be shy, join the fun!",
+          "app_id": "553834731"
+        },
+        "Coin Master": {
+          "version": "3.5.2290",
+          "updated": "2025-10-27T07:55:07Z",
+          "releaseNotes": "Thanks for playing Coin Master!\n\nIn this version, we’ve implemented bug fixes & performance improvements.\n\nWe have also implemented our new reward calendar feature - collect your daily rewards! \n\nEnjoy a world of fun, thrills, and huge rewards right at your fingertips. \n\nInvite your friends to play Coin Master & get your FREE REWARDS! We also recommend joining our community on Facebook, Twitter, and Instagram for more fun & excitement.\n\nEnjoying Coin Master? Leave a review :)",
+          "app_id": "406889139"
+        },
+        "卡厄思夢境": {
+          "version": "1.0.203",
+          "updated": "2025-10-21T07:00:00Z",
+          "releaseNotes": "Bug fixes and improvements",
+          "app_id": "6502326151"
+        },
+        "滿貫大亨 - 快打旋風登場": {
+          "version": "1.1.234",
+          "updated": "2025-10-29T01:01:18Z",
+          "releaseNotes": "《仙境傳說》傳說再起，乘倍一路狂飆！",
+          "app_id": "1007924271"
+        },
+        "王國之歌（Top Heroes）": {
+          "version": "1.79.12",
+          "updated": "2025-11-03T11:16:16Z",
+          "releaseNotes": "The Ancient and Frostfield Battlefields usher in a brand-new “Turnaround Moment”! When the final battle drums sound, the tides of war shift—both factions will earn double points. Comeback or domination, everything will be decided in the final moments.",
+          "app_id": "6450953550"
+        },
+        "麻將 神來也麻將－台灣16張、麻雀": {
+          "version": "19.0",
+          "updated": "2025-11-03T06:57:31Z",
+          "releaseNotes": "Improved gameplay.\n\nNote:\nIf you have trouble logging in or forgot your password, please click on \"Can't sign in\" on the login screen to send a report. We will immediately take care of the issue.\n\nGamesofa are constantly striving to improve the quality of our games. If you have any suggestions, please let us know using the customer feedback function so we can solve the problem. Thank you!",
+          "app_id": "455902495"
+        },
+        "弓箭傳說2": {
+          "version": "1.1.3",
+          "updated": "2025-10-22T12:30:13Z",
+          "releaseNotes": "1. Lost Kingdom series heroes: Cleo, Phynx, Mymu, and their new Halloween skins \"Fiery Reckoning,\" \"Scarlet Sandstorm,\" and \"Empowered Curse.\"\n2. Halloween Special Event: Candy Carnival! Get the new Halloween-themed relics: Frostflame Lamp and Boltfang Candy Jar!\n3. Halloween Limited Brawl Mode: Trick-or-Treat Party!\n4. Guild Expedition will now be season-based, and the first season is about to officially begin!\n5. Optimized Arena Grouping for new servers.",
+          "app_id": "6502820653"
+        },
+        "Pokémon TCG Pocket": {
+          "version": "1.4.0",
+          "updated": "2025-10-29T01:00:40Z",
+          "releaseNotes": "● Mega Rising: Mega Gyarados, Mega Rising: Mega Blaziken, and and Mega Rising: Mega Altaria booster packs are now available.\n● New share feature.\n● More cards eligible for trading.\n● Wonder pick feature updated.\n● Flair can now be obtained automatically.\n● Increased the number of decks you can build.\n● Player level max has been increased.\n● Improvements to some features.",
+          "app_id": "6479970832"
+        },
+        "卡皮巴拉 Go!": {
+          "version": "1.7.6",
+          "updated": "2025-10-30T07:16:55Z",
+          "releaseNotes": "[New Content] \n1. Add Portuguese (Brazil) multilingual option; \n[Optimization] \n1. Home experience optimization; \n[Bug Fixes] \n1. Fix the white screen issue with the Kapi Machine's grand prize probability display; 2. Fix the issue where the mount's skill counterattack does not trigger the light spear; 3. Fix the issue where online friends are not displayed when teaming up in the Gulu Dungeon",
+          "app_id": "6596787726"
+        },
+        "Pokémon GO": {
+          "version": "0.385.2",
+          "updated": "2025-11-03T01:40:33Z",
+          "releaseNotes": "Trainers, we hope you’re enjoying your adventure in Pokémon GO! We update the app regularly with new events and features, so make sure to check the in-game News to stay up to date.",
+          "app_id": "1094591345"
+        },
+        "跑跑薑餅人：烤箱大逃亡": {
+          "version": "13.201",
+          "updated": "2025-10-26T22:08:29Z",
+          "releaseNotes": "Hop aboard!\nNext stop:\nThe World of Dreams!\n\n1. Milky Way Cookie & Marshpillow\nChoo choo! Meet our friendly conductor!\n\n2. Legendary Treasure & Pet\nGlittering Dream Orb & Somnionimbus\n\n3. All Aboard the Dream Voyage!\nWhat dreamy stories can you uncover?\n\n4. Dream Express Gacha!\nCollect special anniversary rewards!\n\n5. New Costumes\nMilky Way Cookie (Super Epic) & Candy Corn Cookie (Epic)\n\n6. Map Maker OPEN!\nRuns available from Nov. 5",
+          "app_id": "963067330"
+        },
+        "七騎士 Re:BIRTH": {
+          "version": "1.08.06",
+          "updated": "2025-10-31T12:42:31Z",
+          "releaseNotes": "[New Additions]\n- New Legendary Hero [Kyrielle] added.\n- 7 new costumes added.\n\n[Improvements and Fixes]\n- Improved Content Convenience\n- Bug Fixes and Other Improvements",
+          "app_id": "6479595079"
+        },
+        "Royal Match": {
+          "version": "32131",
+          "updated": "2025-10-27T08:01:19Z",
+          "releaseNotes": "Are you ready for a spooky new update?\n\n• Get ready for amazing 100 NEW LEVELS! Hit the CLOCK TOWER and watch the GEARS burst onto the board!\n\n• Explore the NEW AREA! Stock up on scares and sweets in the HALLOWEEN SHOP!\n\nNew levels are coming in every two weeks! Be sure to update your game to get the latest content!",
+          "app_id": "1482155847"
+        },
+        "夢幻花園 (Gardenscapes)": {
+          "version": "9.1.0",
+          "updated": "2025-10-03T13:08:16Z",
+          "releaseNotes": "A fall Gardenscapes update!\nNEW EVENTS\nLegends of Transylvania: find the missing girls and complete a horror quest!\nScourge of the Seas: embark on a real pirate adventure for treasure!\n\nSTORYLINE\nFind out what Bill Young's parents were secretly working on at their oceanographic station!",
+          "app_id": "1105855019"
+        },
+        "小兵特攻隊": {
+          "version": "3.4.1",
+          "updated": "2025-11-03T10:37:24Z",
+          "releaseNotes": "Bug fixes and performance improvements",
+          "app_id": "6746140478"
+        },
+        "原神·空月之歌": {
+          "version": "6.1.0",
+          "updated": "2025-10-21T21:45:21Z",
+          "releaseNotes": "Version Luna II \"Song of the Welkin Moon: Reprise\" — An Elegy for Faded Moonlight is now available!\nNew Character: Nefer\nNew Gameplay: Miliastra Wonderland\nNew Events: Version Main Event \"Ruins Exploration: Fieldwise Center,\" Phased Events \"Saurian Sojourn,\" \"Dance Dance Dynamic Disco,\" etc.\nNew Stories: New Archon Quests\nNew Weapon: Reliquary of Truth\nNew Monster: Frostnight Herra\nGenius Invokation TCG Update: New Character Cards and Action Cards",
+          "app_id": "1517783697"
+        },
+        "《荒野亂鬥》": {
+          "version": "64.226",
+          "updated": "2025-10-28T08:56:33Z",
+          "releaseNotes": "UPDATE 64: STRANGER THINGS\nNovember 2025 - December 2025\n∙ Head into the Upside Showdown, a new rogue-lite PVP mode! Get unique powers every game, making each run different!\n∙ Stranger Things skins, like Eleven Lumi & Scoops Ahoy Berry!\n∙ New Brawler: Gigi (Mythic Assassin)\n∙ Brawlidays get MECHA!\n∙ Brawl Pass Season 44: Stranger Things (November)\n∙ Brawl Pass Season 45: Mechmas (December)",
+          "app_id": "1229016807"
+        },
+        "漫遊小鎮®：合併&故事": {
+          "version": "1.83.0",
+          "updated": "2025-10-29T18:27:50Z",
+          "releaseNotes": "NEW CONTENT EVERY WEEK \n- Locations! Unlock a new location and its secrets!\n- Events! Spice up your gaming experience with this weeks' event!\n\nWe've also fixed bugs and added cool new features!",
+          "app_id": "6443755785"
+        },
+        "夢幻家園 (Homescapes)": {
+          "version": "8.3.6",
+          "updated": "2025-10-23T09:04:00Z",
+          "releaseNotes": "Get ready for a thrilling Homescapes update!\n \nHALLOWEEN: A NIGHT IN THE WOODS\n• Help Robbie find his daughter Chloe in the nighttime forest!\n• Uncover the mystery of the sinister masked figure!\n• Finish the event to earn a unique decoration!\n \nTHE FRONTIER'S GOLD\n• Learn the story of Austin's great-grandmother, the fearless Marshal Goldy!\n• Foil the local bandits' plans and be the first to claim the legendary treasures!\n• Finish the event to earn a unique decoration!\n \nALSO\n• Spooky Pass and Home Pass! Activate the passes to get coins, boosters, and other valuable rewards!\n• The Other Half story continues! Who will Katherine choose?",
+          "app_id": "1195621598"
+        },
+        "MLB：9局職棒25": {
+          "version": "10.1.2",
+          "updated": "2025-10-30T01:59:48Z",
+          "releaseNotes": "- Revamped Stage Challenge difficulty and rewards.\n- Added Extreme difficulty to Club Challenge.\n- Updated various QoL features.\n\nGot feedback? Leave a review or contact our Customer Support by visiting http://customer-m.withhive.com/ask",
+          "app_id": "1059665257"
+        },
+        "點點大作戰": {
+          "version": "2.3.900",
+          "updated": "2025-10-30T07:33:36Z",
+          "releaseNotes": "[New Content]\n- [Wilderness Map] exploration gameplay opens a brand-new map [A Night at the Museum]. Update to the latest version to immediately experience more exciting storylines and collect exquisite decorative buildings!\n\n- After reaching a certain progress in [Expedition] mode, the new [Quick Raid] feature will be unlocked.. If your formation can easily defeat enemies in multiple upcoming stages, you can use this feature to complete several stages at once and receive the corresponding rewards.\n\n- Rosie’s exclusive showcase [Neon Stage] is now available in the shelter! Chiefs can unlock this decoration and watch Rosie’s stunning performance after purchasing the [1st Buy] bundle. Players who have already purchased the [1st Buy] bundle will automatically unlock [Neon Stage] after updating to the latest version and can manually place it.\n\n[Optimizations & Fixes]\n- Hero Signature Weapon Optimization:\n1. Signature Weapon level cap increased from 6 to 15, providing extraordinary power to your heroes!\n- Each hero’s Signature Weapon now has its own unique skill, which will further enhance at levels 10 and 15, granting even stronger bonuses!\n\n- Hero Gear Reforge Optimization:\n1. Added more types of attributes obtainable through reforging.\n2. After this update, all Reforge Hammers consumed by Chiefs before 00:00 UTC on October 30 will be returned via mail. (This will not affect the current reforge progress of Chiefs.)\n3. Further user experience improvements for Gear Reforging will be implemented in future updates.\n\n- Major Hero System Upgrade:\n1. Added a [Faction] tag on top of existing hero classes. \n2. Multiple heroes have received class adjustments and skill enhancements. \n\n- [Underground Goldmine] Event Optimization:\n1. Cross-server matching added, allowing you to explore this opportunity- and challenge-filled underground alongside Chiefs from different States!\n2. Added a gathering leaderboard, which tracks the total gold acquired by each Chief in a round through mining, plundering, and revenge, with generous ranking rewards!\n3. After the update, the number of minefields per layer will dynamically adjust based on the current mining progress of that layer, allowing Chiefs to more quickly view and select target mines.\n\n- Adjusted the size of some decorative buildings to better display your collection. Due to these size changes, all decorations will temporarily revert to an unplaced state after the update (no effect on attribute bonuses). Chiefs can reposition them according to preference.\n\n- Chat Optimizations:\n1. Private chat limit increased to 100 users.\n2. Maximum chat message length increased to 1000 characters.\n3. Season chat channels will not close immediately after the season ends but will remain open until new season matchmaking is completed.\n\n- Optimized the custom avatar upload process in Chief info, adding a status display for “Avatar Under Review.”",
+          "app_id": "6738109752"
+        }
+      },
+      "top_free": {
+        "二重螺旋": {
+          "version": "1.0.11",
+          "updated": "2025-10-25T09:38:30Z",
+          "releaseNotes": "Duet Night Abyss, a thrilling hybrid action RPG set in a dual-narrative fantasy world, is launching globally on October 28, 2025, 10:00 AM (UTC+8).\nAll characters and weapons are free to unlock. A destined battle awaits!",
+          "app_id": "6744096826"
+        },
+        "Block Blast!": {
+          "version": "6.4.8",
+          "updated": "2025-11-04T02:20:00Z",
+          "releaseNotes": "We’re always improving Block Blast! Turn on auto-updates to get the latest features.\n\nSuggestions? Email us: blockblast-support@hungrystudio.com\nFollow us on TikTok for updates: @blockblastofficial",
+          "app_id": "1617391485"
+        },
+        "卡厄思夢境": {
+          "version": "1.0.203",
+          "updated": "2025-10-21T07:00:00Z",
+          "releaseNotes": "Bug fixes and improvements",
+          "app_id": "6502326151"
+        },
+        "Foodie Sizzle: 美食滋滋": {
+          "version": "1.43",
+          "updated": "2025-10-31T15:11:57Z",
+          "releaseNotes": "- Performance optimization  \n- Bug fixes",
+          "app_id": "6746246179"
+        },
+        "八零找茬": {
+          "version": "1.0.8",
+          "updated": "2025-10-16T01:21:17Z",
+          "releaseNotes": "Optimize gameplay experience and fix game issues",
+          "app_id": "6748932117"
+        },
+        "Legend of YMIR": {
+          "version": "1.2.3",
+          "updated": "2025-11-03T22:56:17Z",
+          "releaseNotes": "- New event added\n- User convenience improvements\n- Fixed certain in-game issues",
+          "app_id": "6748295875"
+        },
+        "小兵特攻隊": {
+          "version": "3.4.1",
+          "updated": "2025-11-03T10:37:24Z",
+          "releaseNotes": "Bug fixes and performance improvements",
+          "app_id": "6746140478"
+        },
+        "Frost & Flame: King of Avalon": {
+          "version": "22.5.1",
+          "updated": "2025-10-31T03:55:08Z",
+          "releaseNotes": "Optimization:\n Fixed some bugs and made optimizations.",
+          "app_id": "1084930849"
+        },
+        "Last Z:Survival Shooter（倖存者逃亡）": {
+          "version": "1.250.682",
+          "updated": "2025-10-23T07:21:09Z",
+          "releaseNotes": "bugs fixed.",
+          "app_id": "6503272652"
+        },
+        "Grill Sort - 燒烤時光 物品分類遊戲": {
+          "version": "2.7",
+          "updated": "2025-11-01T01:01:55Z",
+          "releaseNotes": "‌New enhanced features added! Experience the upgraded peripherals now!",
+          "app_id": "6742812903"
+        },
+        "寒霜啟示錄": {
+          "version": "1.28.18",
+          "updated": "2025-10-22T07:06:00Z",
+          "releaseNotes": "[New Content]\n1. New Feature: Tundra Album. Forge your legend in the icy realm! Gather Scene Fragments scattered across the tundra. And piece them together into spectacular scenes. Relive the timeless legends of the frost-bound era and make history yourself!\n2. New Feature: Leading Glory system. Each time your state qualifies as a Leading State during State Transfer, it will receive a Leading Emblem. The Leading Emblems can be used to unlock exclusive rewards such as Sunfire Castle Shield Skin, State Transfer Event State Name Card, Sunfire Castle Skin and Turret Skin, and Exclusive State Title. Stay proud of your state!\n3. New Event: Dead Shot When participating in regular events, you have a chance of earning \"Shotchits\". You can use the \"Shotchits\" to play a shooting game. Hit the bullseye for bountiful rewards! Every 2 \"Chest Keys\" collected can be used to open a chest that contains extra bonuses. By spending enough Shotchits, you can unlock the exclusive Action Emote: Hit!\n\n[Optimization & Adjustment]\n1. Bear Hunt: Added the Auto-Register feature, which automatically starts a Bear Hunt based on the last opening time once the cooldown ends.\n2. Castle Battle: Reduced the battle duration to 5 hours and the required occupation time for victory to 2.5 hours, without changing the battlefield opening hours.\n3. Daybreak Island: Added a new basic decoration, \"Marble Fence\". Introduced the Like History feature, allowing you to view likes from other Chiefs.\n4. Lighthouse Intel: Upon reaching Furnace Lv. 15 or VIP Lv. 5, you will unlock the \"Claim All\" feature for claiming your Intel rewards.\n5. Alliance Championship: Added the \"Batch-Adjust\" feature to the troop info page, allowing R4 or higher officers to adjust lanes more efficiently.\n6. Teleport: While using a \"Territory Teleporter\", you can freely adjust and select your target location before confirmation. If your target location is within your Alliance territory, \"Territory Teleporters\" will be used first.\n7. Snowbusters:\na. Increased Fuel consumption and rewards for snow clearing (numerical adjustments only without changing the overall rewards). After a certain levels, monsters in an area can drop multiple Snowbuster Maps.\nb. Added a feature that allows you to exchange Fuel for Rockets after clearing Area 16.\nc. Added the Raid feature, which becomes available once you reach Area 24. You will be able to clear stages quickly by spending Fuel.\nd. Snowbusters Pass Optimization: Using Rockets now grants Snow Points. \n8. Chief Gear: When your state age reaches a certain number of days, we will introduce T4 Legendary Gear (3-Star) and expand the sources for Chief Gear enhancement materials. The details are as follows:\na. Labyrinth Shop: \"Chief Gear Materials Chest\" will become available.\nb. Alliance Championship Shop: The weekly purchase limit for \"Polishing Solution\", \"Design Plan\", and \"Hardened Alloy\" will be increased.\nc. Crazy Joe: Personal Ranking Rewards and Alliance Ranking Rewards will be updated.\n9. Frostdragon Tyrant: Introduced State Rewards for all Chiefs at Furnace Lv. 20 or higher in the states of the top 10 Chiefs on the Occupation Ranking. Additionally, the Tyrant’s Gift will now appear at a random location near the Sunfire Castle instead of a fixed position.\n10. Tundra Arms League: Introduced rank-determined State Rewards for all Chiefs at Furnace Lv. 20 or higher in the states of the top 4 Legions, which can be claimed manually.\n11. Foundry Battle: After occupying a building for 30 minutes in Foundry Battle and Tundra Arms League, you will gain Personal Points much faster.\n12. Mercenary Prestige: When your state unlocks Fire Crystal Lv. 8, a new type of Legend's Initiation will be introduced, and the current one will be renamed as Epic Initiation.\n13. The Labyrinth: Introduced the Alliance Member Leaderboard, allowing you to view your allies' performances.",
+          "app_id": "6443575749"
+        },
+        "可獄不可囚": {
+          "version": "1.0.23",
+          "updated": "2025-10-29T06:06:19Z",
+          "releaseNotes": "Update game content.",
+          "app_id": "6738469826"
+        },
+        "Roblox": {
+          "version": "2.697.925",
+          "updated": "2025-10-30T16:08:29Z",
+          "releaseNotes": "To make Roblox work better for you, we deliver updates regularly. These updates include bug fixes and improvements for speed and reliability.",
+          "app_id": "431946152"
+        },
+        "食光旅行": {
+          "version": "41.0",
+          "updated": "2025-10-27T02:52:53Z",
+          "releaseNotes": "- Minor bug fixes and improvements",
+          "app_id": "6471045672"
+        },
+        "拼圖接龍": {
+          "version": "0.16",
+          "updated": "2025-07-14T21:11:52Z",
+          "releaseNotes": "Get ready to challenge your brain with fresh puzzles! We’ve added a batch of new levels for you to enjoy. Sharpen your mind and see how fast you can solve them! Thanks for playing Jigsolitaire!",
+          "app_id": "6741408932"
+        },
+        "Pikmin Bloom": {
+          "version": "131.2",
+          "updated": "2025-11-01T04:59:03Z",
+          "releaseNotes": "Thanks for playing Pikmin Bloom! New in this version:\n\n- Minor improvements and bug fixes.\n\n*Please download the latest version of the app from the store for the changes above to be reflected.",
+          "app_id": "1556357398"
+        },
+        "Dark War:Survival": {
+          "version": "1.250.620",
+          "updated": "2025-10-30T09:02:15Z",
+          "releaseNotes": "[Optimization & Adjustments]\n- After canceling the Bio-Mutant's Engage Offline function, a pop-up notification will be added.\n- When tapping an alliance that has been disbanded in the Rankings, a pop-up notification will now indicate that the alliance has been disbanded.\n- Optimized some in-game visuals and details.",
+          "app_id": "6670441558"
+        },
+        "Kingshot": {
+          "version": "1.7.12",
+          "updated": "2025-10-28T07:10:55Z",
+          "releaseNotes": "[New Content]\n1. New Feature: Mystic Trial. A brand-new adventure awaits! \n2. New Feature: Leading Glory. During Kingdom Transfer, your Kingdom will receive a Leading Emblem each time it qualifies as a Leading Kingdom. Accumulate Leading Emblems to unlock special Leading Glory skins. Show off your Kingdom's dominance!\n3. New Feature: Mood Status. Set a status to let others know how you're feeling, making social interactions more fun and personal.",
+          "app_id": "6739554056"
+        },
+        "細胞保衛戰 - 生存射擊大亂鬥": {
+          "version": "2.0",
+          "updated": "2025-11-03T02:31:46Z",
+          "releaseNotes": "Stability improvements and bug fixes.",
+          "app_id": "6746465127"
+        },
+        "Brain Puzzle: Tricky Quest": {
+          "version": "1.2.7",
+          "updated": "2025-10-22T08:37:38Z",
+          "releaseNotes": "• Fix some bugs",
+          "app_id": "6670789598"
+        },
+        "Drop the Cat": {
+          "version": "1.10.9",
+          "updated": "2025-10-30T07:55:32Z",
+          "releaseNotes": "-Stage Added\n-Bug Fixed",
+          "app_id": "6749132002"
+        },
+        "不用網路的遊戲 - 無網路遊戲 - 離線 遊戲 - 無網遊戲": {
+          "version": "3.4.8",
+          "updated": "2025-10-16T07:47:35Z",
+          "releaseNotes": "• Added support for playing vs 2/3 bots in Ludo\n• Bug fixes and improvements",
+          "app_id": "6448104157"
+        },
+        "Royal Kingdom": {
+          "version": "23120",
+          "updated": "2025-11-03T07:59:26Z",
+          "releaseNotes": "Get ready for a splendid new update!\n\n• Prepare yourself for 100 NEW LEVELS! Experience fun and exciting challenges!\n\n• Explore the new district, AIRPORT! Keep expanding the kingdom to discover new horizons!\n\nPlay Royal Kingdom now!",
+          "app_id": "1606549505"
+        },
+        "緋聞港口：合併&故事": {
+          "version": "3.76.0",
+          "updated": "2025-10-22T11:03:36Z",
+          "releaseNotes": "NEW EPISODE EVERY FRIDAY!\n- NEW EPISODE: With new chapter updates every Friday; follow Quinn as she exposes secrets and solves puzzles.\n- NEW EVENT:Visit the Dark Zone and unlock the Howling Factory! Join Sam, Colton and Harrison as they're transported to a strange nightmare world. Help them escape by collecting points and unlock exclusive decorations to complete the event.",
+          "app_id": "1623318294"
+        },
+        "單線方塊填充益智遊戲": {
+          "version": "1.0.5",
+          "updated": "2025-10-28T14:01:29Z",
+          "releaseNotes": "Optimized Game Experience",
+          "app_id": "6748683699"
+        },
+        "Pokémon GO": {
+          "version": "0.385.2",
+          "updated": "2025-11-03T01:40:33Z",
+          "releaseNotes": "Trainers, we hope you’re enjoying your adventure in Pokémon GO! We update the app regularly with new events and features, so make sure to check the in-game News to stay up to date.",
+          "app_id": "1094591345"
+        },
+        "Top Tycoon: Coin Theme Empire": {
+          "version": "1.0.7",
+          "updated": "2025-09-03T01:59:35Z",
+          "releaseNotes": "1. We’ve fixed bugs for a smoother gaming experience!\n2. And added new exciting content.\n\nKeep your game updated to enjoy all the great features!\n\nIf you’re enjoying \"Top Tycoon,\" we’d love to hear your thoughts! :)",
+          "app_id": "6739124364"
+        },
+        "最後的戰爭 - Last War": {
+          "version": "1.0.317",
+          "updated": "2025-10-29T08:55:44Z",
+          "releaseNotes": "1. Gift level cap increased to Level 25, with new dynamic emotes and Avatar Frame rewards added.\n2. Optimized the interface display of Arena [Battle Record] to more clearly show defense and win/loss information.",
+          "app_id": "6448786147"
+        },
+        "幸福都市 - 市長模擬器": {
+          "version": "1.4.8",
+          "updated": "2025-11-04T01:39:41Z",
+          "releaseNotes": "Are you ready for an enjoyable update?\n\nThis update:\nFixed some bugs\n\nHave fun!",
+          "app_id": "6745251520"
+        },
+        "夢想小鎮 (Township)": {
+          "version": "31.0.0",
+          "updated": "2025-10-14T10:15:05Z",
+          "releaseNotes": "Get ready for a new update!\nNew adventures in Township!\n\nSeason Adventures\n* Gatsby-era fashion and medieval nobility are coming to Township! Decorate your town and win valuable resources in the Gatsby Pass and Knight Pass!\n\nThrilling new expeditions\n* While searching for traces of Vikings, Richard and Rachel end up captured by them and must fight off a mysterious monster!\n* Richard, Ellen, and Alicia take part in filming an exciting Thanksgiving TV show!\n\nNew card collection\n* Collect cards from the Winter Collection to get a unique badge and other prizes!\n\nAlso\n* Halloween and Black Friday sales\n* Travel to Loch Ness and Santa's home in new regatta seasons!\n* Enjoy new buildings—a yoga center and a spiral complex!",
+          "app_id": "638689075"
+        },
+        "新武俠大明星-功夫打猛鬼": {
+          "version": "1.1.5",
+          "updated": "2025-09-29T12:10:51Z",
+          "releaseNotes": "【限時主題煥新】\n月蝕隱曜，燭影搖紅。舊宅深院的重門次第開啟，縈繞百年的低語喚醒沉睡的恐懼...\n朱漆剝落腐朽搖墜的雕花木門，喜轎所至喜錢皆化作紙灰，鬼新娘紅蓋頭下藏著怎樣的面容？道長手中的羅盤能否掃除陰穢？\n新主題「中元詭夜」即將登場！遊戲主介面升級煥新，場景融入民俗詭韻，部分主線關卡將增加特別機制。請準備闖入這片詭域的少俠們謹記：當你聽見少女的嬉笑，切勿回頭——\n\n【全新內容】\n1.幫會聚寶池\n幫會成員完成幫會任務、儲值可共同積攢獎池並瓜分獎勵。\n2.靈獸連結功能\n靈獸新增技能鏈接系統，靈獸可以學習其他靈獸的技能並化為自身所用，靈獸的品質越高，能鏈接其他靈獸的技能數量越多，只有達到一定品質的靈獸的技能才可被鏈接。\n3.全新主線章節\n-第106章「通明壇」\n-第107章「暖香浴肆」\n-第108章「懷光溪穀」\n-第109章「荷笠灣」\n-第110章「千星頂」\n4.新增活動：薪火相傳\n新增「薪火相傳」活動，從超值福利入口進入，邀請玩家回歸可獲得【豪俠令】、【華光珍珠】等獎勵，邀請玩家回歸數量越多，獎勵越豐厚。\n5.新增活動：呼朋喚友\n少俠成功邀請新玩家註冊遊戲即可獲得獎勵，邀請人數越多獎勵越豐厚，新玩家遊玩遊戲，邀請人還可以領取額外的邀請獎勵。少俠可邀上三五知己，和摯友一起行走四方，共賞江湖美景。",
+          "app_id": "6503113088"
+        },
+        "Travel Town - Merge Adventure": {
+          "version": "2.12.1291",
+          "updated": "2025-10-29T09:45:15Z",
+          "releaseNotes": "Welcome to the latest update of Travel Town!\nWe’ve been busy improving the game and addressing bugs for you. \nEnjoy!",
+          "app_id": "1521236603"
+        },
+        "王國之歌（Top Heroes）": {
+          "version": "1.79.12",
+          "updated": "2025-11-03T11:16:16Z",
+          "releaseNotes": "The Ancient and Frostfield Battlefields usher in a brand-new “Turnaround Moment”! When the final battle drums sound, the tides of war shift—both factions will earn double points. Comeback or domination, everything will be decided in the final moments.",
+          "app_id": "6450953550"
+        }
+      }
+    }
+  }
+}
