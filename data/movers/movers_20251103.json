@@ -1,214 +1,430 @@
 {
   "tw": {
-    "top_grossing": [
-      {
-        "name": "賽馬娘Pretty Derby",
-        "delta": 158,
-        "direction": "rise"
-      },
-      {
-        "name": "雀魂麻將",
-        "delta": -104,
-        "direction": "fall"
-      },
-      {
-        "name": "冰的啦！企鵝逗陣戰",
-        "delta": -99,
-        "direction": "fall"
-      },
-      {
-        "name": "神魔之塔",
-        "delta": 92,
-        "direction": "rise"
-      },
-      {
-        "name": "明日方舟",
-        "delta": 91,
-        "direction": "rise"
-      },
-      {
-        "name": "出發吧麥芬-香格里拉·開拓異境聯動",
-        "delta": -88,
-        "direction": "fall"
-      },
-      {
-        "name": "喪尸狂潮",
-        "delta": -86,
-        "direction": "fall"
-      },
-      {
-        "name": "跑跑薑餅人：烤箱大逃亡",
-        "delta": -84,
-        "direction": "fall"
-      },
-      {
-        "name": "RO仙境傳說：重生",
-        "delta": 76,
-        "direction": "rise"
-      },
-      {
-        "name": "藍顏清夢",
-        "delta": 76,
-        "direction": "rise"
-      }
-    ],
-    "top_free": [
-      {
-        "name": "怪物彈珠",
-        "delta": -142,
-        "direction": "fall"
-      },
-      {
-        "name": "貪婪洞窟：重生",
-        "delta": -127,
-        "direction": "fall"
-      },
-      {
-        "name": "Pikmin Bloom",
-        "delta": 123,
-        "direction": "rise"
-      },
-      {
-        "name": "LINE 天外消消楽(Match Flight)",
-        "delta": 123,
-        "direction": "rise"
-      },
-      {
-        "name": "滿貫大亨 - 快打旋風登場",
-        "delta": 120,
-        "direction": "rise"
-      },
-      {
-        "name": "暗影英雄：突襲",
-        "delta": 117,
-        "direction": "rise"
-      },
-      {
-        "name": "點消 X",
-        "delta": -112,
-        "direction": "fall"
-      },
-      {
-        "name": "Mahjong Wonders™",
-        "delta": 106,
-        "direction": "rise"
-      },
-      {
-        "name": "蛋先生：解謎大師",
-        "delta": 105,
-        "direction": "rise"
-      },
-      {
-        "name": "主公衝衝衝",
-        "delta": 103,
-        "direction": "rise"
-      }
-    ]
+    "ios": {
+      "top_grossing": [
+        {
+          "name": "雀魂麻將",
+          "delta": -104,
+          "direction": "fall"
+        },
+        {
+          "name": "冰的啦！企鵝逗陣戰",
+          "delta": -99,
+          "direction": "fall"
+        },
+        {
+          "name": "神魔之塔",
+          "delta": 92,
+          "direction": "rise"
+        },
+        {
+          "name": "明日方舟",
+          "delta": 91,
+          "direction": "rise"
+        },
+        {
+          "name": "出發吧麥芬-香格里拉·開拓異境聯動",
+          "delta": -88,
+          "direction": "fall"
+        },
+        {
+          "name": "喪尸狂潮",
+          "delta": -86,
+          "direction": "fall"
+        },
+        {
+          "name": "跑跑薑餅人：烤箱大逃亡",
+          "delta": -84,
+          "direction": "fall"
+        },
+        {
+          "name": "RO仙境傳說：重生",
+          "delta": 76,
+          "direction": "rise"
+        },
+        {
+          "name": "部落衝突 (Clash of Clans)",
+          "delta": 69,
+          "direction": "rise"
+        },
+        {
+          "name": "LINE Rangers - 率領熊大和兔兔來大戰一番吧！",
+          "delta": 65,
+          "direction": "rise"
+        }
+      ],
+      "top_free": [
+        {
+          "name": "怪物彈珠",
+          "delta": -142,
+          "direction": "fall"
+        },
+        {
+          "name": "主公衝衝衝",
+          "delta": 103,
+          "direction": "rise"
+        },
+        {
+          "name": "遺跡的地平線",
+          "delta": -94,
+          "direction": "fall"
+        },
+        {
+          "name": "Skewer Jam: Food Games",
+          "delta": 90,
+          "direction": "rise"
+        },
+        {
+          "name": "弓箭傳說2",
+          "delta": -89,
+          "direction": "fall"
+        },
+        {
+          "name": "LINE 天外消消樂",
+          "delta": -85,
+          "direction": "fall"
+        },
+        {
+          "name": "跑跑薑餅人：烤箱大逃亡",
+          "delta": -83,
+          "direction": "fall"
+        },
+        {
+          "name": "魔法琴键3",
+          "delta": -77,
+          "direction": "fall"
+        },
+        {
+          "name": "Pokémon TCG Pocket",
+          "delta": 76,
+          "direction": "rise"
+        },
+        {
+          "name": "商業與城鎮：公司經營遊戲 (商業大亨)",
+          "delta": 76,
+          "direction": "rise"
+        }
+      ]
+    },
+    "gp": {
+      "top_grossing": [
+        {
+          "name": "賽馬娘Pretty Derby",
+          "delta": 158,
+          "direction": "rise"
+        },
+        {
+          "name": "藍顏清夢",
+          "delta": 76,
+          "direction": "rise"
+        },
+        {
+          "name": "世紀帝國M",
+          "delta": -73,
+          "direction": "fall"
+        },
+        {
+          "name": "遺忘之劍",
+          "delta": -72,
+          "direction": "fall"
+        },
+        {
+          "name": "龍族幻想：勇者集結",
+          "delta": 68,
+          "direction": "rise"
+        },
+        {
+          "name": "天上碑M",
+          "delta": -65,
+          "direction": "fall"
+        },
+        {
+          "name": "火炬之光：無限",
+          "delta": -64,
+          "direction": "fall"
+        },
+        {
+          "name": "桃源深處有人家 - 蘿蘿一週年慶典",
+          "delta": -60,
+          "direction": "fall"
+        },
+        {
+          "name": "女神秘令",
+          "delta": -59,
+          "direction": "fall"
+        },
+        {
+          "name": "英雄刷刷刷",
+          "delta": 57,
+          "direction": "rise"
+        }
+      ],
+      "top_free": [
+        {
+          "name": "貪婪洞窟：重生",
+          "delta": -127,
+          "direction": "fall"
+        },
+        {
+          "name": "Pikmin Bloom",
+          "delta": 123,
+          "direction": "rise"
+        },
+        {
+          "name": "LINE 天外消消楽(Match Flight)",
+          "delta": 123,
+          "direction": "rise"
+        },
+        {
+          "name": "滿貫大亨 - 快打旋風登場",
+          "delta": 120,
+          "direction": "rise"
+        },
+        {
+          "name": "暗影英雄：突襲",
+          "delta": 117,
+          "direction": "rise"
+        },
+        {
+          "name": "點消 X",
+          "delta": -112,
+          "direction": "fall"
+        },
+        {
+          "name": "Mahjong Wonders™",
+          "delta": 106,
+          "direction": "rise"
+        },
+        {
+          "name": "蛋先生：解謎大師",
+          "delta": 105,
+          "direction": "rise"
+        },
+        {
+          "name": "Pokémon TCG Pocket",
+          "delta": 102,
+          "direction": "rise"
+        },
+        {
+          "name": "DoE：流亡地牢—Mini Diablo三分鐘暗黑解壓",
+          "delta": 93,
+          "direction": "rise"
+        }
+      ]
+    }
   },
   "us": {
-    "top_grossing": [
-      {
-        "name": "Warhammer 40,000: Tacticus ™",
-        "delta": -99,
-        "direction": "fall"
-      },
-      {
-        "name": "Magic: The Gathering Arena",
-        "delta": 91,
-        "direction": "rise"
-      },
-      {
-        "name": "Pixel Flow!",
-        "delta": 87,
-        "direction": "rise"
-      },
-      {
-        "name": "Isekai:Slow Life",
-        "delta": 79,
-        "direction": "rise"
-      },
-      {
-        "name": "Zombie Waves-shooting game",
-        "delta": -71,
-        "direction": "fall"
-      },
-      {
-        "name": "CookieRun: Kingdom",
-        "delta": -70,
-        "direction": "fall"
-      },
-      {
-        "name": "League of Legends: Wild Rift",
-        "delta": -64,
-        "direction": "fall"
-      },
-      {
-        "name": "Umamusume: Pretty Derby",
-        "delta": -59,
-        "direction": "fall"
-      },
-      {
-        "name": "Chaos Zero Nightmare",
-        "delta": -55,
-        "direction": "fall"
-      },
-      {
-        "name": "Sea War: Raid",
-        "delta": -52,
-        "direction": "fall"
-      }
-    ],
-    "top_free": [
-      {
-        "name": "Top Tycoon: Coin Theme Empire",
-        "delta": 122,
-        "direction": "rise"
-      },
-      {
-        "name": "Stumble Guys",
-        "delta": 117,
-        "direction": "rise"
-      },
-      {
-        "name": "Hunting Sniper",
-        "delta": -107,
-        "direction": "fall"
-      },
-      {
-        "name": "Spades - Classic Cards",
-        "delta": 106,
-        "direction": "rise"
-      },
-      {
-        "name": "Jigblock™ Puzzle",
-        "delta": 102,
-        "direction": "rise"
-      },
-      {
-        "name": "Life Sim 3D: Family Simulator",
-        "delta": 98,
-        "direction": "rise"
-      },
-      {
-        "name": "Drop Away: Color Puzzle",
-        "delta": -98,
-        "direction": "fall"
-      },
-      {
-        "name": "Tile Explorer: Tiles Clear!",
-        "delta": -94,
-        "direction": "fall"
-      },
-      {
-        "name": "Antistress Fun Mini Games",
-        "delta": -93,
-        "direction": "fall"
-      },
-      {
-        "name": "Slot Erupt Cash",
-        "delta": 92,
-        "direction": "rise"
-      }
-    ]
+    "ios": {
+      "top_grossing": [
+        {
+          "name": "Warhammer 40,000: Tacticus ™",
+          "delta": -99,
+          "direction": "fall"
+        },
+        {
+          "name": "Magic: The Gathering Arena",
+          "delta": 91,
+          "direction": "rise"
+        },
+        {
+          "name": "Pixel Flow!",
+          "delta": 87,
+          "direction": "rise"
+        },
+        {
+          "name": "Isekai:Slow Life",
+          "delta": 79,
+          "direction": "rise"
+        },
+        {
+          "name": "Zombie Waves-shooting game",
+          "delta": -71,
+          "direction": "fall"
+        },
+        {
+          "name": "CookieRun: Kingdom",
+          "delta": -70,
+          "direction": "fall"
+        },
+        {
+          "name": "League of Legends: Wild Rift",
+          "delta": -64,
+          "direction": "fall"
+        },
+        {
+          "name": "Umamusume: Pretty Derby",
+          "delta": -59,
+          "direction": "fall"
+        },
+        {
+          "name": "Chaos Zero Nightmare",
+          "delta": -55,
+          "direction": "fall"
+        },
+        {
+          "name": "Sea War: Raid",
+          "delta": -52,
+          "direction": "fall"
+        }
+      ],
+      "top_free": [
+        {
+          "name": "Top Tycoon: Coin Theme Empire",
+          "delta": 122,
+          "direction": "rise"
+        },
+        {
+          "name": "Spades - Classic Cards",
+          "delta": 106,
+          "direction": "rise"
+        },
+        {
+          "name": "Jigblock™ Puzzle",
+          "delta": 102,
+          "direction": "rise"
+        },
+        {
+          "name": "Life Sim 3D: Family Simulator",
+          "delta": 98,
+          "direction": "rise"
+        },
+        {
+          "name": "Drop Away: Color Puzzle",
+          "delta": -98,
+          "direction": "fall"
+        },
+        {
+          "name": "Tile Explorer: Tiles Clear!",
+          "delta": -94,
+          "direction": "fall"
+        },
+        {
+          "name": "Hexa Away",
+          "delta": 85,
+          "direction": "rise"
+        },
+        {
+          "name": "Friday Night Funkin' Mobile",
+          "delta": 84,
+          "direction": "rise"
+        },
+        {
+          "name": "Foodie Sizzle",
+          "delta": -81,
+          "direction": "fall"
+        },
+        {
+          "name": "Happy Screw Trip 3D",
+          "delta": -81,
+          "direction": "fall"
+        }
+      ]
+    },
+    "gp": {
+      "top_grossing": [
+        {
+          "name": "PUBG MOBILE",
+          "delta": 45,
+          "direction": "rise"
+        },
+        {
+          "name": "Star Wars™: Galaxy of Heroes",
+          "delta": -38,
+          "direction": "fall"
+        },
+        {
+          "name": "Gold and Goblins: Mining Games",
+          "delta": 34,
+          "direction": "rise"
+        },
+        {
+          "name": "Hay Day",
+          "delta": -34,
+          "direction": "fall"
+        },
+        {
+          "name": "CookieRun: Kingdom",
+          "delta": -30,
+          "direction": "fall"
+        },
+        {
+          "name": "Genshin Impact",
+          "delta": -29,
+          "direction": "fall"
+        },
+        {
+          "name": "GODDESS OF VICTORY: NIKKE",
+          "delta": -27,
+          "direction": "fall"
+        },
+        {
+          "name": "The Seven Deadly Sins",
+          "delta": 25,
+          "direction": "rise"
+        },
+        {
+          "name": "Summoners War",
+          "delta": -25,
+          "direction": "fall"
+        },
+        {
+          "name": "EA SPORTS FC™ Mobile Soccer",
+          "delta": -24,
+          "direction": "fall"
+        }
+      ],
+      "top_free": [
+        {
+          "name": "Stumble Guys",
+          "delta": 117,
+          "direction": "rise"
+        },
+        {
+          "name": "Hunting Sniper",
+          "delta": -107,
+          "direction": "fall"
+        },
+        {
+          "name": "Antistress Fun Mini Games",
+          "delta": -93,
+          "direction": "fall"
+        },
+        {
+          "name": "Slot Erupt Cash",
+          "delta": 92,
+          "direction": "rise"
+        },
+        {
+          "name": "Slam Dunk!",
+          "delta": -92,
+          "direction": "fall"
+        },
+        {
+          "name": "Find It Out - Hidden Object",
+          "delta": 71,
+          "direction": "rise"
+        },
+        {
+          "name": "Find Hidden Objects - Spot It!",
+          "delta": 69,
+          "direction": "rise"
+        },
+        {
+          "name": "Angry Birds 2",
+          "delta": 67,
+          "direction": "rise"
+        },
+        {
+          "name": "Spider Solitaire",
+          "delta": -61,
+          "direction": "fall"
+        },
+        {
+          "name": "Draw To Smash: Logic puzzle",
+          "delta": -59,
+          "direction": "fall"
+        }
+      ]
+    }
   }
 }

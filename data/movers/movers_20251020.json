@@ -1,214 +1,430 @@
 {
   "tw": {
-    "top_grossing": [
-      {
-        "name": "瘋狂的蛇姬",
-        "delta": -122,
-        "direction": "fall"
-      },
-      {
-        "name": "怪獸 8號 THE GAME",
-        "delta": 121,
-        "direction": "rise"
-      },
-      {
-        "name": "拳皇98 終極之戰OL",
-        "delta": -117,
-        "direction": "fall"
-      },
-      {
-        "name": "Fate/Grand Order",
-        "delta": -106,
-        "direction": "fall"
-      },
-      {
-        "name": "小兵來支援！",
-        "delta": -85,
-        "direction": "fall"
-      },
-      {
-        "name": "出發吧麥芬-香格里拉·開拓異境聯動",
-        "delta": -81,
-        "direction": "fall"
-      },
-      {
-        "name": "絕區零",
-        "delta": 71,
-        "direction": "rise"
-      },
-      {
-        "name": "TFT: 聯盟戰棋",
-        "delta": -69,
-        "direction": "fall"
-      },
-      {
-        "name": "新武俠大明星-功夫打猛鬼",
-        "delta": -63,
-        "direction": "fall"
-      },
-      {
-        "name": "ONE PIECE Bounty Rush",
-        "delta": 62,
-        "direction": "rise"
-      }
-    ],
-    "top_free": [
-      {
-        "name": "Brain Puzzle 2: Logic Twist",
-        "delta": 131,
-        "direction": "rise"
-      },
-      {
-        "name": "我的勇者外傳",
-        "delta": -105,
-        "direction": "fall"
-      },
-      {
-        "name": "拼拼世界",
-        "delta": -103,
-        "direction": "fall"
-      },
-      {
-        "name": "RO仙境傳說：曙光",
-        "delta": -94,
-        "direction": "fall"
-      },
-      {
-        "name": "Disney Magic Match 3D",
-        "delta": -93,
-        "direction": "fall"
-      },
-      {
-        "name": "鳴潮",
-        "delta": -92,
-        "direction": "fall"
-      },
-      {
-        "name": "Water Sort Puzzle - Sort Color",
-        "delta": -91,
-        "direction": "fall"
-      },
-      {
-        "name": "Royal Match",
-        "delta": -89,
-        "direction": "fall"
-      },
-      {
-        "name": "Wool Escape 3D",
-        "delta": -86,
-        "direction": "fall"
-      },
-      {
-        "name": "貓狗世界：人類消失之後",
-        "delta": -78,
-        "direction": "fall"
-      }
-    ]
+    "ios": {
+      "top_grossing": [
+        {
+          "name": "瘋狂的蛇姬",
+          "delta": -122,
+          "direction": "fall"
+        },
+        {
+          "name": "怪獸 8號 THE GAME",
+          "delta": 121,
+          "direction": "rise"
+        },
+        {
+          "name": "拳皇98 終極之戰OL",
+          "delta": -117,
+          "direction": "fall"
+        },
+        {
+          "name": "Fate/Grand Order",
+          "delta": -106,
+          "direction": "fall"
+        },
+        {
+          "name": "小兵來支援！",
+          "delta": -85,
+          "direction": "fall"
+        },
+        {
+          "name": "出發吧麥芬-香格里拉·開拓異境聯動",
+          "delta": -81,
+          "direction": "fall"
+        },
+        {
+          "name": "絕區零",
+          "delta": 71,
+          "direction": "rise"
+        },
+        {
+          "name": "TFT: 聯盟戰棋",
+          "delta": -69,
+          "direction": "fall"
+        },
+        {
+          "name": "新武俠大明星-功夫打猛鬼",
+          "delta": -63,
+          "direction": "fall"
+        },
+        {
+          "name": "ONE PIECE Bounty Rush",
+          "delta": 62,
+          "direction": "rise"
+        }
+      ],
+      "top_free": [
+        {
+          "name": "Brain Puzzle 2: Logic Twist",
+          "delta": 131,
+          "direction": "rise"
+        },
+        {
+          "name": "我的勇者外傳",
+          "delta": -105,
+          "direction": "fall"
+        },
+        {
+          "name": "拼拼世界",
+          "delta": -103,
+          "direction": "fall"
+        },
+        {
+          "name": "RO仙境傳說：曙光",
+          "delta": -94,
+          "direction": "fall"
+        },
+        {
+          "name": "Disney Magic Match 3D",
+          "delta": -93,
+          "direction": "fall"
+        },
+        {
+          "name": "鳴潮",
+          "delta": -92,
+          "direction": "fall"
+        },
+        {
+          "name": "Water Sort Puzzle - Sort Color",
+          "delta": -91,
+          "direction": "fall"
+        },
+        {
+          "name": "Royal Match",
+          "delta": -89,
+          "direction": "fall"
+        },
+        {
+          "name": "Wool Escape 3D",
+          "delta": -86,
+          "direction": "fall"
+        },
+        {
+          "name": "貓狗世界：人類消失之後",
+          "delta": -78,
+          "direction": "fall"
+        }
+      ]
+    },
+    "gp": {
+      "top_grossing": [
+        {
+          "name": "Wizardry Variants Daphne",
+          "delta": 123,
+          "direction": "rise"
+        },
+        {
+          "name": "絕區零",
+          "delta": 115,
+          "direction": "rise"
+        },
+        {
+          "name": "三國志・戰略版",
+          "delta": -86,
+          "direction": "fall"
+        },
+        {
+          "name": "Fate/Grand Order",
+          "delta": 70,
+          "direction": "rise"
+        },
+        {
+          "name": "碧藍航線",
+          "delta": -66,
+          "direction": "fall"
+        },
+        {
+          "name": "帝國與解謎 (Empires & Puzzles)",
+          "delta": 59,
+          "direction": "rise"
+        },
+        {
+          "name": "黑道風雲：老大你來做",
+          "delta": 57,
+          "direction": "rise"
+        },
+        {
+          "name": "口袋奇兵（Top War）-超休閒的策略遊戲",
+          "delta": 51,
+          "direction": "rise"
+        },
+        {
+          "name": "魔靈召喚: 天空之役",
+          "delta": 50,
+          "direction": "rise"
+        },
+        {
+          "name": "突襲：暗影傳說",
+          "delta": 47,
+          "direction": "rise"
+        }
+      ],
+      "top_free": [
+        {
+          "name": "瘋狂的蛇姬",
+          "delta": -107,
+          "direction": "fall"
+        },
+        {
+          "name": "Gun Hero: Cat Survival Shooter",
+          "delta": -89,
+          "direction": "fall"
+        },
+        {
+          "name": "王國之歌（Top Heroes）",
+          "delta": -87,
+          "direction": "fall"
+        },
+        {
+          "name": "水排序益智解謎遊戲 - 好玩又鍛煉腦力的顏色分類游戲",
+          "delta": -87,
+          "direction": "fall"
+        },
+        {
+          "name": "成語猜猜",
+          "delta": -86,
+          "direction": "fall"
+        },
+        {
+          "name": "浮嵐聽泉",
+          "delta": -86,
+          "direction": "fall"
+        },
+        {
+          "name": "腦洞大爆炸",
+          "delta": 80,
+          "direction": "rise"
+        },
+        {
+          "name": "Hot Pot Sort:Hotpot Match Game",
+          "delta": -80,
+          "direction": "fall"
+        },
+        {
+          "name": "可獄不可囚",
+          "delta": 64,
+          "direction": "rise"
+        },
+        {
+          "name": "海盜團很忙：Team RPG",
+          "delta": 63,
+          "direction": "rise"
+        }
+      ]
+    }
   },
   "us": {
-    "top_grossing": [
-      {
-        "name": "DRAGON BALL LEGENDS",
-        "delta": 109,
-        "direction": "rise"
-      },
-      {
-        "name": "Age of Empires Mobile",
-        "delta": 95,
-        "direction": "rise"
-      },
-      {
-        "name": "Love and Deepspace",
-        "delta": -81,
-        "direction": "fall"
-      },
-      {
-        "name": "Magic: The Gathering Arena",
-        "delta": 67,
-        "direction": "rise"
-      },
-      {
-        "name": "Sea War: Raid",
-        "delta": -61,
-        "direction": "fall"
-      },
-      {
-        "name": "GODDESS OF VICTORY: NIKKE",
-        "delta": 47,
-        "direction": "rise"
-      },
-      {
-        "name": "Golf Clash - Golfing Simulator",
-        "delta": 44,
-        "direction": "rise"
-      },
-      {
-        "name": "Disney Emoji Blitz Game",
-        "delta": 40,
-        "direction": "rise"
-      },
-      {
-        "name": "Guns of Glory: Lost Island",
-        "delta": 37,
-        "direction": "rise"
-      },
-      {
-        "name": "Harry Potter: Hogwarts Mystery",
-        "delta": -37,
-        "direction": "fall"
-      }
-    ],
-    "top_free": [
-      {
-        "name": "Delta Force",
-        "delta": -129,
-        "direction": "fall"
-      },
-      {
-        "name": "Hexa Sort",
-        "delta": 105,
-        "direction": "rise"
-      },
-      {
-        "name": "Pixel Flow!",
-        "delta": 98,
-        "direction": "rise"
-      },
-      {
-        "name": "Car Match - Traffic Puzzle",
-        "delta": -65,
-        "direction": "fall"
-      },
-      {
-        "name": "Tiles Survive!",
-        "delta": -64,
-        "direction": "fall"
-      },
-      {
-        "name": "Carnival Tycoon: Coin Games",
-        "delta": -60,
-        "direction": "fall"
-      },
-      {
-        "name": "Teacher Simulator: Study Time!",
-        "delta": 59,
-        "direction": "rise"
-      },
-      {
-        "name": "Cookingdom",
-        "delta": -59,
-        "direction": "fall"
-      },
-      {
-        "name": "State Connect: Traffic Control",
-        "delta": 57,
-        "direction": "rise"
-      },
-      {
-        "name": "Water Out Puzzle",
-        "delta": 56,
-        "direction": "rise"
-      }
-    ]
+    "ios": {
+      "top_grossing": [
+        {
+          "name": "DRAGON BALL LEGENDS",
+          "delta": 109,
+          "direction": "rise"
+        },
+        {
+          "name": "Age of Empires Mobile",
+          "delta": 95,
+          "direction": "rise"
+        },
+        {
+          "name": "Love and Deepspace",
+          "delta": -81,
+          "direction": "fall"
+        },
+        {
+          "name": "Magic: The Gathering Arena",
+          "delta": 67,
+          "direction": "rise"
+        },
+        {
+          "name": "Sea War: Raid",
+          "delta": -61,
+          "direction": "fall"
+        },
+        {
+          "name": "GODDESS OF VICTORY: NIKKE",
+          "delta": 47,
+          "direction": "rise"
+        },
+        {
+          "name": "Golf Clash - Golfing Simulator",
+          "delta": 44,
+          "direction": "rise"
+        },
+        {
+          "name": "Disney Emoji Blitz Game",
+          "delta": 40,
+          "direction": "rise"
+        },
+        {
+          "name": "Guns of Glory: Lost Island",
+          "delta": 37,
+          "direction": "rise"
+        },
+        {
+          "name": "Harry Potter: Hogwarts Mystery",
+          "delta": -37,
+          "direction": "fall"
+        }
+      ],
+      "top_free": [
+        {
+          "name": "Delta Force",
+          "delta": -129,
+          "direction": "fall"
+        },
+        {
+          "name": "Hexa Sort",
+          "delta": 105,
+          "direction": "rise"
+        },
+        {
+          "name": "Pixel Flow!",
+          "delta": 98,
+          "direction": "rise"
+        },
+        {
+          "name": "Car Match - Traffic Puzzle",
+          "delta": -65,
+          "direction": "fall"
+        },
+        {
+          "name": "Tiles Survive!",
+          "delta": -64,
+          "direction": "fall"
+        },
+        {
+          "name": "Carnival Tycoon: Coin Games",
+          "delta": -60,
+          "direction": "fall"
+        },
+        {
+          "name": "Teacher Simulator: Study Time!",
+          "delta": 59,
+          "direction": "rise"
+        },
+        {
+          "name": "Cookingdom",
+          "delta": -59,
+          "direction": "fall"
+        },
+        {
+          "name": "State Connect: Traffic Control",
+          "delta": 57,
+          "direction": "rise"
+        },
+        {
+          "name": "Water Out Puzzle",
+          "delta": 56,
+          "direction": "rise"
+        }
+      ]
+    },
+    "gp": {
+      "top_grossing": [
+        {
+          "name": "DRAGON BALL LEGENDS",
+          "delta": 126,
+          "direction": "rise"
+        },
+        {
+          "name": "Wuthering Waves",
+          "delta": -89,
+          "direction": "fall"
+        },
+        {
+          "name": "Destiny: Rising",
+          "delta": -81,
+          "direction": "fall"
+        },
+        {
+          "name": "Last Shelter: Survival",
+          "delta": -71,
+          "direction": "fall"
+        },
+        {
+          "name": "Honkai: Star Rail",
+          "delta": 68,
+          "direction": "rise"
+        },
+        {
+          "name": "The Tower - Idle Tower Defense",
+          "delta": 64,
+          "direction": "rise"
+        },
+        {
+          "name": "Words With Friends Word Game",
+          "delta": -59,
+          "direction": "fall"
+        },
+        {
+          "name": "Epic Seven",
+          "delta": -53,
+          "direction": "fall"
+        },
+        {
+          "name": "Star Wars™: Galaxy of Heroes",
+          "delta": 47,
+          "direction": "rise"
+        },
+        {
+          "name": "Stormshot: Isle of Adventure",
+          "delta": 44,
+          "direction": "rise"
+        }
+      ],
+      "top_free": [
+        {
+          "name": "Mahjong Club - Solitaire Game",
+          "delta": -170,
+          "direction": "fall"
+        },
+        {
+          "name": "Legend of Elements",
+          "delta": -130,
+          "direction": "fall"
+        },
+        {
+          "name": "Color Block Jam",
+          "delta": -113,
+          "direction": "fall"
+        },
+        {
+          "name": "Sprunki Beat: Full Mod Music",
+          "delta": 108,
+          "direction": "rise"
+        },
+        {
+          "name": "Drop Away: Color Puzzle",
+          "delta": -85,
+          "direction": "fall"
+        },
+        {
+          "name": "EA SPORTS FC™ Mobile Soccer",
+          "delta": -75,
+          "direction": "fall"
+        },
+        {
+          "name": "Nightmare Puzzles: The Unknown",
+          "delta": -72,
+          "direction": "fall"
+        },
+        {
+          "name": "UNO!™",
+          "delta": 67,
+          "direction": "rise"
+        },
+        {
+          "name": "Sniper Area: Sniper shooter",
+          "delta": -65,
+          "direction": "fall"
+        },
+        {
+          "name": "Grapple Hook Hero : Zip Action",
+          "delta": 60,
+          "direction": "rise"
+        }
+      ]
+    }
   }
 }
