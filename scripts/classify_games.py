@@ -28,9 +28,11 @@ if api_key:
         client = OpenAI(api_key=api_key)
         print("[INFO] OpenAI Client 成功初始化。")
     except Exception as e:
+        # 即使初始化失敗，也將 client 設為 None，讓程式可以繼續執行 (但跳過 AI 呼叫)
+        client = None 
         print(f"[FATAL ERROR] OpenAI Client 初始化失敗: {e}")
 else:
-    print("[FATAL ERROR] 找不到 OPENAI_API_KEY 環境變數。AI 功能將無法運作。")
+    print("[WARN] 找不到 OPENAI_API_KEY 環境變數。AI 功能將無法運作，新遊戲將被歸類為「其他」。")
 
 # --- 工具函式 ---
 
@@ -56,8 +58,9 @@ def get_ai_classification(app_name: str, app_genre: str):
     呼叫 OpenAI API 取得遊戲分類。
     """
     if not client:
+        # 如果 AI 服務失效，則歸類為「其他」
         print(f"[WARN] OpenAI Client 未初始化，跳過 AI 分類: {app_name}")
-        return "其他" # 如果 AI 服務失效，則歸類為「其他」
+        return "其他" 
 
     # 建立一個非常嚴格的 Prompt，強制 AI 只能回答七種類型中的一種
     prompt = f"""
@@ -82,7 +85,7 @@ def get_ai_classification(app_name: str, app_genre: str):
             model="gpt-4o-mini", # 使用最新且快速的 gpt-4o-mini 模型
             messages=[
                 {"role": "system", "content": "你是一個精準的遊戲分類專家。"},
-                {"role": "user", "content": prompt}
+                {"role_name": "user", "content": prompt}
             ],
             temperature=0, # 盡可能產生確定性的結果
             max_tokens=20 # 限制回答長度 (分類名稱通常很短)
@@ -116,13 +119,14 @@ def get_ai_classification(app_name: str, app_genre: str):
         return "其他"
 
 def process_country_folder(country_folder: Path, game_type_cache: dict):
-    # === 修正 1：確保 is_cache_updated 總是被初始化 ===
+    # === 確保 is_cache_updated 總是被初始化 ===
     is_cache_updated = False 
     
     # 使用 glob 匹配 ios_* 或 gp_* 的榜單檔案
     for json_file in sorted(country_folder.glob("*.json")):
         if json_file.name.endswith(OUTPUT_SUFFIX) or json_file.name.startswith("available_dates_"):
             continue  # 跳過已分類檔和日期檔
+        # 這個判斷確保只處理原始榜單檔案 (ios_... 或 gp_...)
         if not json_file.name.startswith(("ios_", "gp_")):
              continue
         
@@ -145,7 +149,6 @@ def process_country_folder(country_folder: Path, game_type_cache: dict):
         print(f"[INFO] 正在分類排行榜檔案：{json_file.name}")
 
         # === 進行分類 (優先使用快取/覆寫) ===
-        # is_cache_updated = False # (原始位置，已移至函式頂部)
         
         for app in rows:
             app_id = app.get("app_id")
@@ -167,7 +170,8 @@ def process_country_folder(country_folder: Path, game_type_cache: dict):
                 is_cache_updated = True # 標記快取已被更新
                 
                 # 避免 API 呼叫過於頻繁
-                time.sleep(1) 
+                if client:
+                    time.sleep(1) 
 
         # === 統計類型與百分比 ===
         type_counts_raw = dict(Counter([r["genre"] for r in rows if r.get("genre")]))
@@ -181,7 +185,9 @@ def process_country_folder(country_folder: Path, game_type_cache: dict):
 
         # === 輸出 ===
         platform = json_file.name.split('_')[0]
-        outfile = json_file.parent / f"{platform}_{country.lower()}_{chart}_{date_obj.strftime('%Y%m%d')}_classified.json"
+        # 這裡使用 json_file.stem 取得沒有副檔名的部分，避免重複的 .json
+        # ios_tw_top_free_20251013 -> ios_tw_top_free_20251013_classified.json
+        outfile = json_file.parent / f"{json_file.stem}_classified.json"
         
         payload["type_counts"] = type_counts_raw
         payload["type_counts_ai"] = type_counts_ai
@@ -201,9 +207,10 @@ def main():
         print("❌ 找不到 data/ranks 資料夾")
         return
     
-    if not client:
-        print("❌ OpenAI Client 未成功初始化，無法執行 AI 分類。")
-        return
+    # 這裡移除對 client 必須存在的強制檢查，讓程式即使沒有 AI 服務也能執行，只是分類結果為「其他」
+    # if not client:
+    #     print("❌ OpenAI Client 未成功初始化，無法執行 AI 分類。")
+    #     return # 舊有程式碼已移除
 
     # 載入遊戲類型快取 (包含人工覆寫)
     game_type_cache = read_json(GAME_TYPES_CACHE_PATH)
@@ -214,7 +221,7 @@ def main():
     
     # 遍歷所有國家資料夾
     for cc_folder in RANKS_DIR.iterdir():
-        # === 修正 2：確保只處理資料夾，並明確跳過 'updates' 資料夾 ===
+        # === 確保只處理資料夾，並明確跳過 'updates' 資料夾 ===
         if cc_folder.is_dir() and cc_folder.name != "updates":
             print(f"\n--- 處理國家資料夾: {cc_folder.name} ---")
             # 傳入快取，並接收快取是否有被更新
