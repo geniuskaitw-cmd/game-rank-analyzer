@@ -1,979 +1,986 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>遊戲市場趨勢儀表板</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
-    <style>
-        /* 簡單的 loading 動畫 */
-        .loader {
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid #3498db;
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            animation: spin 1s linear infinite;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        /* 用於歷史分析的選中樣式 */
-        .selected-for-analysis {
-            background-color: #fffbeb !important; /* 淺黃色背景 */
-            border-left: 4px solid #f59e0b; /* 黃色左邊框 */
-        }
-        
-        /* === START: Tooltip 優化 === */
-        /* 更新圖示樣式 (移除 margin 和 cursor) */
-        .update-icon {
-            display: inline-block;
-            color: #2563eb; /* blue-600 */
-        }
-        /* === END: Tooltip 優化 === */
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>遊戲市場趨勢儀表板</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
+    <style>
+        /* 簡單的 loading 動畫 */
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        /* 用於歷史分析的選中樣式 */
+        .selected-for-analysis {
+            background-color: #fffbeb !important; /* 淺黃色背景 */
+            border-left: 4px solid #f59e0b; /* 黃色左邊框 */
+        }
+        
+        /* === START: Tooltip 優化 === */
+        /* 更新圖示樣式 (移除 margin 和 cursor) */
+        .update-icon {
+            display: inline-block;
+            color: #2563eb; /* blue-600 */
+        }
+        /* === END: Tooltip 優化 === */
 
-        /* 隱藏與動畫控制 */
-        .collapse-container {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out; /* 新增動畫效果 */
-        }
-        .collapse-container.expanded {
-            max-height: 5000px; /* 足夠大的值，確保內容能完全展開 */
-            transition: max-height 0.5s ease-in;
-        }
-    </style>
+        /* 隱藏與動畫控制 */
+        .collapse-container {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out; /* 新增動畫效果 */
+        }
+        .collapse-container.expanded {
+            max-height: 5000px; /* 足夠大的值，確保內容能完全展開 */
+            transition: max-height 0.5s ease-in;
+        }
+    </style>
 </head>
 <body class="bg-gray-100 font-sans text-gray-800">
 
-    <div id="toast-container" class="fixed bottom-5 right-5 z-[100]"></div>
-
-    <header class="bg-white shadow-md">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-gray-800">遊戲市場趨勢儀表板</h1>
-            <div id="loading-indicator" class="loader hidden"></div>
-        </div>
-    </header>
-
-    <nav class="bg-gray-800 text-white sticky top-0 z-10">
-        <div class="container mx-auto px-4 py-3 flex flex-wrap gap-4 items-center">
-            <div>
-                <label for="platform-select" class="text-sm font-medium mr-2">平台:</label>
-                <select id="platform-select" class="bg-gray-700 border-gray-600 rounded-md py-1 px-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"></select>
-            </div>
-            <div>
-                <label for="country-select" class="text-sm font-medium mr-2">國家:</label>
-                <select id="country-select" class="bg-gray-700 border-gray-600 rounded-md py-1 px-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"></select>
-                
-            </div>
-            <div>
-                <label for="chart-select" class="text-sm font-medium mr-2">榜單:</label>
-                <select id="chart-select" class="bg-gray-700 border-gray-600 rounded-md py-1 px-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"></select>
-            </div>
-            <div>
-                <label for="date-select" class="text-sm font-medium mr-2">日期:</label>
-                <select id="date-select" class="bg-gray-700 border-gray-600 rounded-md py-1 px-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" disabled>
-                    <option>請先選擇國家</option>
-                </select>
-            </div>
-            <div class="ml-auto flex gap-2">
-                <button id="toggle-history-btn" class="bg-green-600 hover:bg-green-700 text-white py-1 px-3 rounded-md text-sm font-medium">歷史分析</button>
-                <button id="run-history-btn" class="bg-blue-600 hover:bg-blue-700 text-white py-1 px-3 rounded-md text-sm font-medium hidden" disabled>分析 0 款遊戲</button>
-            </div>
-        </div>
-    </nav>
-
-    <main class="container mx-auto px-4 py-6">
-        <div class="flex flex-col lg:flex-row gap-6">
-
-            <section class="lg:w-2/3 bg-white p-6 rounded-lg shadow-md">
-                <h2 class="text-xl font-semibold mb-4">排行榜</h2>
-                <div class="overflow-x-auto">
-                    <table class="w-full min-w-max" id="rank-list">
-                        <thead>
-                            <tr class="border-b bg-gray-50 t-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                                <th class="py-3 px-4">#</th>
-                                <th class="py-3 px-4">遊戲</th>
-            147                                   <th class="py-3 px-4">變動</th>
-                                <th class="py-3 px-4">類型 (AI)</th>
-                            </tr>
-                        </thead>
-                        <tbody id="rank-list-body">
-                            <tr><td colspan="4" class="py-10 text-center text-gray-500">載入資料中...</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <button id="toggle-expand" class="mt-4 text-sm text-blue-600 hover:underline hidden">展開全部</button>
-            </section>
-
-            <aside class="lg:w-1/3 space-y-6">
-
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-lg font-semibold mb-4">品類統計 (AI 分類)</h3>
-                    <div id="stats-body" class="relative h-64 w-full">
-                        <p class="text-sm text-gray-500">載入中...</p>
-                    </div>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-lg font-semibold mb-4">摘要與變動 (Movers)</h3>
-                    <div class="text-sm">
-                        <h4 class="font-semibold text-green-600 mb-2">▲ 今日大幅上升 (Top 10)</h4>
-                        <ul id="movers-rise" class="list-disc list-inside space-y-1 text-gray-700">
-                            <li>載入中...</li>
-                        </ul>
-                    </div>
-                    <div class="text-sm mt-4">
-                        <h4 class="font-semibold text-red-600 mb-2">▼ 今日大幅下降 (Top 10)</h4>
-                        <ul id="movers-fall" class="list-disc list-inside space-y-1 text-gray-700">
-                            <li>載入中...</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-lg font-semibold mb-4">📋 手遊七大分類定義</h3>
-                    
-                    <div id="definition-table-container" class="collapse-container">
-                        <div class="overflow-x-auto">
-                            <table class="w-full text-sm">
-                                <thead>
-                                    <tr class="bg-gray-50 border-b">
-                                        <th class="py-2 px-3 text-left text-xs font-semibold text-gray-600 uppercase w-1/4">自訂分類</th>
-                                        <th class="py-2 px-3 text-left text-xs font-semibold text-gray-600 uppercase w-1/2">類型特徵與範圍</th>
-                                        <th class="py-2 px-3 text-left text-xs font-semibold text-gray-600 uppercase w-1/4">代表作品</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="border-b hover:bg-gray-50"><td class="py-2 px-3 font-medium">角色扮演（RPG）</td><td class="py-2 px-3">劇情與角色成長導向、養成與數值進展明顯；包含放置、回合、部分動作等分支</td><td class="py-2 px-3">《原神》《放置奇兵》《天堂M》《崩壞：星穹鐵道》《向僵屍開炮》《胡鬧地牢》</td></tr>
-                                    <tr class="border-b hover:bg-gray-50"><td class="py-2 px-3 font-medium">社交賭場（Social Casino）</td><td class="py-2 px-3">以老虎機、輪盤、撲克、賓果等為主；無真金交易(很難說)具社交互動</td><td class="py-2 px-3">《Coin Master》《星城》《Slotomania》《Bingo Blitz》</td></tr>
-                                    <tr class="border-b hover:bg-gray-50"><td class="py-2 px-3 font-medium">策略對戰（Strategy）</td><td class="py-2 px-3">強調佈局與思考、資源運用、塔防或戰爭；中速節奏</td><td class="py-2 px-3">《Clash of Clans》《皇室戰爭》《三國志・戰略版》《XCOM》《Last War》</td></tr>
-                                    <tr class="border-b hover:bg-gray-50"><td class="py-2 px-3 font-medium">動作競技（Action / Fighting / Shooter）</td><td class="py-2 px-3">節奏快、操作手感強；含格鬥、射擊、跑酷、MOBA、體育、即時競技等</td><td class="py-2 px-3">《王者榮耀》《PUBG Mobile》《Temple Run》《Brawl Stars》</td></tr>
-                                    <tr class="border-b hover:bg-gray-50"><td class="py-2 px-3 font-medium">模擬沙盒（Simulation / Sandbox）</td><td class="py-2 px-3">模擬經營、養成、建造或自由探索沙盒；偏長期進程</td><td class="py-2 px-3">《模擬市民 Mobile》《Minecraft》《星露谷物語》《模擬飛行》</td></tr>
-                                    <tr class="hover:bg-gray-50"><td class="py-2 px-3 font-medium">休閒益智（Casual / Puzzle）</td><td class="py-2 px-3">規則簡單、輕遊玩；包含三消、放置、射泡泡、拼圖等</td><td class="py-2 px-3">《Candy Crush》《Homescapes》《貓咪大戰爭》《植物大戰殭屍》</td></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    
-                    <button id="toggle-definition-btn" class="mt-4 text-sm text-blue-600 hover:underline">展開定義</button>
-                </div>
-                </aside>
-        </div>
-    </main>
-    
-    <div id="history-modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden p-4">
-        <div class="bg-white rounded-lg shadow-xl w-full max-w-4xl max-h-[90vh] flex flex-col">
-            <div class="flex justify-between items-center border-b p-4">
-                <h3 class="text-xl font-semibold">歷史排名分析</h3>
-                <button id="close-history-modal" class="text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
-            </div>
-            <div id="history-modal-body" class="p-6 overflow-y-auto">
-                </div>
-        </div>
-    </div>
-
-    <script type="module">
-        // 載入 Firebase 核心 SDK
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
-        // 載入 Auth (用於登入)
-        import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
-        // 載入 Firestore (用於寫入分類)
-        import { getFirestore, doc, setDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
-
-        // --- 應用程式主邏輯 ---
-        const app = {
-            // 1. 狀態管理
-            db: null,
-            auth: null,
-            isAuthReady: false,
-            isLoading: false,
-            isHistoryMode: false,	
-            historySelection: new Map(),	
-            historyChartInstance: null,	
-            pieChartInstance: null, // 圓餅圖實例
-            currentMetadata: new Map(),	
-
-            // 定義篩選條件
-            platforms: [
-                { id: 'ios', name: 'iOS' },
-                { id: 'gp', name: 'Google Play' }
-            ],
-            countries: [
-                { id: 'TW', name: '台灣' },
-                { id: 'US', name: '美國' },
-                { id: 'CN', name: '中國' },
-                { id: 'TH', name: '泰國' },
-                { id: 'PH', name: '菲律賓' }
-            ],
-            charts: [
-                { id: 'top_grossing', name: '暢銷榜' },
-                { id: 'top_free', name: '免費榜' }
-            ],
-            categories: [
-                '角色扮演', '社交賭場', '策略對戰', '動作競技', '模擬沙盒', '休閒益智', '其他'
-            ],
-            
-            // 定義一個固定的顏色表，確保分類顏色一致
-            categoryColors: {
-                '角色扮演': '#FF6384',
-                '社交賭場': '#36A2EB',
-                '策略對戰': '#FFCE56',
-                '動作競技': '#4BC0C0',
-                '模擬沙盒': '#9966FF',
-                '休閒益智': '#FF9F40',
-                '其他': '#C9CBCF'
-            },
-
-            // 2. 初始化 (程式進入點)
-            async initialize() {
-                console.log("儀表板初始化...");
-                this.initializeFirebase();
-                this.bindEvents();
-                this.renderFilters();
-                this.handleCountryChange();
-                
-                // 預設將定義表設為收合，以隱藏內容
-                const container = document.getElementById('definition-table-container');
-                container.classList.remove('expanded');
-                // 預設將按鈕文字設為展開
-                document.getElementById('toggle-definition-btn').textContent = '展開定義';
-            },
-
-            // 3. Firebase 初始化
-            initializeFirebase() {
-                try {
-                    const firebaseConfig = {
-                      apiKey: "AIzaSyAgXqF-jPd8FpTLzuXuiDfDD4vhGO28d7M",
-                      authDomain: "rankanalyzer-1a95d.firebaseapp.com",
-                      projectId: "rankanalyzer-1a95d",
-                      storageBucket: "rankanalyzer-1a95d.appspot.com",	
-                      messagingSenderId: "825847760",
-                      appId: "1:825847760:web:1606401fd848f9c962d3d5"
-                    };
-
-                    if (!firebaseConfig.apiKey) {
-                        console.warn("Firebase config 未設定或無效，分類覆寫功能將無法使用。");
-                        this.showError("Firebase 未設定，覆寫功能已停用。");
-                        return;
-                    }
-
-                    const firebaseApp = initializeApp(firebaseConfig);
-                    this.db = getFirestore(firebaseApp);
-                    this.auth = getAuth(firebaseApp);
-
-                    onAuthStateChanged(this.auth, (user) => {
-                        if (user) {
-                            console.log("Firebase 驗證成功:", user.uid);
-                            this.isAuthReady = true;
-                        } else {
-                            this.authenticate();
-                        }
-                    });
-                } catch (error) {
-                    console.error("Firebase 初始化失敗:", error);
-                    this.showError("Firebase 初始化失敗。");
-                }
-            },
-
-            // 4. Firebase 登入邏輯 (簡化：只用匿名)
-            async authenticate() {
-                try {
-                    console.log("嘗試匿名登入...");
-                    await signInAnonymously(this.auth);
-                } catch (error) {
-                    console.error("Firebase 匿名登入失敗:", error);
-                    this.showError("Firebase 登入失敗，無法使用分類覆寫功能。");
-                }
-            },
-
-            // 5. 綁定所有 DOM 事件監聽
-            bindEvents() {
-                document.getElementById('platform-select').addEventListener('change', () => this.handleFilterChange());
-                document.getElementById('country-select').addEventListener('change', () => this.handleCountryChange());
-                document.getElementById('chart-select').addEventListener('change', () => this.handleFilterChange());
-                document.getElementById('date-select').addEventListener('change', () => this.handleFilterChange());
-                
-                // 新增：綁定定義表的展開/收合按鈕
-                document.getElementById('toggle-definition-btn').addEventListener('click', () => this.toggleDefinitionTable());
-
-                document.getElementById('toggle-expand').addEventListener('click', (e) => {
-                    this.toggleRankListExpand(e.target);
-                });
-
-                document.getElementById('toggle-history-btn').addEventListener('click', () => this.toggleHistoryMode());
-                document.getElementById('run-history-btn').addEventListener('click', () => this.runHistoryAnalysis());
-                
-                // === START: Tooltip 優化 (綁定事件) ===
-                // 1. 綁定排行榜表格的點擊事件 (用於點擊開關)
-                document.getElementById('rank-list').addEventListener('click', (e) => {
-                    this.handleHistorySelection(e);
-                    this.handleTooltipToggle(e); // 新增：處理 tooltip 點擊
-                });
-                
-                // 2. 綁定全域點擊事件 (用於點擊空白處關閉)
-                window.addEventListener('click', (e) => {
-                    this.handleGlobalClick(e); // 新增：處理全域點擊
-                });
-                // === END: Tooltip 優化 ===
-
-                document.getElementById('close-history-modal').addEventListener('click', () => {
-                    document.getElementById('history-modal').classList.add('hidden');
-                });
-            },
-
-            // 6. 渲染篩選器
-            renderFilters() {
-                this.populateSelect('platform-select', this.platforms);
-                this.populateSelect('country-select', this.countries);
-                this.populateSelect('chart-select', this.charts);
-            },
-
-            populateSelect(elementId, options) {
-                const select = document.getElementById(elementId);
-                select.innerHTML = options.map(opt => `<option value="${opt.id}">${opt.name}</option>`).join('');
-            },
-
-            // 7. 核心資料載入邏輯
-
-            async handleCountryChange() {
-                const country = document.getElementById('country-select').value;
-                const dateSelect = document.getElementById('date-select');
-                dateSelect.disabled = true;
-                dateSelect.innerHTML = '<option>載入日期中...</option>';
-
-                try {
-                    const dates = await this.fetchJson(`data/ranks/${country}/available_dates_${country}.json`);
-                    if (dates && dates.length > 0) {
-                        dateSelect.innerHTML = dates.map(date => `<option value="${date}">${date}</option>`).join('');
-                        dateSelect.disabled = false;
-                        this.handleFilterChange();	
-                    } else {
-                        dateSelect.innerHTML = '<option>無可用日期</option>';
-                        this.clearUI();
-                        this.setLoading(false);
-                    }
-                } catch (error) {
-                    console.error("載入日期失敗:", error);
-                    dateSelect.innerHTML = '<option>載入失敗</option>';
-                    this.showError(`載入 ${country} 日期列表失敗。`);
-                    this.clearUI();
-                    this.setLoading(false);
-                }
-            },
-
-            async handleFilterChange() {
-                if (this.isLoading) return;
-                this.setLoading(true);
-                this.currentMetadata.clear();	
-
-                this.clearUI();
-
-                const platform = document.getElementById('platform-select').value;
-                const country = document.getElementById('country-select').value;
-                const chart = document.getElementById('chart-select').value;
-                const date = document.getElementById('date-select').value;
-
-                if (!date || date === '無可用日期' || date === '載入日期中...' || date === '載入失敗') {
-                    this.setLoading(false);
-                    return;
-                }
-
-                const countryLower = country.toLowerCase();
-                const platformLower = platform.toLowerCase();
-
-                try {
-                    const [rankData, moversData, metadataCacheData] = await Promise.all([
-                        this.fetchJson(`data/ranks/${country}/${platformLower}_${countryLower}_${chart}_${date}_classified.json`),
-                        this.fetchJson(`data/movers/movers_${date}.json`),
-                        this.fetchJson(`data/ranks/updates/metadata_cache_${date}.json`)	
-                    ]);
-
-                    if (metadataCacheData && metadataCacheData[country]?.[platformLower]?.[chart]) {
-                        const cache = metadataCacheData[country][platformLower][chart];
-                        this.currentMetadata = new Map(Object.entries(cache));
-                    }	
-                    
-                    if (rankData) {
-                        this.renderRankList(rankData.rows || [], this.currentMetadata);	
-                        
-                        this.renderStatistics(
-                            rankData.type_percentages_ai || {},
-                            rankData.type_counts_ai || {}	
-                        );
-                        
-                    } else {
-                        this.showError(`找不到榜單資料: data/ranks/${country}/${platformLower}_${countryLower}_${chart}_${date}_classified.json`);
-                    }
-
-                    // === 修正 Movers 數據讀取邏輯：加入平台層級 ===
-                    const currentMovers = moversData?.[countryLower]?.[platformLower]?.[chart];
-                    
-                    if (currentMovers) {
-                        this.renderMovers(currentMovers);
-                    } else {
-                        this.renderMovers([]);
-                    }
-                    // === 修正結束 ===
-
-                } catch (error) {
-                    console.error("載入資料時發生錯誤:", error);
-                    this.showError("載入資料時發生錯誤，請檢查主控台。");
-                } finally {
-                    this.setLoading(false);
-                }
-            },
-
-            // 8. 渲染 UI 元件
-            renderRankList(rows, metadataMap) {	
-                const listElement = document.getElementById('rank-list-body');
-                if (rows.length === 0) {
-                    listElement.innerHTML = '<tr><td colspan="4" class="py-4 text-center text-gray-500">此篩選條件下無榜單資料。</td></tr>';
-                    document.getElementById('toggle-expand').classList.add('hidden');
-                    return;
-                }
-
-                listElement.innerHTML = rows.map((row, index) => {
-                    const delta = row.delta || 0;
-                    const deltaColor = delta > 0 ? 'text-green-500' : (delta < 0 ? 'text-red-500' : 'text-gray-400');
-                    const deltaIcon = delta > 0 ? '▲' : (delta < 0 ? '▼' : '—');
-                    
-                    // === START: Tooltip 優化 (產生自訂 Tooltip HTML) ===
-                    const metadataInfo = metadataMap.get(row.app_name);	
-                    
-                    let updateIconHtml = '';
-                    if (metadataInfo) {
-    390                     const version = metadataInfo.version || 'N/A';
-                        const updatedTime = metadataInfo.updated ? new Date(metadataInfo.updated).toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }) : 'N/A';
-                        
-                        updateIconHtml = `
-                            <div class="relative group inline-block ml-1 align-middle">
-                                <span data-action="toggle-tooltip" class="update-icon cursor-pointer">🔄</span>
-                                
-                                <div class="custom-tooltip absolute z-20 bottom-full mb-2 left-1/2 -translate-x-1/2 w-64
-                                            bg-white border border-gray-300 rounded-md shadow-lg p-3
-                                            text-sm text-left text-gray-700
-                                            hidden group-hover:block
-                                            pointer-events-none">
-                                    <strong class="block font-medium text-gray-900">最新版本: ${version}</strong>
-                                    <span class="block mt-1">App Store 更新時間: ${updatedTime}</span>
-                                    <div class="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0
-                                            border-l-8 border-l-transparent
-                                            border-r-8 border-r-transparent
-                                            border-t-8 border-t-white
-                                            drop-shadow-sm" style="margin-left: -8px;"></div>
-                                </div>
-                            </div>
-                        `;
-                    }
-                    // === END: Tooltip 優化 ===
-
-                    return `
-                        <tr id="app-row-${row.app_id}" class="bg-white border-b hover:bg-gray-50 ${index >= 10 ? 'hidden rank-collapsed' : ''} rank-row" data-app-id="${row.app_id}" data-app-name="${row.app_name}">
-                            <td class="py-3 px-4 text-sm text-gray-500">${row.rank}</td>
-                            <td class="py-3 px-4 font-medium text-gray-900">
-                                <span class="align-middle">${row.app_name}</span>
-                                ${updateIconHtml}
-                                <button data-action="toggle-history" class="history-add-btn hidden ml-2 px-2 py-0.5 text-xs text-blue-600 bg-blue-100 rounded-full hover:bg-blue-200 align-middle">+</button>
-                            </td>
-                            <td class="py-3 px-4 text-sm ${deltaColor}">${deltaIcon} ${Math.abs(delta)}</td>
-                            <td class="py-3 px-4 text-sm">
-                                <div class="relative inline-block">
-                                    <select data-app-id="${row.app_id}" class="category-select appearance-none bg-gray-100 border border-gray-300 rounded-md py-1 px-2 pr-8 text-sm text-gray-700 hover:bg-gray-200 focus:outline-none">
-                                        ${this.categories.map(cat => `
-                                            <option value="${cat}" ${row.ai_type === cat ? 'selected' : ''}>${cat}</option>
-                                        `).join('')}
-                                    </select>
-                                    <span class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none text-gray-500">
-                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                                    </span>
-                                </div>
-                            </td>
-                        </tr>
-                    `;
-                }).join('');
-
-                document.querySelectorAll('.category-select').forEach(select => {
-                    select.addEventListener('change', (e) => this.handleCategoryOverride(e));
-                });
-
-                const toggleBtn = document.getElementById('toggle-expand');
-                if (rows.length > 10) {
-                    toggleBtn.classList.remove('hidden');
-                    toggleBtn.textContent = '展開全部';
-                    toggleBtn.dataset.expanded = 'false';
-                } else {
-                    toggleBtn.classList.add('hidden');
-                }
-            },
-
-            // (圓餅圖優化後的 renderStatistics 函式)
-            renderStatistics(percentages, counts) {
-                const container = document.getElementById('stats-body');
-
-                if (this.pieChartInstance) {
-                    this.pieChartInstance.destroy();
-                    this.pieChartInstance = null;
-                }
-
-                if (Object.keys(percentages).length === 0) {
-                    container.innerHTML = '<p class="text-sm text-gray-500">無統計資料。</p>';
-                    return;
-                }
-
-                container.innerHTML = '<canvas id="category-pie-chart"></canvas>';
-                const ctx = document.getElementById('category-pie-chart').getContext('2d');
-
-                const sortedPercentages = Object.entries(percentages).sort(([,a],[,b]) => b-a);
-                
-                const labels = sortedPercentages.map(([name]) => name);
-                const data = sortedPercentages.map(([, percent]) => percent);
-                const backgroundColors = labels.map(label => this.categoryColors[label] || '#C9CBCF');	
-
-                this.pieChartInstance = new Chart(ctx, {
-                    type: 'doughnut',	
-                    data: {
-                        labels: labels,
-                        datasets: [{
-                            label: '品類佔比',
-                            data: data,
-                            backgroundColor: backgroundColors,
-                            borderColor: '#FFFFFF',	
-                            borderWidth: 2
-                        }]
-                    },
-                    plugins: [ChartDataLabels],
-                    options: {
-                        responsive: true,
-                        maintainAspectRatio: false,	
-                        plugins: {
-                            datalabels: {
-                                formatter: (value, context) => {
-                                    if (value < 5) {
-                                        return null;
-                                    }
-                                    return `${value}%`;
-                                },
-                                color: '#FFFFFF',
-                                font: {
-                                    weight: 'bold',
-                                    size: 14,
-                                },
-                                textStrokeColor: 'rgba(0,0,0,0.6)',
-                                textStrokeWidth: 1.5
-                            },
-                            legend: {
-                                position: 'right',	
-                                labels: {
-                                    font: {
-                                        size: 12
-                                    },
-                                    boxWidth: 20,
-                                    generateLabels: function(chart) {
-                                        const data = chart.data;
-                                        if (data.labels.length && data.datasets.length) {
-                                            return data.labels.map((label, i) => {
-                                                const meta = chart.getDatasetMeta(0);
-                                                const style = meta.controller.getStyle(i);
-                                                const categoryCount = counts[label] || 0;	
-                                                
-                                                return {
-                                                    text: `${label} (${categoryCount}款)`,
-                                                    fillStyle: style.backgroundColor,
-                                                    strokeStyle: style.borderColor,
-                                                    lineWidth: style.borderWidth,
-                                                    hidden: !chart.getDataVisibility(i),
-                                                    index: i
-                                                };
-                                            });
-                                        }
-                                        return [];
-                                    }
-                                }
-                            },
-                            tooltip: {
-                                callbacks: {
-                                    label: function(context) {
-                                        let label = context.label || '';
-                                        let value = context.raw || 0;
-                                        let count = counts[label] || 0;
-                                        return `${label}: ${value}% (${count}款)`;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                });
-            },
-
-            renderMovers(movers) {
-                const riseList = document.getElementById('movers-rise');
-                const fallList = document.getElementById('movers-fall');
-
-                const rising = movers.filter(m => m.direction === 'rise');
-                const falling = movers.filter(m => m.direction === 'fall');
-
-                riseList.innerHTML = rising.length > 0 ?
-                    rising.map(m => `<li>${m.name} (+${m.delta})</li>`).join('') :
-                    '<li>無</li>';
-
-                fallList.innerHTML = falling.length > 0 ?
-                    falling.map(m => `<li>${m.name} (${m.delta})</li>`).join('') :
-                    '<li>無</li>';
-            },
-
-            // === START: Tooltip 優化 (新增 JS 處理函式) ===
-            handleTooltipToggle(event) {
-                const trigger = event.target.closest('[data-action="toggle-tooltip"]');
-                if (!trigger) return; // 點擊的不是 tooltip 觸發器
-
-                event.stopPropagation(); // 阻止事件冒泡到 window
-
-                // 找到這個觸發器對應的彈窗
-                const tooltip = trigger.nextElementSibling;
-                if (!tooltip || !tooltip.classList.contains('custom-tooltip')) {
-                    console.error("Could not find tooltip sibling for", trigger);
-                    return;
-                }
-
-                // const isOpen = !tooltip.classList.contains('hidden'); // 不再使用
-
-                // 先關閉所有 *其他* 彈窗
-                document.querySelectorAll('.custom-tooltip').forEach(tt => {
-                    if (tt !== tooltip) {
-                        tt.classList.add('hidden');	
-                    }
-                });
-
-                // 然後切換當前這一個的狀態
-                tooltip.classList.toggle('hidden');
-            },
-
-            handleGlobalClick(event) {
-                // 如果點擊的不是觸發器，則關閉所有已打開的彈窗
-                if (!event.target.closest('[data-action="toggle-tooltip"]')) {
-                    document.querySelectorAll('.custom-tooltip').forEach(tooltip => {
-                        tooltip.classList.add('hidden');
-                    });
-                }
-            },
-            // === END: Tooltip 優化 ===
-
-            // 新增：定義表展開/收合功能
-            toggleDefinitionTable() {
-                const container = document.getElementById('definition-table-container');
-                const button = document.getElementById('toggle-definition-btn');
-                
-                const isExpanded = container.classList.toggle('expanded');
-                
-                button.textContent = isExpanded ? '收合定義' : '展開定義';
-            },
-
-            // 9. 互動功能 (原展開/收合榜單列表)
-            toggleRankListExpand(button) {
-                const collapsedRows = document.querySelectorAll('.rank-collapsed');
-                const isExpanded = button.dataset.expanded === 'true';
-
-                collapsedRows.forEach((row) => {
-                    row.classList.toggle('hidden', isExpanded);
-                });
-
-    640               button.textContent = isExpanded ? '展開全部' : '收合榜單';
-                button.dataset.expanded = !isExpanded;
-            },
-
-            async handleCategoryOverride(event) {
-                if (!this.db || !this.isAuthReady) {
-                    this.showError("Firebase 未連線，無法儲存覆寫。");
-                    const select = event.target;
-                    const originalIndex = Array.from(select.options).findIndex(option => option.defaultSelected);
-                    select.selectedIndex = originalIndex >= 0 ? originalIndex : 0;
-                    return;
-                }
-
-                const appId = event.target.dataset.appId;
-                const newCategory = event.target.value;
-                const appName = document.getElementById(`app-row-${appId}`).dataset.appName;
-
-                console.log(`準備覆寫 App ID: ${appId} (${appName}) -> 新分類: ${newCategory}`);
-                this.showLoadingMessage(`正在儲存 ${appName} 的分類...`);
-
-                try {
-                    const docRef = doc(this.db, "overrides", appId);
-                    await setDoc(docRef, {
-                        app_id: appId,
-                        app_name: appName,
-                        category: newCategory,
-                        updated_at: serverTimestamp()
-                    });
-                    this.showSuccess(`已成功儲存 ${appName} 的分類！下次自動化執行時將會套用。`);
-                    Array.from(event.target.options).forEach(option => {
-                        option.defaultSelected = (option.value === newCategory);
-                    });
-
-                } catch (error) {
-                    console.error("寫入 Firestore 失敗:", error);
-                    this.showError("儲存覆寫失敗，請檢查主控台。");
-                    const select = event.target;
-                    const originalIndex = Array.from(select.options).findIndex(option => option.defaultSelected);
-                    select.selectedIndex = originalIndex >= 0 ? originalIndex : 0;
-                }
-            },
-
-            // 10. 歷史分析功能
-            toggleHistoryMode() {
-                this.isHistoryMode = !this.isHistoryMode;
-                const btn = document.getElementById('toggle-history-btn');
-                const runBtn = document.getElementById('run-history-btn');
-                const addBtns = document.querySelectorAll('.history-add-btn');
-
-                if (this.isHistoryMode) {
-                    btn.textContent = '取消分析';
-                    btn.classList.replace('bg-green-600', 'bg-gray-500');
-                    btn.classList.replace('hover:bg-green-700', 'hover:bg-gray-600');
-                    runBtn.classList.remove('hidden');
-                    addBtns.forEach(b => b.classList.remove('hidden'));
-                    this.updateHistorySelectionCount();
-                } else {
-                    btn.textContent = '歷史分析';
-                    btn.classList.replace('bg-gray-500', 'bg-green-600');
-                    btn.classList.replace('hover:bg-gray-600', 'hover:bg-green-700');
-                    runBtn.classList.add('hidden');
-                    addBtns.forEach(b => b.classList.add('hidden'));
-
-                    this.historySelection.clear();
-                    document.querySelectorAll('.selected-for-analysis').forEach(row => {
-                        row.classList.remove('selected-for-analysis');
-                    });
-                    document.querySelectorAll('.history-add-btn').forEach(b => {
-                        b.textContent = '+';
-                        b.classList.replace('bg-red-100', 'bg-blue-100');
-                        b.classList.replace('hover:bg-red-200', 'hover:bg-blue-200');
-                        b.classList.replace('text-red-600', 'text-blue-600');
-                    });
-                }
-            },
-
-            handleHistorySelection(event) {
-                if (!this.isHistoryMode) return;
-                
-                // === Tooltip 優化：確保點擊 tooltip 區域時不會觸發歷史分析 ===
-                if (event.target.closest('[data-action="toggle-tooltip"]')) {
-                    return; // 如果點擊的是 tooltip 圖示，則中止
-                }
-                // === END: Tooltip 優化 ===
-
-                const button = event.target.closest('[data-action="toggle-history"]');
-                if (!button) return;
-
-                const row = button.closest('tr');
-                const appId = row.dataset.appId;
-                const appName = row.dataset.appName;
-
-                if (this.historySelection.has(appId)) {
-                    this.historySelection.delete(appId);
-                    row.classList.remove('selected-for-analysis');
-                    button.textContent = '+';
-                    button.classList.replace('bg-red-100', 'bg-blue-100');
-                    button.classList.replace('hover:bg-red-200', 'hover:bg-blue-200');
-                    button.classList.replace('text-red-600', 'text-blue-600');
-                } else {
-                    if (this.historySelection.size >= 10) {
-                        this.showError("最多只能選取 10 款遊戲進行分析。");
-                        return;
-                    }
-                    this.historySelection.set(appId, appName);
-                    row.classList.add('selected-for-analysis');
-                    button.textContent = '—';
-                    button.classList.replace('bg-blue-100', 'bg-red-100');
-                    button.classList.replace('hover:bg-blue-200', 'hover:bg-red-200');
-                    button.classList.replace('text-blue-600', 'text-red-600');
-                }
-
-                this.updateHistorySelectionCount();
-            },
-
-            updateHistorySelectionCount() {
-                const runBtn = document.getElementById('run-history-btn');
-                const count = this.historySelection.size;
-                runBtn.textContent = `分析 ${count} 款遊戲`;
-                runBtn.disabled = count === 0;
-            },
-
-            async runHistoryAnalysis() {
-                if (this.historySelection.size === 0) {
-                    this.showError("請至少選取 1 款遊戲。");
-                    return;
-                }
-
-                const modal = document.getElementById('history-modal');
-                const modalBody = document.getElementById('history-modal-body');
-                modalBody.innerHTML = '<div class="flex justify-center items-center h-64"><div class="loader"></div><p class="ml-4">正在載入歷史資料...</p></div>';
-                modal.classList.remove('hidden');
-
-                const country = document.getElementById('country-select').value;
-                const platform = document.getElementById('platform-select').value;
-                const chart = document.getElementById('chart-select').value;
-                const platformLower = platform.toLowerCase();
-                const countryLower = country.toLowerCase();
-
-                try {
-                    const dates = await this.fetchJson(`data/ranks/${country}/available_dates_${country}.json`);
-                    if (!dates || dates.length === 0) {
-                        throw new Error("找不到可用日期。");
-                    }
-
-                    const sortedDates = dates.slice().reverse();
-
-                    const datasets = new Map();
-                    this.historySelection.forEach((appName, appId) => {
-                        datasets.set(appId, {
-                            label: appName,
-                            data: [],
-                            borderColor: `hsl(${Math.random() * 360}, 70%, 50%)`,
-                            fill: false,
-                            tension: 0.1
-                        });
-                    });
-
-                    for (const date of sortedDates) {
-                        const rankFile = `data/ranks/${country}/${platformLower}_${countryLower}_${chart}_${date}_classified.json`;
-                        const rankData = await this.fetchJson(rankFile);
-
-                        const rankMap = rankData ? new Map(rankData.rows.map(row => [row.app_id, row.rank])) : new Map();
-
-      　　           datasets.forEach((appData, appId) => {
-                            const rank = rankMap.get(appId) || null;
-                            appData.data.push(rank);
-                        });
-                    }
-
-                    modalBody.innerHTML = '<canvas id="history-chart"></canvas>';
-                    const ctx = document.getElementById('history-chart').getContext('2d');
-
-                    if (this.historyChartInstance) {
-                        this.historyChartInstance.destroy();
-                    }
-
-                    this.historyChartInstance = new Chart(ctx, {
-                        type: 'line',
-                        data: {
-                            labels: sortedDates,
-                            datasets: Array.from(datasets.values())
-                        },
-                        options: {
-                            responsive: true,
-                            scales: {
-                                y: {
-                                    reverse: true,
-                                    beginAtZero: true,
-                                    title: {
-                                        display: true,
-                                        text: '排名 (Rank)'
-                                    }
-                                }
-                            },
-                            plugins: {
-                                title: {
-                                    display: true,
-                                    text: `歷史排名分析 - ${platform} ${country} ${chart}`
-                                },
-                                tooltip: {
-                                    mode: 'index',
-                                    intersect: false
-                                }
-                            },
-                            interaction: {
-                                intersect: false,
-                                mode: 'index',
-                            }
-                        }
-                    });
-
-                } catch (error) {
-                    console.error("歷史分析失敗:", error);
-                    modalBody.innerHTML = `<p class="text-red-500">載入歷史圖表失敗: ${error.message}</p>`;
-                }
-            },
-
-            // 11. 輔助工具
-            setLoading(isLoading) {
-                this.isLoading = isLoading;
-                document.getElementById('loading-indicator').classList.toggle('hidden', !isLoading);
-
-                document.getElementById('platform-select').disabled = isLoading;
-                document.getElementById('country-select').disabled = isLoading;
-                document.getElementById('chart-select').disabled = isLoading;
-                if (!isLoading && document.getElementById('date-select').options.length > 0 && !document.getElementById('date-select').options[0].text.includes('載入')) {
-                    document.getElementById('date-select').disabled = false;
-                } else if (isLoading) {
-                    document.getElementById('date-select').disabled = true;
-                }
-            },
-
-            clearUI() {
-                document.getElementById('rank-list-body').innerHTML = '<tr><td colspan="4" class="py-10 text-center text-gray-500">載入資料中...</td></tr>';
-                document.getElementById('stats-body').innerHTML = '<p class="text-sm text-gray-500">載入中...</p>';
-                document.getElementById('movers-rise').innerHTML = '<li>載入中...</li>';
-                document.getElementById('movers-fall').innerHTML = '<li>載入中...</li>';
-            },
-
-            async fetchJson(url) {
-                try {
-                    const absoluteUrl = new URL(url, window.location.origin);
-
-                    const response = await fetch(absoluteUrl, { cache: 'no-cache' });
-                    if (!response.ok) {
-                        if (response.status === 404) {
-                            console.warn(`找不到檔案: ${absoluteUrl}`);
-                            return null;
-                        }
-                        throw new Error(`HTTP error! status: ${response.status}`);
-                    }
-                    return await response.json();
-                } catch (error) {
-                    console.error(`Fetch 錯誤 ${url}:`, error);
-                    throw error;
-                }
-            },
-
-            showError(message) {
-                this.showMessage(message, 'bg-red-500');
-            },
-            showSuccess(message) {
-                this.showMessage(message, 'bg-green-500');
-            },
-            showLoadingMessage(message) {
-                this.showMessage(message, 'bg-blue-500', 0);
-            },
-            showMessage(message, bgColor, duration = 3000) {
-                const container = document.getElementById('toast-container');
-                const oldLoading = document.getElementById('toast-loading');
-                if (oldLoading) oldLoading.remove();
-
-          　    const toast = document.createElement('div');
-                toast.id = (duration === 0) ? 'toast-loading' : '';
-                toast.className = `p-4 rounded-md text-white shadow-lg transform transition-all ${bgColor}`;	
-                toast.textContent = message;
-
-                container.appendChild(toast);
-
-                if (duration > 0) {
-                    setTimeout(() => {
-                        toast.remove();
-                    }, duration);
-                }
-            }
-        };
-
-        // DOM 載入完成後，啟動應用程式
-        document.addEventListener('DOMContentLoaded', () => {
-            app.initialize();
-        });
-
-    </script>
+    <div id="toast-container" class="fixed bottom-5 right-5 z-[100]"></div>
+
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-800">遊戲市場趨勢儀表板</h1>
+            <div id="loading-indicator" class="loader hidden"></div>
+        </div>
+    </header>
+
+    <nav class="bg-gray-800 text-white sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-3 flex flex-wrap gap-4 items-center">
+            <div>
+                <label for="platform-select" class="text-sm font-medium mr-2">平台:</label>
+                <select id="platform-select" class="bg-gray-700 border-gray-600 rounded-md py-1 px-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"></select>
+            </div>
+            <div>
+                <label for="country-select" class="text-sm font-medium mr-2">國家:</label>
+                <select id="country-select" class="bg-gray-700 border-gray-600 rounded-md py-1 px-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"></select>
+            </div>
+            <div>
+                <label for="chart-select" class="text-sm font-medium mr-2">榜單:</label>
+                <select id="chart-select" class="bg-gray-700 border-gray-600 rounded-md py-1 px-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"></select>
+            </div>
+            <div>
+                <label for="date-select" class="text-sm font-medium mr-2">日期:</label>
+                <select id="date-select" class="bg-gray-700 border-gray-600 rounded-md py-1 px-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" disabled>
+                    <option>請先選擇國家</option>
+                </select>
+            </div>
+            <div class="ml-auto flex gap-2">
+                <button id="toggle-history-btn" class="bg-green-600 hover:bg-green-700 text-white py-1 px-3 rounded-md text-sm font-medium">歷史分析</button>
+                <button id="run-history-btn" class="bg-blue-600 hover:bg-blue-700 text-white py-1 px-3 rounded-md text-sm font-medium hidden" disabled>分析 0 款遊戲</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-6">
+        <div class="flex flex-col lg:flex-row gap-6">
+
+            <section class="lg:w-2/3 bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-4">排行榜</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full min-w-max" id="rank-list">
+                        <thead>
+                            <tr class="border-b bg-gray-50 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                                <th class="py-3 px-4">#</th>
+                                <th class="py-3 px-4">遊戲</th>
+                                <th class="py-3 px-4">變動</th>
+                                <th class="py-3 px-4">類型 (AI)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="rank-list-body">
+                            <tr><td colspan="4" class="py-10 text-center text-gray-500">載入資料中...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <button id="toggle-expand" class="mt-4 text-sm text-blue-600 hover:underline hidden">展開全部</button>
+            </section>
+
+            <aside class="lg:w-1/3 space-y-6">
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold mb-4">品類統計 (AI 分類)</h3>
+                    <div id="stats-body" class="relative h-64 w-full">
+                        <p class="text-sm text-gray-500">載入中...</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold mb-4">摘要與變動 (Movers)</h3>
+                    <div class="text-sm">
+                        <h4 class="font-semibold text-green-600 mb-2">▲ 今日大幅上升 (Top 10)</h4>
+                        <ul id="movers-rise" class="list-disc list-inside space-y-1 text-gray-700">
+                            <li>載入中...</li>
+                        </ul>
+                    </div>
+                    <div class="text-sm mt-4">
+                        <h4 class="font-semibold text-red-600 mb-2">▼ 今日大幅下降 (Top 10)</h4>
+                        <ul id="movers-fall" class="list-disc list-inside space-y-1 text-gray-700">
+                            <li>載入中...</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-lg font-semibold mb-4">📋 手遊七大分類定義</h3>
+                    
+                    <div id="definition-table-container" class="collapse-container">
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm">
+                                <thead>
+                                    <tr class="bg-gray-50 border-b">
+                                        <th class="py-2 px-3 text-left text-xs font-semibold text-gray-600 uppercase w-1/4">自訂分類</th>
+                                        <th class="py-2 px-3 text-left text-xs font-semibold text-gray-600 uppercase w-1/2">類型特徵與範圍</th>
+                                        <th class="py-2 px-3 text-left text-xs font-semibold text-gray-600 uppercase w-1/4">代表作品</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b hover:bg-gray-50"><td class="py-2 px-3 font-medium">角色扮演（RPG）</td><td class="py-2 px-3">劇情與角色成長導向、養成與數值進展明顯；包含放置、回合、部分動作等分支</td><td class="py-2 px-3">《原神》《放置奇兵》《天堂M》《崩壞：星穹鐵道》《向僵屍開炮》《胡鬧地牢》</td></tr>
+                                    <tr class="border-b hover:bg-gray-50"><td class="py-2 px-3 font-medium">社交賭場（Social Casino）</td><td class="py-2 px-3">以老虎機、輪盤、撲克、賓果等為主；無真金交易(很難說)具社交互動</td><td class="py-2 px-3">《Coin Master》《星城》《Slotomania》《Bingo Blitz》</td></tr>
+                                    <tr class="border-b hover:bg-gray-50"><td class="py-2 px-3 font-medium">策略對戰（Strategy）</td><td class="py-2 px-3">強調佈局與思考、資源運用、塔防或戰爭；中速節奏</td><td class="py-2 px-3">《Clash of Clans》《皇室戰爭》《三國志・戰略版》《XCOM》《Last War》</td></tr>
+                                    <tr class="border-b hover:bg-gray-50"><td class="py-2 px-3 font-medium">動作競技（Action / Fighting / Shooter）</td><td class="py-2 px-3">節奏快、操作手感強；含格鬥、射擊、跑酷、MOBA、體育、即時競技等</td><td class="py-2 px-3">《王者榮耀》《PUBG Mobile》《Temple Run》《Brawl Stars》</td></tr>
+                                    <tr class="border-b hover:bg-gray-50"><td class="py-2 px-3 font-medium">模擬沙盒（Simulation / Sandbox）</td><td class="py-2 px-3">模擬經營、養成、建造或自由探索沙盒；偏長期進程</td><td class="py-2 px-3">《模擬市民 Mobile》《Minecraft》《星露谷物語》《模擬飛行》</td></tr>
+                                    <tr class="hover:bg-gray-50"><td class="py-2 px-3 font-medium">休閒益智（Casual / Puzzle）</td><td class="py-2 px-3">規則簡單、輕遊玩；包含三消、放置、射泡泡、拼圖等</td><td class="py-2 px-3">《Candy Crush》《Homescapes》《貓咪大戰爭》《植物大戰殭屍》</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <button id="toggle-definition-btn" class="mt-4 text-sm text-blue-600 hover:underline">展開定義</button>
+                </div>
+                </aside>
+        </div>
+    </main>
+    
+    <div id="history-modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 hidden p-4">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-4xl max-h-[90vh] flex flex-col">
+            <div class="flex justify-between items-center border-b p-4">
+                <h3 class="text-xl font-semibold">歷史排名分析</h3>
+                <button id="close-history-modal" class="text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
+            </div>
+            <div id="history-modal-body" class="p-6 overflow-y-auto">
+                </div>
+        </div>
+    </div>
+
+    <script type="module">
+        // 載入 Firebase 核心 SDK
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        // 載入 Auth (用於登入)
+        import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        // 載入 Firestore (用於寫入分類)
+        import { getFirestore, doc, setDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        // --- 應用程式主邏輯 ---
+        const app = {
+            // 1. 狀態管理
+            db: null,
+            auth: null,
+            isAuthReady: false,
+            isLoading: false,
+            isHistoryMode: false,	
+            historySelection: new Map(),	
+            historyChartInstance: null,	
+            pieChartInstance: null, // 圓餅圖實例
+            currentMetadata: new Map(),	
+
+            // 定義篩選條件
+            platforms: [
+                { id: 'ios', name: 'iOS' },
+                { id: 'gp', name: 'Google Play' }
+            ],
+            countries: [
+                { id: 'TW', name: '台灣' },
+                { id: 'US', name: '美國' },
+                { id: 'CN', name: '中國' },
+                { id: 'TH', name: '泰國' },
+                { id: 'PH', name: '菲律賓' }
+            ],
+            charts: [
+                { id: 'top_grossing', name: '暢銷榜' },
+                { id: 'top_free', name: '免費榜' }
+            ],
+            categories: [
+                '角色扮演', '社交賭場', '策略對戰', '動作競技', '模擬沙盒', '休閒益智', '其他'
+            ],
+            
+            // 定義一個固定的顏色表，確保分類顏色一致
+            categoryColors: {
+                '角色扮演': '#FF6384',
+                '社交賭場': '#36A2EB',
+                '策略對戰': '#FFCE56',
+                '動作競技': '#4BC0C0',
+                '模擬沙盒': '#9966FF',
+                '休閒益智': '#FF9F40',
+                '其他': '#C9CBCF'
+            },
+
+            // 2. 初始化 (程式進入點)
+            async initialize() {
+                console.log("儀表板初始化...");
+                this.initializeFirebase();
+                this.bindEvents();
+                this.renderFilters();
+                
+                // === 修正 1：確保篩選器有預設值，以啟動數據載入流程 ===
+                document.getElementById('platform-select').value = 'ios';
+                document.getElementById('country-select').value = 'TW';
+                document.getElementById('chart-select').value = 'top_grossing';
+                // === 修正結束 ===
+
+                this.handleCountryChange();
+                
+                // 預設將定義表設為收合，以隱藏內容
+                const container = document.getElementById('definition-table-container');
+                container.classList.remove('expanded');
+                // 預設將按鈕文字設為展開
+                document.getElementById('toggle-definition-btn').textContent = '展開定義';
+            },
+
+            // 3. Firebase 初始化
+            initializeFirebase() {
+                try {
+                    const firebaseConfig = {
+                      apiKey: "AIzaSyAgXqF-jPd8FpTLzuXuiDfDD4vhGO28d7M",
+                      authDomain: "rankanalyzer-1a95d.firebaseapp.com",
+                      projectId: "rankanalyzer-1a95d",
+                      storageBucket: "rankanalyzer-1a95d.appspot.com",	
+                      messagingSenderId: "825847760",
+                      appId: "1:825847760:web:1606401fd848f9c962d3d5"
+                    };
+
+                    if (!firebaseConfig.apiKey) {
+                        console.warn("Firebase config 未設定或無效，分類覆寫功能將無法使用。");
+                        this.showError("Firebase 未設定，覆寫功能已停用。");
+                        return;
+                    }
+
+                    const firebaseApp = initializeApp(firebaseConfig);
+                    this.db = getFirestore(firebaseApp);
+                    this.auth = getAuth(firebaseApp);
+
+                    onAuthStateChanged(this.auth, (user) => {
+                        if (user) {
+                            console.log("Firebase 驗證成功:", user.uid);
+                            this.isAuthReady = true;
+                        } else {
+                            this.authenticate();
+                        }
+                    });
+                } catch (error) {
+                    console.error("Firebase 初始化失敗:", error);
+                    this.showError("Firebase 初始化失敗。");
+                }
+            },
+
+            // 4. Firebase 登入邏輯 (簡化：只用匿名)
+            async authenticate() {
+                try {
+                    console.log("嘗試匿名登入...");
+                    await signInAnonymously(this.auth);
+                } catch (error) {
+                    console.error("Firebase 匿名登入失敗:", error);
+                    this.showError("Firebase 登入失敗，無法使用分類覆寫功能。");
+                }
+            },
+
+            // 5. 綁定所有 DOM 事件監聽
+            bindEvents() {
+                document.getElementById('platform-select').addEventListener('change', () => this.handleFilterChange());
+                document.getElementById('country-select').addEventListener('change', () => this.handleCountryChange());
+                document.getElementById('chart-select').addEventListener('change', () => this.handleFilterChange());
+                document.getElementById('date-select').addEventListener('change', () => this.handleFilterChange());
+                
+                // 新增：綁定定義表的展開/收合按鈕
+                document.getElementById('toggle-definition-btn').addEventListener('click', () => this.toggleDefinitionTable());
+
+                document.getElementById('toggle-expand').addEventListener('click', (e) => {
+                    this.toggleRankListExpand(e.target);
+                });
+
+                document.getElementById('toggle-history-btn').addEventListener('click', () => this.toggleHistoryMode());
+                document.getElementById('run-history-btn').addEventListener('click', () => this.runHistoryAnalysis());
+                
+                // === START: Tooltip 優化 (綁定事件) ===
+                // 1. 綁定排行榜表格的點擊事件 (用於點擊開關)
+                document.getElementById('rank-list').addEventListener('click', (e) => {
+                    this.handleHistorySelection(e);
+                    this.handleTooltipToggle(e); // 新增：處理 tooltip 點擊
+                });
+                
+                // 2. 綁定全域點擊事件 (用於點擊空白處關閉)
+                window.addEventListener('click', (e) => {
+                    this.handleGlobalClick(e); // 新增：處理全域點擊
+                });
+                // === END: Tooltip 優化 ===
+
+                document.getElementById('close-history-modal').addEventListener('click', () => {
+                    document.getElementById('history-modal').classList.add('hidden');
+                });
+            },
+
+            // 6. 渲染篩選器
+            renderFilters() {
+                this.populateSelect('platform-select', this.platforms);
+                this.populateSelect('country-select', this.countries);
+                this.populateSelect('chart-select', this.charts);
+            },
+
+            populateSelect(elementId, options) {
+                const select = document.getElementById(elementId);
+                select.innerHTML = options.map(opt => `<option value="${opt.id}">${opt.name}</option>`).join('');
+            },
+
+            // 7. 核心資料載入邏輯
+
+            async handleCountryChange() {
+                const country = document.getElementById('country-select').value;
+                const dateSelect = document.getElementById('date-select');
+                dateSelect.disabled = true;
+                dateSelect.innerHTML = '<option>載入日期中...</option>';
+
+                try {
+                    // country 變數在這裡應該是有效的 (例如 'TW')
+                    const dates = await this.fetchJson(`data/ranks/${country}/available_dates_${country}.json`);
+                    if (dates && dates.length > 0) {
+                        dateSelect.innerHTML = dates.map(date => `<option value="${date}">${date}</option>`).join('');
+                        dateSelect.disabled = false;
+                        this.handleFilterChange();	
+                    } else {
+                        dateSelect.innerHTML = '<option>無可用日期</option>';
+                        this.clearUI();
+                        this.setLoading(false);
+                    }
+                } catch (error) {
+                    console.error("載入日期失敗:", error);
+                    dateSelect.innerHTML = '<option>載入失敗</option>';
+                    this.showError(`載入 ${country} 日期列表失敗。`);
+                    this.clearUI();
+                    this.setLoading(false);
+                }
+            },
+
+            async handleFilterChange() {
+                if (this.isLoading) return;
+                this.setLoading(true);
+                this.currentMetadata.clear();	
+
+                this.clearUI();
+
+                const platform = document.getElementById('platform-select').value;
+                const country = document.getElementById('country-select').value;
+                const chart = document.getElementById('chart-select').value;
+                const date = document.getElementById('date-select').value;
+
+                if (!date || date === '無可用日期' || date === '載入日期中...' || date === '載入失敗') {
+                    this.setLoading(false);
+                    return;
+                }
+
+                const countryLower = country.toLowerCase();
+                const platformLower = platform.toLowerCase();
+
+                try {
+                    const [rankData, moversData, metadataCacheData] = await Promise.all([
+                        this.fetchJson(`data/ranks/${country}/${platformLower}_${countryLower}_${chart}_${date}_classified.json`),
+                        this.fetchJson(`data/movers/movers_${date}.json`),
+                        this.fetchJson(`data/ranks/updates/metadata_cache_${date}.json`)	
+                    ]);
+
+                    if (metadataCacheData && metadataCacheData[country]?.[platformLower]?.[chart]) {
+                        const cache = metadataCacheData[country][platformLower][chart];
+                        this.currentMetadata = new Map(Object.entries(cache));
+                    }	
+                    
+                    if (rankData) {
+                        this.renderRankList(rankData.rows || [], this.currentMetadata);	
+                        
+                        this.renderStatistics(
+                            rankData.type_percentages_ai || {},
+                            rankData.type_counts_ai || {}	
+                        );
+                        
+                    } else {
+                        this.showError(`找不到榜單資料: data/ranks/${country}/${platformLower}_${countryLower}_${chart}_${date}_classified.json`);
+                    }
+
+                    // === 修正 Movers 數據讀取邏輯：加入平台層級 (與 analyze_rank_movers.py 結構同步) ===
+                    const currentMovers = moversData?.[countryLower]?.[platformLower]?.[chart];
+                    
+                    if (currentMovers) {
+                        this.renderMovers(currentMovers);
+                    } else {
+                        this.renderMovers([]);
+                    }
+                    // === 修正結束 ===
+
+                } catch (error) {
+                    console.error("載入資料時發生錯誤:", error);
+                    this.showError("載入資料時發生錯誤，請檢查主控台。");
+                } finally {
+                    this.setLoading(false);
+                }
+            },
+
+            // 8. 渲染 UI 元件
+            renderRankList(rows, metadataMap) {	
+                const listElement = document.getElementById('rank-list-body');
+                if (rows.length === 0) {
+                    listElement.innerHTML = '<tr><td colspan="4" class="py-4 text-center text-gray-500">此篩選條件下無榜單資料。</td></tr>';
+                    document.getElementById('toggle-expand').classList.add('hidden');
+                    return;
+                }
+
+                listElement.innerHTML = rows.map((row, index) => {
+                    const delta = row.delta || 0;
+                    const deltaColor = delta > 0 ? 'text-green-500' : (delta < 0 ? 'text-red-500' : 'text-gray-400');
+                    const deltaIcon = delta > 0 ? '▲' : (delta < 0 ? '▼' : '—');
+                    
+                    // === START: Tooltip 優化 (產生自訂 Tooltip HTML) ===
+                    const metadataInfo = metadataMap.get(row.app_name);	
+                    
+                    let updateIconHtml = '';
+                    if (metadataInfo) {
+                        const version = metadataInfo.version || 'N/A';
+                        const updatedTime = metadataInfo.updated ? new Date(metadataInfo.updated).toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' }) : 'N/A';
+                        
+                        updateIconHtml = `
+                            <div class="relative group inline-block ml-1 align-middle">
+                                <span data-action="toggle-tooltip" class="update-icon cursor-pointer">🔄</span>
+                                
+                                <div class="custom-tooltip absolute z-20 bottom-full mb-2 left-1/2 -translate-x-1/2 w-64
+                                            bg-white border border-gray-300 rounded-md shadow-lg p-3
+                                            text-sm text-left text-gray-700
+                                            hidden group-hover:block
+                                            pointer-events-none">
+                                    <strong class="block font-medium text-gray-900">最新版本: ${version}</strong>
+                                    <span class="block mt-1">App Store 更新時間: ${updatedTime}</span>
+                                    <div class="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0
+                                            border-l-8 border-l-transparent
+                                            border-r-8 border-r-transparent
+                                            border-t-8 border-t-white
+                                            drop-shadow-sm" style="margin-left: -8px;"></div>
+                                </div>
+                            </div>
+                        `;
+                    }
+                    // === END: Tooltip 優化 ===
+
+                    return `
+                        <tr id="app-row-${row.app_id}" class="bg-white border-b hover:bg-gray-50 ${index >= 10 ? 'hidden rank-collapsed' : ''} rank-row" data-app-id="${row.app_id}" data-app-name="${row.app_name}">
+                            <td class="py-3 px-4 text-sm text-gray-500">${row.rank}</td>
+                            <td class="py-3 px-4 font-medium text-gray-900">
+                                <span class="align-middle">${row.app_name}</span>
+                                ${updateIconHtml}
+                                <button data-action="toggle-history" class="history-add-btn hidden ml-2 px-2 py-0.5 text-xs text-blue-600 bg-blue-100 rounded-full hover:bg-blue-200 align-middle">+</button>
+                            </td>
+                            <td class="py-3 px-4 text-sm ${deltaColor}">${deltaIcon} ${Math.abs(delta)}</td>
+                            <td class="py-3 px-4 text-sm">
+                                <div class="relative inline-block">
+                                    <select data-app-id="${row.app_id}" class="category-select appearance-none bg-gray-100 border border-gray-300 rounded-md py-1 px-2 pr-8 text-sm text-gray-700 hover:bg-gray-200 focus:outline-none">
+                                        ${this.categories.map(cat => `
+                                            <option value="${cat}" ${row.ai_type === cat ? 'selected' : ''}>${cat}</option>
+                                        `).join('')}
+                                    </select>
+                                    <span class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none text-gray-500">
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                    `;
+                }).join('');
+
+                document.querySelectorAll('.category-select').forEach(select => {
+                    select.addEventListener('change', (e) => this.handleCategoryOverride(e));
+                });
+
+                const toggleBtn = document.getElementById('toggle-expand');
+                if (rows.length > 10) {
+                    toggleBtn.classList.remove('hidden');
+                    toggleBtn.textContent = '展開全部';
+                    toggleBtn.dataset.expanded = 'false';
+                } else {
+                    toggleBtn.classList.add('hidden');
+                }
+            },
+
+            // (圓餅圖優化後的 renderStatistics 函式)
+            renderStatistics(percentages, counts) {
+                const container = document.getElementById('stats-body');
+
+                if (this.pieChartInstance) {
+                    this.pieChartInstance.destroy();
+                    this.pieChartInstance = null;
+                }
+
+                if (Object.keys(percentages).length === 0) {
+                    container.innerHTML = '<p class="text-sm text-gray-500">無統計資料。</p>';
+                    return;
+                }
+
+                container.innerHTML = '<canvas id="category-pie-chart"></canvas>';
+                const ctx = document.getElementById('category-pie-chart').getContext('2d');
+
+                const sortedPercentages = Object.entries(percentages).sort(([,a],[,b]) => b-a);
+                
+                const labels = sortedPercentages.map(([name]) => name);
+                const data = sortedPercentages.map(([, percent]) => percent);
+                const backgroundColors = labels.map(label => this.categoryColors[label] || '#C9CBCF');	
+
+                this.pieChartInstance = new Chart(ctx, {
+                    type: 'doughnut',	
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: '品類佔比',
+                            data: data,
+                            backgroundColor: backgroundColors,
+                            borderColor: '#FFFFFF',	
+                            borderWidth: 2
+                        }]
+                    },
+                    plugins: [ChartDataLabels],
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,	
+                        plugins: {
+                            datalabels: {
+                                formatter: (value, context) => {
+                                    if (value < 5) {
+                                        return null;
+                                    }
+                                    return `${value}%`;
+                                },
+                                color: '#FFFFFF',
+                                font: {
+                                    weight: 'bold',
+                                    size: 14,
+                                },
+                                textStrokeColor: 'rgba(0,0,0,0.6)',
+                                textStrokeWidth: 1.5
+                            },
+                            legend: {
+                                position: 'right',	
+                                labels: {
+                                    font: {
+                                        size: 12
+                                    },
+                                    boxWidth: 20,
+                                    generateLabels: function(chart) {
+                                        const data = chart.data;
+                                        if (data.labels.length && data.datasets.length) {
+                                            return data.labels.map((label, i) => {
+                                                const meta = chart.getDatasetMeta(0);
+                                                const style = meta.controller.getStyle(i);
+                                                const categoryCount = counts[label] || 0;	
+                                                
+                                                return {
+                                                    text: `${label} (${categoryCount}款)`,
+                                                    fillStyle: style.backgroundColor,
+                                                    strokeStyle: style.borderColor,
+                                                    lineWidth: style.borderWidth,
+                                                    hidden: !chart.getDataVisibility(i),
+                                                    index: i
+                                                };
+                                            });
+                                        }
+                                        return [];
+                                    }
+                                }
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        let label = context.label || '';
+                                        let value = context.raw || 0;
+                                        let count = counts[label] || 0;
+                                        return `${label}: ${value}% (${count}款)`;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            },
+
+            renderMovers(movers) {
+                const riseList = document.getElementById('movers-rise');
+                const fallList = document.getElementById('movers-fall');
+
+                const rising = movers.filter(m => m.direction === 'rise');
+                const falling = movers.filter(m => m.direction === 'fall');
+
+                riseList.innerHTML = rising.length > 0 ?
+                    rising.map(m => `<li>${m.name} (+${m.delta})</li>`).join('') :
+                    '<li>無</li>';
+
+                fallList.innerHTML = falling.length > 0 ?
+                    falling.map(m => `<li>${m.name} (${m.delta})</li>`).join('') :
+                    '<li>無</li>';
+            },
+
+            // === START: Tooltip 優化 (新增 JS 處理函式) ===
+            handleTooltipToggle(event) {
+                const trigger = event.target.closest('[data-action="toggle-tooltip"]');
+                if (!trigger) return; // 點擊的不是 tooltip 觸發器
+
+                event.stopPropagation(); // 阻止事件冒泡到 window
+
+                // 找到這個觸發器對應的彈窗
+                const tooltip = trigger.nextElementSibling;
+                if (!tooltip || !tooltip.classList.contains('custom-tooltip')) {
+                    console.error("Could not find tooltip sibling for", trigger);
+                    return;
+                }
+
+                // const isOpen = !tooltip.classList.contains('hidden'); // 不再使用
+
+                // 先關閉所有 *其他* 彈窗
+                document.querySelectorAll('.custom-tooltip').forEach(tt => {
+                    if (tt !== tooltip) {
+                        tt.classList.add('hidden');	
+                    }
+                });
+
+                // 然後切換當前這一個的狀態
+                tooltip.classList.toggle('hidden');
+            },
+
+            handleGlobalClick(event) {
+                // 如果點擊的不是觸發器，則關閉所有已打開的彈窗
+                if (!event.target.closest('[data-action="toggle-tooltip"]')) {
+                    document.querySelectorAll('.custom-tooltip').forEach(tooltip => {
+                        tooltip.classList.add('hidden');
+                    });
+                }
+            },
+            // === END: Tooltip 優化 ===
+
+            // 新增：定義表展開/收合功能
+            toggleDefinitionTable() {
+                const container = document.getElementById('definition-table-container');
+                const button = document.getElementById('toggle-definition-btn');
+                
+                const isExpanded = container.classList.toggle('expanded');
+                
+                button.textContent = isExpanded ? '收合定義' : '展開定義';
+            },
+
+            // 9. 互動功能 (原展開/收合榜單列表)
+            toggleRankListExpand(button) {
+                const collapsedRows = document.querySelectorAll('.rank-collapsed');
+                const isExpanded = button.dataset.expanded === 'true';
+
+                collapsedRows.forEach((row) => {
+                    row.classList.toggle('hidden', isExpanded);
+                });
+
+                button.textContent = isExpanded ? '展開全部' : '收合榜單';
+                button.dataset.expanded = !isExpanded;
+            },
+
+            async handleCategoryOverride(event) {
+                if (!this.db || !this.isAuthReady) {
+                    this.showError("Firebase 未連線，無法儲存覆寫。");
+                    const select = event.target;
+                    const originalIndex = Array.from(select.options).findIndex(option => option.defaultSelected);
+                    select.selectedIndex = originalIndex >= 0 ? originalIndex : 0;
+                    return;
+                }
+
+                const appId = event.target.dataset.appId;
+                const newCategory = event.target.value;
+                const appName = document.getElementById(`app-row-${appId}`).dataset.appName;
+
+                console.log(`準備覆寫 App ID: ${appId} (${appName}) -> 新分類: ${newCategory}`);
+                this.showLoadingMessage(`正在儲存 ${appName} 的分類...`);
+
+                try {
+                    const docRef = doc(this.db, "overrides", appId);
+                    await setDoc(docRef, {
+                        app_id: appId,
+                        app_name: appName,
+                        category: newCategory,
+                        updated_at: serverTimestamp()
+                    });
+                    this.showSuccess(`已成功儲存 ${appName} 的分類！下次自動化執行時將會套用。`);
+                    Array.from(event.target.options).forEach(option => {
+                        option.defaultSelected = (option.value === newCategory);
+                    });
+
+                } catch (error) {
+                    console.error("寫入 Firestore 失敗:", error);
+                    this.showError("儲存覆寫失敗，請檢查主控台。");
+                    const select = event.target;
+                    const originalIndex = Array.from(select.options).findIndex(option => option.defaultSelected);
+                    select.selectedIndex = originalIndex >= 0 ? originalIndex : 0;
+                }
+            },
+
+            // 10. 歷史分析功能
+            toggleHistoryMode() {
+                this.isHistoryMode = !this.isHistoryMode;
+                const btn = document.getElementById('toggle-history-btn');
+                const runBtn = document.getElementById('run-history-btn');
+                const addBtns = document.querySelectorAll('.history-add-btn');
+
+                if (this.isHistoryMode) {
+                    btn.textContent = '取消分析';
+                    btn.classList.replace('bg-green-600', 'bg-gray-500');
+                    btn.classList.replace('hover:bg-green-700', 'hover:bg-gray-600');
+                    runBtn.classList.remove('hidden');
+                    addBtns.forEach(b => b.classList.remove('hidden'));
+                    this.updateHistorySelectionCount();
+                } else {
+                    btn.textContent = '歷史分析';
+                    btn.classList.replace('bg-gray-500', 'bg-green-600');
+                    btn.classList.replace('hover:bg-gray-600', 'hover:bg-green-700');
+                    runBtn.classList.add('hidden');
+                    addBtns.forEach(b => b.classList.add('hidden'));
+
+                    this.historySelection.clear();
+                    document.querySelectorAll('.selected-for-analysis').forEach(row => {
+                        row.classList.remove('selected-for-analysis');
+                    });
+                    document.querySelectorAll('.history-add-btn').forEach(b => {
+                        b.textContent = '+';
+                        b.classList.replace('bg-red-100', 'bg-blue-100');
+                        b.classList.replace('hover:bg-red-200', 'hover:bg-blue-200');
+                        b.classList.replace('text-red-600', 'text-blue-600');
+                    });
+                }
+            },
+
+            handleHistorySelection(event) {
+                if (!this.isHistoryMode) return;
+                
+                // === Tooltip 優化：確保點擊 tooltip 區域時不會觸發歷史分析 ===
+                if (event.target.closest('[data-action="toggle-tooltip"]')) {
+                    return; // 如果點擊的是 tooltip 圖示，則中止
+                }
+                // === END: Tooltip 優化 ===
+
+                const button = event.target.closest('[data-action="toggle-history"]');
+                if (!button) return;
+
+                const row = button.closest('tr');
+                const appId = row.dataset.appId;
+                const appName = row.dataset.appName;
+
+                if (this.historySelection.has(appId)) {
+                    this.historySelection.delete(appId);
+                    row.classList.remove('selected-for-analysis');
+                    button.textContent = '+';
+                    button.classList.replace('bg-red-100', 'bg-blue-100');
+                    button.classList.replace('hover:bg-red-200', 'hover:bg-blue-200');
+                    button.classList.replace('text-red-600', 'text-blue-600');
+                } else {
+                    if (this.historySelection.size >= 10) {
+                        this.showError("最多只能選取 10 款遊戲進行分析。");
+                        return;
+                    }
+                    this.historySelection.set(appId, appName);
+                    row.classList.add('selected-for-analysis');
+                    button.textContent = '—';
+                    button.classList.replace('bg-blue-100', 'bg-red-100');
+                    button.classList.replace('hover:bg-blue-200', 'hover:bg-red-200');
+                    button.classList.replace('text-blue-600', 'text-red-600');
+                }
+
+                this.updateHistorySelectionCount();
+            },
+
+            updateHistorySelectionCount() {
+                const runBtn = document.getElementById('run-history-btn');
+                const count = this.historySelection.size;
+                runBtn.textContent = `分析 ${count} 款遊戲`;
+                runBtn.disabled = count === 0;
+            },
+
+            async runHistoryAnalysis() {
+                if (this.historySelection.size === 0) {
+                    this.showError("請至少選取 1 款遊戲。");
+                    return;
+                }
+
+                const modal = document.getElementById('history-modal');
+                const modalBody = document.getElementById('history-modal-body');
+                modalBody.innerHTML = '<div class="flex justify-center items-center h-64"><div class="loader"></div><p class="ml-4">正在載入歷史資料...</p></div>';
+                modal.classList.remove('hidden');
+
+                const country = document.getElementById('country-select').value;
+                const platform = document.getElementById('platform-select').value;
+                const chart = document.getElementById('chart-select').value;
+                const platformLower = platform.toLowerCase();
+                const countryLower = country.toLowerCase();
+
+                try {
+                    const dates = await this.fetchJson(`data/ranks/${country}/available_dates_${country}.json`);
+                    if (!dates || dates.length === 0) {
+                        throw new Error("找不到可用日期。");
+                    }
+
+                    const sortedDates = dates.slice().reverse();
+
+                    const datasets = new Map();
+                    this.historySelection.forEach((appName, appId) => {
+                        datasets.set(appId, {
+                            label: appName,
+                            data: [],
+                            borderColor: `hsl(${Math.random() * 360}, 70%, 50%)`,
+                            fill: false,
+                            tension: 0.1
+                        });
+                    });
+
+                    for (const date of sortedDates) {
+                        const rankFile = `data/ranks/${country}/${platformLower}_${countryLower}_${chart}_${date}_classified.json`;
+                        const rankData = await this.fetchJson(rankFile);
+
+                        const rankMap = rankData ? new Map(rankData.rows.map(row => [row.app_id, row.rank])) : new Map();
+
+                        datasets.forEach((appData, appId) => {
+                            const rank = rankMap.get(appId) || null;
+                            appData.data.push(rank);
+                        });
+                    }
+
+                    modalBody.innerHTML = '<canvas id="history-chart"></canvas>';
+                    const ctx = document.getElementById('history-chart').getContext('2d');
+
+                    if (this.historyChartInstance) {
+                        this.historyChartInstance.destroy();
+                    }
+
+                    this.historyChartInstance = new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: sortedDates,
+                            datasets: Array.from(datasets.values())
+                        },
+                        options: {
+                            responsive: true,
+                            scales: {
+                                y: {
+                                    reverse: true,
+                                    beginAtZero: true,
+                                    title: {
+                                        display: true,
+                                        text: '排名 (Rank)'
+                                    }
+                                }
+                            },
+                            plugins: {
+                                title: {
+                                    display: true,
+                                    text: `歷史排名分析 - ${platform} ${country} ${chart}`
+                                },
+                                tooltip: {
+                                    mode: 'index',
+                                    intersect: false
+                                }
+                            },
+                            interaction: {
+                                intersect: false,
+                                mode: 'index',
+                            }
+                        }
+                    });
+
+                } catch (error) {
+                    console.error("歷史分析失敗:", error);
+                    modalBody.innerHTML = `<p class="text-red-500">載入歷史圖表失敗: ${error.message}</p>`;
+                }
+            },
+
+            // 11. 輔助工具
+            setLoading(isLoading) {
+                this.isLoading = isLoading;
+                document.getElementById('loading-indicator').classList.toggle('hidden', !isLoading);
+
+                document.getElementById('platform-select').disabled = isLoading;
+                document.getElementById('country-select').disabled = isLoading;
+                document.getElementById('chart-select').disabled = isLoading;
+                if (!isLoading && document.getElementById('date-select').options.length > 0 && !document.getElementById('date-select').options[0].text.includes('載入')) {
+                    document.getElementById('date-select').disabled = false;
+                } else if (isLoading) {
+                    document.getElementById('date-select').disabled = true;
+                }
+            },
+
+            clearUI() {
+                document.getElementById('rank-list-body').innerHTML = '<tr><td colspan="4" class="py-10 text-center text-gray-500">載入資料中...</td></tr>';
+                document.getElementById('stats-body').innerHTML = '<p class="text-sm text-gray-500">載入中...</p>';
+                document.getElementById('movers-rise').innerHTML = '<li>載入中...</li>';
+                document.getElementById('movers-fall').innerHTML = '<li>載入中...</li>';
+            },
+
+            async fetchJson(url) {
+                try {
+                    const absoluteUrl = new URL(url, window.location.origin);
+
+                    const response = await fetch(absoluteUrl, { cache: 'no-cache' });
+                    if (!response.ok) {
+                        if (response.status === 404) {
+                            console.warn(`找不到檔案: ${absoluteUrl}`);
+                            return null;
+                        }
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return await response.json();
+                } catch (error) {
+                    console.error(`Fetch 錯誤 ${url}:`, error);
+                    throw error;
+                }
+            },
+
+            showError(message) {
+                this.showMessage(message, 'bg-red-500');
+            },
+            showSuccess(message) {
+                this.showMessage(message, 'bg-green-500');
+            },
+            showLoadingMessage(message) {
+                this.showMessage(message, 'bg-blue-500', 0);
+            },
+            showMessage(message, bgColor, duration = 3000) {
+                const container = document.getElementById('toast-container');
+                const oldLoading = document.getElementById('toast-loading');
+                if (oldLoading) oldLoading.remove();
+
+                const toast = document.createElement('div');
+                toast.id = (duration === 0) ? 'toast-loading' : '';
+                toast.className = `p-4 rounded-md text-white shadow-lg transform transition-all ${bgColor}`;	
+                toast.textContent = message;
+
+                container.appendChild(toast);
+
+                if (duration > 0) {
+                    setTimeout(() => {
+                        toast.remove();
+                    }, duration);
+                }
+            }
+        };
+
+        // DOM 載入完成後，啟動應用程式
+        document.addEventListener('DOMContentLoaded', () => {
+            app.initialize();
+        });
+
+    </script>
 </body>
 </html>
