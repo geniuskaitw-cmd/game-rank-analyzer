@@ -1,0 +1,214 @@
+{
+  "tw": {
+    "top_grossing": [
+      {
+        "name": "跑跑薑餅人：烤箱大逃亡",
+        "delta": 136,
+        "direction": "rise"
+      },
+      {
+        "name": "龍族幻想：勇者集結",
+        "delta": 105,
+        "direction": "rise"
+      },
+      {
+        "name": "絕區零",
+        "delta": -101,
+        "direction": "fall"
+      },
+      {
+        "name": "怪物彈珠",
+        "delta": 80,
+        "direction": "rise"
+      },
+      {
+        "name": "嘟嘟臉惡作劇",
+        "delta": -73,
+        "direction": "fall"
+      },
+      {
+        "name": "出發吧麥芬-香格里拉·開拓異境聯動",
+        "delta": 70,
+        "direction": "rise"
+      },
+      {
+        "name": "一念逍遙：涅槃重生",
+        "delta": -69,
+        "direction": "fall"
+      },
+      {
+        "name": "冰的啦！企鵝逗陣戰",
+        "delta": 65,
+        "direction": "rise"
+      },
+      {
+        "name": "神魔之塔",
+        "delta": -65,
+        "direction": "fall"
+      },
+      {
+        "name": "全明星街球派對",
+        "delta": 64,
+        "direction": "rise"
+      }
+    ],
+    "top_free": [
+      {
+        "name": "野蠻生存錄：侏羅紀",
+        "delta": -116,
+        "direction": "fall"
+      },
+      {
+        "name": "七騎士 Re:BIRTH",
+        "delta": -103,
+        "direction": "fall"
+      },
+      {
+        "name": "Skewer Jam: Food Games",
+        "delta": -103,
+        "direction": "fall"
+      },
+      {
+        "name": "新武俠大明星-功夫打猛鬼",
+        "delta": 94,
+        "direction": "rise"
+      },
+      {
+        "name": "魔法村物語",
+        "delta": -94,
+        "direction": "fall"
+      },
+      {
+        "name": "TDS - Tower Destiny Survive",
+        "delta": -93,
+        "direction": "fall"
+      },
+      {
+        "name": "噩夢森林",
+        "delta": -86,
+        "direction": "fall"
+      },
+      {
+        "name": "全明星街球派對",
+        "delta": 84,
+        "direction": "rise"
+      },
+      {
+        "name": "英勇之地",
+        "delta": -83,
+        "direction": "fall"
+      },
+      {
+        "name": "伊瑟",
+        "delta": -83,
+        "direction": "fall"
+      }
+    ]
+  },
+  "us": {
+    "top_grossing": [
+      {
+        "name": "Love and Deepspace",
+        "delta": 106,
+        "direction": "rise"
+      },
+      {
+        "name": "Warhammer 40,000: Tacticus ™",
+        "delta": 96,
+        "direction": "rise"
+      },
+      {
+        "name": "Magic: The Gathering Arena",
+        "delta": -92,
+        "direction": "fall"
+      },
+      {
+        "name": "X-Clash: Dare",
+        "delta": 91,
+        "direction": "rise"
+      },
+      {
+        "name": "Zombie Waves-shooting game",
+        "delta": 67,
+        "direction": "rise"
+      },
+      {
+        "name": "Capybara Go!",
+        "delta": 58,
+        "direction": "rise"
+      },
+      {
+        "name": "Mobile Legends: Bang Bang.US",
+        "delta": -58,
+        "direction": "fall"
+      },
+      {
+        "name": "DRAGON BALL LEGENDS",
+        "delta": -55,
+        "direction": "fall"
+      },
+      {
+        "name": "Caesars Slots - Casino Games",
+        "delta": 41,
+        "direction": "rise"
+      },
+      {
+        "name": "Madden NFL 26 Mobile Football",
+        "delta": -38,
+        "direction": "fall"
+      }
+    ],
+    "top_free": [
+      {
+        "name": "Foundation: Galactic Frontier",
+        "delta": -126,
+        "direction": "fall"
+      },
+      {
+        "name": "Hexa Away",
+        "delta": -90,
+        "direction": "fall"
+      },
+      {
+        "name": "Solitaire Classic - 2026",
+        "delta": -85,
+        "direction": "fall"
+      },
+      {
+        "name": "Teacher Simulator: Study Time!",
+        "delta": -79,
+        "direction": "fall"
+      },
+      {
+        "name": "Top Heroes: Kingdom Saga",
+        "delta": 78,
+        "direction": "rise"
+      },
+      {
+        "name": "Bubble Wand：Win Real Cash",
+        "delta": -71,
+        "direction": "fall"
+      },
+      {
+        "name": "Top Tycoon: Coin Theme Empire",
+        "delta": -70,
+        "direction": "fall"
+      },
+      {
+        "name": "Coin Sort",
+        "delta": 67,
+        "direction": "rise"
+      },
+      {
+        "name": "Otium Word: Cross Puzzle Game",
+        "delta": -63,
+        "direction": "fall"
+      },
+      {
+        "name": "Jigsolitaire",
+        "delta": 62,
+        "direction": "rise"
+      }
+    ]
+  }
+}
