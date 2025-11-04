@@ -34,6 +34,17 @@
             color: #2563eb; /* blue-600 */
         }
         /* === END: Tooltip 優化 === */
+
+        /* 隱藏與動畫控制 */
+        .collapse-container {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out; /* 新增動畫效果 */
+        }
+        .collapse-container.expanded {
+            max-height: 5000px; /* 足夠大的值，確保內容能完全展開 */
+            transition: max-height 0.5s ease-in;
+        }
     </style>
 </head>
 <body class="bg-gray-100 font-sans text-gray-800">
@@ -124,25 +135,30 @@
                 
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <h3 class="text-lg font-semibold mb-4">📋 手遊七大分類定義</h3>
-                    <div class="overflow-x-auto">
-                        <table class="w-full text-sm">
-                            <thead>
-                                <tr class="bg-gray-50 border-b">
-                                    <th class="py-2 px-3 text-left text-xs font-semibold text-gray-600 uppercase w-1/4">自訂分類</th>
-                                    <th class="py-2 px-3 text-left text-xs font-semibold text-gray-600 uppercase w-1/2">類型特徵與範圍</th>
-                                    <th class="py-2 px-3 text-left text-xs font-semibold text-gray-600 uppercase w-1/4">代表作品</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="border-b hover:bg-gray-50"><td class="py-2 px-3 font-medium">角色扮演（RPG）</td><td class="py-2 px-3">劇情與角色成長導向、養成與數值進展明顯；包含放置、回合、部分動作等分支</td><td class="py-2 px-3">《原神》《放置奇兵》《天堂M》《崩壞：星穹鐵道》《向僵屍開炮》《胡鬧地牢》</td></tr>
-                                <tr class="border-b hover:bg-gray-50"><td class="py-2 px-3 font-medium">社交賭場（Social Casino）</td><td class="py-2 px-3">以老虎機、輪盤、撲克、賓果等為主；無真金交易(很難說)具社交互動</td><td class="py-2 px-3">《Coin Master》《星城》《Slotomania》《Bingo Blitz》</td></tr>
-                                <tr class="border-b hover:bg-gray-50"><td class="py-2 px-3 font-medium">策略對戰（Strategy）</td><td class="py-2 px-3">強調佈局與思考、資源運用、塔防或戰爭；中速節奏</td><td class="py-2 px-3">《Clash of Clans》《皇室戰爭》《三國志・戰略版》《XCOM》《Last War》</td></tr>
-                                <tr class="border-b hover:bg-gray-50"><td class="py-2 px-3 font-medium">動作競技（Action / Fighting / Shooter）</td><td class="py-2 px-3">節奏快、操作手感強；含格鬥、射擊、跑酷、MOBA、體育、即時競技等</td><td class="py-2 px-3">《王者榮耀》《PUBG Mobile》《Temple Run》《Brawl Stars》</td></tr>
-                                <tr class="border-b hover:bg-gray-50"><td class="py-2 px-3 font-medium">模擬沙盒（Simulation / Sandbox）</td><td class="py-2 px-3">模擬經營、養成、建造或自由探索沙盒；偏長期進程</td><td class="py-2 px-3">《模擬市民 Mobile》《Minecraft》《星露谷物語》《模擬飛行》</td></tr>
-                                <tr class="hover:bg-gray-50"><td class="py-2 px-3 font-medium">休閒益智（Casual / Puzzle）</td><td class="py-2 px-3">規則簡單、輕遊玩；包含三消、放置、射泡泡、拼圖等</td><td class="py-2 px-3">《Candy Crush》《Homescapes》《貓咪大戰爭》《植物大戰殭屍》</td></tr>
+                    
+                    <div id="definition-table-container" class="collapse-container">
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm">
+                                <thead>
+                                    <tr class="bg-gray-50 border-b">
+                                        <th class="py-2 px-3 text-left text-xs font-semibold text-gray-600 uppercase w-1/4">自訂分類</th>
+                                        <th class="py-2 px-3 text-left text-xs font-semibold text-gray-600 uppercase w-1/2">類型特徵與範圍</th>
+                                        <th class="py-2 px-3 text-left text-xs font-semibold text-gray-600 uppercase w-1/4">代表作品</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b hover:bg-gray-50"><td class="py-2 px-3 font-medium">角色扮演（RPG）</td><td class="py-2 px-3">劇情與角色成長導向、養成與數值進展明顯；包含放置、回合、部分動作等分支</td><td class="py-2 px-3">《原神》《放置奇兵》《天堂M》《崩壞：星穹鐵道》《向僵屍開炮》《胡鬧地牢》</td></tr>
+                                    <tr class="border-b hover:bg-gray-50"><td class="py-2 px-3 font-medium">社交賭場（Social Casino）</td><td class="py-2 px-3">以老虎機、輪盤、撲克、賓果等為主；無真金交易(很難說)具社交互動</td><td class="py-2 px-3">《Coin Master》《星城》《Slotomania》《Bingo Blitz》</td></tr>
+                                    <tr class="border-b hover:bg-gray-50"><td class="py-2 px-3 font-medium">策略對戰（Strategy）</td><td class="py-2 px-3">強調佈局與思考、資源運用、塔防或戰爭；中速節奏</td><td class="py-2 px-3">《Clash of Clans》《皇室戰爭》《三國志・戰略版》《XCOM》《Last War》</td></tr>
+                                    <tr class="border-b hover:bg-gray-50"><td class="py-2 px-3 font-medium">動作競技（Action / Fighting / Shooter）</td><td class="py-2 px-3">節奏快、操作手感強；含格鬥、射擊、跑酷、MOBA、體育、即時競技等</td><td class="py-2 px-3">《王者榮耀》《PUBG Mobile》《Temple Run》《Brawl Stars》</td></tr>
+                                    <tr class="border-b hover:bg-gray-50"><td class="py-2 px-3 font-medium">模擬沙盒（Simulation / Sandbox）</td><td class="py-2 px-3">模擬經營、養成、建造或自由探索沙盒；偏長期進程</td><td class="py-2 px-3">《模擬市民 Mobile》《Minecraft》《星露谷物語》《模擬飛行》</td></tr>
+                                    <tr class="hover:bg-gray-50"><td class="py-2 px-3 font-medium">休閒益智（Casual / Puzzle）</td><td class="py-2 px-3">規則簡單、輕遊玩；包含三消、放置、射泡泡、拼圖等</td><td class="py-2 px-3">《Candy Crush》《Homescapes》《貓咪大戰爭》《植物大戰殭屍》</td></tr>
                                 </tbody>
-                        </table>
+                            </table>
+                        </div>
                     </div>
+                    
+                    <button id="toggle-definition-btn" class="mt-4 text-sm text-blue-600 hover:underline">展開定義</button>
                 </div>
                 </aside>
         </div>
@@ -218,6 +234,12 @@
                 this.bindEvents();
                 this.renderFilters();
                 this.handleCountryChange();
+                
+                // 預設將定義表設為收合，以隱藏內容
+                const container = document.getElementById('definition-table-container');
+                container.classList.remove('expanded');
+                // 預設將按鈕文字設為展開
+                document.getElementById('toggle-definition-btn').textContent = '展開定義';
             },
 
             // 3. Firebase 初始化
@@ -273,6 +295,9 @@
                 document.getElementById('country-select').addEventListener('change', () => this.handleCountryChange());
                 document.getElementById('chart-select').addEventListener('change', () => this.handleFilterChange());
                 document.getElementById('date-select').addEventListener('change', () => this.handleFilterChange());
+                
+                // 新增：綁定定義表的展開/收合按鈕
+                document.getElementById('toggle-definition-btn').addEventListener('click', () => this.toggleDefinitionTable());
 
                 document.getElementById('toggle-expand').addEventListener('click', (e) => {
                     this.toggleRankListExpand(e.target);
@@ -632,8 +657,17 @@
             },
             // === END: Tooltip 優化 ===
 
+            // 新增：定義表展開/收合功能
+            toggleDefinitionTable() {
+                const container = document.getElementById('definition-table-container');
+                const button = document.getElementById('toggle-definition-btn');
+                
+                const isExpanded = container.classList.toggle('expanded');
+                
+                button.textContent = isExpanded ? '收合定義' : '展開定義';
+            },
 
-            // 9. 互動功能
+            // 9. 互動功能 (原展開/收合榜單列表)
             toggleRankListExpand(button) {
                 const collapsedRows = document.querySelectorAll('.rank-collapsed');
                 const isExpanded = button.dataset.expanded === 'true';
