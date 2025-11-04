@@ -121,15 +121,31 @@
                         </ul>
                     </div>
                 </div>
-
+                
                 <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-lg font-semibold mb-4">這裡已經沒用了</h3>
-                    <ul id="updates-list" class="list-disc list-inside space-y-1 text-sm text-gray-700">
-                        <li>版本資訊已整合到排行榜圖示中。</li>
-                    </ul>
+                    <h3 class="text-lg font-semibold mb-4">📋 七大分類標準對應表</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="bg-gray-50 border-b">
+                                    <th class="py-2 px-3 text-left text-xs font-semibold text-gray-600 uppercase w-1/3">自訂分類</th>
+                                    <th class="py-2 px-3 text-left text-xs font-semibold text-gray-600 uppercase w-1/3">App Store (iOS)</th>
+                                    <th class="py-2 px-3 text-left text-xs font-semibold text-gray-600 uppercase w-1/3">Google Play (GP)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b hover:bg-gray-50"><td class="py-2 px-3 font-medium">角色扮演</td><td class="py-2 px-3">Role Playing, Adventure</td><td class="py-2 px-3">Role Playing, Adventure</td></tr>
+                                <tr class="border-b hover:bg-gray-50"><td class="py-2 px-3 font-medium">社交賭場</td><td class="py-2 px-3">Casino, 博弈, Board</td><td class="py-2 px-3">Casino, 博弈, Board, Card</td></tr>
+                                <tr class="border-b hover:bg-gray-50"><td class="py-2 px-3 font-medium">策略對戰</td><td class="py-2 px-3">Strategy, 戰爭, MOBA, Card</td><td class="py-2 px-3">Strategy, 戰爭, MOBA, Card</td></tr>
+                                <tr class="border-b hover:bg-gray-50"><td class="py-2 px-3 font-medium">動作競技</td><td class="py-2 px-3">Action, Shooter, Sports, Racing, Fighting</td><td class="py-2 px-3">Action, Shooter, Sports, Racing, Fighting</td></tr>
+                                <tr class="border-b hover:bg-gray-50"><td class="py-2 px-3 font-medium">模擬沙盒</td><td class="py-2 px-3">Simulation, 建造, 沙盒, Educational (部分)</td><td class="py-2 px-3">Simulation, 建造, 沙盒, Educational (部分)</td></tr>
+                                <tr class="border-b hover:bg-gray-50"><td class="py-2 px-3 font-medium">休閒益智</td><td class="py-2 px-3">Puzzle, Casual, Arcade, Music</td><td class="py-2 px-3">Puzzle, Casual, Arcade, Music, Pinball</td></tr>
+                                <tr class="hover:bg-gray-50"><td class="py-2 px-3 font-medium">其他</td><td class="py-2 px-3">—</td><td class="py-2 px-3">—</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-
-            </aside>
+                </aside>
         </div>
     </main>
 
@@ -159,11 +175,11 @@
             auth: null,
             isAuthReady: false,
             isLoading: false,
-            isHistoryMode: false, 
-            historySelection: new Map(), 
-            historyChartInstance: null, 
+            isHistoryMode: false,	
+            historySelection: new Map(),	
+            historyChartInstance: null,	
             pieChartInstance: null, // 圓餅圖實例
-            currentMetadata: new Map(), 
+            currentMetadata: new Map(),	
 
             // 定義篩選條件
             platforms: [
@@ -212,7 +228,7 @@
                       apiKey: "AIzaSyAgXqF-jPd8FpTLzuXuiDfDD4vhGO28d7M",
                       authDomain: "rankanalyzer-1a95d.firebaseapp.com",
                       projectId: "rankanalyzer-1a95d",
-                      storageBucket: "rankanalyzer-1a95d.appspot.com", 
+                      storageBucket: "rankanalyzer-1a95d.appspot.com",	
                       messagingSenderId: "825847760",
                       appId: "1:825847760:web:1606401fd848f9c962d3d5"
                     };
@@ -309,7 +325,7 @@
                     if (dates && dates.length > 0) {
                         dateSelect.innerHTML = dates.map(date => `<option value="${date}">${date}</option>`).join('');
                         dateSelect.disabled = false;
-                        this.handleFilterChange(); 
+                        this.handleFilterChange();	
                     } else {
                         dateSelect.innerHTML = '<option>無可用日期</option>';
                         this.clearUI();
@@ -327,7 +343,7 @@
             async handleFilterChange() {
                 if (this.isLoading) return;
                 this.setLoading(true);
-                this.currentMetadata.clear(); 
+                this.currentMetadata.clear();	
 
                 this.clearUI();
 
@@ -348,20 +364,20 @@
                     const [rankData, moversData, metadataCacheData] = await Promise.all([
                         this.fetchJson(`data/ranks/${country}/${platformLower}_${countryLower}_${chart}_${date}_classified.json`),
                         this.fetchJson(`data/movers/movers_${date}.json`),
-                        this.fetchJson(`data/ranks/updates/metadata_cache_${date}.json`) 
+                        this.fetchJson(`data/ranks/updates/metadata_cache_${date}.json`)	
                     ]);
 
                     if (metadataCacheData && metadataCacheData[country]?.[platformLower]?.[chart]) {
                         const cache = metadataCacheData[country][platformLower][chart];
                         this.currentMetadata = new Map(Object.entries(cache));
-                    }  
+                    }	
                     
                     if (rankData) {
-                        this.renderRankList(rankData.rows || [], this.currentMetadata); 
+                        this.renderRankList(rankData.rows || [], this.currentMetadata);	
                         
                         this.renderStatistics(
                             rankData.type_percentages_ai || {},
-                            rankData.type_counts_ai || {} 
+                            rankData.type_counts_ai || {}	
                         );
                         
                     } else {
@@ -383,7 +399,7 @@
             },
 
             // 8. 渲染 UI 元件
-            renderRankList(rows, metadataMap) { 
+            renderRankList(rows, metadataMap) {	
                 const listElement = document.getElementById('rank-list-body');
                 if (rows.length === 0) {
                     listElement.innerHTML = '<tr><td colspan="4" class="py-4 text-center text-gray-500">此篩選條件下無榜單資料。</td></tr>';
@@ -397,7 +413,7 @@
                     const deltaIcon = delta > 0 ? '▲' : (delta < 0 ? '▼' : '—');
                     
                     // === START: Tooltip 優化 (產生自訂 Tooltip HTML) ===
-                    const metadataInfo = metadataMap.get(row.app_name); 
+                    const metadataInfo = metadataMap.get(row.app_name);	
                     
                     let updateIconHtml = '';
                     if (metadataInfo) {
@@ -416,10 +432,10 @@
                                     <strong class="block font-medium text-gray-900">最新版本: ${version}</strong>
                                     <span class="block mt-1">App Store 更新時間: ${updatedTime}</span>
                                     <div class="absolute top-full left-1/2 -translate-x-1/2 w-0 h-0
-                                                border-l-8 border-l-transparent
-                                                border-r-8 border-r-transparent
-                                                border-t-8 border-t-white
-                                                drop-shadow-sm" style="margin-left: -8px;"></div>
+                                            border-l-8 border-l-transparent
+                                            border-r-8 border-r-transparent
+                                            border-t-8 border-t-white
+                                            drop-shadow-sm" style="margin-left: -8px;"></div>
                                 </div>
                             </div>
                         `;
@@ -486,24 +502,24 @@
                 
                 const labels = sortedPercentages.map(([name]) => name);
                 const data = sortedPercentages.map(([, percent]) => percent);
-                const backgroundColors = labels.map(label => this.categoryColors[label] || '#C9CBCF'); 
+                const backgroundColors = labels.map(label => this.categoryColors[label] || '#C9CBCF');	
 
                 this.pieChartInstance = new Chart(ctx, {
-                    type: 'doughnut', 
+                    type: 'doughnut',	
                     data: {
                         labels: labels,
                         datasets: [{
                             label: '品類佔比',
                             data: data,
                             backgroundColor: backgroundColors,
-                            borderColor: '#FFFFFF', 
+                            borderColor: '#FFFFFF',	
                             borderWidth: 2
                         }]
                     },
                     plugins: [ChartDataLabels],
                     options: {
                         responsive: true,
-                        maintainAspectRatio: false, 
+                        maintainAspectRatio: false,	
                         plugins: {
                             datalabels: {
                                 formatter: (value, context) => {
@@ -521,7 +537,7 @@
                                 textStrokeWidth: 1.5
                             },
                             legend: {
-                                position: 'right', 
+                                position: 'right',	
                                 labels: {
                                     font: {
                                         size: 12
@@ -533,7 +549,7 @@
                                             return data.labels.map((label, i) => {
                                                 const meta = chart.getDatasetMeta(0);
                                                 const style = meta.controller.getStyle(i);
-                                                const categoryCount = counts[label] || 0; 
+                                                const categoryCount = counts[label] || 0;	
                                                 
                                                 return {
                                                     text: `${label} (${categoryCount}款)`,
@@ -594,12 +610,12 @@
                     return;
                 }
 
-                const isOpen = !tooltip.classList.contains('hidden');
+                // const isOpen = !tooltip.classList.contains('hidden'); // 不再使用
 
                 // 先關閉所有 *其他* 彈窗
                 document.querySelectorAll('.custom-tooltip').forEach(tt => {
                     if (tt !== tooltip) {
-                        tt.classList.add('hidden'); 
+                        tt.classList.add('hidden');	
                     }
                 });
 
@@ -854,7 +870,7 @@
                 document.getElementById('country-select').disabled = isLoading;
                 document.getElementById('chart-select').disabled = isLoading;
                 if (!isLoading && document.getElementById('date-select').options.length > 0 && !document.getElementById('date-select').options[0].text.includes('載入')) {
-                     document.getElementById('date-select').disabled = false;
+                    document.getElementById('date-select').disabled = false;
                 } else if (isLoading) {
                     document.getElementById('date-select').disabled = true;
                 }
@@ -865,11 +881,6 @@
                 document.getElementById('stats-body').innerHTML = '<p class="text-sm text-gray-500">載入中...</p>';
                 document.getElementById('movers-rise').innerHTML = '<li>載入中...</li>';
                 document.getElementById('movers-fall').innerHTML = '<li>載入中...</li>';
-                
-                const updatesList = document.getElementById('updates-list');
-                if (updatesList) {
-                    updatesList.innerHTML = '<li>版本資訊已整合到排行榜圖示中。</li>';
-                }
             },
 
             async fetchJson(url) {
@@ -907,7 +918,7 @@
 
                 const toast = document.createElement('div');
                 toast.id = (duration === 0) ? 'toast-loading' : '';
-                toast.className = `p-4 rounded-md text-white shadow-lg transform transition-all ${bgColor}`; 
+                toast.className = `p-4 rounded-md text-white shadow-lg transform transition-all ${bgColor}`;	
                 toast.textContent = message;
 
                 container.appendChild(toast);
