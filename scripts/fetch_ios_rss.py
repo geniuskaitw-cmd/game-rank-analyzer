@@ -162,9 +162,19 @@ def fetch_and_generate():
         country = normalize_country(row.get("國家", "TW"))
         chart = normalize_chart(row.get("排行榜類別", "暢銷榜"))
         
-        # 統一處理平台名稱
-        platform = platform.lower().strip() if platform else "ios"
-        if platform not in ["ios", "gp"]: platform = "ios"
+        # === 修正：統一處理平台名稱，提高識別容錯性 ===
+        platform_str = str(platform).lower().strip() if platform else "ios"
+        
+        if "google" in platform_str or "gp" in platform_str:
+            # 判斷為 Google Play 平台
+            platform = "gp"
+        elif "ios" in platform_str or "app store" in platform_str:
+            # 判斷為 iOS/App Store 平台
+            platform = "ios"
+        else:
+            # 如果還是無法識別，預設為 ios (以兼容舊有數據或未知錯誤)
+            platform = "ios"
+        # === 修正結束 ===
 
         key = (platform, country, chart, date_obj)
 
