@@ -41,7 +41,7 @@
       "app_name_zh": "Clash Royale",
       "developer": "Supercell",
       "genre": "策略",
-      "delta": 0,
+      "delta": -1,
       "alert": false,
       "ai_type": null
     },
@@ -52,7 +52,7 @@
       "app_name_zh": "Block Blast！",
       "developer": "Hungry Studio",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": -1,
       "alert": false,
       "ai_type": null
     },
@@ -63,7 +63,7 @@
       "app_name_zh": "Magic Sort!",
       "developer": "Grand Games A.Ş.",
       "genre": "休闲",
-      "delta": 0,
+      "delta": 2,
       "alert": false,
       "ai_type": null
     },
@@ -74,7 +74,7 @@
       "app_name_zh": "Roblox",
       "developer": "Roblox Corporation",
       "genre": "动作",
-      "delta": 0,
+      "delta": -2,
       "alert": false,
       "ai_type": null
     },
@@ -85,7 +85,7 @@
       "app_name_zh": "Fortnite",
       "developer": "Epic Games Inc.",
       "genre": "冒险",
-      "delta": 0,
+      "delta": 1,
       "alert": false,
       "ai_type": null
     },
@@ -96,7 +96,7 @@
       "app_name_zh": "Royal Kingdom",
       "developer": "Dream Games",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": 2,
       "alert": false,
       "ai_type": null
     },
@@ -107,7 +107,7 @@
       "app_name_zh": "Township",
       "developer": "Playrix",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": -4,
       "alert": false,
       "ai_type": null
     },
@@ -118,7 +118,7 @@
       "app_name_zh": "Whiteout Survival",
       "developer": "Century Games Pte. Ltd.",
       "genre": "策略",
-      "delta": 0,
+      "delta": 1,
       "alert": false,
       "ai_type": null
     },
@@ -129,7 +129,7 @@
       "app_name_zh": "Color Block Jam",
       "developer": "Rollic Games",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": 4,
       "alert": false,
       "ai_type": null
     },
@@ -140,7 +140,7 @@
       "app_name_zh": "Last War:Survival",
       "developer": "FUNFLY PTE. LTD.",
       "genre": "卡牌",
-      "delta": 0,
+      "delta": 1,
       "alert": false,
       "ai_type": null
     },
@@ -151,7 +151,7 @@
       "app_name_zh": "Vita Mahjong",
       "developer": "Vita Studio",
       "genre": "卡牌",
-      "delta": 0,
+      "delta": -1,
       "alert": false,
       "ai_type": null
     },
@@ -162,7 +162,7 @@
       "app_name_zh": "Word Search Explorer®",
       "developer": "PlaySimple Games Pte Ltd",
       "genre": "字谜",
-      "delta": 0,
+      "delta": 7,
       "alert": false,
       "ai_type": null
     },
@@ -173,7 +173,7 @@
       "app_name_zh": "Solitaire Associations: Words",
       "developer": "Hitapps Games LTD",
       "genre": "字谜",
-      "delta": 0,
+      "delta": -9,
       "alert": false,
       "ai_type": null
     },
@@ -184,7 +184,7 @@
       "app_name_zh": "Goods Puzzle: Sort Challenge",
       "developer": "ONESOFT GLOBAL PTE. LTD.",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": 2,
       "alert": false,
       "ai_type": null
     },
@@ -195,7 +195,7 @@
       "app_name_zh": "MONOPOLY GO!",
       "developer": "Scopely, Inc.",
       "genre": "家庭聚会",
-      "delta": 0,
+      "delta": 6,
       "alert": false,
       "ai_type": null
     },
@@ -206,7 +206,7 @@
       "app_name_zh": "Sorry! World - Board Game",
       "developer": "Gameberry Labs",
       "genre": "桌面",
-      "delta": 0,
+      "delta": 28,
       "alert": false,
       "ai_type": null
     },
@@ -217,7 +217,7 @@
       "app_name_zh": "Last Z: Survival Shooter",
       "developer": "Florere Game Limited",
       "genre": "卡牌",
-      "delta": 0,
+      "delta": 16,
       "alert": false,
       "ai_type": null
     },
@@ -228,7 +228,7 @@
       "app_name_zh": "Kingshot",
       "developer": "Century Games Pte. Ltd.",
       "genre": "策略",
-      "delta": 0,
+      "delta": -11,
       "alert": false,
       "ai_type": null
     },
@@ -239,7 +239,7 @@
       "app_name_zh": "Subway Surfers",
       "developer": "Sybo Games ApS",
       "genre": "动作",
-      "delta": 0,
+      "delta": -1,
       "alert": false,
       "ai_type": null
     },
@@ -250,7 +250,7 @@
       "app_name_zh": "Magic Tiles 3: Piano Game",
       "developer": "Amanotes Pte. Ltd.",
       "genre": "休闲",
-      "delta": 0,
+      "delta": -3,
       "alert": false,
       "ai_type": null
     },
@@ -261,7 +261,7 @@
       "app_name_zh": "Disney Solitaire",
       "developer": "SuperPlay",
       "genre": "卡牌",
-      "delta": 0,
+      "delta": -6,
       "alert": false,
       "ai_type": null
     },
@@ -272,7 +272,7 @@
       "app_name_zh": "Gossip Harbor®: Merge & Story",
       "developer": "Microfun Limited",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": -10,
       "alert": false,
       "ai_type": null
     },
@@ -283,7 +283,7 @@
       "app_name_zh": "Sort It Right: Relax Puzzle",
       "developer": "Lemon Global Limited",
       "genre": "问答",
-      "delta": 0,
+      "delta": 105,
       "alert": false,
       "ai_type": null
     },
@@ -294,7 +294,7 @@
       "app_name_zh": "Imposter - Party Word Game",
       "developer": "Sven Vucak",
       "genre": "家庭聚会",
-      "delta": 0,
+      "delta": 8,
       "alert": false,
       "ai_type": null
     },
@@ -305,7 +305,7 @@
       "app_name_zh": "Homescapes",
       "developer": "Playrix",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": 15,
       "alert": false,
       "ai_type": null
     },
@@ -316,7 +316,7 @@
       "app_name_zh": "Royal Match",
       "developer": "Dream Games",
       "genre": "休闲",
-      "delta": 0,
+      "delta": -6,
       "alert": false,
       "ai_type": null
     },
@@ -327,7 +327,7 @@
       "app_name_zh": "Among Us!",
       "developer": "InnerSloth LLC",
       "genre": "动作",
-      "delta": 0,
+      "delta": -3,
       "alert": false,
       "ai_type": null
     },
@@ -338,7 +338,7 @@
       "app_name_zh": "Wool Crush -Escape Traffic Jam",
       "developer": "Mirror of Ember",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": -6,
       "alert": false,
       "ai_type": null
     },
@@ -349,7 +349,7 @@
       "app_name_zh": "Call of Duty®: Mobile",
       "developer": "Activision Publishing, Inc.",
       "genre": "动作",
-      "delta": 0,
+      "delta": -1,
       "alert": false,
       "ai_type": null
     },
@@ -360,7 +360,7 @@
       "app_name_zh": "Block Crush！",
       "developer": "Wonderful Studio",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": 1,
       "alert": false,
       "ai_type": null
     },
@@ -371,7 +371,7 @@
       "app_name_zh": "Hexa Away",
       "developer": "GOODROID,Inc.",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": 5,
       "alert": false,
       "ai_type": null
     },
@@ -382,7 +382,7 @@
       "app_name_zh": "Hole.io",
       "developer": "Voodoo",
       "genre": "体育",
-      "delta": 0,
+      "delta": -3,
       "alert": false,
       "ai_type": null
     },
@@ -393,7 +393,7 @@
       "app_name_zh": "Drop the Cat",
       "developer": "ACTIONFIT",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": 2,
       "alert": false,
       "ai_type": null
     },
@@ -404,7 +404,7 @@
       "app_name_zh": "Differences - Find & Spot It",
       "developer": "Guru Smart Holding Limited",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": -8,
       "alert": false,
       "ai_type": null
     },
@@ -415,7 +415,7 @@
       "app_name_zh": "Clash of Clans",
       "developer": "Supercell",
       "genre": "动作",
-      "delta": 0,
+      "delta": -12,
       "alert": false,
       "ai_type": null
     },
@@ -426,7 +426,7 @@
       "app_name_zh": "Dice Dreams™",
       "developer": "SuperPlay",
       "genre": "休闲",
-      "delta": 0,
+      "delta": 41,
       "alert": false,
       "ai_type": null
     },
@@ -437,7 +437,7 @@
       "app_name_zh": "NYT Games: Wordle & Crossword",
       "developer": "The New York Times Company",
       "genre": "字谜",
-      "delta": 0,
+      "delta": 1,
       "alert": false,
       "ai_type": null
     },
@@ -448,7 +448,7 @@
       "app_name_zh": "Fruit Merge: Match Game",
       "developer": "Bravestars Technology JSC",
       "genre": "休闲",
-      "delta": 0,
+      "delta": -11,
       "alert": false,
       "ai_type": null
     },
@@ -459,7 +459,7 @@
       "app_name_zh": "Triumph: Play for Cash",
       "developer": "Triumph Arcade",
       "genre": "策略",
-      "delta": 0,
+      "delta": -9,
       "alert": false,
       "ai_type": null
     },
@@ -470,7 +470,7 @@
       "app_name_zh": "ColorBlock : Combo Blast",
       "developer": "FLYYES TECHNOLOGY PTE. LTD.",
       "genre": "休闲",
-      "delta": 0,
+      "delta": 3,
       "alert": false,
       "ai_type": null
     },
@@ -481,7 +481,7 @@
       "app_name_zh": "Drop Away: Color Puzzle",
       "developer": "Rollic Games",
       "genre": "桌面",
-      "delta": 0,
+      "delta": 84,
       "alert": false,
       "ai_type": null
     },
@@ -492,7 +492,7 @@
       "app_name_zh": "X-Clash: Dare",
       "developer": "9z Games(HK)",
       "genre": "休闲",
-      "delta": 0,
+      "delta": 42,
       "alert": false,
       "ai_type": null
     },
@@ -503,7 +503,7 @@
       "app_name_zh": "Wool Craze -Yarn Color Sort 3D",
       "developer": "HERO LINKAGE",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": 28,
       "alert": false,
       "ai_type": null
     },
@@ -514,7 +514,7 @@
       "app_name_zh": "8 Ball Pool™",
       "developer": "Miniclip.com",
       "genre": "体育",
-      "delta": 0,
+      "delta": 2,
       "alert": false,
       "ai_type": null
     },
@@ -525,7 +525,7 @@
       "app_name_zh": "Epic Plane Evolution",
       "developer": "Voodoo",
       "genre": "模拟",
-      "delta": 0,
+      "delta": -6,
       "alert": false,
       "ai_type": null
     },
@@ -536,7 +536,7 @@
       "app_name_zh": "Meta Horizon",
       "developer": "Meta Platforms, Inc.",
       "genre": "动作",
-      "delta": 0,
+      "delta": 18,
       "alert": false,
       "ai_type": null
     },
@@ -547,7 +547,7 @@
       "app_name_zh": "Angry Birds 2",
       "developer": "Rovio Entertainment Oyj",
       "genre": "动作",
-      "delta": 0,
+      "delta": -10,
       "alert": false,
       "ai_type": null
     },
@@ -558,7 +558,7 @@
       "app_name_zh": "Candy Crush Saga",
       "developer": "King",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": -1,
       "alert": false,
       "ai_type": null
     },
@@ -569,7 +569,7 @@
       "app_name_zh": "Delta Force",
       "developer": "Level Infinite",
       "genre": "动作",
-      "delta": 0,
+      "delta": 2,
       "alert": false,
       "ai_type": null
     },
@@ -580,7 +580,7 @@
       "app_name_zh": "Charades - Family & Party Game",
       "developer": "Dmytro Cheverda",
       "genre": "字谜",
-      "delta": 0,
+      "delta": 43,
       "alert": false,
       "ai_type": null
     },
@@ -591,7 +591,7 @@
       "app_name_zh": "FanDuel Casino - Real Money",
       "developer": "FanDuel, Inc.",
       "genre": "娱乐场",
-      "delta": 0,
+      "delta": 12,
       "alert": false,
       "ai_type": null
     },
@@ -602,7 +602,7 @@
       "app_name_zh": "Domino Dreams™",
       "developer": "SuperPlay",
       "genre": "桌面",
-      "delta": 0,
+      "delta": 24,
       "alert": false,
       "ai_type": null
     },
@@ -613,7 +613,7 @@
       "app_name_zh": "Bubble Cash",
       "developer": "Papaya Gaming",
       "genre": "娱乐场",
-      "delta": 0,
+      "delta": 22,
       "alert": false,
       "ai_type": null
     },
@@ -624,7 +624,7 @@
       "app_name_zh": "Solitaire Smash: Real Cash!",
       "developer": "Play Perfect",
       "genre": "卡牌",
-      "delta": 0,
+      "delta": 16,
       "alert": false,
       "ai_type": null
     },
@@ -635,7 +635,7 @@
       "app_name_zh": "Yarn Fever! Unravel Puzzle",
       "developer": "Getsmart LLC",
       "genre": "休闲",
-      "delta": 0,
+      "delta": -7,
       "alert": false,
       "ai_type": null
     },
@@ -646,7 +646,7 @@
       "app_name_zh": "Eatventure",
       "developer": "Lessmore UG (haftungsbeschränkt)",
       "genre": "休闲",
-      "delta": 0,
+      "delta": -22,
       "alert": false,
       "ai_type": null
     },
@@ -657,7 +657,7 @@
       "app_name_zh": "Brain Test: Tricky Puzzles",
       "developer": "UNICO STUDIO",
       "genre": "家庭聚会",
-      "delta": 0,
+      "delta": -1,
       "alert": false,
       "ai_type": null
     },
@@ -668,7 +668,7 @@
       "app_name_zh": "Chess - Play & Learn Online",
       "developer": "Chess.com",
       "genre": "策略",
-      "delta": 0,
+      "delta": -4,
       "alert": false,
       "ai_type": null
     },
@@ -690,7 +690,7 @@
       "app_name_zh": "Happy Color by Numbers Game",
       "developer": "X-Flow",
       "genre": "桌面",
-      "delta": 0,
+      "delta": -35,
       "alert": false,
       "ai_type": null
     },
@@ -701,7 +701,7 @@
       "app_name_zh": "MONOPOLY: Bingo!",
       "developer": "Clipwire Games Inc.",
       "genre": "娱乐场",
-      "delta": 0,
+      "delta": -19,
       "alert": false,
       "ai_type": null
     },
@@ -712,7 +712,7 @@
       "app_name_zh": "Pokémon TCG Pocket",
       "developer": "The Pokemon Company",
       "genre": "休闲",
-      "delta": 0,
+      "delta": -21,
       "alert": false,
       "ai_type": null
     },
@@ -723,7 +723,7 @@
       "app_name_zh": "Offline Games - No Wifi Games",
       "developer": "Moreno Maio",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": -4,
       "alert": false,
       "ai_type": null
     },
@@ -734,7 +734,7 @@
       "app_name_zh": "TDS - Tower Destiny Survive",
       "developer": "SayGames LTD",
       "genre": "休闲",
-      "delta": 0,
+      "delta": 45,
       "alert": false,
       "ai_type": null
     },
@@ -745,7 +745,7 @@
       "app_name_zh": "Perfect Tidy",
       "developer": "ABI GLOBAL LTD.",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": 2,
       "alert": false,
       "ai_type": null
     },
@@ -756,7 +756,7 @@
       "app_name_zh": "Solitaire Clash: Win Real Cash",
       "developer": "Aviagames Inc.",
       "genre": "卡牌",
-      "delta": 0,
+      "delta": -4,
       "alert": false,
       "ai_type": null
     },
@@ -767,7 +767,7 @@
       "app_name_zh": "Sniper 3D: Gun Shooting Games",
       "developer": "Wildlife Studios",
       "genre": "动作",
-      "delta": 0,
+      "delta": 38,
       "alert": false,
       "ai_type": null
     },
@@ -778,7 +778,7 @@
       "app_name_zh": "Solitaire",
       "developer": "MobilityWare",
       "genre": "桌面",
-      "delta": 0,
+      "delta": -7,
       "alert": false,
       "ai_type": null
     },
@@ -789,7 +789,7 @@
       "app_name_zh": "That’s My Seat – Logic Puzzle",
       "developer": "ROOFTOP GAMES OYUN TEKNOLOJILERI ANONIM SIRKETI",
       "genre": "字谜",
-      "delta": 0,
+      "delta": -24,
       "alert": false,
       "ai_type": null
     },
@@ -800,7 +800,7 @@
       "app_name_zh": "Solitaire Cash",
       "developer": "Papaya Gaming",
       "genre": "卡牌",
-      "delta": 0,
+      "delta": 12,
       "alert": false,
       "ai_type": null
     },
@@ -811,7 +811,7 @@
       "app_name_zh": "Cookingdom",
       "developer": "ABI GLOBAL LTD.",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": 15,
       "alert": false,
       "ai_type": null
     },
@@ -822,7 +822,7 @@
       "app_name_zh": "Bus Escape: Traffic Jam",
       "developer": "ABI GLOBAL LTD.",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": -4,
       "alert": false,
       "ai_type": null
     },
@@ -833,7 +833,7 @@
       "app_name_zh": "Dreamy Room",
       "developer": "ABI GLOBAL LTD.",
       "genre": "模拟",
-      "delta": 0,
+      "delta": 27,
       "alert": false,
       "ai_type": null
     },
@@ -844,7 +844,7 @@
       "app_name_zh": "Geometry Dash Lite",
       "developer": "RobTop Games AB",
       "genre": "休闲",
-      "delta": 0,
+      "delta": -5,
       "alert": false,
       "ai_type": null
     },
@@ -855,7 +855,7 @@
       "app_name_zh": "Flop House",
       "developer": "Crazy Labs",
       "genre": "模拟",
-      "delta": 0,
+      "delta": 3,
       "alert": false,
       "ai_type": null
     },
@@ -866,7 +866,7 @@
       "app_name_zh": "Brawl Stars",
       "developer": "Supercell",
       "genre": "休闲",
-      "delta": 0,
+      "delta": -19,
       "alert": false,
       "ai_type": null
     },
@@ -877,7 +877,7 @@
       "app_name_zh": "UNO!™",
       "developer": "Mattel163 Limited",
       "genre": "家庭聚会",
-      "delta": 0,
+      "delta": 10,
       "alert": false,
       "ai_type": null
     },
@@ -888,7 +888,7 @@
       "app_name_zh": "Paper.io 2",
       "developer": "Voodoo",
       "genre": "休闲",
-      "delta": 0,
+      "delta": 25,
       "alert": false,
       "ai_type": null
     },
@@ -899,7 +899,7 @@
       "app_name_zh": "Tasty Travels: Merge Game",
       "developer": "Century Games Pte. Ltd.",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": -29,
       "alert": false,
       "ai_type": null
     },
@@ -910,7 +910,7 @@
       "app_name_zh": "2 Player Games : Offline Games",
       "developer": "Moreno Maio",
       "genre": "休闲",
-      "delta": 0,
+      "delta": 11,
       "alert": false,
       "ai_type": null
     },
@@ -921,7 +921,7 @@
       "app_name_zh": "Goods Triple Match: Sorting 3D",
       "developer": "Guru Smart Holding Limited",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": 7,
       "alert": false,
       "ai_type": null
     },
@@ -932,7 +932,7 @@
       "app_name_zh": "Highway Racer Pro",
       "developer": "Spektra Games",
       "genre": "模拟",
-      "delta": 0,
+      "delta": 74,
       "alert": false,
       "ai_type": null
     },
@@ -943,7 +943,7 @@
       "app_name_zh": "All in Hole: Black Hole Games",
       "developer": "HOMA GAMES",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": -34,
       "alert": false,
       "ai_type": null
     },
@@ -954,7 +954,7 @@
       "app_name_zh": "Grill Sort - Food Sorting Game",
       "developer": "Smart Imagine",
       "genre": "休闲",
-      "delta": 0,
+      "delta": -12,
       "alert": false,
       "ai_type": null
     },
@@ -965,7 +965,7 @@
       "app_name_zh": "Tile Explorer: Tiles Clear!",
       "developer": "Oakever Games",
       "genre": "休闲",
-      "delta": 0,
+      "delta": 61,
       "alert": false,
       "ai_type": null
     },
@@ -976,7 +976,7 @@
       "app_name_zh": "Lamar - Idle Vlogger",
       "developer": "Crazy Labs",
       "genre": "模拟",
-      "delta": 0,
+      "delta": 28,
       "alert": false,
       "ai_type": null
     },
@@ -987,7 +987,7 @@
       "app_name_zh": "Plants vs. Zombies™",
       "developer": "Electronic Arts",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": -13,
       "alert": false,
       "ai_type": null
     },
@@ -998,7 +998,7 @@
       "app_name_zh": "Lavish Luck Casino",
       "developer": "Prudent Owl Limited",
       "genre": "游戏",
-      "delta": 0,
+      "delta": -23,
       "alert": false,
       "ai_type": null
     },
@@ -1009,7 +1009,7 @@
       "app_name_zh": "Little Farm Story: Idle Tycoon",
       "developer": "SayGames LTD",
       "genre": "模拟",
-      "delta": 0,
+      "delta": -9,
       "alert": false,
       "ai_type": null
     },
@@ -1020,7 +1020,7 @@
       "app_name_zh": "PUBG MOBILE",
       "developer": "Tencent Mobile International Limited",
       "genre": "动作",
-      "delta": 0,
+      "delta": -9,
       "alert": false,
       "ai_type": null
     },
@@ -1031,7 +1031,7 @@
       "app_name_zh": "Foodie Sizzle",
       "developer": "ABI GLOBAL LTD.",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": 6,
       "alert": false,
       "ai_type": null
     },
@@ -1042,7 +1042,7 @@
       "app_name_zh": "Sudoku.com - Number Games",
       "developer": "Easybrain Ltd",
       "genre": "桌面",
-      "delta": 0,
+      "delta": 3,
       "alert": false,
       "ai_type": null
     },
@@ -1053,7 +1053,7 @@
       "app_name_zh": "Travel Town - Merge Adventure",
       "developer": "Moon Active",
       "genre": "桌面",
-      "delta": 0,
+      "delta": -41,
       "alert": false,
       "ai_type": null
     },
@@ -1064,7 +1064,7 @@
       "app_name_zh": "Daily Themed Crossword Puzzles",
       "developer": "PlaySimple Games Pte Ltd",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": 67,
       "alert": false,
       "ai_type": null
     },
@@ -1075,7 +1075,7 @@
       "app_name_zh": "Crossword Master - Word Puzzle",
       "developer": "Easybrain Ltd",
       "genre": "字谜",
-      "delta": 0,
+      "delta": 22,
       "alert": false,
       "ai_type": null
     },
@@ -1086,7 +1086,7 @@
       "app_name_zh": "Gardenscapes",
       "developer": "Playrix",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": 37,
       "alert": false,
       "ai_type": null
     },
@@ -1097,7 +1097,7 @@
       "app_name_zh": "Match Factory!",
       "developer": "Peak Games",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": -8,
       "alert": false,
       "ai_type": null
     },
@@ -1108,7 +1108,7 @@
       "app_name_zh": "BitLife - Life Simulator",
       "developer": "Candywriter, LLC",
       "genre": "角色扮演",
-      "delta": 0,
+      "delta": 10,
       "alert": false,
       "ai_type": null
     },
@@ -1119,7 +1119,7 @@
       "app_name_zh": "Connect Word Association Game",
       "developer": "Hitapps Games LTD",
       "genre": "字谜",
-      "delta": 0,
+      "delta": -41,
       "alert": false,
       "ai_type": null
     },
@@ -1130,7 +1130,7 @@
       "app_name_zh": "Retro Bowl",
       "developer": "New Star Games",
       "genre": "模拟",
-      "delta": 0,
+      "delta": -1,
       "alert": false,
       "ai_type": null
     },
@@ -1141,7 +1141,7 @@
       "app_name_zh": "EA SPORTS FC™ Mobile Soccer",
       "developer": "Electronic Arts",
       "genre": "体育",
-      "delta": 0,
+      "delta": -22,
       "alert": false,
       "ai_type": null
     },
@@ -1152,7 +1152,7 @@
       "app_name_zh": "Jackpot Go: Slots Casino",
       "developer": "WISE WISHES STUDIO LIMITED",
       "genre": "游戏",
-      "delta": 0,
+      "delta": -6,
       "alert": false,
       "ai_type": null
     },
@@ -1174,7 +1174,7 @@
       "app_name_zh": "Brain Puzzle: Tricky Quest",
       "developer": "SmallStep Dev Team",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": -21,
       "alert": false,
       "ai_type": null
     },
@@ -1196,7 +1196,7 @@
       "app_name_zh": "Madden NFL 26 Mobile Football",
       "developer": "Electronic Arts",
       "genre": "体育",
-      "delta": 0,
+      "delta": 6,
       "alert": false,
       "ai_type": null
     },
@@ -1207,7 +1207,7 @@
       "app_name_zh": "Dark War:Survival",
       "developer": "Florere Game Limited",
       "genre": "卡牌",
-      "delta": 0,
+      "delta": -15,
       "alert": false,
       "ai_type": null
     },
@@ -1218,7 +1218,7 @@
       "app_name_zh": "Wordscapes",
       "developer": "PeopleFun, Inc.",
       "genre": "字谜",
-      "delta": 0,
+      "delta": 7,
       "alert": false,
       "ai_type": null
     },
@@ -1229,7 +1229,7 @@
       "app_name_zh": "Bird Sort 2 Color Puzzle Game",
       "developer": "ONESOFT GLOBAL PTE. LTD.",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": 87,
       "alert": false,
       "ai_type": null
     },
@@ -1240,7 +1240,7 @@
       "app_name_zh": "Exposed - Who's Most Likely To",
       "developer": "Behind The App",
       "genre": "休闲",
-      "delta": 0,
+      "delta": 59,
       "alert": false,
       "ai_type": null
     },
@@ -1251,7 +1251,7 @@
       "app_name_zh": "Match Villains",
       "developer": "Good Job Games",
       "genre": "休闲",
-      "delta": 0,
+      "delta": -9,
       "alert": false,
       "ai_type": null
     },
@@ -1262,7 +1262,7 @@
       "app_name_zh": "Pizza Ready!",
       "developer": "Supercent, Inc.",
       "genre": "模拟",
-      "delta": 0,
+      "delta": -27,
       "alert": false,
       "ai_type": null
     },
@@ -1273,7 +1273,7 @@
       "app_name_zh": "Pokémon GO",
       "developer": "Niantic, Inc.",
       "genre": "策略",
-      "delta": 0,
+      "delta": -12,
       "alert": false,
       "ai_type": null
     },
@@ -1284,7 +1284,7 @@
       "app_name_zh": "Tile Axiom",
       "developer": "Forge Games",
       "genre": "游戏",
-      "delta": 0,
+      "delta": 4,
       "alert": false,
       "ai_type": null
     },
@@ -1295,7 +1295,7 @@
       "app_name_zh": "Unravel Master",
       "developer": "SUPERSONIC STUDIOS LTD",
       "genre": "游戏",
-      "delta": 0,
+      "delta": 35,
       "alert": false,
       "ai_type": null
     },
@@ -1306,7 +1306,7 @@
       "app_name_zh": "Car Jam: Escape Traffic Puzzle",
       "developer": "Mindscaplay",
       "genre": "休闲",
-      "delta": 0,
+      "delta": -56,
       "alert": false,
       "ai_type": null
     },
@@ -1317,7 +1317,7 @@
       "app_name_zh": "Screwdom",
       "developer": "Zego Global Pte Ltd",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": -10,
       "alert": false,
       "ai_type": null
     },
@@ -1328,7 +1328,7 @@
       "app_name_zh": "Coin Sort",
       "developer": "Lion Studios Plus",
       "genre": "休闲",
-      "delta": 0,
+      "delta": 1,
       "alert": false,
       "ai_type": null
     },
@@ -1339,7 +1339,7 @@
       "app_name_zh": "Tiles Survive!",
       "developer": "FunPlus International AG",
       "genre": "角色扮演",
-      "delta": 0,
+      "delta": 18,
       "alert": false,
       "ai_type": null
     },
@@ -1350,7 +1350,7 @@
       "app_name_zh": "Animals & Coins Adventure Game",
       "developer": "Innplay Labs",
       "genre": "冒险",
-      "delta": 0,
+      "delta": 67,
       "alert": false,
       "ai_type": null
     },
@@ -1361,7 +1361,7 @@
       "app_name_zh": "Free Fire x NARUTO SHIPPUDEN",
       "developer": "GARENA INTERNATIONAL I PRIVATE LIMITED",
       "genre": "冒险",
-      "delta": 0,
+      "delta": -5,
       "alert": false,
       "ai_type": null
     },
@@ -1372,7 +1372,7 @@
       "app_name_zh": "Hexa Sort",
       "developer": "Lion Studios Plus",
       "genre": "桌面",
-      "delta": 0,
+      "delta": 7,
       "alert": false,
       "ai_type": null
     },
@@ -1383,7 +1383,7 @@
       "app_name_zh": "Solitaire.com: Classic Cards",
       "developer": "Tripledot Studios",
       "genre": "桌面",
-      "delta": 0,
+      "delta": 18,
       "alert": false,
       "ai_type": null
     },
@@ -1394,7 +1394,7 @@
       "app_name_zh": "Blitz - Win Cash",
       "developer": "Blitz Games",
       "genre": "娱乐场",
-      "delta": 0,
+      "delta": 27,
       "alert": false,
       "ai_type": null
     },
@@ -1405,7 +1405,7 @@
       "app_name_zh": "Imposter Game — Fakeit",
       "developer": "smak apps",
       "genre": "字谜",
-      "delta": 0,
+      "delta": 58,
       "alert": false,
       "ai_type": null
     },
@@ -1416,7 +1416,7 @@
       "app_name_zh": "Bingo Cash",
       "developer": "Papaya Gaming",
       "genre": "桌面",
-      "delta": 0,
+      "delta": 5,
       "alert": false,
       "ai_type": null
     },
@@ -1427,7 +1427,7 @@
       "app_name_zh": "Mahjong Wonders™",
       "developer": "Nebula Studio",
       "genre": "卡牌",
-      "delta": 0,
+      "delta": -1,
       "alert": false,
       "ai_type": null
     },
@@ -1438,7 +1438,7 @@
       "app_name_zh": "UNO Wonder",
       "developer": "Mattel163 Limited",
       "genre": "卡牌",
-      "delta": 0,
+      "delta": -7,
       "alert": false,
       "ai_type": null
     },
@@ -1449,7 +1449,7 @@
       "app_name_zh": "Charades Guess Game: Guessly",
       "developer": "smak apps",
       "genre": "家庭聚会",
-      "delta": 0,
+      "delta": 66,
       "alert": false,
       "ai_type": null
     },
@@ -1460,7 +1460,7 @@
       "app_name_zh": "Gleaming Slots - Win Real Cash",
       "developer": "Enchantia Entertainment Studio Limited",
       "genre": "桌面",
-      "delta": 0,
+      "delta": 22,
       "alert": false,
       "ai_type": null
     },
@@ -1471,7 +1471,7 @@
       "app_name_zh": "Otium Word: Cross Puzzle Game",
       "developer": "Palmax Group Limited",
       "genre": "休闲",
-      "delta": 0,
+      "delta": -58,
       "alert": false,
       "ai_type": null
     },
@@ -1482,7 +1482,7 @@
       "app_name_zh": "Carnival Tycoon: Coin Games",
       "developer": "Wild Candle Spin LLC",
       "genre": "模拟",
-      "delta": 0,
+      "delta": -77,
       "alert": false,
       "ai_type": null
     },
@@ -1493,7 +1493,7 @@
       "app_name_zh": "Toon Blast",
       "developer": "Peak Games",
       "genre": "休闲",
-      "delta": 0,
+      "delta": 31,
       "alert": false,
       "ai_type": null
     },
@@ -1504,7 +1504,7 @@
       "app_name_zh": "Stake US - Casino & Slots",
       "developer": "Sweepsteaks Limited",
       "genre": "卡牌",
-      "delta": 0,
+      "delta": -21,
       "alert": false,
       "ai_type": null
     },
@@ -1515,7 +1515,7 @@
       "app_name_zh": "Soccer Superstar",
       "developer": "Real Free Soccer",
       "genre": "动作",
-      "delta": 0,
+      "delta": -8,
       "alert": false,
       "ai_type": null
     },
@@ -1537,7 +1537,7 @@
       "app_name_zh": "Bingo Tour: Win Real Cash",
       "developer": "Aviagames Inc.",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": 10,
       "alert": false,
       "ai_type": null
     },
@@ -1570,7 +1570,7 @@
       "app_name_zh": "Zen Color - Color By Number",
       "developer": "Oakever Games",
       "genre": "桌面",
-      "delta": 0,
+      "delta": 9,
       "alert": false,
       "ai_type": null
     },
@@ -1592,7 +1592,7 @@
       "app_name_zh": "Teacher Simulator: Study Time!",
       "developer": "Kwalee Ltd",
       "genre": "休闲",
-      "delta": 0,
+      "delta": -3,
       "alert": false,
       "ai_type": null
     },
@@ -1603,7 +1603,7 @@
       "app_name_zh": "Melon: Sandbox",
       "developer": "Payge Ltd",
       "genre": "模拟",
-      "delta": 0,
+      "delta": 22,
       "alert": false,
       "ai_type": null
     },
@@ -1614,7 +1614,7 @@
       "app_name_zh": "Fantasy Room: Home Decor",
       "developer": "Tang Thi Thuy",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": -6,
       "alert": false,
       "ai_type": null
     },
@@ -1625,7 +1625,7 @@
       "app_name_zh": "Zen Word® - Relax Puzzle Game",
       "developer": "Oakever Games",
       "genre": "字谜",
-      "delta": 0,
+      "delta": -34,
       "alert": false,
       "ai_type": null
     },
@@ -1647,7 +1647,7 @@
       "app_name_zh": "Temple Run",
       "developer": "Imangi Studios, LLC",
       "genre": "休闲",
-      "delta": 0,
+      "delta": -13,
       "alert": false,
       "ai_type": null
     },
@@ -1658,7 +1658,7 @@
       "app_name_zh": "Happy Screw Trip 3D",
       "developer": "BESTPLAY GAMES PTE. LTD.",
       "genre": "休闲",
-      "delta": 0,
+      "delta": 11,
       "alert": false,
       "ai_type": null
     },
@@ -1669,7 +1669,7 @@
       "app_name_zh": "Merge Cooking®",
       "developer": "Happibits",
       "genre": "模拟",
-      "delta": 0,
+      "delta": -96,
       "alert": false,
       "ai_type": null
     },
@@ -1680,7 +1680,7 @@
       "app_name_zh": "West Game II",
       "developer": "LEXIANGCO.,LIMITED",
       "genre": "策略",
-      "delta": 0,
+      "delta": -40,
       "alert": false,
       "ai_type": null
     },
@@ -1702,7 +1702,7 @@
       "app_name_zh": "Yotta: Play and Win.",
       "developer": "Yotta Technologies Inc.",
       "genre": "娱乐场",
-      "delta": 0,
+      "delta": -10,
       "alert": false,
       "ai_type": null
     },
@@ -1713,7 +1713,7 @@
       "app_name_zh": "Snake.io - Fun Online Snake",
       "developer": "Kooapps",
       "genre": "策略",
-      "delta": 0,
+      "delta": 2,
       "alert": false,
       "ai_type": null
     },
@@ -1735,7 +1735,7 @@
       "app_name_zh": "Royal Cooking",
       "developer": "Matryoshka Games (CY) LTD",
       "genre": "休闲",
-      "delta": 0,
+      "delta": -49,
       "alert": false,
       "ai_type": null
     },
@@ -1757,7 +1757,7 @@
       "app_name_zh": "Top Heroes: Kingdom Saga",
       "developer": "River Game HK Limited",
       "genre": "角色扮演",
-      "delta": 0,
+      "delta": -53,
       "alert": false,
       "ai_type": null
     },
@@ -1768,7 +1768,7 @@
       "app_name_zh": "Hole People",
       "developer": "Rollic Games",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": -22,
       "alert": false,
       "ai_type": null
     },
@@ -1779,7 +1779,7 @@
       "app_name_zh": "Goods Master 3D: Matching Game",
       "developer": "HIGGS TECHNOLOGY CO., LIMITED",
       "genre": "休闲",
-      "delta": 0,
+      "delta": -24,
       "alert": false,
       "ai_type": null
     },
@@ -1801,7 +1801,7 @@
       "app_name_zh": "Knit Out",
       "developer": "Rollic Games",
       "genre": "模拟",
-      "delta": 0,
+      "delta": -37,
       "alert": false,
       "ai_type": null
     },
@@ -1812,7 +1812,7 @@
       "app_name_zh": "Fishing Travel",
       "developer": "Ark Game Limited",
       "genre": "体育",
-      "delta": 0,
+      "delta": 36,
       "alert": false,
       "ai_type": null
     },
@@ -1834,7 +1834,7 @@
       "app_name_zh": "Tetris®",
       "developer": "PlayStudios",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": -10,
       "alert": false,
       "ai_type": null
     },
@@ -1845,7 +1845,7 @@
       "app_name_zh": "Cash Carnival - Win Real Money",
       "developer": "ACORN PRODUCT COMPANY LLC",
       "genre": "娱乐场",
-      "delta": 0,
+      "delta": -21,
       "alert": false,
       "ai_type": null
     },
@@ -1856,7 +1856,7 @@
       "app_name_zh": "Classic Solitaire:Brain Games",
       "developer": "晶 闫",
       "genre": "游戏",
-      "delta": 0,
+      "delta": -43,
       "alert": false,
       "ai_type": null
     },
@@ -1867,7 +1867,7 @@
       "app_name_zh": "Top Tycoon: Coin Theme Empire",
       "developer": "BeheFun Games Limited",
       "genre": "模拟",
-      "delta": 0,
+      "delta": 19,
       "alert": false,
       "ai_type": null
     },
@@ -1889,7 +1889,7 @@
       "app_name_zh": "Cookzii: Cozy Cooking ASMR",
       "developer": "Vu Long",
       "genre": "模拟",
-      "delta": 0,
+      "delta": -12,
       "alert": false,
       "ai_type": null
     },
@@ -1900,7 +1900,7 @@
       "app_name_zh": "Art Puzzle - Jigsaw Games",
       "developer": "Easybrain Ltd",
       "genre": "桌面",
-      "delta": 0,
+      "delta": 22,
       "alert": false,
       "ai_type": null
     },
@@ -1911,7 +1911,7 @@
       "app_name_zh": "Mini Games: Calm & Chill",
       "developer": "CTC Technology Limited",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": -13,
       "alert": false,
       "ai_type": null
     },
@@ -1922,7 +1922,7 @@
       "app_name_zh": "Royal Slots Horizon",
       "developer": "Celestial Clarity Studio Limited",
       "genre": "游戏",
-      "delta": 0,
+      "delta": -9,
       "alert": false,
       "ai_type": null
     },
@@ -1933,7 +1933,7 @@
       "app_name_zh": "Goods Sort Master Triple Match",
       "developer": "Hong Hai Wu Xian Technology Development Co., Ltd.",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": 17,
       "alert": false,
       "ai_type": null
     },
@@ -1955,7 +1955,7 @@
       "app_name_zh": "Arrows – Puzzle Escape",
       "developer": "Lessmore UG (haftungsbeschränkt)",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": -77,
       "alert": false,
       "ai_type": null
     },
@@ -1988,7 +1988,7 @@
       "app_name_zh": "Friday Night Funkin' Mobile",
       "developer": "Funkin' Crew",
       "genre": "动作",
-      "delta": 0,
+      "delta": -6,
       "alert": false,
       "ai_type": null
     },
@@ -1999,7 +1999,7 @@
       "app_name_zh": "Screw Sort 3D: Pin Puzzle Game",
       "developer": "Mindscaplay",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": -39,
       "alert": false,
       "ai_type": null
     },
@@ -2021,7 +2021,7 @@
       "app_name_zh": "Blackjack",
       "developer": "Tripledot Studios",
       "genre": "卡牌",
-      "delta": 0,
+      "delta": -3,
       "alert": false,
       "ai_type": null
     },
@@ -2065,7 +2065,7 @@
       "app_name_zh": "Lands of Jail",
       "developer": "SINGAPORE JUST GAME TECHNOLOGY PTE.LTD.",
       "genre": "模拟",
-      "delta": 0,
+      "delta": 6,
       "alert": false,
       "ai_type": null
     },
@@ -2076,7 +2076,7 @@
       "app_name_zh": "Mobile Legends: Bang Bang.US",
       "developer": "Skystone Games Pte. Ltd.",
       "genre": "策略",
-      "delta": 0,
+      "delta": -1,
       "alert": false,
       "ai_type": null
     },
@@ -2098,7 +2098,7 @@
       "app_name_zh": "Mini Antistress Relaxing Games",
       "developer": "Hassam Ahmad",
       "genre": "休闲",
-      "delta": 0,
+      "delta": -14,
       "alert": false,
       "ai_type": null
     },
@@ -2109,7 +2109,7 @@
       "app_name_zh": "eFootball™",
       "developer": "KONAMI",
       "genre": "体育",
-      "delta": 0,
+      "delta": -22,
       "alert": false,
       "ai_type": null
     },
@@ -2131,7 +2131,7 @@
       "app_name_zh": "Bingo Stars - Win Real Money",
       "developer": "Lucky Day Entertainment, Inc.",
       "genre": "休闲",
-      "delta": 0,
+      "delta": -43,
       "alert": false,
       "ai_type": null
     },
@@ -2142,7 +2142,7 @@
       "app_name_zh": "Truck Star",
       "developer": "Century Games Pte. Ltd.",
       "genre": "模拟",
-      "delta": 0,
+      "delta": -62,
       "alert": false,
       "ai_type": null
     },
@@ -2208,7 +2208,7 @@
       "app_name_zh": "Block Puzzle - Brain Test Game",
       "developer": "Doodle Mobile Limited",
       "genre": "益智解谜",
-      "delta": 0,
+      "delta": -10,
       "alert": false,
       "ai_type": null
     },
