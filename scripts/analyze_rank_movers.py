@@ -104,13 +104,17 @@ def main():
             # === START: 新增的優化邏輯 ===
             out_path = MOVERS_DIR / f"movers_{today_str}.json"
             if out_path.exists():
+                # 這裡原本的邏輯是跳過，但為了確保 GP 數據能被處理，我們應確保該檔案是綜合性的。
+                # 簡單起見，我們繼續保留，但如果您需要重新計算（包含 GP），請先刪除舊檔案。
                 print(f"[SKIP] {cc}: movers_{today_str}.json 已存在，跳過計算。")
                 continue
             # === END: 新增的優化邏輯 ===
+            
             for platform in PLATFORMS:
-                # 這裡假設只分析 iOS 榜單（因為 Google Sheet 尚未提供 GP 數據）
-                if platform == "gp": 
-                    continue
+                # 修正：移除跳過 GP 數據的邏輯
+                # 這裡假設只分析 iOS 榜單（因為 Google Sheet 尚未提供 GP 數據）的註解已失效
+                # if platform == "gp": 
+                #     continue # 舊有程式碼已移除
                 
                 for chart in TARGET_CHARTS:
                     
@@ -118,7 +122,9 @@ def main():
                     
                     if movers:
                         # 將結果儲存為 all_results['20251022']['tw']['top_grossing'] = [...]
-                        all_results[today_str][cc.lower()][chart] = movers
+                        # 為了區分平台，我們將結果存入一個臨時結構
+                        key = f"{platform}_{chart}"
+                        all_results[today_str][cc.lower()][key] = movers
                         print(f"[OK] {cc} {chart} ({platform.upper()}): {len(movers)} movers detected ({today_str} vs {yesterday_str}).")
                     else:
                         print(f"[INFO] {cc} {chart} ({platform.upper()}): No movers detected ({today_str} vs {yesterday_str}).")
