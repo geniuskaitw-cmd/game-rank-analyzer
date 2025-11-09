@@ -3,15 +3,15 @@
     "ios": {
       "top_grossing": {
         "MONOPOLY GO!": {
-          "version": "1.57.0",
-          "updated": "2025-10-31T08:58:32Z",
+          "version": "1.57.2",
+          "updated": "2025-11-04T15:13:38Z",
           "releaseNotes": "A new version has made its way to your Boards, Tycoons!\nThis time, Mr. M focused on squashing bugs and smoothing out your gameplay experience—all to get things ready for the next Sticker collection!\nSo update now and GO for the Stickers you need while you can to win A-list rewards!",
           "app_id": "1621328561"
         },
         "Last War:Survival": {
-          "version": "1.0.317",
-          "updated": "2025-10-29T08:55:44Z",
-          "releaseNotes": "1. Gift level cap increased to Level 25, with new dynamic emotes and Avatar Frame rewards added.\n2. Optimized the interface display of Arena [Battle Record] to more clearly show defense and win/loss information.",
+          "version": "1.0.318",
+          "updated": "2025-11-05T10:20:42Z",
+          "releaseNotes": "Improvements:\n1. During the Meteorite Iron War, when gathering Meteorite Iron points, if allies arrive at the target location first, a secondary confirmation popup will appear.\n2. The Conductor can set whether VIP passengers can choose to receive rewards from specific carriages on the train.",
           "app_id": "6448786147"
         },
         "Royal Match": {
@@ -33,8 +33,8 @@
           "app_id": "6739554056"
         },
         "Candy Crush Saga": {
-          "version": "1.314.1.1",
-          "updated": "2025-10-27T07:10:20Z",
+          "version": "1.315.0.1",
+          "updated": "2025-11-04T07:20:11Z",
           "releaseNotes": "We hope you’re having fun playing Candy Crush Saga! \n\nWe update the game every week with sweet new features, exciting levels, and important bug fixes to keep everything running smoothly. \n\nDon't forget to download the latest version for the best experience!\n\nNew to the game? Don’t be shy, join the fun!",
           "app_id": "553834731"
         },
@@ -45,9 +45,9 @@
           "app_id": "6443575749"
         },
         "Gossip Harbor®: Merge & Story": {
-          "version": "3.76.0",
-          "updated": "2025-10-22T11:03:36Z",
-          "releaseNotes": "NEW EPISODE EVERY FRIDAY!\n- NEW EPISODE: With new chapter updates every Friday; follow Quinn as she exposes secrets and solves puzzles.\n- NEW EVENT:Visit the Dark Zone and unlock the Howling Factory! Join Sam, Colton and Harrison as they're transported to a strange nightmare world. Help them escape by collecting points and unlock exclusive decorations to complete the event.",
+          "version": "3.77.0",
+          "updated": "2025-11-04T13:33:13Z",
+          "releaseNotes": "NEW EPISODE EVERY FRIDAY!\n- NEW EPISODE: With new chapter updates every Friday; follow Quinn as she exposes secrets and solves puzzles.\n- NEW EVENT:Experience Turkey-tastic Times and unlock the Comforting Soup Collection! Join Olivia, Quinn, and Amala as they join the feathery festivities. Party on by collecting points and unlock exclusive decorations to complete the event.",
           "app_id": "1623318294"
         },
         "Royal Kingdom": {
@@ -57,14 +57,14 @@
           "app_id": "1606549505"
         },
         "Township": {
-          "version": "31.0.0",
-          "updated": "2025-10-14T10:15:05Z",
+          "version": "31.1.0",
+          "updated": "2025-11-04T20:03:02Z",
           "releaseNotes": "Get ready for a new update!\nNew adventures in Township!\n\nSeason Adventures\n* Gatsby-era fashion and medieval nobility are coming to Township! Decorate your town and win valuable resources in the Gatsby Pass and Knight Pass!\n\nThrilling new expeditions\n* While searching for traces of Vikings, Richard and Rachel end up captured by them and must fight off a mysterious monster!\n* Richard, Ellen, and Alicia take part in filming an exciting Thanksgiving TV show!\n\nNew card collection\n* Collect cards from the Winter Collection to get a unique badge and other prizes!\n\nAlso\n* Halloween and Black Friday sales\n* Travel to Loch Ness and Santa's home in new regatta seasons!\n* Enjoy new buildings—a yoga center and a spiral complex!",
           "app_id": "638689075"
         },
         "Clash of Clans": {
-          "version": "17.477.13",
-          "updated": "2025-10-23T10:22:37Z",
+          "version": "17.477.15",
+          "updated": "2025-11-04T09:34:19Z",
           "releaseNotes": "Rank Up!\n·   Multiplayer split! Join Tournaments and climb new Leagues in Ranked Battles, or duke it out in regular Battles without the risk of losing Trophies.\n·   Revenge is back, and it’s sweet! Attack players that raided your Village to get your resources back!\n·   Shields have switched up! Introducing Magic Shields that protect resources and Legend Shields that skip upcoming League Days.\n·   Other Changes: We’re reworking Spring Traps and removing Town Hall Weapon Levels.",
           "app_id": "529479190"
         },
@@ -123,15 +123,15 @@
           "app_id": "1195621598"
         },
         "Evony": {
-          "version": "5.11.0",
-          "updated": "2025-11-03T01:12:19Z",
+          "version": "5.12.0",
+          "updated": "2025-11-07T01:19:51Z",
           "releaseNotes": "- Bug fixes and improvements",
           "app_id": "1098157959"
         },
         "PUBG MOBILE": {
-          "version": "4.0.0",
-          "updated": "2025-09-04T10:00:22Z",
-          "releaseNotes": "PUBG MOBILE's Spooky Soiree version arrives on September 4! V4.0 introduces tons of ghostly content, as well as new game modes and tons of collaborations! Get ready for the most spooktacular update of the year!\n\nClassic Mode\n1. Ghost Gameplay: Unlock shield, boost, flying, and healing abilities, plus you can engage in battles even after you get knocked out!\n2. Mortar: A new weapon that deals high explosive damage. Supports both close aiming and ranged target selection, for more tactical versatility.\n3. Weapon Adjustments: Stocks and foregrips have been completely revamped for more precise shooting feedback.\nAsymmetric Game Mode: Unfail is now available! Experience the intense 1v4 pursuit and escape showdown between the Predator and the Survivors!\nMetro Royale: Challenge your friends to a 1v1, check out the new limited seasonal crates, and face a new limited-time boss.\nWOW: WOW 1.0 is officially here! Most players now have access to the editor and can win cash rewards!\nPerformance Update: The Super Smooth graphics option is now available, designed to improve the frame rate, reduce lag, minimize overheating, and lower power consumption!",
+          "version": "4.1.0",
+          "updated": "2025-11-06T10:00:48Z",
+          "releaseNotes": "PUBG MOBILE's Frosty Funland version was officially released on November 6! V4.1 features arctic towns inhabited by animals, tons of content and experience improvements, as well as a super cute ninja penguin ally to keep you company throughout. We sincerely invite you to team up with your friends and embark on a fantastical, icy adventure to explore the endless wonders of Frosty Funland! Also, the BABYMONSTER collaboration will be returning on 11/21, so stay tuned for more exciting content!\nStay tuned for more collaborations with Porsche and other well-known IPs to inject new energy into the battleground!\nClassic Mode\n1. Themed Items: Use the Penguin Snowmobile (amphibious four-seater vehicle, launches snowballs to deal damage, features co-op driving for faster speed), Salted Fish Rocket Launcher (Offers Control, Mobility, and Damage), Magic Ice Skates (creates special ice trails), Swordfish Syringe (heal yourself and your teammates), and Winterland Kar98K (charged shot triggers ice explosion) to fight and survive.\n2. Interactions: The ninja penguin PowNin will be somewhere on the map. Interact and communicate with it in English. There are also other cute animal NPCs such as the Gunsmith Polar Bear, Apothecary Penguin, and Magic Fox. Interact with them to upgrade items or get surprise supply drops to aid your exploration.\n3. Special Scenery: Go to Penguinville to compete for the core crate. Extra respawn chances will help you become the Strongest Team!\n4. Combat Improvements: Enjoy firearm balance adjustments, better combat sound effects, and improved aiming for a completely upgraded combat experience!\nWOW: New multiplayer racing map available! Pick your ride and race to the finish line for extreme speed and fun!\nMetro Royale: Chapter 29 is here! Plus, Command Post and Fame system updates allow you to level up faster and get more rewards!",
           "app_id": "1330123889"
         },
         "Fishdom": {
@@ -141,8 +141,8 @@
           "app_id": "664575829"
         },
         "Travel Town - Merge Adventure": {
-          "version": "2.12.1291",
-          "updated": "2025-10-29T09:45:15Z",
+          "version": "2.12.1301",
+          "updated": "2025-11-04T08:14:27Z",
           "releaseNotes": "Welcome to the latest update of Travel Town!\nWe’ve been busy improving the game and addressing bugs for you. \nEnjoy!",
           "app_id": "1521236603"
         },
@@ -159,8 +159,8 @@
           "app_id": "6670441558"
         },
         "Top Heroes: Kingdom Saga": {
-          "version": "1.79.12",
-          "updated": "2025-11-03T11:16:16Z",
+          "version": "1.79.18",
+          "updated": "2025-11-07T02:35:41Z",
           "releaseNotes": "The Ancient and Frostfield Battlefields usher in a brand-new “Turnaround Moment”! When the final battle drums sound, the tides of war shift—both factions will earn double points. Comeback or domination, everything will be decided in the final moments.",
           "app_id": "6450953550"
         },
@@ -195,8 +195,8 @@
           "app_id": "1483058899"
         },
         "Age of Origins:Tower Defense": {
-          "version": "1.3.804",
-          "updated": "2025-10-31T03:14:11Z",
+          "version": "1.3.808",
+          "updated": "2025-11-06T08:54:51Z",
           "releaseNotes": "Optimized some of the game play.",
           "app_id": "1376515087"
         },
@@ -207,14 +207,14 @@
           "app_id": "850417475"
         },
         "Cashman Casino Slots Games": {
-          "version": "3.78.0",
-          "updated": "2025-10-27T10:36:33Z",
+          "version": "4.0.0",
+          "updated": "2025-11-06T13:17:19Z",
           "releaseNotes": "Hey Mr. Cashman fans!\nGet our NEW games in our latest update!\nFor the best experience and most FUN we’ve squashed bugs and optimized your game.\nBecome a fan today using the following link to get daily bonuses and updates:\nhttps://www.facebook.com/cashmancasino/",
           "app_id": "1123582513"
         },
         "Screwdom": {
-          "version": "7.2.4",
-          "updated": "2025-10-24T02:56:07Z",
+          "version": "7.5.7",
+          "updated": "2025-11-06T08:59:10Z",
           "releaseNotes": "New Event: Christmas Collection – Celebrate the holiday season! Collect festive items and unlock exclusive rewards!",
           "app_id": "6740043080"
         },
@@ -243,8 +243,8 @@
           "app_id": "6499209744"
         },
         "Bingo Blitz™ - BINGO Games": {
-          "version": "5.82.1",
-          "updated": "2025-10-26T07:25:42Z",
+          "version": "5.83.0",
+          "updated": "2025-11-06T08:50:47Z",
           "releaseNotes": "Thank you for being part of the Bingo Blitz community! Discover new bingo rooms, in-game events, celebrations and above all: The BEST Bingo experience! Let's BinGo!",
           "app_id": "529996768"
         },
@@ -255,8 +255,8 @@
           "app_id": "485126024"
         },
         "Seaside Escape®: Merge & Story": {
-          "version": "1.83.0",
-          "updated": "2025-10-29T18:27:50Z",
+          "version": "1.83.5",
+          "updated": "2025-11-04T16:02:23Z",
           "releaseNotes": "NEW CONTENT EVERY WEEK \n- Locations! Unlock a new location and its secrets!\n- Events! Spice up your gaming experience with this weeks' event!\n\nWe've also fixed bugs and added cool new features!",
           "app_id": "6443755785"
         },
@@ -273,9 +273,9 @@
           "app_id": "945621521"
         },
         "NYT Games: Wordle & Crossword": {
-          "version": "6.0.0",
-          "updated": "2025-10-27T17:49:20Z",
-          "releaseNotes": "This version contains improvements to keep you solving smoothly!                                                                               \n\nHave feedback? Email us. nytgames@nytimes.com",
+          "version": "6.1.1",
+          "updated": "2025-11-07T13:10:24Z",
+          "releaseNotes": "This version contains Dark Mode for the entire Games app, letting you play comfortably in any setting.\n\nHave feedback? Email us. nytgames@nytimes.com",
           "app_id": "307569751"
         },
         "Merge Cooking®": {
@@ -317,14 +317,14 @@
           "app_id": "1053012308"
         },
         "X-Clash: Dare": {
-          "version": "1.0.30",
-          "updated": "2025-10-25T05:40:36Z",
-          "releaseNotes": "[Optimizations]\n- Improved certain experiences in Clash of Kingdoms.\n- Coordinates in union mails can now be tapped to navigate directly.\n- Optimized translation texts for some languages.",
+          "version": "1.0.32",
+          "updated": "2025-11-07T02:17:30Z",
+          "releaseNotes": "[Bug Fixes]\n- Fixed an issue where Union Airship rewards were not distributed properly in certain cases.\n- Fixed an issue where the Attackers and Defenders were displayed incorrectly in Clash of Kingdoms.\n- Fixed an issue where the security notice in the chat channel could block messages and translations.\n- Fixed an issue where the Back button occasionally disappeared from the chat interface.\n- Fixed an issue where the displayed CP of Wagons was inconsistent with that shown in the team interface.\n- Fixed an issue where rewards from the Lord Tour event Ranking failed to be reissued in certain cases.",
           "app_id": "6744812012"
         },
         "Block Blast！": {
-          "version": "6.4.7",
-          "updated": "2025-10-31T09:16:17Z",
+          "version": "6.4.9",
+          "updated": "2025-11-06T02:35:39Z",
           "releaseNotes": "We’re always improving Block Blast! Turn on auto-updates to get the latest features.\n\nSuggestions? Email us: blockblast-support@hungrystudio.com\nFollow us on TikTok for updates: @blockblastofficial",
           "app_id": "1617391485"
         },
@@ -341,14 +341,14 @@
           "app_id": "6499209744"
         },
         "Roblox": {
-          "version": "2.697.925",
-          "updated": "2025-10-30T16:08:29Z",
+          "version": "2.698.937",
+          "updated": "2025-11-06T17:11:17Z",
           "releaseNotes": "To make Roblox work better for you, we deliver updates regularly. These updates include bug fixes and improvements for speed and reliability.",
           "app_id": "431946152"
         },
         "Solitaire Associations: Words": {
-          "version": "0.1.62",
-          "updated": "2025-10-21T10:17:36Z",
+          "version": "0.1.71",
+          "updated": "2025-11-07T19:12:26Z",
           "releaseNotes": "We are ready to make your game experience even greater. \nBugs are fixed and game performance is optimized. \nEnjoy.",
           "app_id": "6748950306"
         },
@@ -359,8 +359,8 @@
           "app_id": "1602508478"
         },
         "Township": {
-          "version": "31.0.0",
-          "updated": "2025-10-14T10:15:05Z",
+          "version": "31.1.0",
+          "updated": "2025-11-04T20:03:02Z",
           "releaseNotes": "Get ready for a new update!\nNew adventures in Township!\n\nSeason Adventures\n* Gatsby-era fashion and medieval nobility are coming to Township! Decorate your town and win valuable resources in the Gatsby Pass and Knight Pass!\n\nThrilling new expeditions\n* While searching for traces of Vikings, Richard and Rachel end up captured by them and must fight off a mysterious monster!\n* Richard, Ellen, and Alicia take part in filming an exciting Thanksgiving TV show!\n\nNew card collection\n* Collect cards from the Winter Collection to get a unique badge and other prizes!\n\nAlso\n* Halloween and Black Friday sales\n* Travel to Loch Ness and Santa's home in new regatta seasons!\n* Enjoy new buildings—a yoga center and a spiral complex!",
           "app_id": "638689075"
         },
@@ -389,32 +389,32 @@
           "app_id": "6739554056"
         },
         "Pixel Flow!": {
-          "version": "0.7.0",
-          "updated": "2025-10-31T09:20:20Z",
-          "releaseNotes": "The latest update has landed! Discover new challenges, improved stability, and a more responsive experience all around. We’ve expanded the game with new levels, refined old ones, and made everything run smoother. Your journey just got even better, dive in and explore the upgrades!",
+          "version": "0.8.0",
+          "updated": "2025-11-08T19:37:19Z",
+          "releaseNotes": "New levels are here! This version is full of fresh surprises, new features, performance boosts, and gameplay refinements await you. We’ve also fixed bugs and smoothed out rough edges to ensure a seamless experience from start to finish. Enjoy the new and improved adventure!",
           "app_id": "6751056652"
         },
         "Last War:Survival": {
-          "version": "1.0.317",
-          "updated": "2025-10-29T08:55:44Z",
-          "releaseNotes": "1. Gift level cap increased to Level 25, with new dynamic emotes and Avatar Frame rewards added.\n2. Optimized the interface display of Arena [Battle Record] to more clearly show defense and win/loss information.",
+          "version": "1.0.318",
+          "updated": "2025-11-05T10:20:42Z",
+          "releaseNotes": "Improvements:\n1. During the Meteorite Iron War, when gathering Meteorite Iron points, if allies arrive at the target location first, a secondary confirmation popup will appear.\n2. The Conductor can set whether VIP passengers can choose to receive rewards from specific carriages on the train.",
           "app_id": "6448786147"
         },
         "MONOPOLY GO!": {
-          "version": "1.57.0",
-          "updated": "2025-10-31T08:58:32Z",
+          "version": "1.57.2",
+          "updated": "2025-11-04T15:13:38Z",
           "releaseNotes": "A new version has made its way to your Boards, Tycoons!\nThis time, Mr. M focused on squashing bugs and smoothing out your gameplay experience—all to get things ready for the next Sticker collection!\nSo update now and GO for the Stickers you need while you can to win A-list rewards!",
           "app_id": "1621328561"
         },
         "Imposter - Party Word Game": {
-          "version": "3.5.0",
-          "updated": "2025-09-03T07:02:29Z",
-          "releaseNotes": "New: Optional hint word for the Imposter. Helps them get away - can you still spot them?",
+          "version": "3.6.0",
+          "updated": "2025-11-05T19:40:04Z",
+          "releaseNotes": "New: Custom word hints & 100 new questions! Add optional hints when creating custom words to help impostors blend in. Plus fresh content across all game categories!",
           "app_id": "6745120053"
         },
         "Magic Tiles 3: Piano Game": {
-          "version": "12.101.007",
-          "updated": "2025-10-18T03:17:26Z",
+          "version": "12.103.012",
+          "updated": "2025-11-04T07:24:52Z",
           "releaseNotes": "We regularly update the game to enhance your experience! Don’t forget to update and enjoy the latest improvements. Stay connected with us on TikTok, YouTube, Facebook, and Instagram @magictiles3.",
           "app_id": "1443446174"
         },
@@ -467,9 +467,9 @@
           "app_id": "1351168404"
         },
         "Triumph: Play for Cash": {
-          "version": "2.81.0",
-          "updated": "2025-11-04T00:44:24Z",
-          "releaseNotes": "Why did the chicken cross the road? To beat its high score, obviously.",
+          "version": "2.82.0",
+          "updated": "2025-11-07T19:11:55Z",
+          "releaseNotes": "The chicken crossed the road. Again. Still not sure why.",
           "app_id": "1608987929"
         },
         "Last Z: Survival Shooter": {
@@ -491,8 +491,8 @@
           "app_id": "1482155847"
         },
         "Differences - Find & Spot It": {
-          "version": "2.4.2",
-          "updated": "2025-09-18T15:42:24Z",
+          "version": "2.7.0",
+          "updated": "2025-11-03T21:44:50Z",
           "releaseNotes": "Hey all players,\nThis update includes bug fixes and performance improvements.\nExplore the fun of spotting differences in tons of beautifully designed pictures!\nIf you have any questions or suggestions, feel free to contact us at af@gurugame.ai.\nThanks for choosing us!",
           "app_id": "6504279468"
         },
@@ -509,9 +509,9 @@
           "app_id": "6504332779"
         },
         "Gossip Harbor®: Merge & Story": {
-          "version": "3.76.0",
-          "updated": "2025-10-22T11:03:36Z",
-          "releaseNotes": "NEW EPISODE EVERY FRIDAY!\n- NEW EPISODE: With new chapter updates every Friday; follow Quinn as she exposes secrets and solves puzzles.\n- NEW EVENT:Visit the Dark Zone and unlock the Howling Factory! Join Sam, Colton and Harrison as they're transported to a strange nightmare world. Help them escape by collecting points and unlock exclusive decorations to complete the event.",
+          "version": "3.77.0",
+          "updated": "2025-11-04T13:33:13Z",
+          "releaseNotes": "NEW EPISODE EVERY FRIDAY!\n- NEW EPISODE: With new chapter updates every Friday; follow Quinn as she exposes secrets and solves puzzles.\n- NEW EVENT:Experience Turkey-tastic Times and unlock the Comforting Soup Collection! Join Olivia, Quinn, and Amala as they join the feathery festivities. Party on by collecting points and unlock exclusive decorations to complete the event.",
           "app_id": "1623318294"
         },
         "Call of Duty®: Mobile": {
@@ -551,8 +551,8 @@
           "app_id": "6504324020"
         },
         "Clash of Clans": {
-          "version": "17.477.13",
-          "updated": "2025-10-23T10:22:37Z",
+          "version": "17.477.15",
+          "updated": "2025-11-04T09:34:19Z",
           "releaseNotes": "Rank Up!\n·   Multiplayer split! Join Tournaments and climb new Leagues in Ranked Battles, or duke it out in regular Battles without the risk of losing Trophies.\n·   Revenge is back, and it’s sweet! Attack players that raided your Village to get your resources back!\n·   Shields have switched up! Introducing Magic Shields that protect resources and Legend Shields that skip upcoming League Days.\n·   Other Changes: We’re reworking Spring Traps and removing Town Hall Weapon Levels.",
           "app_id": "529479190"
         },
@@ -569,9 +569,9 @@
           "app_id": "1195621598"
         },
         "Wool Craze -Yarn Color Sort 3D": {
-          "version": "4.2",
-          "updated": "2025-10-30T15:35:55Z",
-          "releaseNotes": "Stability improvements and bug fixes.",
+          "version": "4.3",
+          "updated": "2025-11-07T01:13:33Z",
+          "releaseNotes": "Bugs fixed and performance improvements",
           "app_id": "6744317674"
         },
         "Evertale": {
@@ -599,9 +599,9 @@
           "app_id": "6471572249"
         },
         "Drop the Cat": {
-          "version": "1.10.9",
-          "updated": "2025-10-30T07:55:32Z",
-          "releaseNotes": "-Stage Added\n-Bug Fixed",
+          "version": "1.10.23",
+          "updated": "2025-11-07T16:30:06Z",
+          "releaseNotes": "-stage added\n-performance improved",
           "app_id": "6749132002"
         }
       }
@@ -617,9 +617,9 @@
           "app_id": "583798880"
         },
         "星城Online-普發一萬現領現玩": {
-          "version": "6.45",
-          "updated": "2025-10-30T03:12:35Z",
-          "releaseNotes": "新增經典區可遊玩【新悟空】【六角SLOT】【惡魔天使】\n【血咒德古拉】開放銀幣遊玩\n【天才釣手】開放銅幣遊玩\n【鯊很大2】新增「德古鯊」「崩鎚獸」「波蘿龜」\n【鯊很大4】新增BOSS「冰果鴨」\n優化調整【火爆辣椒】\n移除「賽事區」",
+          "version": "6.46",
+          "updated": "2025-11-06T02:04:56Z",
+          "releaseNotes": "優化調整【拳下星城】【天才釣手】【火爆辣椒】【血咒德古拉】\n移除幣別【小鬥幣】\n下架遊戲館【無上至尊 OVERLORD】",
           "app_id": "919043762"
         },
         "寒霜啟示錄": {
@@ -629,9 +629,9 @@
           "app_id": "6443575749"
         },
         "最後的戰爭 - Last War": {
-          "version": "1.0.317",
-          "updated": "2025-10-29T08:55:44Z",
-          "releaseNotes": "1. Gift level cap increased to Level 25, with new dynamic emotes and Avatar Frame rewards added.\n2. Optimized the interface display of Arena [Battle Record] to more clearly show defense and win/loss information.",
+          "version": "1.0.318",
+          "updated": "2025-11-05T10:20:42Z",
+          "releaseNotes": "Improvements:\n1. During the Meteorite Iron War, when gathering Meteorite Iron points, if allies arrive at the target location first, a secondary confirmation popup will appear.\n2. The Conductor can set whether VIP passengers can choose to receive rewards from specific carriages on the train.",
           "app_id": "6448786147"
         },
         "Kingshot": {
@@ -671,8 +671,8 @@
           "app_id": "406889139"
         },
         "糖果傳奇": {
-          "version": "1.314.1.1",
-          "updated": "2025-10-27T07:10:20Z",
+          "version": "1.315.0.1",
+          "updated": "2025-11-04T07:20:11Z",
           "releaseNotes": "We hope you’re having fun playing Candy Crush Saga! \n\nWe update the game every week with sweet new features, exciting levels, and important bug fixes to keep everything running smoothly. \n\nDon't forget to download the latest version for the best experience!\n\nNew to the game? Don’t be shy, join the fun!",
           "app_id": "553834731"
         },
@@ -683,9 +683,9 @@
           "app_id": "455902495"
         },
         "緋聞港口：合併&故事": {
-          "version": "3.76.0",
-          "updated": "2025-10-22T11:03:36Z",
-          "releaseNotes": "NEW EPISODE EVERY FRIDAY!\n- NEW EPISODE: With new chapter updates every Friday; follow Quinn as she exposes secrets and solves puzzles.\n- NEW EVENT:Visit the Dark Zone and unlock the Howling Factory! Join Sam, Colton and Harrison as they're transported to a strange nightmare world. Help them escape by collecting points and unlock exclusive decorations to complete the event.",
+          "version": "3.77.0",
+          "updated": "2025-11-04T13:33:13Z",
+          "releaseNotes": "NEW EPISODE EVERY FRIDAY!\n- NEW EPISODE: With new chapter updates every Friday; follow Quinn as she exposes secrets and solves puzzles.\n- NEW EVENT:Experience Turkey-tastic Times and unlock the Comforting Soup Collection! Join Olivia, Quinn, and Amala as they join the feathery festivities. Party on by collecting points and unlock exclusive decorations to complete the event.",
           "app_id": "1623318294"
         },
         "MLB：9局職棒25": {
@@ -695,8 +695,8 @@
           "app_id": "1059665257"
         },
         "王國之歌（Top Heroes）": {
-          "version": "1.79.12",
-          "updated": "2025-11-03T11:16:16Z",
+          "version": "1.79.18",
+          "updated": "2025-11-07T02:35:41Z",
           "releaseNotes": "The Ancient and Frostfield Battlefields usher in a brand-new “Turnaround Moment”! When the final battle drums sound, the tides of war shift—both factions will earn double points. Comeback or domination, everything will be decided in the final moments.",
           "app_id": "6450953550"
         },
@@ -785,8 +785,8 @@
           "app_id": "6479595079"
         },
         "漫遊小鎮®：合併&故事": {
-          "version": "1.83.0",
-          "updated": "2025-10-29T18:27:50Z",
+          "version": "1.83.5",
+          "updated": "2025-11-04T16:02:23Z",
           "releaseNotes": "NEW CONTENT EVERY WEEK \n- Locations! Unlock a new location and its secrets!\n- Events! Spice up your gaming experience with this weeks' event!\n\nWe've also fixed bugs and added cool new features!",
           "app_id": "6443755785"
         }
@@ -799,8 +799,8 @@
           "app_id": "6739554056"
         },
         "Block Blast!": {
-          "version": "6.4.7",
-          "updated": "2025-10-31T09:16:17Z",
+          "version": "6.4.9",
+          "updated": "2025-11-06T02:35:39Z",
           "releaseNotes": "We’re always improving Block Blast! Turn on auto-updates to get the latest features.\n\nSuggestions? Email us: blockblast-support@hungrystudio.com\nFollow us on TikTok for updates: @blockblastofficial",
           "app_id": "1617391485"
         },
@@ -811,9 +811,9 @@
           "app_id": "1556357398"
         },
         "Foodie Sizzle: 美食滋滋": {
-          "version": "1.43",
-          "updated": "2025-10-31T15:11:57Z",
-          "releaseNotes": "- Performance optimization  \n- Bug fixes",
+          "version": "1.45",
+          "updated": "2025-11-07T19:15:17Z",
+          "releaseNotes": "- Added new Foodie Streak event\n- Optimized performance\n- Fixed bugs",
           "app_id": "6746246179"
         },
         "卡厄思夢境": {
@@ -829,9 +829,9 @@
           "app_id": "6741408932"
         },
         "最後的戰爭 - Last War": {
-          "version": "1.0.317",
-          "updated": "2025-10-29T08:55:44Z",
-          "releaseNotes": "1. Gift level cap increased to Level 25, with new dynamic emotes and Avatar Frame rewards added.\n2. Optimized the interface display of Arena [Battle Record] to more clearly show defense and win/loss information.",
+          "version": "1.0.318",
+          "updated": "2025-11-05T10:20:42Z",
+          "releaseNotes": "Improvements:\n1. During the Meteorite Iron War, when gathering Meteorite Iron points, if allies arrive at the target location first, a secondary confirmation popup will appear.\n2. The Conductor can set whether VIP passengers can choose to receive rewards from specific carriages on the train.",
           "app_id": "6448786147"
         },
         "寒霜啟示錄": {
@@ -841,9 +841,9 @@
           "app_id": "6443575749"
         },
         "Grill Sort - 燒烤時光 物品分類遊戲": {
-          "version": "2.7",
-          "updated": "2025-11-01T01:01:55Z",
-          "releaseNotes": "‌New enhanced features added! Experience the upgraded peripherals now!",
+          "version": "2.9",
+          "updated": "2025-11-07T23:37:25Z",
+          "releaseNotes": "Expanded exploration zones! Discover serendipity in every corner!",
           "app_id": "6742812903"
         },
         "八零找茬": {
@@ -859,8 +859,8 @@
           "app_id": "6503272652"
         },
         "Roblox": {
-          "version": "2.697.925",
-          "updated": "2025-10-30T16:08:29Z",
+          "version": "2.698.937",
+          "updated": "2025-11-06T17:11:17Z",
           "releaseNotes": "To make Roblox work better for you, we deliver updates regularly. These updates include bug fixes and improvements for speed and reliability.",
           "app_id": "431946152"
         },
@@ -925,14 +925,14 @@
           "app_id": "6670789598"
         },
         "Travel Town - Merge Adventure": {
-          "version": "2.12.1291",
-          "updated": "2025-10-29T09:45:15Z",
+          "version": "2.12.1301",
+          "updated": "2025-11-04T08:14:27Z",
           "releaseNotes": "Welcome to the latest update of Travel Town!\nWe’ve been busy improving the game and addressing bugs for you. \nEnjoy!",
           "app_id": "1521236603"
         },
         "Bus Escape: Traffic Jam": {
-          "version": "1.9.43",
-          "updated": "2025-10-30T17:25:27Z",
+          "version": "1.9.44",
+          "updated": "2025-11-06T19:59:24Z",
           "releaseNotes": "-Update levels.",
           "app_id": "6689516366"
         },
@@ -961,15 +961,15 @@
           "app_id": "6744096826"
         },
         "不用網路的遊戲 - 無網路遊戲 - 離線 遊戲 - 無網遊戲": {
-          "version": "3.4.8",
-          "updated": "2025-10-16T07:47:35Z",
+          "version": "3.4.9",
+          "updated": "2025-11-04T22:08:36Z",
           "releaseNotes": "• Added support for playing vs 2/3 bots in Ludo\n• Bug fixes and improvements",
           "app_id": "6448104157"
         },
         "緋聞港口：合併&故事": {
-          "version": "3.76.0",
-          "updated": "2025-10-22T11:03:36Z",
-          "releaseNotes": "NEW EPISODE EVERY FRIDAY!\n- NEW EPISODE: With new chapter updates every Friday; follow Quinn as she exposes secrets and solves puzzles.\n- NEW EVENT:Visit the Dark Zone and unlock the Howling Factory! Join Sam, Colton and Harrison as they're transported to a strange nightmare world. Help them escape by collecting points and unlock exclusive decorations to complete the event.",
+          "version": "3.77.0",
+          "updated": "2025-11-04T13:33:13Z",
+          "releaseNotes": "NEW EPISODE EVERY FRIDAY!\n- NEW EPISODE: With new chapter updates every Friday; follow Quinn as she exposes secrets and solves puzzles.\n- NEW EVENT:Experience Turkey-tastic Times and unlock the Comforting Soup Collection! Join Olivia, Quinn, and Amala as they join the feathery festivities. Party on by collecting points and unlock exclusive decorations to complete the event.",
           "app_id": "1623318294"
         }
       }
