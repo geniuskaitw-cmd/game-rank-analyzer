@@ -3,21 +3,21 @@
     "ios": {
       "top_grossing": {
         "MONOPOLY GO!": {
-          "version": "1.57.2",
-          "updated": "2025-11-04T15:13:38Z",
-          "releaseNotes": "A new version has made its way to your Boards, Tycoons!\nThis time, Mr. M focused on squashing bugs and smoothing out your gameplay experience—all to get things ready for the next Sticker collection!\nSo update now and GO for the Stickers you need while you can to win A-list rewards!",
+          "version": "1.58.0",
+          "updated": "2025-11-14T17:13:24Z",
+          "releaseNotes": "Ready to roll, Tycoon?\nYour Sticker collection isn’t going to finish itself, time to make some moves! Mr Monopoly has been busy and has:\nCleared bugs off the board\nFine-tuned tournaments for smoother competition\nPolished gameplay for a better experience\nUpdate now and keep your progress on a roll!",
           "app_id": "1621328561"
         },
         "Last War:Survival": {
-          "version": "1.0.318",
-          "updated": "2025-11-05T10:20:42Z",
-          "releaseNotes": "Improvements:\n1. During the Meteorite Iron War, when gathering Meteorite Iron points, if allies arrive at the target location first, a secondary confirmation popup will appear.\n2. The Conductor can set whether VIP passengers can choose to receive rewards from specific carriages on the train.",
+          "version": "1.0.319",
+          "updated": "2025-11-12T09:02:12Z",
+          "releaseNotes": "1. Added sound effects for notifications in the Event Hub.\n2. Added the option to display Server Time in the Calendar interface of the Arms Race event.",
           "app_id": "6448786147"
         },
         "Royal Match": {
-          "version": "32131",
-          "updated": "2025-10-27T08:01:19Z",
-          "releaseNotes": "Are you ready for a spooky new update?\n\n• Get ready for amazing 100 NEW LEVELS! Hit the CLOCK TOWER and watch the GEARS burst onto the board!\n\n• Explore the NEW AREA! Stock up on scares and sweets in the HALLOWEEN SHOP!\n\nNew levels are coming in every two weeks! Be sure to update your game to get the latest content!",
+          "version": "32263",
+          "updated": "2025-11-10T08:00:49Z",
+          "releaseNotes": "Are you ready for a challenging new update?\n\n• Get ready for amazing 100 NEW LEVELS! Fun and exciting new challenges are waiting for you!\n\n• Celebrate the fun in the NEW EVENT! Merge objects and take the spotlight in the WONDER FESTIVAL!\n\n• Explore the NEW AREA! Test your wits and unlock fun in the PUZZLE ROOM!\n\nNew levels are coming in every two weeks! Be sure to update your game to get the latest content!",
           "app_id": "1482155847"
         },
         "Clash Royale": {
@@ -69,9 +69,9 @@
           "app_id": "529479190"
         },
         "Last Z: Survival Shooter": {
-          "version": "1.250.682",
-          "updated": "2025-10-23T07:21:09Z",
-          "releaseNotes": "bugs fixed.",
+          "version": "1.250.683",
+          "updated": "2025-11-10T11:11:35Z",
+          "releaseNotes": "fixed bugs.",
           "app_id": "6503272652"
         },
         "Pokémon TCG Pocket": {
@@ -81,14 +81,14 @@
           "app_id": "6479970832"
         },
         "Toon Blast": {
-          "version": "19991",
-          "updated": "2025-10-27T08:01:00Z",
-          "releaseNotes": "PLAY 50 NEW LEVELS!\nToon Blast introduces the Candy Crew episode with 50 new levels!\nBe sure to update to the current version of Toon Blast for the newest content.\nCome and join the fun!",
+          "version": "20189",
+          "updated": "2025-11-13T07:20:25Z",
+          "releaseNotes": "PLAY 50 NEW LEVELS!\nToon Blast introduces the Look Behind You! episode with 50 new levels!\nBe sure to update to the current version of Toon Blast for the newest content.\nCome and join the fun!",
           "app_id": "1176027022"
         },
         "Coin Master": {
-          "version": "3.5.2290",
-          "updated": "2025-10-27T07:55:07Z",
+          "version": "3.5.2311",
+          "updated": "2025-11-09T09:04:48Z",
           "releaseNotes": "Thanks for playing Coin Master!\n\nIn this version, we’ve implemented bug fixes & performance improvements.\n\nWe have also implemented our new reward calendar feature - collect your daily rewards! \n\nEnjoy a world of fun, thrills, and huge rewards right at your fingertips. \n\nInvite your friends to play Coin Master & get your FREE REWARDS! We also recommend joining our community on Facebook, Twitter, and Instagram for more fun & excitement.\n\nEnjoying Coin Master? Leave a review :)",
           "app_id": "406889139"
         },
@@ -111,15 +111,15 @@
           "app_id": "1300146617"
         },
         "Gardenscapes": {
-          "version": "9.1.0",
-          "updated": "2025-10-03T13:08:16Z",
-          "releaseNotes": "A fall Gardenscapes update!\nNEW EVENTS\nLegends of Transylvania: find the missing girls and complete a horror quest!\nScourge of the Seas: embark on a real pirate adventure for treasure!\n\nSTORYLINE\nFind out what Bill Young's parents were secretly working on at their oceanographic station!",
+          "version": "9.2.0",
+          "updated": "2025-11-13T15:52:31Z",
+          "releaseNotes": "An intriguing Gardenscapes update!\nNEW EVENTS\nA Puzzling Inheritance: Uncover the secret of the family heirlooms and find Mycroft's treasure!\nChristmas with the Parents: Help Katherine and Austin reach a mountain lodge in time for Christmas!\n\nSTORYLINE\nFind out if Austin and friends can solve the mystery of the truth serum!",
           "app_id": "1105855019"
         },
         "Homescapes": {
-          "version": "8.3.6",
-          "updated": "2025-10-23T09:04:00Z",
-          "releaseNotes": "Get ready for a thrilling Homescapes update!\n \nHALLOWEEN: A NIGHT IN THE WOODS\n• Help Robbie find his daughter Chloe in the nighttime forest!\n• Uncover the mystery of the sinister masked figure!\n• Finish the event to earn a unique decoration!\n \nTHE FRONTIER'S GOLD\n• Learn the story of Austin's great-grandmother, the fearless Marshal Goldy!\n• Foil the local bandits' plans and be the first to claim the legendary treasures!\n• Finish the event to earn a unique decoration!\n \nALSO\n• Spooky Pass and Home Pass! Activate the passes to get coins, boosters, and other valuable rewards!\n• The Other Half story continues! Who will Katherine choose?",
+          "version": "8.4.0.1",
+          "updated": "2025-11-14T16:06:10Z",
+          "releaseNotes": "A magical Homescapes update is here!\n\nSECRETS OF THE SCHOOL OF MAGIC\n• Go to the School of Magic with Austin and a young sorceress!\n• Save the magical world from sinister Dark Guardians!\n• Complete the event to get valuable rewards!\n\nA SHADOW OVER CHRISTMAS\n• Go on a Christmas adventure with Austin and his family!\n• Pass Krampus's trials to save the long-awaited holiday!\n• Complete the event to get valuable rewards!\n\nALSO\n• A new chapter: Broom Bakery! Will Stephanie Broom pull off opening the best café in town?",
           "app_id": "1195621598"
         },
         "Evony": {
@@ -135,9 +135,9 @@
           "app_id": "1330123889"
         },
         "Fishdom": {
-          "version": "9.3.2",
-          "updated": "2025-10-21T09:06:40Z",
-          "releaseNotes": "Check out the latest Fishdom update!\nPIRATE GOLD AND THE POWER OF THE ELEMENTS!\n- Get tons of rewards and the Traveler's Badge by collecting all the cards in the Journey Collection!\n- Embark on the Black Mark expedition and solve the mystery of Captain Black's cursed doubloon!\n- Take on the challenges in the Thunder Spear expedition and appease Tlaloc and his furious thunderstorms!\nALSO\nNew aquarium: Treasure Island\nNew fish: Frontosa Cichlid and Rainbow Darter\nEnjoy the game!",
+          "version": "9.3.5",
+          "updated": "2025-11-11T07:20:49Z",
+          "releaseNotes": "Check out the latest Fishdom update!\nWhat's new:\n- Bug fixes and improvements\nPlease update to the latest version.\nPIRATE GOLD AND THE POWER OF THE ELEMENTS!\n- Get tons of rewards and the Journey's Badge by completing the Journey Collection!\n- Embark on the Black Mark expedition and solve the mystery of Captain Black's cursed doubloon!\n- Brave the Thunder Spear expedition to appease Tlaloc and his furious thunderstorms!\nALSO\nA new aquarium\nNew fish\nEnjoy the game!",
           "app_id": "664575829"
         },
         "Travel Town - Merge Adventure": {
@@ -147,33 +147,33 @@
           "app_id": "1521236603"
         },
         "Disney Solitaire": {
-          "version": "1.7.1",
-          "updated": "2025-10-23T09:42:27Z",
+          "version": "1.8.0",
+          "updated": "2025-11-10T16:02:36Z",
           "releaseNotes": "Get ready for an amazing update!\n* Prepare for NEW levels!\n* Unlock NEW Disney characters!\n* Join the magic with NEW DISNEY FEATURES!\n* Enjoy performance improvements for a smoother gaming experience!\nPlay Disney Solitaire!",
           "app_id": "6475757306"
         },
         "Dark War:Survival": {
-          "version": "1.250.620",
-          "updated": "2025-10-30T09:02:15Z",
-          "releaseNotes": "[Optimization & Adjustments]\n- After canceling the Bio-Mutant's Engage Offline function, a pop-up notification will be added.\n- When tapping an alliance that has been disbanded in the Rankings, a pop-up notification will now indicate that the alliance has been disbanded.\n- Optimized some in-game visuals and details.",
+          "version": "1.250.621",
+          "updated": "2025-11-14T14:08:34Z",
+          "releaseNotes": "[New Features]\n\n[Apocalypse Guide]\n- Survivors with a Shelter Level of 10 or above can now access the [Apocalypse Guide] via the [Gathering Ground] building in your city.\n- The [Apocalypse Guide] contains information on upcoming major events, allowing you to plan and prepare in advance.",
           "app_id": "6670441558"
         },
         "Top Heroes: Kingdom Saga": {
-          "version": "1.79.18",
-          "updated": "2025-11-07T02:35:41Z",
-          "releaseNotes": "The Ancient and Frostfield Battlefields usher in a brand-new “Turnaround Moment”! When the final battle drums sound, the tides of war shift—both factions will earn double points. Comeback or domination, everything will be decided in the final moments.",
+          "version": "1.81.9",
+          "updated": "2025-11-14T02:01:26Z",
+          "releaseNotes": "The Twilight Raven Invasion event now opens at a higher difficulty! Stronger foes and deadlier challenges await the bravest lords. Only the true champions will stand firm against the rising darkness!",
           "app_id": "6450953550"
         },
         "Lightning Link Casino Slots": {
-          "version": "9.6.0",
-          "updated": "2025-10-29T13:37:29Z",
+          "version": "9.6.1",
+          "updated": "2025-11-10T12:03:32Z",
           "releaseNotes": "Thank you for playing Lightning Link Casino!\n\nNew amazing slots are on their way for you to enjoy! Stay tuned for more amazing events, seasons and coins to be won.\n\nWe hope you enjoy Lightning Link Casino!",
           "app_id": "1243005112"
         },
         "Color Block Jam": {
-          "version": "1.29.3",
-          "updated": "2025-11-01T16:58:58Z",
-          "releaseNotes": "New look, same fun! We’ve refreshed our game icon, so you’ll spot us more easily on your home screen. Get ready to take your skills to the next level with our LATEST NEW OBSTACLE! This update introduces the COLORFUL CRATE and FRESH NEW LEVELS! Colorful crates are cleared once all blocks of the same color are removed from the board. Watch carefully which colors you have, plan your moves wisely, and clear your path with perfect timing! Strategy, timing, and precision will decide your success. Don’t miss the new update!",
+          "version": "1.29.35",
+          "updated": "2025-11-14T10:15:57Z",
+          "releaseNotes": "We’ve completely redesigned our in-game visuals! Dive into a smoother, brighter, and more colorful experience — everything looks fresh, but the fun you love stays the same. Brighter visuals, smoother moves, endless fun — update now and experience it all!",
           "app_id": "6504332779"
         },
         "Call of Duty®: Mobile": {
@@ -183,26 +183,26 @@
           "app_id": "1287282214"
         },
         "Jackpot Party - Casino Slots": {
-          "version": "5064.00",
-          "updated": "2025-10-28T00:22:49Z",
+          "version": "5065.00",
+          "updated": "2025-11-13T23:23:29Z",
           "releaseNotes": "Hey, partiers! Get ready to take your slot-playing journey to the next level with our newest update! Download the latest version today and dive into a brand new Jackpot Party experience, including new collectable feature Party Cards, and see where you rank with Leaderboards!",
           "app_id": "575980917"
         },
         "Project Makeover": {
-          "version": "2.125.5",
-          "updated": "2025-11-03T11:20:37Z",
-          "releaseNotes": "It's our birthday, Directors! Come celebrate Project Makeover's 5th Anniversary with a brand new episode, a grand Season Pass, and a wonderful new event for all Directors to party together!\n\n-CELEBRATION: 5th Anniversary Fest！\n-TIMED BONUS CARDS: 5th Anniversary Cards!\n-SEASON PASS: Birthday Celebration!\n-OPTIMIZED EVENT: Cruising for First!\n-NEW MAKEOVER: Chill Hard!\n-60 new levels!",
+          "version": "2.126.1",
+          "updated": "2025-11-11T10:38:50Z",
+          "releaseNotes": "An aspiring opera singer needs the perfect practice room before their debut on stage! Wait... Do you see those mushrooms outside? If you follow them, they just might lead us to a witch in the woods! Embrace the magic during our new Timed Makeover Challenge!\n\n-TIMED MAKEOVER: Fungi Fresh!\n-NEW MAKEOVER: Practice Makes Perfect!\n-60 new levels!",
           "app_id": "1483058899"
         },
         "Age of Origins:Tower Defense": {
-          "version": "1.3.808",
-          "updated": "2025-11-06T08:54:51Z",
+          "version": "1.3.811",
+          "updated": "2025-11-14T02:44:06Z",
           "releaseNotes": "Optimized some of the game play.",
           "app_id": "1376515087"
         },
         "Candy Crush Soda Saga": {
-          "version": "1.305.2",
-          "updated": "2025-10-28T08:42:47Z",
+          "version": "1.306.3",
+          "updated": "2025-11-11T08:26:13Z",
           "releaseNotes": "Sodalicious! We update our game every week with exciting levels, improvements to the game, and fun new features. Download the latest version to check it out!\nJoining us after a break? Welcome back! New to the game? You’ll be a pro before you know it!\n\nWhat are you waiting for? Let’s play!",
           "app_id": "850417475"
         },
@@ -219,8 +219,8 @@
           "app_id": "6740043080"
         },
         "Tasty Travels: Merge Game": {
-          "version": "41.0",
-          "updated": "2025-10-27T02:52:53Z",
+          "version": "42.0",
+          "updated": "2025-11-09T23:12:49Z",
           "releaseNotes": "- Minor bug fixes and improvements",
           "app_id": "6471045672"
         },
@@ -237,14 +237,14 @@
           "app_id": "6443467666"
         },
         "Magic Sort!": {
-          "version": "16.28",
-          "updated": "2025-10-26T18:10:45Z",
+          "version": "17.25",
+          "updated": "2025-11-14T08:40:33Z",
           "releaseNotes": "Are you ready for a magical new update?\n\n-New 100 levels!\n-Bug Fixes & Improvements\n\nEnjoy!",
           "app_id": "6499209744"
         },
         "Bingo Blitz™ - BINGO Games": {
-          "version": "5.83.0",
-          "updated": "2025-11-06T08:50:47Z",
+          "version": "5.83.3",
+          "updated": "2025-11-12T08:14:38Z",
           "releaseNotes": "Thank you for being part of the Bingo Blitz community! Discover new bingo rooms, in-game events, celebrations and above all: The BEST Bingo experience! Let's BinGo!",
           "app_id": "529996768"
         },
@@ -255,8 +255,8 @@
           "app_id": "485126024"
         },
         "Seaside Escape®: Merge & Story": {
-          "version": "1.83.5",
-          "updated": "2025-11-04T16:02:23Z",
+          "version": "1.84.0",
+          "updated": "2025-11-11T19:19:04Z",
           "releaseNotes": "NEW CONTENT EVERY WEEK \n- Locations! Unlock a new location and its secrets!\n- Events! Spice up your gaming experience with this weeks' event!\n\nWe've also fixed bugs and added cool new features!",
           "app_id": "6443755785"
         },
@@ -267,20 +267,20 @@
           "app_id": "890378044"
         },
         "Quick Hit Slots - Vegas Casino": {
-          "version": "3.64.02",
-          "updated": "2025-10-24T14:08:38Z",
-          "releaseNotes": "SUMMER IS STILL PUMPING over at Quick Hit Slots!\n• Our NEW COLLECTIONS season pits GOOD against EVIL!\n• Quick Hit’s BIRTHDAY PARTY is just around the corner!\n• Choose any WildBall in the Showroom with our MAGICAL WILD WILDBALL!\n• We are ready to have a big celebration this LABOR DAY - so join us!\n• SCRATCH CARDS are coming, are you ready to WIN BIG?\n \nDOWNLOAD & UPDATE NOW!",
+          "version": "3.65.00",
+          "updated": "2025-11-14T18:28:23Z",
+          "releaseNotes": "It’s time to get ready for the Holiday Season with Quick Hit Slots!\n \n- Join the Greenwoods with our NEWEST COLLECTIONS SEASON – Family Trip!\n- Make the most of your QUICK HIT REWARDS’ POINTS before they reset!\n- SCRATCH CARDS are coming to Quick Hit Slots!\n- SWEEPS ROYALE is here to bring you SPECIAL REWARDS!\n- Plus - AMAZING PROMOTIONS for Thanksgiving & Christmas!\n\nDOWNLOAD & UPDATE NOW!",
           "app_id": "945621521"
         },
         "NYT Games: Wordle & Crossword": {
-          "version": "6.1.1",
-          "updated": "2025-11-07T13:10:24Z",
-          "releaseNotes": "This version contains Dark Mode for the entire Games app, letting you play comfortably in any setting.\n\nHave feedback? Email us. nytgames@nytimes.com",
+          "version": "6.2.0",
+          "updated": "2025-11-12T14:58:26Z",
+          "releaseNotes": "This version contains Create Your Wordle Puzzle. Choose a 4–7 letter word, add a clue and share with anyone.\n\nHave feedback? Email us.",
           "app_id": "307569751"
         },
         "Merge Cooking®": {
-          "version": "1.15.0",
-          "updated": "2025-10-30T02:30:28Z",
+          "version": "1.16.1",
+          "updated": "2025-11-10T03:54:21Z",
           "releaseNotes": "Welcome back, Chef!\nA new version of Merge Cooking is available!\nTo provide a better experience, we're working hard to optimize the game performance as well as bring you exciting content.\nWe hope you can enjoy the time playing!\nNew to the game? Don't worry. We've prepared step-by-step instructions to guide you through. Join us and have some fun.",
           "app_id": "1643509748"
         },
@@ -291,9 +291,9 @@
           "app_id": "538212549"
         },
         "Fortnite": {
-          "version": "38.00",
-          "updated": "2025-11-01T16:10:35Z",
-          "releaseNotes": "Mobile Optimization\nWe’re continuing our efforts to make it faster and easier to jump into Fortnite!\nWith v38.00, Blitz Royale is now the only experience included in new installs, letting you get into the action quicker and play your way. You can also play and update creator-made islands without waiting for other experiences to download or update. That way, you can choose when to download experiences like Battle Royale, Creative, Reload, OG, LEGO Fortnite, Rocket Racing or Fortnite Festival - keeping the initial install smaller.\n\nFortnite | Simpsons\nSpringfield is the Island in the new Battle Royale Season! Unlock Homer, Marge, and more in the Battle Pass.\n\nGet a Trusty Sidekick\nUnlock the first Sidekick in Fortnite, Peels, in the Battle Pass. Sidekicks tag along with you!",
+          "version": "38.10",
+          "updated": "2025-11-11T09:10:19Z",
+          "releaseNotes": "Simpsons Sugar High in BR & Delulu\nGiant food is falling from the sky in Battle Royale and Zero Build as Scratchy and Moe have appeared as new bosses on the map! New Simpsons weapons have also arrived in Delulu. ¡Ay Caramba!\n\nGet Over Here!\nScorpion and Sub-Zero’s Kombat Kits can now be found in Blitz Royale. Strike fast with Scorpion’s relentless combo attacks, then FINISH THEM with Sub-Zero’s frosty fists.",
           "app_id": "6483539426"
         },
         "Hay Day": {
@@ -323,38 +323,38 @@
           "app_id": "6744812012"
         },
         "Block Blast！": {
-          "version": "6.4.9",
-          "updated": "2025-11-06T02:35:39Z",
+          "version": "6.5.2",
+          "updated": "2025-11-14T08:49:52Z",
           "releaseNotes": "We’re always improving Block Blast! Turn on auto-updates to get the latest features.\n\nSuggestions? Email us: blockblast-support@hungrystudio.com\nFollow us on TikTok for updates: @blockblastofficial",
           "app_id": "1617391485"
         },
         "Fortnite": {
-          "version": "38.00",
-          "updated": "2025-11-01T16:10:35Z",
-          "releaseNotes": "Mobile Optimization\nWe’re continuing our efforts to make it faster and easier to jump into Fortnite!\nWith v38.00, Blitz Royale is now the only experience included in new installs, letting you get into the action quicker and play your way. You can also play and update creator-made islands without waiting for other experiences to download or update. That way, you can choose when to download experiences like Battle Royale, Creative, Reload, OG, LEGO Fortnite, Rocket Racing or Fortnite Festival - keeping the initial install smaller.\n\nFortnite | Simpsons\nSpringfield is the Island in the new Battle Royale Season! Unlock Homer, Marge, and more in the Battle Pass.\n\nGet a Trusty Sidekick\nUnlock the first Sidekick in Fortnite, Peels, in the Battle Pass. Sidekicks tag along with you!",
+          "version": "38.10",
+          "updated": "2025-11-11T09:10:19Z",
+          "releaseNotes": "Simpsons Sugar High in BR & Delulu\nGiant food is falling from the sky in Battle Royale and Zero Build as Scratchy and Moe have appeared as new bosses on the map! New Simpsons weapons have also arrived in Delulu. ¡Ay Caramba!\n\nGet Over Here!\nScorpion and Sub-Zero’s Kombat Kits can now be found in Blitz Royale. Strike fast with Scorpion’s relentless combo attacks, then FINISH THEM with Sub-Zero’s frosty fists.",
           "app_id": "6483539426"
         },
         "Magic Sort!": {
-          "version": "16.28",
-          "updated": "2025-10-26T18:10:45Z",
+          "version": "17.25",
+          "updated": "2025-11-14T08:40:33Z",
           "releaseNotes": "Are you ready for a magical new update?\n\n-New 100 levels!\n-Bug Fixes & Improvements\n\nEnjoy!",
           "app_id": "6499209744"
         },
         "Roblox": {
-          "version": "2.698.937",
-          "updated": "2025-11-06T17:11:17Z",
+          "version": "2.699.877",
+          "updated": "2025-11-13T18:12:11Z",
           "releaseNotes": "To make Roblox work better for you, we deliver updates regularly. These updates include bug fixes and improvements for speed and reliability.",
           "app_id": "431946152"
         },
         "Solitaire Associations: Words": {
-          "version": "0.1.71",
-          "updated": "2025-11-07T19:12:26Z",
+          "version": "0.1.72",
+          "updated": "2025-11-12T19:35:28Z",
           "releaseNotes": "We are ready to make your game experience even greater. \nBugs are fixed and game performance is optimized. \nEnjoy.",
           "app_id": "6748950306"
         },
         "Word Search Explorer®": {
-          "version": "1.122",
-          "updated": "2025-09-23T12:49:59Z",
+          "version": "1.124",
+          "updated": "2025-11-11T14:22:36Z",
           "releaseNotes": "Bug fixes and performance boosts! Enjoy smoother gameplay and faster load times—dive right in!",
           "app_id": "1602508478"
         },
@@ -365,8 +365,8 @@
           "app_id": "638689075"
         },
         "Disney Solitaire": {
-          "version": "1.7.1",
-          "updated": "2025-10-23T09:42:27Z",
+          "version": "1.8.0",
+          "updated": "2025-11-10T16:02:36Z",
           "releaseNotes": "Get ready for an amazing update!\n* Prepare for NEW levels!\n* Unlock NEW Disney characters!\n* Join the magic with NEW DISNEY FEATURES!\n* Enjoy performance improvements for a smoother gaming experience!\nPlay Disney Solitaire!",
           "app_id": "6475757306"
         },
@@ -377,8 +377,8 @@
           "app_id": "6443575749"
         },
         "Vita Mahjong": {
-          "version": "2.64.1",
-          "updated": "2025-11-03T11:26:23Z",
+          "version": "2.65.1",
+          "updated": "2025-11-12T01:43:13Z",
           "releaseNotes": "-Bug fixes and performance improvements.",
           "app_id": "6468921495"
         },
@@ -389,21 +389,21 @@
           "app_id": "6739554056"
         },
         "Pixel Flow!": {
-          "version": "0.8.0",
-          "updated": "2025-11-08T19:37:19Z",
-          "releaseNotes": "New levels are here! This version is full of fresh surprises, new features, performance boosts, and gameplay refinements await you. We’ve also fixed bugs and smoothed out rough edges to ensure a seamless experience from start to finish. Enjoy the new and improved adventure!",
+          "version": "0.8.2",
+          "updated": "2025-11-11T20:55:41Z",
+          "releaseNotes": "We’ve been busy behind the scenes, and now it’s your turn to enjoy the results! This update brings fresh levels, new content, and lots of quality-of-life improvements. Bugs have been eliminated, gameplay is smoother, and everything feels sharper than ever. Update now and see the difference!",
           "app_id": "6751056652"
         },
         "Last War:Survival": {
-          "version": "1.0.318",
-          "updated": "2025-11-05T10:20:42Z",
-          "releaseNotes": "Improvements:\n1. During the Meteorite Iron War, when gathering Meteorite Iron points, if allies arrive at the target location first, a secondary confirmation popup will appear.\n2. The Conductor can set whether VIP passengers can choose to receive rewards from specific carriages on the train.",
+          "version": "1.0.319",
+          "updated": "2025-11-12T09:02:12Z",
+          "releaseNotes": "1. Added sound effects for notifications in the Event Hub.\n2. Added the option to display Server Time in the Calendar interface of the Arms Race event.",
           "app_id": "6448786147"
         },
         "MONOPOLY GO!": {
-          "version": "1.57.2",
-          "updated": "2025-11-04T15:13:38Z",
-          "releaseNotes": "A new version has made its way to your Boards, Tycoons!\nThis time, Mr. M focused on squashing bugs and smoothing out your gameplay experience—all to get things ready for the next Sticker collection!\nSo update now and GO for the Stickers you need while you can to win A-list rewards!",
+          "version": "1.58.0",
+          "updated": "2025-11-14T17:13:24Z",
+          "releaseNotes": "Ready to roll, Tycoon?\nYour Sticker collection isn’t going to finish itself, time to make some moves! Mr Monopoly has been busy and has:\nCleared bugs off the board\nFine-tuned tournaments for smoother competition\nPolished gameplay for a better experience\nUpdate now and keep your progress on a roll!",
           "app_id": "1621328561"
         },
         "Imposter - Party Word Game": {
@@ -431,9 +431,9 @@
           "app_id": "6479970832"
         },
         "Goods Puzzle: Sort Challenge": {
-          "version": "4.32",
-          "updated": "2025-10-31T08:17:41Z",
-          "releaseNotes": "- New collections: Winter",
+          "version": "4.42",
+          "updated": "2025-11-14T04:04:18Z",
+          "releaseNotes": "- Fix some bugs",
           "app_id": "6482849843"
         },
         "Royal Kingdom": {
@@ -449,8 +449,8 @@
           "app_id": "6446354191"
         },
         "Tasty Travels: Merge Game": {
-          "version": "41.0",
-          "updated": "2025-10-27T02:52:53Z",
+          "version": "42.0",
+          "updated": "2025-11-09T23:12:49Z",
           "releaseNotes": "- Minor bug fixes and improvements",
           "app_id": "6471045672"
         },
@@ -467,32 +467,32 @@
           "app_id": "1351168404"
         },
         "Triumph: Play for Cash": {
-          "version": "2.82.0",
-          "updated": "2025-11-07T19:11:55Z",
-          "releaseNotes": "The chicken crossed the road. Again. Still not sure why.",
+          "version": "2.83.0",
+          "updated": "2025-11-14T00:47:56Z",
+          "releaseNotes": "We moved a button. Please don't freak out.",
           "app_id": "1608987929"
         },
         "Last Z: Survival Shooter": {
-          "version": "1.250.682",
-          "updated": "2025-10-23T07:21:09Z",
-          "releaseNotes": "bugs fixed.",
+          "version": "1.250.683",
+          "updated": "2025-11-10T11:11:35Z",
+          "releaseNotes": "fixed bugs.",
           "app_id": "6503272652"
         },
         "Hole.io": {
-          "version": "2.34.7",
-          "updated": "2025-10-29T10:47:32Z",
+          "version": "2.34.9",
+          "updated": "2025-11-10T10:22:28Z",
           "releaseNotes": "- Hole Escape is here! Jump into our new limited-time event! Win stages, escape being devoured by the hole and earn big rewards! Who will be the last survivor?\n- Bug Fixes",
           "app_id": "1389111413"
         },
         "Royal Match": {
-          "version": "32131",
-          "updated": "2025-10-27T08:01:19Z",
-          "releaseNotes": "Are you ready for a spooky new update?\n\n• Get ready for amazing 100 NEW LEVELS! Hit the CLOCK TOWER and watch the GEARS burst onto the board!\n\n• Explore the NEW AREA! Stock up on scares and sweets in the HALLOWEEN SHOP!\n\nNew levels are coming in every two weeks! Be sure to update your game to get the latest content!",
+          "version": "32263",
+          "updated": "2025-11-10T08:00:49Z",
+          "releaseNotes": "Are you ready for a challenging new update?\n\n• Get ready for amazing 100 NEW LEVELS! Fun and exciting new challenges are waiting for you!\n\n• Celebrate the fun in the NEW EVENT! Merge objects and take the spotlight in the WONDER FESTIVAL!\n\n• Explore the NEW AREA! Test your wits and unlock fun in the PUZZLE ROOM!\n\nNew levels are coming in every two weeks! Be sure to update your game to get the latest content!",
           "app_id": "1482155847"
         },
         "Differences - Find & Spot It": {
-          "version": "2.7.0",
-          "updated": "2025-11-03T21:44:50Z",
+          "version": "2.9.0",
+          "updated": "2025-11-13T20:37:02Z",
           "releaseNotes": "Hey all players,\nThis update includes bug fixes and performance improvements.\nExplore the fun of spotting differences in tons of beautifully designed pictures!\nIf you have any questions or suggestions, feel free to contact us at af@gurugame.ai.\nThanks for choosing us!",
           "app_id": "6504279468"
         },
@@ -503,9 +503,9 @@
           "app_id": "880047117"
         },
         "Color Block Jam": {
-          "version": "1.29.3",
-          "updated": "2025-11-01T16:58:58Z",
-          "releaseNotes": "New look, same fun! We’ve refreshed our game icon, so you’ll spot us more easily on your home screen. Get ready to take your skills to the next level with our LATEST NEW OBSTACLE! This update introduces the COLORFUL CRATE and FRESH NEW LEVELS! Colorful crates are cleared once all blocks of the same color are removed from the board. Watch carefully which colors you have, plan your moves wisely, and clear your path with perfect timing! Strategy, timing, and precision will decide your success. Don’t miss the new update!",
+          "version": "1.29.35",
+          "updated": "2025-11-14T10:15:57Z",
+          "releaseNotes": "We’ve completely redesigned our in-game visuals! Dive into a smoother, brighter, and more colorful experience — everything looks fresh, but the fun you love stays the same. Brighter visuals, smoother moves, endless fun — update now and experience it all!",
           "app_id": "6504332779"
         },
         "Gossip Harbor®: Merge & Story": {
@@ -521,9 +521,9 @@
           "app_id": "1287282214"
         },
         "Wool Crush -Escape Traffic Jam": {
-          "version": "2.5",
-          "updated": "2025-11-02T15:35:29Z",
-          "releaseNotes": "Optimized and adjusted current levels for smoother experience.",
+          "version": "2.6",
+          "updated": "2025-11-11T02:08:46Z",
+          "releaseNotes": "Stability improvements and bug fixes.",
           "app_id": "6743385713"
         },
         "Epic Plane Evolution": {
@@ -539,8 +539,8 @@
           "app_id": "6747734279"
         },
         "MONOPOLY: Bingo!": {
-          "version": "1.9.2",
-          "updated": "2025-11-03T13:31:31Z",
+          "version": "1.9.4",
+          "updated": "2025-11-13T14:45:36Z",
           "releaseNotes": "Version 1.9 introduces Special Card Packs—including Gold Packs with guaranteed Gold Cards and Master Packs with guaranteed new cards to boost your collection. Enjoy new seasonal board events like Monster Midway and themed rooms including Pie Party, Turkey Time, and Tangled Up. Plus, updated missions, tournaments, and rewards make completing the upcoming card series, Home for the Holidays, faster than ever!",
           "app_id": "6479528256"
         },
@@ -563,15 +563,15 @@
           "app_id": "1632573314"
         },
         "Homescapes": {
-          "version": "8.3.6",
-          "updated": "2025-10-23T09:04:00Z",
-          "releaseNotes": "Get ready for a thrilling Homescapes update!\n \nHALLOWEEN: A NIGHT IN THE WOODS\n• Help Robbie find his daughter Chloe in the nighttime forest!\n• Uncover the mystery of the sinister masked figure!\n• Finish the event to earn a unique decoration!\n \nTHE FRONTIER'S GOLD\n• Learn the story of Austin's great-grandmother, the fearless Marshal Goldy!\n• Foil the local bandits' plans and be the first to claim the legendary treasures!\n• Finish the event to earn a unique decoration!\n \nALSO\n• Spooky Pass and Home Pass! Activate the passes to get coins, boosters, and other valuable rewards!\n• The Other Half story continues! Who will Katherine choose?",
+          "version": "8.4.0.1",
+          "updated": "2025-11-14T16:06:10Z",
+          "releaseNotes": "A magical Homescapes update is here!\n\nSECRETS OF THE SCHOOL OF MAGIC\n• Go to the School of Magic with Austin and a young sorceress!\n• Save the magical world from sinister Dark Guardians!\n• Complete the event to get valuable rewards!\n\nA SHADOW OVER CHRISTMAS\n• Go on a Christmas adventure with Austin and his family!\n• Pass Krampus's trials to save the long-awaited holiday!\n• Complete the event to get valuable rewards!\n\nALSO\n• A new chapter: Broom Bakery! Will Stephanie Broom pull off opening the best café in town?",
           "app_id": "1195621598"
         },
         "Wool Craze -Yarn Color Sort 3D": {
-          "version": "4.3",
-          "updated": "2025-11-07T01:13:33Z",
-          "releaseNotes": "Bugs fixed and performance improvements",
+          "version": "4.5",
+          "updated": "2025-11-15T12:39:46Z",
+          "releaseNotes": "‌New enhanced features added! Experience the upgraded peripherals now!",
           "app_id": "6744317674"
         },
         "Evertale": {
@@ -599,8 +599,8 @@
           "app_id": "6471572249"
         },
         "Drop the Cat": {
-          "version": "1.10.23",
-          "updated": "2025-11-07T16:30:06Z",
+          "version": "1.10.29",
+          "updated": "2025-11-15T10:43:02Z",
           "releaseNotes": "-stage added\n-performance improved",
           "app_id": "6749132002"
         }
@@ -611,15 +611,15 @@
     "ios": {
       "top_grossing": {
         "神魔之塔": {
-          "version": "2025.600",
-          "updated": "2025-11-03T03:04:21Z",
-          "releaseNotes": "- New Black-gold Character “Pristine Heartscape - Mandala”!\n- New Exclusive Character “Entombment of Iniquity - Dante”!\n- New Side Story of “Pristine Heartscape - Mandala”!",
+          "version": "2025.601",
+          "updated": "2025-11-10T03:37:17Z",
+          "releaseNotes": "Some bugs fixed",
           "app_id": "583798880"
         },
         "星城Online-普發一萬現領現玩": {
-          "version": "6.46",
-          "updated": "2025-11-06T02:04:56Z",
-          "releaseNotes": "優化調整【拳下星城】【天才釣手】【火爆辣椒】【血咒德古拉】\n移除幣別【小鬥幣】\n下架遊戲館【無上至尊 OVERLORD】",
+          "version": "6.47",
+          "updated": "2025-11-14T01:36:55Z",
+          "releaseNotes": "【鈔鑽錢】閃閃鑽爆！JP開酒翻倍賞~\n【星城刮好運】新增胖普金派對刮刮卡最高200萬\n優化調整【任務通行證】",
           "app_id": "919043762"
         },
         "寒霜啟示錄": {
@@ -629,9 +629,9 @@
           "app_id": "6443575749"
         },
         "最後的戰爭 - Last War": {
-          "version": "1.0.318",
-          "updated": "2025-11-05T10:20:42Z",
-          "releaseNotes": "Improvements:\n1. During the Meteorite Iron War, when gathering Meteorite Iron points, if allies arrive at the target location first, a secondary confirmation popup will appear.\n2. The Conductor can set whether VIP passengers can choose to receive rewards from specific carriages on the train.",
+          "version": "1.0.319",
+          "updated": "2025-11-12T09:02:12Z",
+          "releaseNotes": "1. Added sound effects for notifications in the Event Hub.\n2. Added the option to display Server Time in the Calendar interface of the Arms Race event.",
           "app_id": "6448786147"
         },
         "Kingshot": {
@@ -653,20 +653,20 @@
           "app_id": "6479970832"
         },
         "Last Z:Survival Shooter（倖存者逃亡）": {
-          "version": "1.250.682",
-          "updated": "2025-10-23T07:21:09Z",
-          "releaseNotes": "bugs fixed.",
+          "version": "1.250.683",
+          "updated": "2025-11-10T11:11:35Z",
+          "releaseNotes": "fixed bugs.",
           "app_id": "6503272652"
         },
         "Dark War:Survival": {
-          "version": "1.250.620",
-          "updated": "2025-10-30T09:02:15Z",
-          "releaseNotes": "[Optimization & Adjustments]\n- After canceling the Bio-Mutant's Engage Offline function, a pop-up notification will be added.\n- When tapping an alliance that has been disbanded in the Rankings, a pop-up notification will now indicate that the alliance has been disbanded.\n- Optimized some in-game visuals and details.",
+          "version": "1.250.621",
+          "updated": "2025-11-14T14:08:34Z",
+          "releaseNotes": "[New Features]\n\n[Apocalypse Guide]\n- Survivors with a Shelter Level of 10 or above can now access the [Apocalypse Guide] via the [Gathering Ground] building in your city.\n- The [Apocalypse Guide] contains information on upcoming major events, allowing you to plan and prepare in advance.",
           "app_id": "6670441558"
         },
         "Coin Master": {
-          "version": "3.5.2290",
-          "updated": "2025-10-27T07:55:07Z",
+          "version": "3.5.2311",
+          "updated": "2025-11-09T09:04:48Z",
           "releaseNotes": "Thanks for playing Coin Master!\n\nIn this version, we’ve implemented bug fixes & performance improvements.\n\nWe have also implemented our new reward calendar feature - collect your daily rewards! \n\nEnjoy a world of fun, thrills, and huge rewards right at your fingertips. \n\nInvite your friends to play Coin Master & get your FREE REWARDS! We also recommend joining our community on Facebook, Twitter, and Instagram for more fun & excitement.\n\nEnjoying Coin Master? Leave a review :)",
           "app_id": "406889139"
         },
@@ -677,8 +677,8 @@
           "app_id": "553834731"
         },
         "麻將 神來也麻將－台灣16張、麻雀": {
-          "version": "19.0",
-          "updated": "2025-11-03T06:57:31Z",
+          "version": "19.0.3",
+          "updated": "2025-11-14T03:17:51Z",
           "releaseNotes": "Improved gameplay.\n\nNote:\nIf you have trouble logging in or forgot your password, please click on \"Can't sign in\" on the login screen to send a report. We will immediately take care of the issue.\n\nGamesofa are constantly striving to improve the quality of our games. If you have any suggestions, please let us know using the customer feedback function so we can solve the problem. Thank you!",
           "app_id": "455902495"
         },
@@ -695,9 +695,9 @@
           "app_id": "1059665257"
         },
         "王國之歌（Top Heroes）": {
-          "version": "1.79.18",
-          "updated": "2025-11-07T02:35:41Z",
-          "releaseNotes": "The Ancient and Frostfield Battlefields usher in a brand-new “Turnaround Moment”! When the final battle drums sound, the tides of war shift—both factions will earn double points. Comeback or domination, everything will be decided in the final moments.",
+          "version": "1.81.9",
+          "updated": "2025-11-14T02:01:26Z",
+          "releaseNotes": "The Twilight Raven Invasion event now opens at a higher difficulty! Stronger foes and deadlier challenges await the bravest lords. Only the true champions will stand firm against the rising darkness!",
           "app_id": "6450953550"
         },
         "SD鋼彈 G世代 永恆": {
@@ -707,9 +707,9 @@
           "app_id": "6692615881"
         },
         "滿貫大亨 - 快打旋風登場": {
-          "version": "1.1.234",
-          "updated": "2025-10-29T01:01:18Z",
-          "releaseNotes": "《仙境傳說》傳說再起，乘倍一路狂飆！",
+          "version": "1.1.236",
+          "updated": "2025-11-10T04:17:15Z",
+          "releaseNotes": "《宿命對決》快打旋風再次狂熱來襲！百裂連擊精神碎！\n《大工の源さん超韋駄天》經典 IP 降臨柏青哥，BONUS 連莊無上限！",
           "app_id": "1007924271"
         },
         "Pokémon GO": {
@@ -725,20 +725,20 @@
           "app_id": "1290086677"
         },
         "卡厄思夢境": {
-          "version": "1.0.203",
-          "updated": "2025-10-21T07:00:00Z",
+          "version": "1.0.209",
+          "updated": "2025-11-12T01:01:19Z",
           "releaseNotes": "Bug fixes and improvements",
           "app_id": "6502326151"
         },
         "夢幻花園 (Gardenscapes)": {
-          "version": "9.1.0",
-          "updated": "2025-10-03T13:08:16Z",
-          "releaseNotes": "A fall Gardenscapes update!\nNEW EVENTS\nLegends of Transylvania: find the missing girls and complete a horror quest!\nScourge of the Seas: embark on a real pirate adventure for treasure!\n\nSTORYLINE\nFind out what Bill Young's parents were secretly working on at their oceanographic station!",
+          "version": "9.2.0",
+          "updated": "2025-11-13T15:52:31Z",
+          "releaseNotes": "An intriguing Gardenscapes update!\nNEW EVENTS\nA Puzzling Inheritance: Uncover the secret of the family heirlooms and find Mycroft's treasure!\nChristmas with the Parents: Help Katherine and Austin reach a mountain lodge in time for Christmas!\n\nSTORYLINE\nFind out if Austin and friends can solve the mystery of the truth serum!",
           "app_id": "1105855019"
         },
         "Pikmin Bloom": {
-          "version": "131.2",
-          "updated": "2025-11-01T04:59:03Z",
+          "version": "132.1",
+          "updated": "2025-11-14T05:16:29Z",
           "releaseNotes": "Thanks for playing Pikmin Bloom! New in this version:\n\n- Minor improvements and bug fixes.\n\n*Please download the latest version of the app from the store for the changes above to be reflected.",
           "app_id": "1556357398"
         },
@@ -761,15 +761,15 @@
           "app_id": "971601423"
         },
         "《荒野亂鬥》": {
-          "version": "64.226",
-          "updated": "2025-10-28T08:56:33Z",
+          "version": "64.264",
+          "updated": "2025-11-12T08:56:04Z",
           "releaseNotes": "UPDATE 64: STRANGER THINGS\nNovember 2025 - December 2025\n∙ Head into the Upside Showdown, a new rogue-lite PVP mode! Get unique powers every game, making each run different!\n∙ Stranger Things skins, like Eleven Lumi & Scoops Ahoy Berry!\n∙ New Brawler: Gigi (Mythic Assassin)\n∙ Brawlidays get MECHA!\n∙ Brawl Pass Season 44: Stranger Things (November)\n∙ Brawl Pass Season 45: Mechmas (December)",
           "app_id": "1229016807"
         },
         "Royal Match": {
-          "version": "32131",
-          "updated": "2025-10-27T08:01:19Z",
-          "releaseNotes": "Are you ready for a spooky new update?\n\n• Get ready for amazing 100 NEW LEVELS! Hit the CLOCK TOWER and watch the GEARS burst onto the board!\n\n• Explore the NEW AREA! Stock up on scares and sweets in the HALLOWEEN SHOP!\n\nNew levels are coming in every two weeks! Be sure to update your game to get the latest content!",
+          "version": "32263",
+          "updated": "2025-11-10T08:00:49Z",
+          "releaseNotes": "Are you ready for a challenging new update?\n\n• Get ready for amazing 100 NEW LEVELS! Fun and exciting new challenges are waiting for you!\n\n• Celebrate the fun in the NEW EVENT! Merge objects and take the spotlight in the WONDER FESTIVAL!\n\n• Explore the NEW AREA! Test your wits and unlock fun in the PUZZLE ROOM!\n\nNew levels are coming in every two weeks! Be sure to update your game to get the latest content!",
           "app_id": "1482155847"
         },
         "小兵特攻隊": {
@@ -785,8 +785,8 @@
           "app_id": "6479595079"
         },
         "漫遊小鎮®：合併&故事": {
-          "version": "1.83.5",
-          "updated": "2025-11-04T16:02:23Z",
+          "version": "1.84.0",
+          "updated": "2025-11-11T19:19:04Z",
           "releaseNotes": "NEW CONTENT EVERY WEEK \n- Locations! Unlock a new location and its secrets!\n- Events! Spice up your gaming experience with this weeks' event!\n\nWe've also fixed bugs and added cool new features!",
           "app_id": "6443755785"
         }
@@ -799,26 +799,26 @@
           "app_id": "6739554056"
         },
         "Block Blast!": {
-          "version": "6.4.9",
-          "updated": "2025-11-06T02:35:39Z",
+          "version": "6.5.2",
+          "updated": "2025-11-14T08:49:52Z",
           "releaseNotes": "We’re always improving Block Blast! Turn on auto-updates to get the latest features.\n\nSuggestions? Email us: blockblast-support@hungrystudio.com\nFollow us on TikTok for updates: @blockblastofficial",
           "app_id": "1617391485"
         },
         "Pikmin Bloom": {
-          "version": "131.2",
-          "updated": "2025-11-01T04:59:03Z",
+          "version": "132.1",
+          "updated": "2025-11-14T05:16:29Z",
           "releaseNotes": "Thanks for playing Pikmin Bloom! New in this version:\n\n- Minor improvements and bug fixes.\n\n*Please download the latest version of the app from the store for the changes above to be reflected.",
           "app_id": "1556357398"
         },
         "Foodie Sizzle: 美食滋滋": {
-          "version": "1.45",
-          "updated": "2025-11-07T19:15:17Z",
-          "releaseNotes": "- Added new Foodie Streak event\n- Optimized performance\n- Fixed bugs",
+          "version": "1.47",
+          "updated": "2025-11-15T18:12:26Z",
+          "releaseNotes": "- Added new Foodie Streak event  \n- Performance optimization  \n- Bug fixes",
           "app_id": "6746246179"
         },
         "卡厄思夢境": {
-          "version": "1.0.203",
-          "updated": "2025-10-21T07:00:00Z",
+          "version": "1.0.209",
+          "updated": "2025-11-12T01:01:19Z",
           "releaseNotes": "Bug fixes and improvements",
           "app_id": "6502326151"
         },
@@ -829,9 +829,9 @@
           "app_id": "6741408932"
         },
         "最後的戰爭 - Last War": {
-          "version": "1.0.318",
-          "updated": "2025-11-05T10:20:42Z",
-          "releaseNotes": "Improvements:\n1. During the Meteorite Iron War, when gathering Meteorite Iron points, if allies arrive at the target location first, a secondary confirmation popup will appear.\n2. The Conductor can set whether VIP passengers can choose to receive rewards from specific carriages on the train.",
+          "version": "1.0.319",
+          "updated": "2025-11-12T09:02:12Z",
+          "releaseNotes": "1. Added sound effects for notifications in the Event Hub.\n2. Added the option to display Server Time in the Calendar interface of the Arms Race event.",
           "app_id": "6448786147"
         },
         "寒霜啟示錄": {
@@ -852,40 +852,46 @@
           "releaseNotes": "Optimize gameplay experience and fix game issues",
           "app_id": "6748932117"
         },
+        "三國志:王戰": {
+          "version": "1.4",
+          "updated": "2025-11-03T06:27:00Z",
+          "releaseNotes": "・修復部分已知bug",
+          "app_id": "6752843031"
+        },
         "Last Z:Survival Shooter（倖存者逃亡）": {
-          "version": "1.250.682",
-          "updated": "2025-10-23T07:21:09Z",
-          "releaseNotes": "bugs fixed.",
+          "version": "1.250.683",
+          "updated": "2025-11-10T11:11:35Z",
+          "releaseNotes": "fixed bugs.",
           "app_id": "6503272652"
         },
         "Roblox": {
-          "version": "2.698.937",
-          "updated": "2025-11-06T17:11:17Z",
+          "version": "2.699.877",
+          "updated": "2025-11-13T18:12:11Z",
           "releaseNotes": "To make Roblox work better for you, we deliver updates regularly. These updates include bug fixes and improvements for speed and reliability.",
           "app_id": "431946152"
         },
         "Dark War:Survival": {
-          "version": "1.250.620",
-          "updated": "2025-10-30T09:02:15Z",
-          "releaseNotes": "[Optimization & Adjustments]\n- After canceling the Bio-Mutant's Engage Offline function, a pop-up notification will be added.\n- When tapping an alliance that has been disbanded in the Rankings, a pop-up notification will now indicate that the alliance has been disbanded.\n- Optimized some in-game visuals and details.",
+          "version": "1.250.621",
+          "updated": "2025-11-14T14:08:34Z",
+          "releaseNotes": "[New Features]\n\n[Apocalypse Guide]\n- Survivors with a Shelter Level of 10 or above can now access the [Apocalypse Guide] via the [Gathering Ground] building in your city.\n- The [Apocalypse Guide] contains information on upcoming major events, allowing you to plan and prepare in advance.",
           "app_id": "6670441558"
         },
         "食光旅行": {
-          "version": "41.0",
-          "updated": "2025-10-27T02:52:53Z",
+          "version": "42.0",
+          "updated": "2025-11-09T23:12:49Z",
           "releaseNotes": "- Minor bug fixes and improvements",
           "app_id": "6471045672"
         },
         "滿貫大亨 - 快打旋風登場": {
-          "version": "1.1.234",
-          "updated": "2025-10-29T01:01:18Z",
-          "releaseNotes": "《仙境傳說》傳說再起，乘倍一路狂飆！",
+          "version": "1.1.236",
+          "updated": "2025-11-10T04:17:15Z",
+          "releaseNotes": "《宿命對決》快打旋風再次狂熱來襲！百裂連擊精神碎！\n《大工の源さん超韋駄天》經典 IP 降臨柏青哥，BONUS 連莊無上限！",
           "app_id": "1007924271"
         },
         "毛線衝擊 - Traffic Jam公車遊戲 塞車解謎": {
-          "version": "2.5",
-          "updated": "2025-11-02T15:35:29Z",
-          "releaseNotes": "Optimized and adjusted current levels for smoother experience.",
+          "version": "2.6",
+          "updated": "2025-11-11T02:08:46Z",
+          "releaseNotes": "Stability improvements and bug fixes.",
           "app_id": "6743385713"
         },
         "茶葉蛋大冒險": {
@@ -895,8 +901,8 @@
           "app_id": "1630938720"
         },
         "可獄不可囚": {
-          "version": "1.0.23",
-          "updated": "2025-10-29T06:06:19Z",
+          "version": "1.0.24",
+          "updated": "2025-11-11T10:30:18Z",
           "releaseNotes": "Update game content.",
           "app_id": "6738469826"
         },
@@ -919,9 +925,9 @@
           "app_id": "6748683699"
         },
         "Brain Puzzle: Tricky Quest": {
-          "version": "1.2.7",
-          "updated": "2025-10-22T08:37:38Z",
-          "releaseNotes": "• Fix some bugs",
+          "version": "1.2.9",
+          "updated": "2025-11-12T22:00:42Z",
+          "releaseNotes": "fix bugs",
           "app_id": "6670789598"
         },
         "Travel Town - Merge Adventure": {
@@ -931,20 +937,20 @@
           "app_id": "1521236603"
         },
         "Bus Escape: Traffic Jam": {
-          "version": "1.9.44",
-          "updated": "2025-11-06T19:59:24Z",
+          "version": "1.9.45",
+          "updated": "2025-11-10T10:57:22Z",
           "releaseNotes": "-Update levels.",
           "app_id": "6689516366"
         },
         "腦洞大爆炸 - 詞語分類 單機益智文字遊戲": {
-          "version": "1.6",
-          "updated": "2025-11-01T01:04:26Z",
-          "releaseNotes": "Performance optimized, experience taken to the next level!",
+          "version": "1.8",
+          "updated": "2025-11-15T00:48:02Z",
+          "releaseNotes": "Performance optimized, speed mode activated!",
           "app_id": "6751377873"
         },
         "《荒野亂鬥》": {
-          "version": "64.226",
-          "updated": "2025-10-28T08:56:33Z",
+          "version": "64.264",
+          "updated": "2025-11-12T08:56:04Z",
           "releaseNotes": "UPDATE 64: STRANGER THINGS\nNovember 2025 - December 2025\n∙ Head into the Upside Showdown, a new rogue-lite PVP mode! Get unique powers every game, making each run different!\n∙ Stranger Things skins, like Eleven Lumi & Scoops Ahoy Berry!\n∙ New Brawler: Gigi (Mythic Assassin)\n∙ Brawlidays get MECHA!\n∙ Brawl Pass Season 44: Stranger Things (November)\n∙ Brawl Pass Season 45: Mechmas (December)",
           "app_id": "1229016807"
         },
@@ -961,9 +967,9 @@
           "app_id": "6744096826"
         },
         "不用網路的遊戲 - 無網路遊戲 - 離線 遊戲 - 無網遊戲": {
-          "version": "3.4.9",
-          "updated": "2025-11-04T22:08:36Z",
-          "releaseNotes": "• Added support for playing vs 2/3 bots in Ludo\n• Bug fixes and improvements",
+          "version": "3.5.1",
+          "updated": "2025-11-11T21:53:17Z",
+          "releaseNotes": "• New game: Spades\n• New pool controls in settings\n• Bug fixes and improvements",
           "app_id": "6448104157"
         },
         "緋聞港口：合併&故事": {
