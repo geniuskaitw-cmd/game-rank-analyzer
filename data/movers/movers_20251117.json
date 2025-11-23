@@ -1,0 +1,430 @@
+{
+  "tw": {
+    "ios": {
+      "top_grossing": [
+        {
+          "name": "冰的啦！企鵝逗陣戰",
+          "delta": 111,
+          "direction": "rise"
+        },
+        {
+          "name": "斗羅大陸：獵魂世界",
+          "delta": -98,
+          "direction": "fall"
+        },
+        {
+          "name": "三國志・戰略版",
+          "delta": 90,
+          "direction": "rise"
+        },
+        {
+          "name": "Mobile Legends: Bang Bang",
+          "delta": -76,
+          "direction": "fall"
+        },
+        {
+          "name": "LINE 熊大農場",
+          "delta": -72,
+          "direction": "fall"
+        },
+        {
+          "name": "LINE Bubble 2",
+          "delta": -71,
+          "direction": "fall"
+        },
+        {
+          "name": "MLB 制勝時刻 25",
+          "delta": -66,
+          "direction": "fall"
+        },
+        {
+          "name": "新武俠大明星-功夫打猛鬼",
+          "delta": -65,
+          "direction": "fall"
+        },
+        {
+          "name": "主公快逃: 拆解大師",
+          "delta": 62,
+          "direction": "rise"
+        },
+        {
+          "name": "《暗黑破壞神 永生不朽》",
+          "delta": -59,
+          "direction": "fall"
+        }
+      ],
+      "top_free": [
+        {
+          "name": "Top Tycoon: Coin Theme Empire",
+          "delta": -131,
+          "direction": "fall"
+        },
+        {
+          "name": "Water Sort Puzzle - Sort Color",
+          "delta": -112,
+          "direction": "fall"
+        },
+        {
+          "name": "豪神娛樂城",
+          "delta": 107,
+          "direction": "rise"
+        },
+        {
+          "name": "口袋奇兵（Top War）",
+          "delta": -93,
+          "direction": "fall"
+        },
+        {
+          "name": "3D螺絲大師：螺絲消消樂遊戲",
+          "delta": -86,
+          "direction": "fall"
+        },
+        {
+          "name": "Wool Escape 3D",
+          "delta": -86,
+          "direction": "fall"
+        },
+        {
+          "name": "Survival Shelter",
+          "delta": -83,
+          "direction": "fall"
+        },
+        {
+          "name": "Hexa Away",
+          "delta": 82,
+          "direction": "rise"
+        },
+        {
+          "name": "崩壞：星穹鐵道",
+          "delta": -78,
+          "direction": "fall"
+        },
+        {
+          "name": "Skewer Jam: Food Games",
+          "delta": -77,
+          "direction": "fall"
+        }
+      ]
+    },
+    "gp": {
+      "top_grossing": [
+        {
+          "name": "三國志・戰略版",
+          "delta": 105,
+          "direction": "rise"
+        },
+        {
+          "name": "RO仙境傳說：守護永恆的愛",
+          "delta": 99,
+          "direction": "rise"
+        },
+        {
+          "name": "賽馬娘Pretty Derby",
+          "delta": -82,
+          "direction": "fall"
+        },
+        {
+          "name": "無雙戰機",
+          "delta": -80,
+          "direction": "fall"
+        },
+        {
+          "name": "LINE Rangers - 率領熊大和兔兔來大戰一番吧！",
+          "delta": -79,
+          "direction": "fall"
+        },
+        {
+          "name": "遺忘之劍",
+          "delta": 77,
+          "direction": "rise"
+        },
+        {
+          "name": "《英雄聯盟：激鬥峽谷》",
+          "delta": 77,
+          "direction": "rise"
+        },
+        {
+          "name": "光與夜之戀：光夜流轉 奔赴有你的未來",
+          "delta": -77,
+          "direction": "fall"
+        },
+        {
+          "name": "世紀帝國M",
+          "delta": -75,
+          "direction": "fall"
+        },
+        {
+          "name": "二重螺旋",
+          "delta": -71,
+          "direction": "fall"
+        }
+      ],
+      "top_free": [
+        {
+          "name": "胸懷三國：美人計",
+          "delta": -144,
+          "direction": "fall"
+        },
+        {
+          "name": "LINE 秘寶挖挖哇",
+          "delta": 135,
+          "direction": "rise"
+        },
+        {
+          "name": "趣穿書ChoiceCraft",
+          "delta": -110,
+          "direction": "fall"
+        },
+        {
+          "name": "Kick the Buddy：有趣的動作遊戲",
+          "delta": 104,
+          "direction": "rise"
+        },
+        {
+          "name": "時光大爆炸",
+          "delta": -98,
+          "direction": "fall"
+        },
+        {
+          "name": "轉轉大冒險",
+          "delta": 96,
+          "direction": "rise"
+        },
+        {
+          "name": "合併女僕咖啡廳－異世界物語",
+          "delta": -92,
+          "direction": "fall"
+        },
+        {
+          "name": "糖果傳奇",
+          "delta": -90,
+          "direction": "fall"
+        },
+        {
+          "name": "妖怪美少女 二選一",
+          "delta": 89,
+          "direction": "rise"
+        },
+        {
+          "name": "蛋先生：解謎大師",
+          "delta": -89,
+          "direction": "fall"
+        }
+      ]
+    }
+  },
+  "us": {
+    "ios": {
+      "top_grossing": [
+        {
+          "name": "League of Legends: Wild Rift",
+          "delta": -90,
+          "direction": "fall"
+        },
+        {
+          "name": "RAID: Shadow Legends",
+          "delta": -78,
+          "direction": "fall"
+        },
+        {
+          "name": "eFootball™",
+          "delta": 70,
+          "direction": "rise"
+        },
+        {
+          "name": "Mobile Legends: Bang Bang.US",
+          "delta": -57,
+          "direction": "fall"
+        },
+        {
+          "name": "Magic: The Gathering Arena",
+          "delta": 53,
+          "direction": "rise"
+        },
+        {
+          "name": "Hero Wars: Alliance Fantasy",
+          "delta": 49,
+          "direction": "rise"
+        },
+        {
+          "name": "Honkai: Star Rail",
+          "delta": -49,
+          "direction": "fall"
+        },
+        {
+          "name": "Golf Clash - Golfing Simulator",
+          "delta": 48,
+          "direction": "rise"
+        },
+        {
+          "name": "Hay Day",
+          "delta": 45,
+          "direction": "rise"
+        },
+        {
+          "name": "Chaos Zero Nightmare",
+          "delta": 43,
+          "direction": "rise"
+        }
+      ],
+      "top_free": [
+        {
+          "name": "Sonic Rumble",
+          "delta": -139,
+          "direction": "fall"
+        },
+        {
+          "name": "Lands of Jail",
+          "delta": -113,
+          "direction": "fall"
+        },
+        {
+          "name": "Charades - Family & Party Game",
+          "delta": -87,
+          "direction": "fall"
+        },
+        {
+          "name": "Brain Test: Tricky Puzzles",
+          "delta": -77,
+          "direction": "fall"
+        },
+        {
+          "name": "Tricky Prank: Annoying Quest",
+          "delta": 76,
+          "direction": "rise"
+        },
+        {
+          "name": "Color Wood Jam - Block Puzzle",
+          "delta": 66,
+          "direction": "rise"
+        },
+        {
+          "name": "MONOPOLY: Bingo!",
+          "delta": 65,
+          "direction": "rise"
+        },
+        {
+          "name": "X-Clash: Survival Challenge",
+          "delta": -65,
+          "direction": "fall"
+        },
+        {
+          "name": "Kick the Buddy",
+          "delta": -64,
+          "direction": "fall"
+        },
+        {
+          "name": "Zen Word® - Relax Puzzle Game",
+          "delta": 63,
+          "direction": "rise"
+        }
+      ]
+    },
+    "gp": {
+      "top_grossing": [
+        {
+          "name": "Azur Lane",
+          "delta": 87,
+          "direction": "rise"
+        },
+        {
+          "name": "DRAGON BALL LEGENDS",
+          "delta": -70,
+          "direction": "fall"
+        },
+        {
+          "name": "Marvel Contest of Champions",
+          "delta": 69,
+          "direction": "rise"
+        },
+        {
+          "name": "Pixel Flow!",
+          "delta": 61,
+          "direction": "rise"
+        },
+        {
+          "name": "Hay Day",
+          "delta": -56,
+          "direction": "fall"
+        },
+        {
+          "name": "The Tower - Idle Tower Defense",
+          "delta": 55,
+          "direction": "rise"
+        },
+        {
+          "name": "Isekai:Slow Life",
+          "delta": -53,
+          "direction": "fall"
+        },
+        {
+          "name": "Gold and Goblins: Mining Games",
+          "delta": -53,
+          "direction": "fall"
+        },
+        {
+          "name": "Age of Origins",
+          "delta": -50,
+          "direction": "fall"
+        },
+        {
+          "name": "DRAGON BALL Z DOKKAN BATTLE",
+          "delta": 47,
+          "direction": "rise"
+        }
+      ],
+      "top_free": [
+        {
+          "name": "Angry Birds 2",
+          "delta": -124,
+          "direction": "fall"
+        },
+        {
+          "name": "UNO!™",
+          "delta": -122,
+          "direction": "fall"
+        },
+        {
+          "name": "Wiggle Escape: Snake Puzzle",
+          "delta": -120,
+          "direction": "fall"
+        },
+        {
+          "name": "Color Oasis - Color by Number",
+          "delta": -114,
+          "direction": "fall"
+        },
+        {
+          "name": "X-Clash",
+          "delta": -107,
+          "direction": "fall"
+        },
+        {
+          "name": "Brain Puzzle 2: Logic Twist",
+          "delta": 98,
+          "direction": "rise"
+        },
+        {
+          "name": "MONOPOLY: Bingo!",
+          "delta": 96,
+          "direction": "rise"
+        },
+        {
+          "name": "Pick Me Up 3D: Taxi Game",
+          "delta": -84,
+          "direction": "fall"
+        },
+        {
+          "name": "Ayla World :Avatar City",
+          "delta": -76,
+          "direction": "fall"
+        },
+        {
+          "name": "MONOPOLY Match",
+          "delta": 74,
+          "direction": "rise"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,430 @@
+{
+  "tw": {
+    "ios": {
+      "top_grossing": [
+        {
+          "name": "RO仙境傳說：守護永恆的愛",
+          "delta": 134,
+          "direction": "rise"
+        },
+        {
+          "name": "光與夜之戀",
+          "delta": -125,
+          "direction": "fall"
+        },
+        {
+          "name": "崩壞：星穹鐵道",
+          "delta": 116,
+          "direction": "rise"
+        },
+        {
+          "name": "救世主超忙",
+          "delta": -111,
+          "direction": "fall"
+        },
+        {
+          "name": "靈蛇奇緣",
+          "delta": -107,
+          "direction": "fall"
+        },
+        {
+          "name": "伊瑟",
+          "delta": -85,
+          "direction": "fall"
+        },
+        {
+          "name": "Legend of YMIR",
+          "delta": -78,
+          "direction": "fall"
+        },
+        {
+          "name": "LINE Rangers - 率領熊大和兔兔來大戰一番吧！",
+          "delta": -74,
+          "direction": "fall"
+        },
+        {
+          "name": "LINE Bubble 2",
+          "delta": 72,
+          "direction": "rise"
+        },
+        {
+          "name": "喪尸狂潮",
+          "delta": 71,
+          "direction": "rise"
+        }
+      ],
+      "top_free": [
+        {
+          "name": "忍蛋奇兵",
+          "delta": -173,
+          "direction": "fall"
+        },
+        {
+          "name": "星痕共鳴",
+          "delta": -141,
+          "direction": "fall"
+        },
+        {
+          "name": "Match Villains",
+          "delta": -123,
+          "direction": "fall"
+        },
+        {
+          "name": "Jigblock™ Puzzle",
+          "delta": 108,
+          "direction": "rise"
+        },
+        {
+          "name": "茶葉蛋大冒險",
+          "delta": -98,
+          "direction": "fall"
+        },
+        {
+          "name": "Water Sort Puzzle - Sort Color",
+          "delta": 97,
+          "direction": "rise"
+        },
+        {
+          "name": "小艦艦超勇",
+          "delta": 94,
+          "direction": "rise"
+        },
+        {
+          "name": "《英雄聯盟：激鬥峽谷》",
+          "delta": 94,
+          "direction": "rise"
+        },
+        {
+          "name": "小兵特攻隊",
+          "delta": -94,
+          "direction": "fall"
+        },
+        {
+          "name": "二重螺旋",
+          "delta": -91,
+          "direction": "fall"
+        }
+      ]
+    },
+    "gp": {
+      "top_grossing": [
+        {
+          "name": "雀魂麻將",
+          "delta": -120,
+          "direction": "fall"
+        },
+        {
+          "name": "《英雄聯盟：激鬥峽谷》",
+          "delta": -100,
+          "direction": "fall"
+        },
+        {
+          "name": "神魔之塔",
+          "delta": 93,
+          "direction": "rise"
+        },
+        {
+          "name": "薑餅人王國",
+          "delta": -91,
+          "direction": "fall"
+        },
+        {
+          "name": "開心水族箱",
+          "delta": 89,
+          "direction": "rise"
+        },
+        {
+          "name": "全明星街球派對",
+          "delta": -85,
+          "direction": "fall"
+        },
+        {
+          "name": "十二之天M Reborn",
+          "delta": 82,
+          "direction": "rise"
+        },
+        {
+          "name": "崩壞3rd",
+          "delta": -80,
+          "direction": "fall"
+        },
+        {
+          "name": "救世主超忙",
+          "delta": 74,
+          "direction": "rise"
+        },
+        {
+          "name": "喪屍狂潮",
+          "delta": -74,
+          "direction": "fall"
+        }
+      ],
+      "top_free": [
+        {
+          "name": "Merge Gardens",
+          "delta": -176,
+          "direction": "fall"
+        },
+        {
+          "name": "Bid Wars: Auction Master 3D",
+          "delta": -164,
+          "direction": "fall"
+        },
+        {
+          "name": "我的歌唱寵物：流行鋼琴遊戲",
+          "delta": 139,
+          "direction": "rise"
+        },
+        {
+          "name": "Subway Surfers",
+          "delta": 116,
+          "direction": "rise"
+        },
+        {
+          "name": "卡包修仙",
+          "delta": -116,
+          "direction": "fall"
+        },
+        {
+          "name": "地球娛樂室 M: Torong Wanted",
+          "delta": -107,
+          "direction": "fall"
+        },
+        {
+          "name": "魚吃魚：成長与進化！-Fish Eat Fish.io",
+          "delta": -107,
+          "direction": "fall"
+        },
+        {
+          "name": "合併女僕咖啡廳－異世界物語",
+          "delta": 103,
+          "direction": "rise"
+        },
+        {
+          "name": "LINE 秘寶挖挖哇",
+          "delta": -94,
+          "direction": "fall"
+        },
+        {
+          "name": "音乐钢琴 7: 极速歌曲游戏",
+          "delta": -92,
+          "direction": "fall"
+        }
+      ]
+    }
+  },
+  "us": {
+    "ios": {
+      "top_grossing": [
+        {
+          "name": "Honkai: Star Rail",
+          "delta": 127,
+          "direction": "rise"
+        },
+        {
+          "name": "League of Legends: Wild Rift",
+          "delta": 115,
+          "direction": "rise"
+        },
+        {
+          "name": "Mobile Legends: Bang Bang.US",
+          "delta": 106,
+          "direction": "rise"
+        },
+        {
+          "name": "eFootball™",
+          "delta": -90,
+          "direction": "fall"
+        },
+        {
+          "name": "Isekai:Slow Life",
+          "delta": -89,
+          "direction": "fall"
+        },
+        {
+          "name": "Umamusume: Pretty Derby",
+          "delta": 75,
+          "direction": "rise"
+        },
+        {
+          "name": "DRAGON BALL LEGENDS",
+          "delta": -75,
+          "direction": "fall"
+        },
+        {
+          "name": "Chaos Zero Nightmare",
+          "delta": -74,
+          "direction": "fall"
+        },
+        {
+          "name": "DC: Dark Legion™",
+          "delta": -60,
+          "direction": "fall"
+        },
+        {
+          "name": "Hay Day",
+          "delta": -51,
+          "direction": "fall"
+        }
+      ],
+      "top_free": [
+        {
+          "name": "Hexa Sort",
+          "delta": -116,
+          "direction": "fall"
+        },
+        {
+          "name": "Friday Night Funkin' Mobile",
+          "delta": -94,
+          "direction": "fall"
+        },
+        {
+          "name": "Spades - Classic Cards",
+          "delta": -91,
+          "direction": "fall"
+        },
+        {
+          "name": "Coin Master",
+          "delta": -82,
+          "direction": "fall"
+        },
+        {
+          "name": "MONOPOLY: Bingo!",
+          "delta": -79,
+          "direction": "fall"
+        },
+        {
+          "name": "BitLife - Life Simulator",
+          "delta": 76,
+          "direction": "rise"
+        },
+        {
+          "name": "Little Farm Story: Idle Tycoon",
+          "delta": -75,
+          "direction": "fall"
+        },
+        {
+          "name": "Fruit Hole",
+          "delta": -71,
+          "direction": "fall"
+        },
+        {
+          "name": "Dreamy Room",
+          "delta": 70,
+          "direction": "rise"
+        },
+        {
+          "name": "Pokémon TCG Pocket",
+          "delta": -68,
+          "direction": "fall"
+        }
+      ]
+    },
+    "gp": {
+      "top_grossing": [
+        {
+          "name": "Honkai: Star Rail",
+          "delta": 128,
+          "direction": "rise"
+        },
+        {
+          "name": "Lootfiend: Idle Dungeons",
+          "delta": 93,
+          "direction": "rise"
+        },
+        {
+          "name": "GODDESS OF VICTORY: NIKKE",
+          "delta": 92,
+          "direction": "rise"
+        },
+        {
+          "name": "Arknights",
+          "delta": -79,
+          "direction": "fall"
+        },
+        {
+          "name": "Hay Day",
+          "delta": 77,
+          "direction": "rise"
+        },
+        {
+          "name": "Azur Lane",
+          "delta": -75,
+          "direction": "fall"
+        },
+        {
+          "name": "Magic: The Gathering Arena",
+          "delta": 63,
+          "direction": "rise"
+        },
+        {
+          "name": "Isekai:Slow Life",
+          "delta": 53,
+          "direction": "rise"
+        },
+        {
+          "name": "Words With Friends Word Game",
+          "delta": 53,
+          "direction": "rise"
+        },
+        {
+          "name": "Pixel Flow!",
+          "delta": 50,
+          "direction": "rise"
+        }
+      ],
+      "top_free": [
+        {
+          "name": "Water Match™- ASMR Water Sort",
+          "delta": 147,
+          "direction": "rise"
+        },
+        {
+          "name": "Chaos Zero Nightmare",
+          "delta": -120,
+          "direction": "fall"
+        },
+        {
+          "name": "Lootfiend: Idle Dungeons",
+          "delta": -93,
+          "direction": "fall"
+        },
+        {
+          "name": "Fishdom",
+          "delta": -92,
+          "direction": "fall"
+        },
+        {
+          "name": "Match Villains",
+          "delta": -88,
+          "direction": "fall"
+        },
+        {
+          "name": "Phone Case DIY",
+          "delta": 82,
+          "direction": "rise"
+        },
+        {
+          "name": "Dice Dreams™️",
+          "delta": -79,
+          "direction": "fall"
+        },
+        {
+          "name": "Timeline Up",
+          "delta": -69,
+          "direction": "fall"
+        },
+        {
+          "name": "Hidden Object Games: Seek It",
+          "delta": 68,
+          "direction": "rise"
+        },
+        {
+          "name": "Tic Tac Toe 2 Player: XO Game",
+          "delta": 68,
+          "direction": "rise"
+        }
+      ]
+    }
+  }
+}
