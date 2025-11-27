@@ -1,0 +1,430 @@
+{
+  "tw": {
+    "ios": {
+      "top_grossing": [
+        {
+          "name": "王牌俱樂部-十萬倍賽特登場",
+          "delta": -116,
+          "direction": "fall"
+        },
+        {
+          "name": "天堂2M",
+          "delta": -94,
+          "direction": "fall"
+        },
+        {
+          "name": "怪物彈珠",
+          "delta": -90,
+          "direction": "fall"
+        },
+        {
+          "name": "一個官人一個妻",
+          "delta": -68,
+          "direction": "fall"
+        },
+        {
+          "name": "超能世界",
+          "delta": 67,
+          "direction": "rise"
+        },
+        {
+          "name": "新武俠大明星-凡人修仙傳聯動",
+          "delta": 67,
+          "direction": "rise"
+        },
+        {
+          "name": "eFootball™",
+          "delta": 63,
+          "direction": "rise"
+        },
+        {
+          "name": "荒野行動-S42賽季",
+          "delta": -60,
+          "direction": "fall"
+        },
+        {
+          "name": "鳴潮",
+          "delta": 53,
+          "direction": "rise"
+        },
+        {
+          "name": "噠噠特攻",
+          "delta": -53,
+          "direction": "fall"
+        }
+      ],
+      "top_free": [
+        {
+          "name": "Match Villains",
+          "delta": 138,
+          "direction": "rise"
+        },
+        {
+          "name": "三國格子爭奪戰",
+          "delta": -123,
+          "direction": "fall"
+        },
+        {
+          "name": "超能世界",
+          "delta": -123,
+          "direction": "fall"
+        },
+        {
+          "name": "Gun Hero: Cat Survival Shooter",
+          "delta": 105,
+          "direction": "rise"
+        },
+        {
+          "name": "人人有功練：腸仔江湖見",
+          "delta": -94,
+          "direction": "fall"
+        },
+        {
+          "name": "Mahjong Wonders™",
+          "delta": -93,
+          "direction": "fall"
+        },
+        {
+          "name": "英勇之地",
+          "delta": 82,
+          "direction": "rise"
+        },
+        {
+          "name": "Dreamy Room - 夢幻房間",
+          "delta": -76,
+          "direction": "fall"
+        },
+        {
+          "name": "Sand Crush",
+          "delta": 74,
+          "direction": "rise"
+        },
+        {
+          "name": "Wool Escape 3D",
+          "delta": 70,
+          "direction": "rise"
+        }
+      ]
+    },
+    "gp": {
+      "top_grossing": [
+        {
+          "name": "戰雙帕彌什：末世科幻3D動作遊戲",
+          "delta": -104,
+          "direction": "fall"
+        },
+        {
+          "name": "Garena® 三角洲行動",
+          "delta": 80,
+          "direction": "rise"
+        },
+        {
+          "name": "Monster Hunter Now",
+          "delta": 75,
+          "direction": "rise"
+        },
+        {
+          "name": "超異域公主連結！Re:Dive",
+          "delta": -74,
+          "direction": "fall"
+        },
+        {
+          "name": "嘟嘟臉惡作劇",
+          "delta": 62,
+          "direction": "rise"
+        },
+        {
+          "name": "魔靈召喚: 天空之役",
+          "delta": -56,
+          "direction": "fall"
+        },
+        {
+          "name": "明日方舟",
+          "delta": -52,
+          "direction": "fall"
+        },
+        {
+          "name": "MONOPOLY GO!",
+          "delta": 52,
+          "direction": "rise"
+        },
+        {
+          "name": "星塔旅人",
+          "delta": 51,
+          "direction": "rise"
+        },
+        {
+          "name": "末日喧囂",
+          "delta": 51,
+          "direction": "rise"
+        }
+      ],
+      "top_free": [
+        {
+          "name": "卡米的旅途",
+          "delta": -96,
+          "direction": "fall"
+        },
+        {
+          "name": "趣穿書ChoiceCraft",
+          "delta": 87,
+          "direction": "rise"
+        },
+        {
+          "name": "Pixel Flow!",
+          "delta": -80,
+          "direction": "fall"
+        },
+        {
+          "name": "I Am Monkey",
+          "delta": -73,
+          "direction": "fall"
+        },
+        {
+          "name": "時光大爆炸",
+          "delta": 73,
+          "direction": "rise"
+        },
+        {
+          "name": "Angry Birds 2",
+          "delta": -70,
+          "direction": "fall"
+        },
+        {
+          "name": "黎明再現(Doomsday: Last Survivors)",
+          "delta": 69,
+          "direction": "rise"
+        },
+        {
+          "name": "糖葫蘆達人－便利店、學校午餐、聖代咖啡館吃播ASMR",
+          "delta": -67,
+          "direction": "fall"
+        },
+        {
+          "name": "第五人格",
+          "delta": 64,
+          "direction": "rise"
+        },
+        {
+          "name": "數獨大師 - Sudoku Master!",
+          "delta": -64,
+          "direction": "fall"
+        }
+      ]
+    }
+  },
+  "us": {
+    "ios": {
+      "top_grossing": [
+        {
+          "name": "DRAGON BALL LEGENDS",
+          "delta": 157,
+          "direction": "rise"
+        },
+        {
+          "name": "CookieRun: Kingdom",
+          "delta": 117,
+          "direction": "rise"
+        },
+        {
+          "name": "GODDESS OF VICTORY: NIKKE",
+          "delta": -89,
+          "direction": "fall"
+        },
+        {
+          "name": "Capybara Go!",
+          "delta": 75,
+          "direction": "rise"
+        },
+        {
+          "name": "Watcher of Realms - US",
+          "delta": -75,
+          "direction": "fall"
+        },
+        {
+          "name": "Love and Deepspace",
+          "delta": -70,
+          "direction": "fall"
+        },
+        {
+          "name": "Golf Clash - Golfing Simulator",
+          "delta": -54,
+          "direction": "fall"
+        },
+        {
+          "name": "CSR 2 - Realistic Drag Racing",
+          "delta": -51,
+          "direction": "fall"
+        },
+        {
+          "name": "Words With Friends Word Game",
+          "delta": -50,
+          "direction": "fall"
+        },
+        {
+          "name": "Chess - Play & Learn Online",
+          "delta": 47,
+          "direction": "rise"
+        }
+      ],
+      "top_free": [
+        {
+          "name": "Color Blaze Shooter",
+          "delta": 119,
+          "direction": "rise"
+        },
+        {
+          "name": "Dreamy Room",
+          "delta": -112,
+          "direction": "fall"
+        },
+        {
+          "name": "That’s My Seat – Logic Puzzle",
+          "delta": 108,
+          "direction": "rise"
+        },
+        {
+          "name": "Drop the Cat",
+          "delta": -99,
+          "direction": "fall"
+        },
+        {
+          "name": "Color Slide - Hexa Puzzle",
+          "delta": 93,
+          "direction": "rise"
+        },
+        {
+          "name": "AMAZE!!!",
+          "delta": 78,
+          "direction": "rise"
+        },
+        {
+          "name": "Pokémon GO",
+          "delta": -74,
+          "direction": "fall"
+        },
+        {
+          "name": "Charades - Family & Party Game",
+          "delta": 72,
+          "direction": "rise"
+        },
+        {
+          "name": "Royal Cooking",
+          "delta": -63,
+          "direction": "fall"
+        },
+        {
+          "name": "Happy Color by Numbers Game",
+          "delta": 62,
+          "direction": "rise"
+        }
+      ]
+    },
+    "gp": {
+      "top_grossing": [
+        {
+          "name": "DRAGON BALL LEGENDS",
+          "delta": 117,
+          "direction": "rise"
+        },
+        {
+          "name": "The Tower - Idle Tower Defense",
+          "delta": -81,
+          "direction": "fall"
+        },
+        {
+          "name": "Genshin Impact",
+          "delta": -80,
+          "direction": "fall"
+        },
+        {
+          "name": "Arknights",
+          "delta": -77,
+          "direction": "fall"
+        },
+        {
+          "name": "CookieRun: Kingdom",
+          "delta": 74,
+          "direction": "rise"
+        },
+        {
+          "name": "Star Wars™: Galaxy of Heroes",
+          "delta": 70,
+          "direction": "rise"
+        },
+        {
+          "name": "WWE SuperCard - Wrestling Game",
+          "delta": -49,
+          "direction": "fall"
+        },
+        {
+          "name": "Chaos Zero Nightmare",
+          "delta": -42,
+          "direction": "fall"
+        },
+        {
+          "name": "Magic: The Gathering Arena",
+          "delta": 39,
+          "direction": "rise"
+        },
+        {
+          "name": "Warhammer 40,000: Tacticus ™",
+          "delta": -39,
+          "direction": "fall"
+        }
+      ],
+      "top_free": [
+        {
+          "name": "MONOPOLY: Bingo!",
+          "delta": -131,
+          "direction": "fall"
+        },
+        {
+          "name": "Bluey: Let's Play!",
+          "delta": -116,
+          "direction": "fall"
+        },
+        {
+          "name": "Madden NFL 26 Mobile Football",
+          "delta": 113,
+          "direction": "rise"
+        },
+        {
+          "name": "Wiggle Escape: Snake Puzzle",
+          "delta": 108,
+          "direction": "rise"
+        },
+        {
+          "name": "Coin Sort",
+          "delta": -102,
+          "direction": "fall"
+        },
+        {
+          "name": "Idol Prank Video Call & Chat",
+          "delta": -98,
+          "direction": "fall"
+        },
+        {
+          "name": "Deep Rock Galactic: Survivor",
+          "delta": -98,
+          "direction": "fall"
+        },
+        {
+          "name": "Hidden Object Games: Seek It",
+          "delta": 97,
+          "direction": "rise"
+        },
+        {
+          "name": "Phone Case DIY",
+          "delta": -89,
+          "direction": "fall"
+        },
+        {
+          "name": "Timeline Up",
+          "delta": -83,
+          "direction": "fall"
+        }
+      ]
+    }
+  }
+}

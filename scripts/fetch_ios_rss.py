@@ -74,8 +74,16 @@ def load_prev_rank(platform, country, chart, date_obj):
         else:
             return None # 找不到前一日數據
     except ValueError:
-        # 當前日期可能首次被處理，不在可用清單中。這是正常情況。
-        return None
+        # 當前日期可能首次被處理，不在可用清單中。
+        # 嘗試尋找比 date_str 小的第一個日期 (dates 已排序 descending)
+        prev_date_str = None
+        for d in dates:
+            if d < date_str:
+                prev_date_str = d
+                break
+        
+        if not prev_date_str:
+            return None
     except AttributeError:
         # 避免非 list 物件的錯誤
         return None
